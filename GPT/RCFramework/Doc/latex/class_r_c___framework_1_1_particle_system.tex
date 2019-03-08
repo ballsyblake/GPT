@@ -1,0 +1,457 @@
+\hypertarget{class_r_c___framework_1_1_particle_system}{}\section{R\+C\+\_\+\+Framework.\+Particle\+System Class Reference}
+\label{class_r_c___framework_1_1_particle_system}\index{R\+C\+\_\+\+Framework.\+Particle\+System@{R\+C\+\_\+\+Framework.\+Particle\+System}}
+Inheritance diagram for R\+C\+\_\+\+Framework.\+Particle\+System\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_r_c___framework_1_1_particle_system}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_particle_system_a9baad9b596967f62ce758557a4baecdc}{Particle\+System}} (Vector2 posZ, int MaxnumZ, int ticks\+System\+DurationZ, int random\+Seed)
+\item 
+override void \mbox{\hyperlink{class_r_c___framework_1_1_particle_system_ac96aa1743b45944d102ddf01d67452c1}{reset}} ()
+\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_particle_system_a145da945b2d05fe75735e007796fc158}{set\+Mandatory1}} (Texture2D texZ, Vector2 start\+SizeZ, Vector2 end\+SizeZ, Color start\+ColorZ, Color end\+ColorZ)
+\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_particle_system_af7698934f85ed2081ba236db023fa004}{set\+Mandatory2}} (int total\+Number\+To\+MakeZ, int initial\+Number\+To\+MakeZ, int subsequent\+Number\+To\+MakeZ, int ticks\+Between\+Make\+EventsZ, int random10000\+TomakeZ)
+\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_particle_system_a4a7d1047a8f891f66c5cc2f290520107}{set\+Mandatory3}} (int ticks\+Particle\+DurationZ, Rectangle boundsZ)
+\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_particle_system_a7b3f6b8c93d32699592cb3737f449fa9}{set\+Mandatory4}} (Vector2 deltaZ, Vector2 initial\+VelosityZ, Vector2 initial\+Velosity\+RandomZ)
+\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_particle_system_a7757ad5d623f0f275e07dff00d37efd5}{activate}} ()
+\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_particle_system_a5203abf6d889ed63facf7c5262a48733}{de\+Activate}} ()
+\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_particle_system_a229864cc0b24df0bab9e43b07fdd4b8d}{if\+Safe\+To\+Remove\+De\+Activate}} ()
+\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_particle_system_a80b4943e107e2ee29218ebb358e5e0bf}{make\+Particles}} (int num)
+\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_particle_system_ad97ae58b6cb5679a4f9ce02cb4d714ea}{Contains}} (Vector2 point)
+\begin{DoxyCompactList}\small\item\em tests if any active particle contains the point Returns -\/1 if it misses all particles otherwise it returns the particle number \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_particle_system_af6c1685abb024ef387dc160fb1db4bad}{set\+Way\+List\+Count}} (int wlc)
+\item 
+override void \mbox{\hyperlink{class_r_c___framework_1_1_particle_system_a658681cf664bb153b4defb6a861bc721}{Update}} (Game\+Time game\+Time)
+\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_particle_system_a8097f166bded1c9a4e511e4d22e09541}{update\+Particles}} ()
+\item 
+override void \mbox{\hyperlink{class_r_c___framework_1_1_particle_system_a2cb9a22f944e93697fff3128a1d3ddb6}{Draw}} (Sprite\+Batch sp)
+\begin{DoxyCompactList}\small\item\em Standard draw routine which assumes the renderable knows where it is \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_r_c___framework_1_1_particle_system_a6f21e255387e86b9352f7ba362f4737c}{inital\+Angle\+Low}} = 0
+\item 
+float \mbox{\hyperlink{class_r_c___framework_1_1_particle_system_a5b6110ac4cdeffb18a96fdc5a3782956}{inital\+Angle\+High}} = 0
+\item 
+float \mbox{\hyperlink{class_r_c___framework_1_1_particle_system_a5703bd6030e08d2047d574d269f936e0}{inital\+Velocity\+Low}} = 0
+\item 
+float \mbox{\hyperlink{class_r_c___framework_1_1_particle_system_acf82c04377b18711b36f2d31ae460ad9}{inital\+Velocity\+High}} = 0
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Texture2D \mbox{\hyperlink{class_r_c___framework_1_1_particle_system_a742f2d81c88deed1f55ec5bbf70f4ab9}{tex}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_r_c___framework_1_1_particle_system_aa8cf7d8f7c1a323cde4dd0016aa4bd9d}{generation}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Vector2 \mbox{\hyperlink{class_r_c___framework_1_1_particle_system_ac4f852ac1384ce4392696641a4a4be25}{start\+Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Vector2 \mbox{\hyperlink{class_r_c___framework_1_1_particle_system_a17842ac5d898f4778ca7e4252cab591f}{end\+Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Vector2 \mbox{\hyperlink{class_r_c___framework_1_1_particle_system_a47f4e639b5021d6088461bb8034853d0}{sys\+Pos}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Color \mbox{\hyperlink{class_r_c___framework_1_1_particle_system_ae2d934fe4a2fe39abb50434f3f205206}{start\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Color \mbox{\hyperlink{class_r_c___framework_1_1_particle_system_a5c7fb74e67dcfd8af485fd0ad0aefe94}{end\+Color}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_particle_system_a618679965392a7e57dd71e7ea64a350d}{ticks\+System\+Duration}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Rectangle \mbox{\hyperlink{class_r_c___framework_1_1_particle_system_a3f28ceb4c26eec9d8ddd5b957f4a5c7c}{bounds}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Vector2 \mbox{\hyperlink{class_r_c___framework_1_1_particle_system_afeebe9c2046c500af1da292b48041054}{delta}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Vector2 \mbox{\hyperlink{class_r_c___framework_1_1_particle_system_a822fa383fdd59536a220d8c6389159d8}{random\+Delta}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Vector2 \mbox{\hyperlink{class_r_c___framework_1_1_particle_system_ad9da77ebbe3e8f1425ef176fef680907}{wind\+Delta}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Vector2 \mbox{\hyperlink{class_r_c___framework_1_1_particle_system_a1ba7b70a31e8c6cc10cc3f59f5250db1}{resistance}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Vector2 \mbox{\hyperlink{class_r_c___framework_1_1_particle_system_ae40ff073fcaf19f02f4a44904441ccca}{initial\+Velosity}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Vector2 \mbox{\hyperlink{class_r_c___framework_1_1_particle_system_a52c86010adb7aacffff157a77786daf0}{initial\+Velosity\+Random}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_particle_system_a1a04c770e267f6c595cef5644a0deae7}{Origin}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Rectangle \mbox{\hyperlink{class_r_c___framework_1_1_particle_system_a3f614b6db7f50a6367d7732160b6cef1}{origin\+Rectangle}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_way_point_list}{Way\+Point\+List}} \mbox{\hyperlink{class_r_c___framework_1_1_particle_system_aa8187c210d815f3e727c3666542513ca}{origin\+Way\+List}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_particle_system_ae799d7d003858a97b66e94210fc95453}{total\+Number\+To\+Make}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_particle_system_a62c4c1f5a709872b3711ed50404fe673}{initial\+Number\+To\+Make}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_particle_system_a1f5308e212ae17bcdd21cc7ac1516f23}{subsequent\+Number\+To\+Make}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_particle_system_a7f84c6b6e2d4f0314e6ab67e8a835b5a}{ticks\+Between\+Make\+Events}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_particle_system_ae1051896325086ff0081894a391735a8}{random10000\+Tomake}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_particle_system_ab467807a417cc9f022d4ef7bb4561035}{ticks\+Particle\+Duration}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_r_c___framework_1_1_particle_system_af2fb2ff9ebf53545b72d20c0e52db834}{set\+Display\+Angle}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_r_c___framework_1_1_particle_system_a9e0e6de2a6683d3a9deb7a762222ab2d}{display\+Angle\+Offset}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_particle_system_a0b390b18ea379c0a285cad7f02d1cafe}{move\+Towards}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em defines override particle movement 0 = nix -\/ just use other movement params ~\newline
+1 = towards move\+Towards\+Pos 2 = away from move\+Towards\+Pos 3 = drift towards move\+Towards\+Pos 4 = drift away from move\+Towards\+Pos \end{DoxyCompactList}\item 
+Vector2 \mbox{\hyperlink{class_r_c___framework_1_1_particle_system_a863bb790d4e1c5ed363ece08509b96b6}{move\+Towards\+Pos}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_r_c___framework_1_1_particle_system_a7d438b6f40ce329bd24ada1fafdfa020}{move\+To\+Drift}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_particle_system_a9baad9b596967f62ce758557a4baecdc}\label{class_r_c___framework_1_1_particle_system_a9baad9b596967f62ce758557a4baecdc}} 
+\index{R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}!Particle\+System@{Particle\+System}}
+\index{Particle\+System@{Particle\+System}!R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}}
+\subsubsection{\texorpdfstring{Particle\+System()}{ParticleSystem()}}
+{\footnotesize\ttfamily R\+C\+\_\+\+Framework.\+Particle\+System.\+Particle\+System (\begin{DoxyParamCaption}\item[{Vector2}]{posZ,  }\item[{int}]{MaxnumZ,  }\item[{int}]{ticks\+System\+DurationZ,  }\item[{int}]{random\+Seed }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_particle_system_a7757ad5d623f0f275e07dff00d37efd5}\label{class_r_c___framework_1_1_particle_system_a7757ad5d623f0f275e07dff00d37efd5}} 
+\index{R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}!activate@{activate}}
+\index{activate@{activate}!R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}}
+\subsubsection{\texorpdfstring{activate()}{activate()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Particle\+System.\+activate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_particle_system_ad97ae58b6cb5679a4f9ce02cb4d714ea}\label{class_r_c___framework_1_1_particle_system_ad97ae58b6cb5679a4f9ce02cb4d714ea}} 
+\index{R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}!Contains@{Contains}}
+\index{Contains@{Contains}!R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}}
+\subsubsection{\texorpdfstring{Contains()}{Contains()}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Particle\+System.\+Contains (\begin{DoxyParamCaption}\item[{Vector2}]{point }\end{DoxyParamCaption})}
+
+
+
+tests if any active particle contains the point Returns -\/1 if it misses all particles otherwise it returns the particle number 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_particle_system_a5203abf6d889ed63facf7c5262a48733}\label{class_r_c___framework_1_1_particle_system_a5203abf6d889ed63facf7c5262a48733}} 
+\index{R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}!de\+Activate@{de\+Activate}}
+\index{de\+Activate@{de\+Activate}!R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}}
+\subsubsection{\texorpdfstring{de\+Activate()}{deActivate()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Particle\+System.\+de\+Activate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_particle_system_a2cb9a22f944e93697fff3128a1d3ddb6}\label{class_r_c___framework_1_1_particle_system_a2cb9a22f944e93697fff3128a1d3ddb6}} 
+\index{R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}!Draw@{Draw}}
+\index{Draw@{Draw}!R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily override void R\+C\+\_\+\+Framework.\+Particle\+System.\+Draw (\begin{DoxyParamCaption}\item[{Sprite\+Batch}]{sb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Standard draw routine which assumes the renderable knows where it is 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_acc26db34e382a25a989c4c0dd0354b23}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_particle_system_a229864cc0b24df0bab9e43b07fdd4b8d}\label{class_r_c___framework_1_1_particle_system_a229864cc0b24df0bab9e43b07fdd4b8d}} 
+\index{R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}!if\+Safe\+To\+Remove\+De\+Activate@{if\+Safe\+To\+Remove\+De\+Activate}}
+\index{if\+Safe\+To\+Remove\+De\+Activate@{if\+Safe\+To\+Remove\+De\+Activate}!R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}}
+\subsubsection{\texorpdfstring{if\+Safe\+To\+Remove\+De\+Activate()}{ifSafeToRemoveDeActivate()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Particle\+System.\+if\+Safe\+To\+Remove\+De\+Activate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_particle_system_a80b4943e107e2ee29218ebb358e5e0bf}\label{class_r_c___framework_1_1_particle_system_a80b4943e107e2ee29218ebb358e5e0bf}} 
+\index{R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}!make\+Particles@{make\+Particles}}
+\index{make\+Particles@{make\+Particles}!R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}}
+\subsubsection{\texorpdfstring{make\+Particles()}{makeParticles()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Particle\+System.\+make\+Particles (\begin{DoxyParamCaption}\item[{int}]{num }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_particle_system_ac96aa1743b45944d102ddf01d67452c1}\label{class_r_c___framework_1_1_particle_system_ac96aa1743b45944d102ddf01d67452c1}} 
+\index{R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}!reset@{reset}}
+\index{reset@{reset}!R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily override void R\+C\+\_\+\+Framework.\+Particle\+System.\+reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_ae65ce69704d15963789f421b58618b1f}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_particle_system_a145da945b2d05fe75735e007796fc158}\label{class_r_c___framework_1_1_particle_system_a145da945b2d05fe75735e007796fc158}} 
+\index{R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}!set\+Mandatory1@{set\+Mandatory1}}
+\index{set\+Mandatory1@{set\+Mandatory1}!R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}}
+\subsubsection{\texorpdfstring{set\+Mandatory1()}{setMandatory1()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Particle\+System.\+set\+Mandatory1 (\begin{DoxyParamCaption}\item[{Texture2D}]{texZ,  }\item[{Vector2}]{start\+SizeZ,  }\item[{Vector2}]{end\+SizeZ,  }\item[{Color}]{start\+ColorZ,  }\item[{Color}]{end\+ColorZ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_particle_system_af7698934f85ed2081ba236db023fa004}\label{class_r_c___framework_1_1_particle_system_af7698934f85ed2081ba236db023fa004}} 
+\index{R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}!set\+Mandatory2@{set\+Mandatory2}}
+\index{set\+Mandatory2@{set\+Mandatory2}!R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}}
+\subsubsection{\texorpdfstring{set\+Mandatory2()}{setMandatory2()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Particle\+System.\+set\+Mandatory2 (\begin{DoxyParamCaption}\item[{int}]{total\+Number\+To\+MakeZ,  }\item[{int}]{initial\+Number\+To\+MakeZ,  }\item[{int}]{subsequent\+Number\+To\+MakeZ,  }\item[{int}]{ticks\+Between\+Make\+EventsZ,  }\item[{int}]{random10000\+TomakeZ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_particle_system_a4a7d1047a8f891f66c5cc2f290520107}\label{class_r_c___framework_1_1_particle_system_a4a7d1047a8f891f66c5cc2f290520107}} 
+\index{R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}!set\+Mandatory3@{set\+Mandatory3}}
+\index{set\+Mandatory3@{set\+Mandatory3}!R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}}
+\subsubsection{\texorpdfstring{set\+Mandatory3()}{setMandatory3()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Particle\+System.\+set\+Mandatory3 (\begin{DoxyParamCaption}\item[{int}]{ticks\+Particle\+DurationZ,  }\item[{Rectangle}]{boundsZ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_particle_system_a7b3f6b8c93d32699592cb3737f449fa9}\label{class_r_c___framework_1_1_particle_system_a7b3f6b8c93d32699592cb3737f449fa9}} 
+\index{R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}!set\+Mandatory4@{set\+Mandatory4}}
+\index{set\+Mandatory4@{set\+Mandatory4}!R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}}
+\subsubsection{\texorpdfstring{set\+Mandatory4()}{setMandatory4()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Particle\+System.\+set\+Mandatory4 (\begin{DoxyParamCaption}\item[{Vector2}]{deltaZ,  }\item[{Vector2}]{initial\+VelosityZ,  }\item[{Vector2}]{initial\+Velosity\+RandomZ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_particle_system_af6c1685abb024ef387dc160fb1db4bad}\label{class_r_c___framework_1_1_particle_system_af6c1685abb024ef387dc160fb1db4bad}} 
+\index{R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}!set\+Way\+List\+Count@{set\+Way\+List\+Count}}
+\index{set\+Way\+List\+Count@{set\+Way\+List\+Count}!R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}}
+\subsubsection{\texorpdfstring{set\+Way\+List\+Count()}{setWayListCount()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Particle\+System.\+set\+Way\+List\+Count (\begin{DoxyParamCaption}\item[{int}]{wlc }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_particle_system_a658681cf664bb153b4defb6a861bc721}\label{class_r_c___framework_1_1_particle_system_a658681cf664bb153b4defb6a861bc721}} 
+\index{R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}!Update@{Update}}
+\index{Update@{Update}!R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily override void R\+C\+\_\+\+Framework.\+Particle\+System.\+Update (\begin{DoxyParamCaption}\item[{Game\+Time}]{game\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_a5745bedc7ba0587aa1e1d8563c357228}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_particle_system_a8097f166bded1c9a4e511e4d22e09541}\label{class_r_c___framework_1_1_particle_system_a8097f166bded1c9a4e511e4d22e09541}} 
+\index{R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}!update\+Particles@{update\+Particles}}
+\index{update\+Particles@{update\+Particles}!R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}}
+\subsubsection{\texorpdfstring{update\+Particles()}{updateParticles()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Particle\+System.\+update\+Particles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_particle_system_a5b6110ac4cdeffb18a96fdc5a3782956}\label{class_r_c___framework_1_1_particle_system_a5b6110ac4cdeffb18a96fdc5a3782956}} 
+\index{R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}!inital\+Angle\+High@{inital\+Angle\+High}}
+\index{inital\+Angle\+High@{inital\+Angle\+High}!R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}}
+\subsubsection{\texorpdfstring{inital\+Angle\+High}{initalAngleHigh}}
+{\footnotesize\ttfamily float R\+C\+\_\+\+Framework.\+Particle\+System.\+inital\+Angle\+High = 0}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_particle_system_a6f21e255387e86b9352f7ba362f4737c}\label{class_r_c___framework_1_1_particle_system_a6f21e255387e86b9352f7ba362f4737c}} 
+\index{R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}!inital\+Angle\+Low@{inital\+Angle\+Low}}
+\index{inital\+Angle\+Low@{inital\+Angle\+Low}!R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}}
+\subsubsection{\texorpdfstring{inital\+Angle\+Low}{initalAngleLow}}
+{\footnotesize\ttfamily float R\+C\+\_\+\+Framework.\+Particle\+System.\+inital\+Angle\+Low = 0}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_particle_system_acf82c04377b18711b36f2d31ae460ad9}\label{class_r_c___framework_1_1_particle_system_acf82c04377b18711b36f2d31ae460ad9}} 
+\index{R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}!inital\+Velocity\+High@{inital\+Velocity\+High}}
+\index{inital\+Velocity\+High@{inital\+Velocity\+High}!R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}}
+\subsubsection{\texorpdfstring{inital\+Velocity\+High}{initalVelocityHigh}}
+{\footnotesize\ttfamily float R\+C\+\_\+\+Framework.\+Particle\+System.\+inital\+Velocity\+High = 0}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_particle_system_a5703bd6030e08d2047d574d269f936e0}\label{class_r_c___framework_1_1_particle_system_a5703bd6030e08d2047d574d269f936e0}} 
+\index{R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}!inital\+Velocity\+Low@{inital\+Velocity\+Low}}
+\index{inital\+Velocity\+Low@{inital\+Velocity\+Low}!R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}}
+\subsubsection{\texorpdfstring{inital\+Velocity\+Low}{initalVelocityLow}}
+{\footnotesize\ttfamily float R\+C\+\_\+\+Framework.\+Particle\+System.\+inital\+Velocity\+Low = 0}
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_particle_system_a3f28ceb4c26eec9d8ddd5b957f4a5c7c}\label{class_r_c___framework_1_1_particle_system_a3f28ceb4c26eec9d8ddd5b957f4a5c7c}} 
+\index{R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}!bounds@{bounds}}
+\index{bounds@{bounds}!R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}}
+\subsubsection{\texorpdfstring{bounds}{bounds}}
+{\footnotesize\ttfamily Rectangle R\+C\+\_\+\+Framework.\+Particle\+System.\+bounds\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_particle_system_afeebe9c2046c500af1da292b48041054}\label{class_r_c___framework_1_1_particle_system_afeebe9c2046c500af1da292b48041054}} 
+\index{R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}!delta@{delta}}
+\index{delta@{delta}!R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}}
+\subsubsection{\texorpdfstring{delta}{delta}}
+{\footnotesize\ttfamily Vector2 R\+C\+\_\+\+Framework.\+Particle\+System.\+delta\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_particle_system_a9e0e6de2a6683d3a9deb7a762222ab2d}\label{class_r_c___framework_1_1_particle_system_a9e0e6de2a6683d3a9deb7a762222ab2d}} 
+\index{R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}!display\+Angle\+Offset@{display\+Angle\+Offset}}
+\index{display\+Angle\+Offset@{display\+Angle\+Offset}!R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}}
+\subsubsection{\texorpdfstring{display\+Angle\+Offset}{displayAngleOffset}}
+{\footnotesize\ttfamily float R\+C\+\_\+\+Framework.\+Particle\+System.\+display\+Angle\+Offset\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_particle_system_a5c7fb74e67dcfd8af485fd0ad0aefe94}\label{class_r_c___framework_1_1_particle_system_a5c7fb74e67dcfd8af485fd0ad0aefe94}} 
+\index{R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}!end\+Color@{end\+Color}}
+\index{end\+Color@{end\+Color}!R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}}
+\subsubsection{\texorpdfstring{end\+Color}{endColor}}
+{\footnotesize\ttfamily Color R\+C\+\_\+\+Framework.\+Particle\+System.\+end\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_particle_system_a17842ac5d898f4778ca7e4252cab591f}\label{class_r_c___framework_1_1_particle_system_a17842ac5d898f4778ca7e4252cab591f}} 
+\index{R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}!end\+Size@{end\+Size}}
+\index{end\+Size@{end\+Size}!R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}}
+\subsubsection{\texorpdfstring{end\+Size}{endSize}}
+{\footnotesize\ttfamily Vector2 R\+C\+\_\+\+Framework.\+Particle\+System.\+end\+Size\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_particle_system_aa8cf7d8f7c1a323cde4dd0016aa4bd9d}\label{class_r_c___framework_1_1_particle_system_aa8cf7d8f7c1a323cde4dd0016aa4bd9d}} 
+\index{R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}!generation@{generation}}
+\index{generation@{generation}!R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}}
+\subsubsection{\texorpdfstring{generation}{generation}}
+{\footnotesize\ttfamily bool R\+C\+\_\+\+Framework.\+Particle\+System.\+generation\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_particle_system_a62c4c1f5a709872b3711ed50404fe673}\label{class_r_c___framework_1_1_particle_system_a62c4c1f5a709872b3711ed50404fe673}} 
+\index{R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}!initial\+Number\+To\+Make@{initial\+Number\+To\+Make}}
+\index{initial\+Number\+To\+Make@{initial\+Number\+To\+Make}!R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}}
+\subsubsection{\texorpdfstring{initial\+Number\+To\+Make}{initialNumberToMake}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Particle\+System.\+initial\+Number\+To\+Make\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_particle_system_ae40ff073fcaf19f02f4a44904441ccca}\label{class_r_c___framework_1_1_particle_system_ae40ff073fcaf19f02f4a44904441ccca}} 
+\index{R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}!initial\+Velosity@{initial\+Velosity}}
+\index{initial\+Velosity@{initial\+Velosity}!R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}}
+\subsubsection{\texorpdfstring{initial\+Velosity}{initialVelosity}}
+{\footnotesize\ttfamily Vector2 R\+C\+\_\+\+Framework.\+Particle\+System.\+initial\+Velosity\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_particle_system_a52c86010adb7aacffff157a77786daf0}\label{class_r_c___framework_1_1_particle_system_a52c86010adb7aacffff157a77786daf0}} 
+\index{R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}!initial\+Velosity\+Random@{initial\+Velosity\+Random}}
+\index{initial\+Velosity\+Random@{initial\+Velosity\+Random}!R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}}
+\subsubsection{\texorpdfstring{initial\+Velosity\+Random}{initialVelosityRandom}}
+{\footnotesize\ttfamily Vector2 R\+C\+\_\+\+Framework.\+Particle\+System.\+initial\+Velosity\+Random\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_particle_system_a7d438b6f40ce329bd24ada1fafdfa020}\label{class_r_c___framework_1_1_particle_system_a7d438b6f40ce329bd24ada1fafdfa020}} 
+\index{R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}!move\+To\+Drift@{move\+To\+Drift}}
+\index{move\+To\+Drift@{move\+To\+Drift}!R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}}
+\subsubsection{\texorpdfstring{move\+To\+Drift}{moveToDrift}}
+{\footnotesize\ttfamily float R\+C\+\_\+\+Framework.\+Particle\+System.\+move\+To\+Drift\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_particle_system_a0b390b18ea379c0a285cad7f02d1cafe}\label{class_r_c___framework_1_1_particle_system_a0b390b18ea379c0a285cad7f02d1cafe}} 
+\index{R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}!move\+Towards@{move\+Towards}}
+\index{move\+Towards@{move\+Towards}!R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}}
+\subsubsection{\texorpdfstring{move\+Towards}{moveTowards}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Particle\+System.\+move\+Towards\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+defines override particle movement 0 = nix -\/ just use other movement params ~\newline
+1 = towards move\+Towards\+Pos 2 = away from move\+Towards\+Pos 3 = drift towards move\+Towards\+Pos 4 = drift away from move\+Towards\+Pos 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_particle_system_a863bb790d4e1c5ed363ece08509b96b6}\label{class_r_c___framework_1_1_particle_system_a863bb790d4e1c5ed363ece08509b96b6}} 
+\index{R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}!move\+Towards\+Pos@{move\+Towards\+Pos}}
+\index{move\+Towards\+Pos@{move\+Towards\+Pos}!R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}}
+\subsubsection{\texorpdfstring{move\+Towards\+Pos}{moveTowardsPos}}
+{\footnotesize\ttfamily Vector2 R\+C\+\_\+\+Framework.\+Particle\+System.\+move\+Towards\+Pos\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_particle_system_a1a04c770e267f6c595cef5644a0deae7}\label{class_r_c___framework_1_1_particle_system_a1a04c770e267f6c595cef5644a0deae7}} 
+\index{R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}!Origin@{Origin}}
+\index{Origin@{Origin}!R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}}
+\subsubsection{\texorpdfstring{Origin}{Origin}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Particle\+System.\+Origin\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_particle_system_a3f614b6db7f50a6367d7732160b6cef1}\label{class_r_c___framework_1_1_particle_system_a3f614b6db7f50a6367d7732160b6cef1}} 
+\index{R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}!origin\+Rectangle@{origin\+Rectangle}}
+\index{origin\+Rectangle@{origin\+Rectangle}!R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}}
+\subsubsection{\texorpdfstring{origin\+Rectangle}{originRectangle}}
+{\footnotesize\ttfamily Rectangle R\+C\+\_\+\+Framework.\+Particle\+System.\+origin\+Rectangle\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_particle_system_aa8187c210d815f3e727c3666542513ca}\label{class_r_c___framework_1_1_particle_system_aa8187c210d815f3e727c3666542513ca}} 
+\index{R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}!origin\+Way\+List@{origin\+Way\+List}}
+\index{origin\+Way\+List@{origin\+Way\+List}!R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}}
+\subsubsection{\texorpdfstring{origin\+Way\+List}{originWayList}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_r_c___framework_1_1_way_point_list}{Way\+Point\+List}} R\+C\+\_\+\+Framework.\+Particle\+System.\+origin\+Way\+List\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_particle_system_ae1051896325086ff0081894a391735a8}\label{class_r_c___framework_1_1_particle_system_ae1051896325086ff0081894a391735a8}} 
+\index{R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}!random10000\+Tomake@{random10000\+Tomake}}
+\index{random10000\+Tomake@{random10000\+Tomake}!R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}}
+\subsubsection{\texorpdfstring{random10000\+Tomake}{random10000Tomake}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Particle\+System.\+random10000\+Tomake\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_particle_system_a822fa383fdd59536a220d8c6389159d8}\label{class_r_c___framework_1_1_particle_system_a822fa383fdd59536a220d8c6389159d8}} 
+\index{R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}!random\+Delta@{random\+Delta}}
+\index{random\+Delta@{random\+Delta}!R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}}
+\subsubsection{\texorpdfstring{random\+Delta}{randomDelta}}
+{\footnotesize\ttfamily Vector2 R\+C\+\_\+\+Framework.\+Particle\+System.\+random\+Delta\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_particle_system_a1ba7b70a31e8c6cc10cc3f59f5250db1}\label{class_r_c___framework_1_1_particle_system_a1ba7b70a31e8c6cc10cc3f59f5250db1}} 
+\index{R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}!resistance@{resistance}}
+\index{resistance@{resistance}!R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}}
+\subsubsection{\texorpdfstring{resistance}{resistance}}
+{\footnotesize\ttfamily Vector2 R\+C\+\_\+\+Framework.\+Particle\+System.\+resistance\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_particle_system_af2fb2ff9ebf53545b72d20c0e52db834}\label{class_r_c___framework_1_1_particle_system_af2fb2ff9ebf53545b72d20c0e52db834}} 
+\index{R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}!set\+Display\+Angle@{set\+Display\+Angle}}
+\index{set\+Display\+Angle@{set\+Display\+Angle}!R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}}
+\subsubsection{\texorpdfstring{set\+Display\+Angle}{setDisplayAngle}}
+{\footnotesize\ttfamily bool R\+C\+\_\+\+Framework.\+Particle\+System.\+set\+Display\+Angle\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_particle_system_ae2d934fe4a2fe39abb50434f3f205206}\label{class_r_c___framework_1_1_particle_system_ae2d934fe4a2fe39abb50434f3f205206}} 
+\index{R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}!start\+Color@{start\+Color}}
+\index{start\+Color@{start\+Color}!R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}}
+\subsubsection{\texorpdfstring{start\+Color}{startColor}}
+{\footnotesize\ttfamily Color R\+C\+\_\+\+Framework.\+Particle\+System.\+start\+Color\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_particle_system_ac4f852ac1384ce4392696641a4a4be25}\label{class_r_c___framework_1_1_particle_system_ac4f852ac1384ce4392696641a4a4be25}} 
+\index{R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}!start\+Size@{start\+Size}}
+\index{start\+Size@{start\+Size}!R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}}
+\subsubsection{\texorpdfstring{start\+Size}{startSize}}
+{\footnotesize\ttfamily Vector2 R\+C\+\_\+\+Framework.\+Particle\+System.\+start\+Size\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_particle_system_a1f5308e212ae17bcdd21cc7ac1516f23}\label{class_r_c___framework_1_1_particle_system_a1f5308e212ae17bcdd21cc7ac1516f23}} 
+\index{R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}!subsequent\+Number\+To\+Make@{subsequent\+Number\+To\+Make}}
+\index{subsequent\+Number\+To\+Make@{subsequent\+Number\+To\+Make}!R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}}
+\subsubsection{\texorpdfstring{subsequent\+Number\+To\+Make}{subsequentNumberToMake}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Particle\+System.\+subsequent\+Number\+To\+Make\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_particle_system_a47f4e639b5021d6088461bb8034853d0}\label{class_r_c___framework_1_1_particle_system_a47f4e639b5021d6088461bb8034853d0}} 
+\index{R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}!sys\+Pos@{sys\+Pos}}
+\index{sys\+Pos@{sys\+Pos}!R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}}
+\subsubsection{\texorpdfstring{sys\+Pos}{sysPos}}
+{\footnotesize\ttfamily Vector2 R\+C\+\_\+\+Framework.\+Particle\+System.\+sys\+Pos\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_particle_system_a742f2d81c88deed1f55ec5bbf70f4ab9}\label{class_r_c___framework_1_1_particle_system_a742f2d81c88deed1f55ec5bbf70f4ab9}} 
+\index{R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}!tex@{tex}}
+\index{tex@{tex}!R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}}
+\subsubsection{\texorpdfstring{tex}{tex}}
+{\footnotesize\ttfamily Texture2D R\+C\+\_\+\+Framework.\+Particle\+System.\+tex\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_particle_system_a7f84c6b6e2d4f0314e6ab67e8a835b5a}\label{class_r_c___framework_1_1_particle_system_a7f84c6b6e2d4f0314e6ab67e8a835b5a}} 
+\index{R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}!ticks\+Between\+Make\+Events@{ticks\+Between\+Make\+Events}}
+\index{ticks\+Between\+Make\+Events@{ticks\+Between\+Make\+Events}!R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}}
+\subsubsection{\texorpdfstring{ticks\+Between\+Make\+Events}{ticksBetweenMakeEvents}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Particle\+System.\+ticks\+Between\+Make\+Events\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_particle_system_ab467807a417cc9f022d4ef7bb4561035}\label{class_r_c___framework_1_1_particle_system_ab467807a417cc9f022d4ef7bb4561035}} 
+\index{R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}!ticks\+Particle\+Duration@{ticks\+Particle\+Duration}}
+\index{ticks\+Particle\+Duration@{ticks\+Particle\+Duration}!R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}}
+\subsubsection{\texorpdfstring{ticks\+Particle\+Duration}{ticksParticleDuration}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Particle\+System.\+ticks\+Particle\+Duration\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_particle_system_a618679965392a7e57dd71e7ea64a350d}\label{class_r_c___framework_1_1_particle_system_a618679965392a7e57dd71e7ea64a350d}} 
+\index{R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}!ticks\+System\+Duration@{ticks\+System\+Duration}}
+\index{ticks\+System\+Duration@{ticks\+System\+Duration}!R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}}
+\subsubsection{\texorpdfstring{ticks\+System\+Duration}{ticksSystemDuration}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Particle\+System.\+ticks\+System\+Duration\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_particle_system_ae799d7d003858a97b66e94210fc95453}\label{class_r_c___framework_1_1_particle_system_ae799d7d003858a97b66e94210fc95453}} 
+\index{R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}!total\+Number\+To\+Make@{total\+Number\+To\+Make}}
+\index{total\+Number\+To\+Make@{total\+Number\+To\+Make}!R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}}
+\subsubsection{\texorpdfstring{total\+Number\+To\+Make}{totalNumberToMake}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Particle\+System.\+total\+Number\+To\+Make\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_particle_system_ad9da77ebbe3e8f1425ef176fef680907}\label{class_r_c___framework_1_1_particle_system_ad9da77ebbe3e8f1425ef176fef680907}} 
+\index{R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}!wind\+Delta@{wind\+Delta}}
+\index{wind\+Delta@{wind\+Delta}!R\+C\+\_\+\+Framework\+::\+Particle\+System@{R\+C\+\_\+\+Framework\+::\+Particle\+System}}
+\subsubsection{\texorpdfstring{wind\+Delta}{windDelta}}
+{\footnotesize\ttfamily Vector2 R\+C\+\_\+\+Framework.\+Particle\+System.\+wind\+Delta\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+B/\+R\+C\+\_\+\+Framework2018/\+Source/\mbox{\hyperlink{_r_c___particle_8cs}{R\+C\+\_\+\+Particle.\+cs}}\end{DoxyCompactItemize}

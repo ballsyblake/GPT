@@ -1,0 +1,160 @@
+\hypertarget{class_r_c___framework_1_1_r_c___gui_menu_renderable}{}\section{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Gui\+Menu\+Renderable Class Reference}
+\label{class_r_c___framework_1_1_r_c___gui_menu_renderable}\index{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Gui\+Menu\+Renderable@{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Gui\+Menu\+Renderable}}
+
+
+a sort of menu system that maintains a state called switch\+Val (int) and or val (float) It uses tag and tagint in renderable Its importent to call update before you pass in keyhit and mouseevents or the clicked\+This\+Frame will not work Its a kind of half way to a full G\+UI this suggests that renderables will ultimately replace G\+UI objects in this framework  
+
+
+Inheritance diagram for R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Gui\+Menu\+Renderable\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_r_c___framework_1_1_r_c___gui_menu_renderable}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_r_c___gui_menu_renderable_a6edd694fec762aa24a713e2b1e567ad0}{R\+C\+\_\+\+Gui\+Menu\+Renderable}} ()
+\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_r_c___gui_menu_renderable_a6e04c0167c6de417d89aaeb8cfd01585}{add}} (\mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_bounded}{R\+C\+\_\+\+Renderable\+Bounded}} ren, int switch\+ValQ, float valQ)
+\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_r_c___gui_menu_renderable_a112c9577a1d1ac24d3eb3f308fc86191}{add\+Below}} (\mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_bounded}{R\+C\+\_\+\+Renderable\+Bounded}} ren, int switch\+ValQ, float valQ, int gap\+In\+Pixels)
+\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_r_c___gui_menu_renderable_a04e2e8f730550afb71db6f700f059996}{add\+Beside}} (\mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_bounded}{R\+C\+\_\+\+Renderable\+Bounded}} ren, int switch\+ValQ, float valQ, int gap\+In\+Pixels)
+\item 
+override void \mbox{\hyperlink{class_r_c___framework_1_1_r_c___gui_menu_renderable_a0c74b42e4af1cad77f708cfa174aa724}{Draw}} (Sprite\+Batch sb)
+\begin{DoxyCompactList}\small\item\em Standard draw routine which assumes the renderable knows where it is \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_r_c___framework_1_1_r_c___gui_menu_renderable_af69df1292acc0f8babaa578caebffd87}{Update}} (Game\+Time game\+Time)
+\item 
+override bool \mbox{\hyperlink{class_r_c___framework_1_1_r_c___gui_menu_renderable_a211b5eebda9524d97f8dfeb1f8024f32}{Mouse\+Click\+Event}} (float mouse\+\_\+x, float mouse\+\_\+y)
+\item 
+override bool \mbox{\hyperlink{class_r_c___framework_1_1_r_c___gui_menu_renderable_a2a1be820f5693b0badd408b5457c81bd}{Key\+Hit\+Event}} (Keys key\+Hit)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_r_c___framework_1_1_r_c___gui_menu_renderable_a400533f5ec57e37197f5b830f4f63ed9}{clicked\+This\+Frame}} = false
+\begin{DoxyCompactList}\small\item\em true if a keyhit was clicked by cr (enter) or mouse to activate the button this turn \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_r_c___framework_1_1_r_c___gui_menu_renderable_a5092508ec1a58aaef9926a1259bc13e5}{selected\+This\+Frame}} = false
+\begin{DoxyCompactList}\small\item\em true if a keyhit was clicked by cr (enter) or mouse to select the button this turn \end{DoxyCompactList}\item 
+Color \mbox{\hyperlink{class_r_c___framework_1_1_r_c___gui_menu_renderable_af5e943fb2d0a14e29fa96203743637b9}{highlight\+Color}} = Color.\+Black
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+a sort of menu system that maintains a state called switch\+Val (int) and or val (float) It uses tag and tagint in renderable Its importent to call update before you pass in keyhit and mouseevents or the clicked\+This\+Frame will not work Its a kind of half way to a full G\+UI this suggests that renderables will ultimately replace G\+UI objects in this framework 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___gui_menu_renderable_a6edd694fec762aa24a713e2b1e567ad0}\label{class_r_c___framework_1_1_r_c___gui_menu_renderable_a6edd694fec762aa24a713e2b1e567ad0}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Gui\+Menu\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Gui\+Menu\+Renderable}!R\+C\+\_\+\+Gui\+Menu\+Renderable@{R\+C\+\_\+\+Gui\+Menu\+Renderable}}
+\index{R\+C\+\_\+\+Gui\+Menu\+Renderable@{R\+C\+\_\+\+Gui\+Menu\+Renderable}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Gui\+Menu\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Gui\+Menu\+Renderable}}
+\subsubsection{\texorpdfstring{R\+C\+\_\+\+Gui\+Menu\+Renderable()}{RC\_GuiMenuRenderable()}}
+{\footnotesize\ttfamily R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Gui\+Menu\+Renderable.\+R\+C\+\_\+\+Gui\+Menu\+Renderable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___gui_menu_renderable_a6e04c0167c6de417d89aaeb8cfd01585}\label{class_r_c___framework_1_1_r_c___gui_menu_renderable_a6e04c0167c6de417d89aaeb8cfd01585}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Gui\+Menu\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Gui\+Menu\+Renderable}!add@{add}}
+\index{add@{add}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Gui\+Menu\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Gui\+Menu\+Renderable}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Gui\+Menu\+Renderable.\+add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_bounded}{R\+C\+\_\+\+Renderable\+Bounded}}}]{ren,  }\item[{int}]{switch\+ValQ,  }\item[{float}]{valQ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___gui_menu_renderable_a112c9577a1d1ac24d3eb3f308fc86191}\label{class_r_c___framework_1_1_r_c___gui_menu_renderable_a112c9577a1d1ac24d3eb3f308fc86191}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Gui\+Menu\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Gui\+Menu\+Renderable}!add\+Below@{add\+Below}}
+\index{add\+Below@{add\+Below}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Gui\+Menu\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Gui\+Menu\+Renderable}}
+\subsubsection{\texorpdfstring{add\+Below()}{addBelow()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Gui\+Menu\+Renderable.\+add\+Below (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_bounded}{R\+C\+\_\+\+Renderable\+Bounded}}}]{ren,  }\item[{int}]{switch\+ValQ,  }\item[{float}]{valQ,  }\item[{int}]{gap\+In\+Pixels }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___gui_menu_renderable_a04e2e8f730550afb71db6f700f059996}\label{class_r_c___framework_1_1_r_c___gui_menu_renderable_a04e2e8f730550afb71db6f700f059996}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Gui\+Menu\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Gui\+Menu\+Renderable}!add\+Beside@{add\+Beside}}
+\index{add\+Beside@{add\+Beside}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Gui\+Menu\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Gui\+Menu\+Renderable}}
+\subsubsection{\texorpdfstring{add\+Beside()}{addBeside()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Gui\+Menu\+Renderable.\+add\+Beside (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_bounded}{R\+C\+\_\+\+Renderable\+Bounded}}}]{ren,  }\item[{int}]{switch\+ValQ,  }\item[{float}]{valQ,  }\item[{int}]{gap\+In\+Pixels }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___gui_menu_renderable_a0c74b42e4af1cad77f708cfa174aa724}\label{class_r_c___framework_1_1_r_c___gui_menu_renderable_a0c74b42e4af1cad77f708cfa174aa724}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Gui\+Menu\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Gui\+Menu\+Renderable}!Draw@{Draw}}
+\index{Draw@{Draw}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Gui\+Menu\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Gui\+Menu\+Renderable}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily override void R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Gui\+Menu\+Renderable.\+Draw (\begin{DoxyParamCaption}\item[{Sprite\+Batch}]{sb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Standard draw routine which assumes the renderable knows where it is 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_acc26db34e382a25a989c4c0dd0354b23}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___gui_menu_renderable_a2a1be820f5693b0badd408b5457c81bd}\label{class_r_c___framework_1_1_r_c___gui_menu_renderable_a2a1be820f5693b0badd408b5457c81bd}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Gui\+Menu\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Gui\+Menu\+Renderable}!Key\+Hit\+Event@{Key\+Hit\+Event}}
+\index{Key\+Hit\+Event@{Key\+Hit\+Event}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Gui\+Menu\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Gui\+Menu\+Renderable}}
+\subsubsection{\texorpdfstring{Key\+Hit\+Event()}{KeyHitEvent()}}
+{\footnotesize\ttfamily override bool R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Gui\+Menu\+Renderable.\+Key\+Hit\+Event (\begin{DoxyParamCaption}\item[{Keys}]{key\+Hit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_a826da9b07316c475186e4c2f00648827}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___gui_menu_renderable_a211b5eebda9524d97f8dfeb1f8024f32}\label{class_r_c___framework_1_1_r_c___gui_menu_renderable_a211b5eebda9524d97f8dfeb1f8024f32}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Gui\+Menu\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Gui\+Menu\+Renderable}!Mouse\+Click\+Event@{Mouse\+Click\+Event}}
+\index{Mouse\+Click\+Event@{Mouse\+Click\+Event}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Gui\+Menu\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Gui\+Menu\+Renderable}}
+\subsubsection{\texorpdfstring{Mouse\+Click\+Event()}{MouseClickEvent()}}
+{\footnotesize\ttfamily override bool R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Gui\+Menu\+Renderable.\+Mouse\+Click\+Event (\begin{DoxyParamCaption}\item[{float}]{mouse\+\_\+x,  }\item[{float}]{mouse\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_af929e80b7c88bb21b01358f47ad36a64}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___gui_menu_renderable_af69df1292acc0f8babaa578caebffd87}\label{class_r_c___framework_1_1_r_c___gui_menu_renderable_af69df1292acc0f8babaa578caebffd87}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Gui\+Menu\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Gui\+Menu\+Renderable}!Update@{Update}}
+\index{Update@{Update}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Gui\+Menu\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Gui\+Menu\+Renderable}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily override void R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Gui\+Menu\+Renderable.\+Update (\begin{DoxyParamCaption}\item[{Game\+Time}]{game\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_a5745bedc7ba0587aa1e1d8563c357228}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___gui_menu_renderable_a400533f5ec57e37197f5b830f4f63ed9}\label{class_r_c___framework_1_1_r_c___gui_menu_renderable_a400533f5ec57e37197f5b830f4f63ed9}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Gui\+Menu\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Gui\+Menu\+Renderable}!clicked\+This\+Frame@{clicked\+This\+Frame}}
+\index{clicked\+This\+Frame@{clicked\+This\+Frame}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Gui\+Menu\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Gui\+Menu\+Renderable}}
+\subsubsection{\texorpdfstring{clicked\+This\+Frame}{clickedThisFrame}}
+{\footnotesize\ttfamily bool R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Gui\+Menu\+Renderable.\+clicked\+This\+Frame = false}
+
+
+
+true if a keyhit was clicked by cr (enter) or mouse to activate the button this turn 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___gui_menu_renderable_af5e943fb2d0a14e29fa96203743637b9}\label{class_r_c___framework_1_1_r_c___gui_menu_renderable_af5e943fb2d0a14e29fa96203743637b9}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Gui\+Menu\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Gui\+Menu\+Renderable}!highlight\+Color@{highlight\+Color}}
+\index{highlight\+Color@{highlight\+Color}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Gui\+Menu\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Gui\+Menu\+Renderable}}
+\subsubsection{\texorpdfstring{highlight\+Color}{highlightColor}}
+{\footnotesize\ttfamily Color R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Gui\+Menu\+Renderable.\+highlight\+Color = Color.\+Black}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___gui_menu_renderable_a5092508ec1a58aaef9926a1259bc13e5}\label{class_r_c___framework_1_1_r_c___gui_menu_renderable_a5092508ec1a58aaef9926a1259bc13e5}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Gui\+Menu\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Gui\+Menu\+Renderable}!selected\+This\+Frame@{selected\+This\+Frame}}
+\index{selected\+This\+Frame@{selected\+This\+Frame}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Gui\+Menu\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Gui\+Menu\+Renderable}}
+\subsubsection{\texorpdfstring{selected\+This\+Frame}{selectedThisFrame}}
+{\footnotesize\ttfamily bool R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Gui\+Menu\+Renderable.\+selected\+This\+Frame = false}
+
+
+
+true if a keyhit was clicked by cr (enter) or mouse to select the button this turn 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+B/\+R\+C\+\_\+\+Framework2018/\+Source/\mbox{\hyperlink{_r_c___g_u_i_menu_renderable_8cs}{R\+C\+\_\+\+G\+U\+I\+Menu\+Renderable.\+cs}}\end{DoxyCompactItemize}

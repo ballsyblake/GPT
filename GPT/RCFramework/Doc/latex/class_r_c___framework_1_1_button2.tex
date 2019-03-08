@@ -1,0 +1,152 @@
+\hypertarget{class_r_c___framework_1_1_button2}{}\section{R\+C\+\_\+\+Framework.\+Button2 Class Reference}
+\label{class_r_c___framework_1_1_button2}\index{R\+C\+\_\+\+Framework.\+Button2@{R\+C\+\_\+\+Framework.\+Button2}}
+
+
+Simple Gui class with 2 images -\/ button up and button down  
+
+
+Inheritance diagram for R\+C\+\_\+\+Framework.\+Button2\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_r_c___framework_1_1_button2}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_button2_a59ba03059eb46cc321f6b38a0f5825ba}{Button2}} (Texture2D upZ, Texture2D downZ, Vector2 pos)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_r_c___framework_1_1_button2}{Button2}} constructor sizes to the texture \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_button2_a82157ea5fe77051daa5f1d6dae13566e}{Button2}} (Texture2D upZ, Texture2D downZ, Rectangle pos)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_r_c___framework_1_1_button2}{Button2}} constructor \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_r_c___framework_1_1_button2_addc2770e16ca29d6bad27e7b234dddf3}{Draw}} (Sprite\+Batch sb)
+\begin{DoxyCompactList}\small\item\em Draw yes a draw standard draw nothing more \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_r_c___framework_1_1_button2_ac15728fbc9e908a70990c159ecd5824f}{Mouse\+Down\+Event\+Left}} (float mouse\+\_\+x, float mouse\+\_\+y)
+\begin{DoxyCompactList}\small\item\em the mouse clicks me \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_button2_a7b34b30866f790b3f0c5427bbeec5c91}{state}}
+\begin{DoxyCompactList}\small\item\em current state 0=up 1=down \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_r_c___framework_1_1_button2_abb085079359e47904684e34467809f00}{was\+Clicked}}
+\begin{DoxyCompactList}\small\item\em true if clicked -\/ you poll this in update and once the click is actiopned you reset it \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Simple Gui class with 2 images -\/ button up and button down 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_button2_a59ba03059eb46cc321f6b38a0f5825ba}\label{class_r_c___framework_1_1_button2_a59ba03059eb46cc321f6b38a0f5825ba}} 
+\index{R\+C\+\_\+\+Framework\+::\+Button2@{R\+C\+\_\+\+Framework\+::\+Button2}!Button2@{Button2}}
+\index{Button2@{Button2}!R\+C\+\_\+\+Framework\+::\+Button2@{R\+C\+\_\+\+Framework\+::\+Button2}}
+\subsubsection{\texorpdfstring{Button2()}{Button2()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily R\+C\+\_\+\+Framework.\+Button2.\+Button2 (\begin{DoxyParamCaption}\item[{Texture2D}]{upZ,  }\item[{Texture2D}]{downZ,  }\item[{Vector2}]{pos }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_r_c___framework_1_1_button2}{Button2}} constructor sizes to the texture 
+
+
+\begin{DoxyParams}{Parameters}
+{\em upZ} & \\
+\hline
+{\em downZ} & \\
+\hline
+{\em pos} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_button2_a82157ea5fe77051daa5f1d6dae13566e}\label{class_r_c___framework_1_1_button2_a82157ea5fe77051daa5f1d6dae13566e}} 
+\index{R\+C\+\_\+\+Framework\+::\+Button2@{R\+C\+\_\+\+Framework\+::\+Button2}!Button2@{Button2}}
+\index{Button2@{Button2}!R\+C\+\_\+\+Framework\+::\+Button2@{R\+C\+\_\+\+Framework\+::\+Button2}}
+\subsubsection{\texorpdfstring{Button2()}{Button2()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily R\+C\+\_\+\+Framework.\+Button2.\+Button2 (\begin{DoxyParamCaption}\item[{Texture2D}]{upZ,  }\item[{Texture2D}]{downZ,  }\item[{Rectangle}]{pos }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_r_c___framework_1_1_button2}{Button2}} constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em upZ} & \\
+\hline
+{\em downZ} & \\
+\hline
+{\em pos} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_button2_addc2770e16ca29d6bad27e7b234dddf3}\label{class_r_c___framework_1_1_button2_addc2770e16ca29d6bad27e7b234dddf3}} 
+\index{R\+C\+\_\+\+Framework\+::\+Button2@{R\+C\+\_\+\+Framework\+::\+Button2}!Draw@{Draw}}
+\index{Draw@{Draw}!R\+C\+\_\+\+Framework\+::\+Button2@{R\+C\+\_\+\+Framework\+::\+Button2}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily override void R\+C\+\_\+\+Framework.\+Button2.\+Draw (\begin{DoxyParamCaption}\item[{Sprite\+Batch}]{sb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Draw yes a draw standard draw nothing more 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_acc26db34e382a25a989c4c0dd0354b23}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_button2_ac15728fbc9e908a70990c159ecd5824f}\label{class_r_c___framework_1_1_button2_ac15728fbc9e908a70990c159ecd5824f}} 
+\index{R\+C\+\_\+\+Framework\+::\+Button2@{R\+C\+\_\+\+Framework\+::\+Button2}!Mouse\+Down\+Event\+Left@{Mouse\+Down\+Event\+Left}}
+\index{Mouse\+Down\+Event\+Left@{Mouse\+Down\+Event\+Left}!R\+C\+\_\+\+Framework\+::\+Button2@{R\+C\+\_\+\+Framework\+::\+Button2}}
+\subsubsection{\texorpdfstring{Mouse\+Down\+Event\+Left()}{MouseDownEventLeft()}}
+{\footnotesize\ttfamily override bool R\+C\+\_\+\+Framework.\+Button2.\+Mouse\+Down\+Event\+Left (\begin{DoxyParamCaption}\item[{float}]{mouse\+\_\+x,  }\item[{float}]{mouse\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+the mouse clicks me 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+\_\+x} & \\
+\hline
+{\em mouse\+\_\+y} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_r_c___framework_1_1_g_u_i___control_a005e7f109afd21abd6576fdf70212af5}{R\+C\+\_\+\+Framework.\+G\+U\+I\+\_\+\+Control}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_button2_a7b34b30866f790b3f0c5427bbeec5c91}\label{class_r_c___framework_1_1_button2_a7b34b30866f790b3f0c5427bbeec5c91}} 
+\index{R\+C\+\_\+\+Framework\+::\+Button2@{R\+C\+\_\+\+Framework\+::\+Button2}!state@{state}}
+\index{state@{state}!R\+C\+\_\+\+Framework\+::\+Button2@{R\+C\+\_\+\+Framework\+::\+Button2}}
+\subsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Button2.\+state}
+
+
+
+current state 0=up 1=down 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_button2_abb085079359e47904684e34467809f00}\label{class_r_c___framework_1_1_button2_abb085079359e47904684e34467809f00}} 
+\index{R\+C\+\_\+\+Framework\+::\+Button2@{R\+C\+\_\+\+Framework\+::\+Button2}!was\+Clicked@{was\+Clicked}}
+\index{was\+Clicked@{was\+Clicked}!R\+C\+\_\+\+Framework\+::\+Button2@{R\+C\+\_\+\+Framework\+::\+Button2}}
+\subsubsection{\texorpdfstring{was\+Clicked}{wasClicked}}
+{\footnotesize\ttfamily bool R\+C\+\_\+\+Framework.\+Button2.\+was\+Clicked}
+
+
+
+true if clicked -\/ you poll this in update and once the click is actiopned you reset it 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+B/\+R\+C\+\_\+\+Framework2018/\+Source/\mbox{\hyperlink{_r_c___g_u_i_8cs}{R\+C\+\_\+\+G\+U\+I.\+cs}}\end{DoxyCompactItemize}

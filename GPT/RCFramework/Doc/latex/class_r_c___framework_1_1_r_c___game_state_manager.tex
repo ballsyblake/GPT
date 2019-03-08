@@ -1,0 +1,114 @@
+\hypertarget{class_r_c___framework_1_1_r_c___game_state_manager}{}\section{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Game\+State\+Manager Class Reference}
+\label{class_r_c___framework_1_1_r_c___game_state_manager}\index{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Game\+State\+Manager@{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Game\+State\+Manager}}
+
+
+To manage levels ~\newline
+ 
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_r_c___game_state_manager_a481a415ee368710463d773ecffc69a26}{R\+C\+\_\+\+Game\+State\+Manager}} ()
+\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_r_c___game_state_manager_abc201bbd33d01162573ae56bb8821532}{Add\+Level}} (int lev\+Num, \mbox{\hyperlink{class_r_c___framework_1_1_r_c___game_state_parent}{R\+C\+\_\+\+Game\+State\+Parent}} lev)
+\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_r_c___game_state_parent}{R\+C\+\_\+\+Game\+State\+Parent}} \mbox{\hyperlink{class_r_c___framework_1_1_r_c___game_state_manager_a6e4402df19c3f71484c99a79465776a9}{get\+Level}} (int lev\+Num)
+\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_r_c___game_state_manager_abc013de4037dfb71de3c641370bf95e1}{set\+Level}} (int lev\+Num)
+\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_r_c___game_state_manager_a608feb785ba1237cd73e4d923ba0c984}{push\+Level}} (int lev\+Num)
+\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_r_c___game_state_manager_a6f0a705a4cf67f540c8b3b6b05ebf908}{pop\+Level}} ()
+\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_r_c___game_state_manager_aa499f3ee8c7b4e013039ef9a895b7bff}{set\+Empty\+Level}} ()
+\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_r_c___game_state_parent}{R\+C\+\_\+\+Game\+State\+Parent}} \mbox{\hyperlink{class_r_c___framework_1_1_r_c___game_state_manager_a5f86142eb931e571ae1116d8be88bcab}{get\+Current\+Level}} ()
+\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_r_c___game_state_manager_ada1ef603c6e9c1d7d40977500e4191d3}{get\+Current\+Level\+Num}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_r_c___game_state_parent}{R\+C\+\_\+\+Game\+State\+Parent}} \mbox{\hyperlink{class_r_c___framework_1_1_r_c___game_state_manager_a36d7fc859f13ad252673c0fae038c8b7}{prev\+State\+Play\+Level}} =null
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+To manage levels ~\newline
+
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___game_state_manager_a481a415ee368710463d773ecffc69a26}\label{class_r_c___framework_1_1_r_c___game_state_manager_a481a415ee368710463d773ecffc69a26}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Manager@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Manager}!R\+C\+\_\+\+Game\+State\+Manager@{R\+C\+\_\+\+Game\+State\+Manager}}
+\index{R\+C\+\_\+\+Game\+State\+Manager@{R\+C\+\_\+\+Game\+State\+Manager}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Manager@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Manager}}
+\subsubsection{\texorpdfstring{R\+C\+\_\+\+Game\+State\+Manager()}{RC\_GameStateManager()}}
+{\footnotesize\ttfamily R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Game\+State\+Manager.\+R\+C\+\_\+\+Game\+State\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___game_state_manager_abc201bbd33d01162573ae56bb8821532}\label{class_r_c___framework_1_1_r_c___game_state_manager_abc201bbd33d01162573ae56bb8821532}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Manager@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Manager}!Add\+Level@{Add\+Level}}
+\index{Add\+Level@{Add\+Level}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Manager@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Manager}}
+\subsubsection{\texorpdfstring{Add\+Level()}{AddLevel()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Game\+State\+Manager.\+Add\+Level (\begin{DoxyParamCaption}\item[{int}]{lev\+Num,  }\item[{\mbox{\hyperlink{class_r_c___framework_1_1_r_c___game_state_parent}{R\+C\+\_\+\+Game\+State\+Parent}}}]{lev }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___game_state_manager_a5f86142eb931e571ae1116d8be88bcab}\label{class_r_c___framework_1_1_r_c___game_state_manager_a5f86142eb931e571ae1116d8be88bcab}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Manager@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Manager}!get\+Current\+Level@{get\+Current\+Level}}
+\index{get\+Current\+Level@{get\+Current\+Level}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Manager@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Manager}}
+\subsubsection{\texorpdfstring{get\+Current\+Level()}{getCurrentLevel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_r_c___framework_1_1_r_c___game_state_parent}{R\+C\+\_\+\+Game\+State\+Parent}} R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Game\+State\+Manager.\+get\+Current\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___game_state_manager_ada1ef603c6e9c1d7d40977500e4191d3}\label{class_r_c___framework_1_1_r_c___game_state_manager_ada1ef603c6e9c1d7d40977500e4191d3}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Manager@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Manager}!get\+Current\+Level\+Num@{get\+Current\+Level\+Num}}
+\index{get\+Current\+Level\+Num@{get\+Current\+Level\+Num}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Manager@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Manager}}
+\subsubsection{\texorpdfstring{get\+Current\+Level\+Num()}{getCurrentLevelNum()}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Game\+State\+Manager.\+get\+Current\+Level\+Num (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___game_state_manager_a6e4402df19c3f71484c99a79465776a9}\label{class_r_c___framework_1_1_r_c___game_state_manager_a6e4402df19c3f71484c99a79465776a9}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Manager@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Manager}!get\+Level@{get\+Level}}
+\index{get\+Level@{get\+Level}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Manager@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Manager}}
+\subsubsection{\texorpdfstring{get\+Level()}{getLevel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_r_c___framework_1_1_r_c___game_state_parent}{R\+C\+\_\+\+Game\+State\+Parent}} R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Game\+State\+Manager.\+get\+Level (\begin{DoxyParamCaption}\item[{int}]{lev\+Num }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___game_state_manager_a6f0a705a4cf67f540c8b3b6b05ebf908}\label{class_r_c___framework_1_1_r_c___game_state_manager_a6f0a705a4cf67f540c8b3b6b05ebf908}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Manager@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Manager}!pop\+Level@{pop\+Level}}
+\index{pop\+Level@{pop\+Level}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Manager@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Manager}}
+\subsubsection{\texorpdfstring{pop\+Level()}{popLevel()}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Game\+State\+Manager.\+pop\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___game_state_manager_a608feb785ba1237cd73e4d923ba0c984}\label{class_r_c___framework_1_1_r_c___game_state_manager_a608feb785ba1237cd73e4d923ba0c984}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Manager@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Manager}!push\+Level@{push\+Level}}
+\index{push\+Level@{push\+Level}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Manager@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Manager}}
+\subsubsection{\texorpdfstring{push\+Level()}{pushLevel()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Game\+State\+Manager.\+push\+Level (\begin{DoxyParamCaption}\item[{int}]{lev\+Num }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___game_state_manager_aa499f3ee8c7b4e013039ef9a895b7bff}\label{class_r_c___framework_1_1_r_c___game_state_manager_aa499f3ee8c7b4e013039ef9a895b7bff}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Manager@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Manager}!set\+Empty\+Level@{set\+Empty\+Level}}
+\index{set\+Empty\+Level@{set\+Empty\+Level}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Manager@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Manager}}
+\subsubsection{\texorpdfstring{set\+Empty\+Level()}{setEmptyLevel()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Game\+State\+Manager.\+set\+Empty\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___game_state_manager_abc013de4037dfb71de3c641370bf95e1}\label{class_r_c___framework_1_1_r_c___game_state_manager_abc013de4037dfb71de3c641370bf95e1}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Manager@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Manager}!set\+Level@{set\+Level}}
+\index{set\+Level@{set\+Level}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Manager@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Manager}}
+\subsubsection{\texorpdfstring{set\+Level()}{setLevel()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Game\+State\+Manager.\+set\+Level (\begin{DoxyParamCaption}\item[{int}]{lev\+Num }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___game_state_manager_a36d7fc859f13ad252673c0fae038c8b7}\label{class_r_c___framework_1_1_r_c___game_state_manager_a36d7fc859f13ad252673c0fae038c8b7}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Manager@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Manager}!prev\+State\+Play\+Level@{prev\+State\+Play\+Level}}
+\index{prev\+State\+Play\+Level@{prev\+State\+Play\+Level}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Manager@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Manager}}
+\subsubsection{\texorpdfstring{prev\+State\+Play\+Level}{prevStatePlayLevel}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_r_c___framework_1_1_r_c___game_state_parent}{R\+C\+\_\+\+Game\+State\+Parent}} R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Game\+State\+Manager.\+prev\+State\+Play\+Level =null}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+B/\+R\+C\+\_\+\+Framework2018/\+Source/\mbox{\hyperlink{_r_c___game_state_8cs}{R\+C\+\_\+\+Game\+State.\+cs}}\end{DoxyCompactItemize}

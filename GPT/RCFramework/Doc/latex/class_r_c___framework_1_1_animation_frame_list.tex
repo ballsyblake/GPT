@@ -1,0 +1,171 @@
+\hypertarget{class_r_c___framework_1_1_animation_frame_list}{}\section{R\+C\+\_\+\+Framework.\+Animation\+Frame\+List Class Reference}
+\label{class_r_c___framework_1_1_animation_frame_list}\index{R\+C\+\_\+\+Framework.\+Animation\+Frame\+List@{R\+C\+\_\+\+Framework.\+Animation\+Frame\+List}}
+Inheritance diagram for R\+C\+\_\+\+Framework.\+Animation\+Frame\+List\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_r_c___framework_1_1_animation_frame_list}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_animation_frame_list_ad4853f5ccf776a762d4a3ca431cf623f}{Animation\+Frame\+List}} (\mbox{\hyperlink{class_r_c___framework_1_1_frame_list}{Frame\+List}} frame\+ListZ, \mbox{\hyperlink{class_r_c___framework_1_1_animation_ticker}{Animation\+Ticker}} anim\+TickerZ)
+\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_animation_frame_list_aa04cc11efd6dbb3cb04b4e67f63fc670}{Animation\+Frame\+List}} (\mbox{\hyperlink{class_r_c___framework_1_1_frame_source}{Frame\+Source}} frame\+Src, \mbox{\hyperlink{class_r_c___framework_1_1_animation_ticker}{Animation\+Ticker}} anim\+TickerZ)
+\item 
+override \mbox{\hyperlink{class_r_c___framework_1_1_r_c___frame}{R\+C\+\_\+\+Frame}} \mbox{\hyperlink{class_r_c___framework_1_1_animation_frame_list_aa253565464d98bf955c81702fd3d66a4}{get\+Frame}} (int num)
+\begin{DoxyCompactList}\small\item\em This one method must be overridden and return a numbered frame for any given number (or null) \end{DoxyCompactList}\item 
+override \mbox{\hyperlink{class_r_c___framework_1_1_r_c___frame}{R\+C\+\_\+\+Frame}} \mbox{\hyperlink{class_r_c___framework_1_1_animation_frame_list_a5bc162ddb15e2ef4f98b72be2720a87b}{get\+Frame}} ()
+\begin{DoxyCompactList}\small\item\em This method must be overridden and return the current frame (or null) \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_r_c___framework_1_1_animation_frame_list_ad6d3b045da01a972a32f48ae7b7c7598}{Update}} (Game\+Time game\+Time)
+\begin{DoxyCompactList}\small\item\em Update so the frames can advance if necessary \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_animation_frame_list_af45c9ca8028ef05f2a23def6bf4f5f82}{set\+Running}} (bool runningQ)
+\begin{DoxyCompactList}\small\item\em Wrapper for animation ticker running flag \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_animation_ticker}{Animation\+Ticker}} \mbox{\hyperlink{class_r_c___framework_1_1_animation_frame_list_a41409ce75f3131d7008e249296cb95a6}{animation\+Ticker}} =null
+\begin{DoxyCompactList}\small\item\em A complicated animation class using a timer of class called \mbox{\hyperlink{class_r_c___framework_1_1_animation_ticker}{Animation\+Ticker}} and a list of frames of class called \mbox{\hyperlink{class_r_c___framework_1_1_frame_list}{Frame\+List}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_frame_source}{Frame\+Source}} \mbox{\hyperlink{class_r_c___framework_1_1_animation_frame_list_a3dd60d9e75ce6498504a04894f8626bc}{frame\+Source}} =null
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_frame_list}{Frame\+List}} \mbox{\hyperlink{class_r_c___framework_1_1_animation_frame_list_a138734a263190761b0da537fb830f2a9}{frame\+List}} =null
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_animation_frame_list_ad4853f5ccf776a762d4a3ca431cf623f}\label{class_r_c___framework_1_1_animation_frame_list_ad4853f5ccf776a762d4a3ca431cf623f}} 
+\index{R\+C\+\_\+\+Framework\+::\+Animation\+Frame\+List@{R\+C\+\_\+\+Framework\+::\+Animation\+Frame\+List}!Animation\+Frame\+List@{Animation\+Frame\+List}}
+\index{Animation\+Frame\+List@{Animation\+Frame\+List}!R\+C\+\_\+\+Framework\+::\+Animation\+Frame\+List@{R\+C\+\_\+\+Framework\+::\+Animation\+Frame\+List}}
+\subsubsection{\texorpdfstring{Animation\+Frame\+List()}{AnimationFrameList()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily R\+C\+\_\+\+Framework.\+Animation\+Frame\+List.\+Animation\+Frame\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_r_c___framework_1_1_frame_list}{Frame\+List}}}]{frame\+ListZ,  }\item[{\mbox{\hyperlink{class_r_c___framework_1_1_animation_ticker}{Animation\+Ticker}}}]{anim\+TickerZ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_animation_frame_list_aa04cc11efd6dbb3cb04b4e67f63fc670}\label{class_r_c___framework_1_1_animation_frame_list_aa04cc11efd6dbb3cb04b4e67f63fc670}} 
+\index{R\+C\+\_\+\+Framework\+::\+Animation\+Frame\+List@{R\+C\+\_\+\+Framework\+::\+Animation\+Frame\+List}!Animation\+Frame\+List@{Animation\+Frame\+List}}
+\index{Animation\+Frame\+List@{Animation\+Frame\+List}!R\+C\+\_\+\+Framework\+::\+Animation\+Frame\+List@{R\+C\+\_\+\+Framework\+::\+Animation\+Frame\+List}}
+\subsubsection{\texorpdfstring{Animation\+Frame\+List()}{AnimationFrameList()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily R\+C\+\_\+\+Framework.\+Animation\+Frame\+List.\+Animation\+Frame\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_r_c___framework_1_1_frame_source}{Frame\+Source}}}]{frame\+Src,  }\item[{\mbox{\hyperlink{class_r_c___framework_1_1_animation_ticker}{Animation\+Ticker}}}]{anim\+TickerZ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_animation_frame_list_aa253565464d98bf955c81702fd3d66a4}\label{class_r_c___framework_1_1_animation_frame_list_aa253565464d98bf955c81702fd3d66a4}} 
+\index{R\+C\+\_\+\+Framework\+::\+Animation\+Frame\+List@{R\+C\+\_\+\+Framework\+::\+Animation\+Frame\+List}!get\+Frame@{get\+Frame}}
+\index{get\+Frame@{get\+Frame}!R\+C\+\_\+\+Framework\+::\+Animation\+Frame\+List@{R\+C\+\_\+\+Framework\+::\+Animation\+Frame\+List}}
+\subsubsection{\texorpdfstring{get\+Frame()}{getFrame()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily override \mbox{\hyperlink{class_r_c___framework_1_1_r_c___frame}{R\+C\+\_\+\+Frame}} R\+C\+\_\+\+Framework.\+Animation\+Frame\+List.\+get\+Frame (\begin{DoxyParamCaption}\item[{int}]{num }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This one method must be overridden and return a numbered frame for any given number (or null) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_r_c___framework_1_1_frame_source_a562dc295b5c265ec760227978802eb3a}{R\+C\+\_\+\+Framework.\+Frame\+Source}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_animation_frame_list_a5bc162ddb15e2ef4f98b72be2720a87b}\label{class_r_c___framework_1_1_animation_frame_list_a5bc162ddb15e2ef4f98b72be2720a87b}} 
+\index{R\+C\+\_\+\+Framework\+::\+Animation\+Frame\+List@{R\+C\+\_\+\+Framework\+::\+Animation\+Frame\+List}!get\+Frame@{get\+Frame}}
+\index{get\+Frame@{get\+Frame}!R\+C\+\_\+\+Framework\+::\+Animation\+Frame\+List@{R\+C\+\_\+\+Framework\+::\+Animation\+Frame\+List}}
+\subsubsection{\texorpdfstring{get\+Frame()}{getFrame()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily override \mbox{\hyperlink{class_r_c___framework_1_1_r_c___frame}{R\+C\+\_\+\+Frame}} R\+C\+\_\+\+Framework.\+Animation\+Frame\+List.\+get\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This method must be overridden and return the current frame (or null) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_r_c___framework_1_1_frame_source_a6fd84a8d608da7d9ff2ff5ab10ed4243}{R\+C\+\_\+\+Framework.\+Frame\+Source}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_animation_frame_list_af45c9ca8028ef05f2a23def6bf4f5f82}\label{class_r_c___framework_1_1_animation_frame_list_af45c9ca8028ef05f2a23def6bf4f5f82}} 
+\index{R\+C\+\_\+\+Framework\+::\+Animation\+Frame\+List@{R\+C\+\_\+\+Framework\+::\+Animation\+Frame\+List}!set\+Running@{set\+Running}}
+\index{set\+Running@{set\+Running}!R\+C\+\_\+\+Framework\+::\+Animation\+Frame\+List@{R\+C\+\_\+\+Framework\+::\+Animation\+Frame\+List}}
+\subsubsection{\texorpdfstring{set\+Running()}{setRunning()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Animation\+Frame\+List.\+set\+Running (\begin{DoxyParamCaption}\item[{bool}]{runningQ }\end{DoxyParamCaption})}
+
+
+
+Wrapper for animation ticker running flag 
+
+
+\begin{DoxyParams}{Parameters}
+{\em runningQ} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_animation_frame_list_ad6d3b045da01a972a32f48ae7b7c7598}\label{class_r_c___framework_1_1_animation_frame_list_ad6d3b045da01a972a32f48ae7b7c7598}} 
+\index{R\+C\+\_\+\+Framework\+::\+Animation\+Frame\+List@{R\+C\+\_\+\+Framework\+::\+Animation\+Frame\+List}!Update@{Update}}
+\index{Update@{Update}!R\+C\+\_\+\+Framework\+::\+Animation\+Frame\+List@{R\+C\+\_\+\+Framework\+::\+Animation\+Frame\+List}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily override void R\+C\+\_\+\+Framework.\+Animation\+Frame\+List.\+Update (\begin{DoxyParamCaption}\item[{Game\+Time}]{game\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Update so the frames can advance if necessary 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Time} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_r_c___framework_1_1_frame_source_a4ab94513c0555c16316b540aed1e9144}{R\+C\+\_\+\+Framework.\+Frame\+Source}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_animation_frame_list_a41409ce75f3131d7008e249296cb95a6}\label{class_r_c___framework_1_1_animation_frame_list_a41409ce75f3131d7008e249296cb95a6}} 
+\index{R\+C\+\_\+\+Framework\+::\+Animation\+Frame\+List@{R\+C\+\_\+\+Framework\+::\+Animation\+Frame\+List}!animation\+Ticker@{animation\+Ticker}}
+\index{animation\+Ticker@{animation\+Ticker}!R\+C\+\_\+\+Framework\+::\+Animation\+Frame\+List@{R\+C\+\_\+\+Framework\+::\+Animation\+Frame\+List}}
+\subsubsection{\texorpdfstring{animation\+Ticker}{animationTicker}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_r_c___framework_1_1_animation_ticker}{Animation\+Ticker}} R\+C\+\_\+\+Framework.\+Animation\+Frame\+List.\+animation\+Ticker =null}
+
+
+
+A complicated animation class using a timer of class called \mbox{\hyperlink{class_r_c___framework_1_1_animation_ticker}{Animation\+Ticker}} and a list of frames of class called \mbox{\hyperlink{class_r_c___framework_1_1_frame_list}{Frame\+List}} 
+
+To use this class its normal to call it as follows\+:
+
+// first here set up the frame list .... fr\+List \mbox{\hyperlink{class_r_c___framework_1_1_frame_list}{Frame\+List}} = new Frame\+List(); fr\+List.\+add(tex, new Rectangle(0,0,100,100); fr\+List.\+add(tex, new Rectangle(0,0,200,100); fr\+List.\+add(tex2, new Rectangle(0,0,100,100);
+
+// now set up the animation ticker int aseq\mbox{[}\mbox{]} = new aseq\mbox{[}3\mbox{]}; \mbox{\hyperlink{class_r_c___framework_1_1_animation_ticker}{Animation\+Ticker}} an\+Ticker = new Animation\+Ticker(a\+Seq, 0, 3, 9, 0);
+
+// now combine them to what you want \mbox{\hyperlink{class_r_c___framework_1_1_animation_frame_list}{Animation\+Frame\+List}} afl = new Animation\+Frame\+List(fr\+List, an\+Ticker); afl.\+animation\+Ticker.\+animation\+Start();
+
+// finally put them in the sprite or renderable sprite.\+frame\+Source = afl;
+
+// finally start the animation using the animation ticker afl.\+animation\+Ticker.\+animation\+Start();\mbox{\Hypertarget{class_r_c___framework_1_1_animation_frame_list_a138734a263190761b0da537fb830f2a9}\label{class_r_c___framework_1_1_animation_frame_list_a138734a263190761b0da537fb830f2a9}} 
+\index{R\+C\+\_\+\+Framework\+::\+Animation\+Frame\+List@{R\+C\+\_\+\+Framework\+::\+Animation\+Frame\+List}!frame\+List@{frame\+List}}
+\index{frame\+List@{frame\+List}!R\+C\+\_\+\+Framework\+::\+Animation\+Frame\+List@{R\+C\+\_\+\+Framework\+::\+Animation\+Frame\+List}}
+\subsubsection{\texorpdfstring{frame\+List}{frameList}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_r_c___framework_1_1_frame_list}{Frame\+List}} R\+C\+\_\+\+Framework.\+Animation\+Frame\+List.\+frame\+List =null\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_animation_frame_list_a3dd60d9e75ce6498504a04894f8626bc}\label{class_r_c___framework_1_1_animation_frame_list_a3dd60d9e75ce6498504a04894f8626bc}} 
+\index{R\+C\+\_\+\+Framework\+::\+Animation\+Frame\+List@{R\+C\+\_\+\+Framework\+::\+Animation\+Frame\+List}!frame\+Source@{frame\+Source}}
+\index{frame\+Source@{frame\+Source}!R\+C\+\_\+\+Framework\+::\+Animation\+Frame\+List@{R\+C\+\_\+\+Framework\+::\+Animation\+Frame\+List}}
+\subsubsection{\texorpdfstring{frame\+Source}{frameSource}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_r_c___framework_1_1_frame_source}{Frame\+Source}} R\+C\+\_\+\+Framework.\+Animation\+Frame\+List.\+frame\+Source =null}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+B/\+R\+C\+\_\+\+Framework2018/\+Source/\mbox{\hyperlink{_r_c___frame_8cs}{R\+C\+\_\+\+Frame.\+cs}}\end{DoxyCompactItemize}

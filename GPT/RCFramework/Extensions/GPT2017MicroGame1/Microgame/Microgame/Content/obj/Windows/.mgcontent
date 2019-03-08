@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Profile>Reach</Profile>
+  <Platform>Windows</Platform>
+  <Config />
+  <SourceFiles>
+    <File>F:/B/RC_Framework2018/Extensions/GPT2017MicroGame1/Microgame/Microgame/Content/Fonty.spritefont</File>
+  </SourceFiles>
+</SourceFileCollection>

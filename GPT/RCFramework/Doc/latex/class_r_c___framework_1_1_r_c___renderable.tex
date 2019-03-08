@@ -1,0 +1,406 @@
+\hypertarget{class_r_c___framework_1_1_r_c___renderable}{}\section{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable Class Reference}
+\label{class_r_c___framework_1_1_r_c___renderable}\index{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable}}
+
+
+Parent class for all renderables sprites and list of things to draw has active flag, color, and visible properties and draw, load contenet and update functions also mouse and keyhit functions  
+
+
+Inheritance diagram for R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_r_c___framework_1_1_r_c___renderable}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_af2c1d0e50a166ca2bd5137dafc7ab105}{R\+C\+\_\+\+Renderable}} ()
+\begin{DoxyCompactList}\small\item\em a default constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_a2f171037bc65e22991e1e4d32ecd8154}{R\+C\+\_\+\+Renderable}} (bool activeZ, bool visibleZ, Color colorZ)
+\begin{DoxyCompactList}\small\item\em a more usefull constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_aa5848d536a2dd1d0c8269a9ea48a06fb}{R\+C\+\_\+\+Renderable}} (\mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable}{R\+C\+\_\+\+Renderable}} r)
+\begin{DoxyCompactList}\small\item\em Copy constructor dont know if it will ever be used since its a parent class \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_a73bf15681dc31644705e509c53f68833}{set\+Color}} (Color c)
+\begin{DoxyCompactList}\small\item\em Sets the blend colour for the sprite if in doubt use Color.\+White \end{DoxyCompactList}\item 
+Color \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_a4066c494d71a398ce2dfb6b932027243}{get\+Color}} ()
+\begin{DoxyCompactList}\small\item\em Gets the sprite blend colour \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_acc26db34e382a25a989c4c0dd0354b23}{Draw}} (Sprite\+Batch sb)
+\begin{DoxyCompactList}\small\item\em Standard draw routine which assumes the renderable knows where it is \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_a5745bedc7ba0587aa1e1d8563c357228}{Update}} (Game\+Time game\+Time)
+\item 
+virtual void \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_ae5283e88f2cc34c2ef010ede22ab1bfb}{Load\+Content}} ()
+\item 
+virtual void \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_ae65ce69704d15963789f421b58618b1f}{reset}} ()
+\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_a3fc6f1efc5735fb15ad0a02b1b821a62}{set\+Visible}} (bool v)
+\begin{DoxyCompactList}\small\item\em Set if the renderable is visible \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_a6258a044f185b02adb80d441fd9f29b2}{get\+Visible}} ()
+\begin{DoxyCompactList}\small\item\em Um this should be obvious \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_a21e5b1a68c7382443c82e7296fd2209a}{scroll\+Move}} (float x, float y)
+\begin{DoxyCompactList}\small\item\em Used to scroll the entire screen -\/ in renderable simple but increases in complexity as the parent child tree deepens (eg sprite3) \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_a64771aae3018662ed596c01ee36fb87f}{Mouse\+Move\+Event}} (Mouse\+State ms, Mouse\+State previous\+Ms)
+\begin{DoxyCompactList}\small\item\em Events in the this class can be consumed so default behavious must be to return false this will indicate that the event was not consumed \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_a41d144d6fad27f219d861e61a2d9796e}{Mouse\+Down\+Event\+Left}} (float mouse\+\_\+x, float mouse\+\_\+y)
+\item 
+virtual bool \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_a9545f4486eacd645e0c6680976020950}{Mouse\+Up\+Event\+Left}} (float mouse\+\_\+x, float mouse\+\_\+y)
+\item 
+virtual bool \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_a827d6c2bde928d9337b341f2ff60ac48}{Mouse\+Down\+Event\+Right}} (float mouse\+\_\+x, float mouse\+\_\+y)
+\item 
+virtual bool \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_afd14f09a6249144be45af3dcb9ebe1b2}{Mouse\+Up\+Event\+Right}} (float mouse\+\_\+x, float mouse\+\_\+y)
+\item 
+virtual bool \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_af929e80b7c88bb21b01358f47ad36a64}{Mouse\+Click\+Event}} (float mouse\+\_\+x, float mouse\+\_\+y)
+\item 
+virtual bool \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_a826da9b07316c475186e4c2f00648827}{Key\+Hit\+Event}} (Keys key\+Hit)
+\item 
+virtual bool \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_abd55ea96d88d7bd2207e3a4ede1f1a05}{Mouse\+Over}} (float mouse\+\_\+x, float mouse\+\_\+y)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_a255c5d9294a719e56855890f3535d129}{text}} = \char`\"{}\char`\"{}
+\begin{DoxyCompactList}\small\item\em This variable called text is just for users to attach a string to the renderable or sprite it is used by the attached renderable \mbox{\hyperlink{class_r_c___framework_1_1_attached_text}{Attached\+Text}} and some other renderables (eg text ones and buttons) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_a192f8ec61fb5e94770fcb3a1f9ae3449}{active}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em this variable called active is used by things like renderable\+\_\+list, sprite\+\_\+list and gui\+\_\+list if a renderable is not active it means it can be deleted or overwritten it is used in conjunction with sprite list to manage activity of sprites in a list importantly inactive renderables should not be given Draw or update (or other UI) events \end{DoxyCompactList}\item 
+Color \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_ad2731b86927b47a6f661f18446332afc}{colour}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em This is the render colour its usually pushed into the spritebatch draw unchanged \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_a27490992e58f8295c86cd3ed1d79d937}{visible}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em is it visible \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_a892d384578d86317fc3975ce977f89ef}{tag}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em this variable called tag is available for use by user code \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_ab429caeeb6b5ce111036e1828b5b3777}{tag\+Int}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em this variable called tag\+Int is available for use by user code \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Parent class for all renderables sprites and list of things to draw has active flag, color, and visible properties and draw, load contenet and update functions also mouse and keyhit functions 
+
+Recently added tag and tag\+Int to help making general purpose renderables 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_af2c1d0e50a166ca2bd5137dafc7ab105}\label{class_r_c___framework_1_1_r_c___renderable_af2c1d0e50a166ca2bd5137dafc7ab105}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}!R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Renderable}}
+\index{R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Renderable}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}}
+\subsubsection{\texorpdfstring{R\+C\+\_\+\+Renderable()}{RC\_Renderable()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable.\+R\+C\+\_\+\+Renderable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+a default constructor 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_a2f171037bc65e22991e1e4d32ecd8154}\label{class_r_c___framework_1_1_r_c___renderable_a2f171037bc65e22991e1e4d32ecd8154}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}!R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Renderable}}
+\index{R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Renderable}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}}
+\subsubsection{\texorpdfstring{R\+C\+\_\+\+Renderable()}{RC\_Renderable()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable.\+R\+C\+\_\+\+Renderable (\begin{DoxyParamCaption}\item[{bool}]{activeZ,  }\item[{bool}]{visibleZ,  }\item[{Color}]{colorZ }\end{DoxyParamCaption})}
+
+
+
+a more usefull constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em activeZ} & \\
+\hline
+{\em visibleZ} & \\
+\hline
+{\em colorZ} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_aa5848d536a2dd1d0c8269a9ea48a06fb}\label{class_r_c___framework_1_1_r_c___renderable_aa5848d536a2dd1d0c8269a9ea48a06fb}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}!R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Renderable}}
+\index{R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Renderable}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}}
+\subsubsection{\texorpdfstring{R\+C\+\_\+\+Renderable()}{RC\_Renderable()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable.\+R\+C\+\_\+\+Renderable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable}{R\+C\+\_\+\+Renderable}}}]{r }\end{DoxyParamCaption})}
+
+
+
+Copy constructor dont know if it will ever be used since its a parent class 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_acc26db34e382a25a989c4c0dd0354b23}\label{class_r_c___framework_1_1_r_c___renderable_acc26db34e382a25a989c4c0dd0354b23}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}!Draw@{Draw}}
+\index{Draw@{Draw}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily virtual void R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable.\+Draw (\begin{DoxyParamCaption}\item[{Sprite\+Batch}]{sb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Standard draw routine which assumes the renderable knows where it is 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a79b8e18ee29cd62719307a059e4cb6df}{R\+C\+\_\+\+Framework.\+Sprite3}}, \mbox{\hyperlink{class_r_c___framework_1_1_string_list_box_a474da32176236c6a1f36129c8cac0386}{R\+C\+\_\+\+Framework.\+String\+List\+Box}}, \mbox{\hyperlink{class_r_c___framework_1_1_texture_flash_1_1_letterbox_mask_aadd01ce0789efac12bc044f336bb5b33}{R\+C\+\_\+\+Framework.\+Texture\+Flash.\+Letterbox\+Mask}}, \mbox{\hyperlink{class_r_c___framework_1_1_texture_flash_a37d7b37ad7c1816d6cf967ad784c7d0f}{R\+C\+\_\+\+Framework.\+Texture\+Flash}}, \mbox{\hyperlink{class_r_c___framework_1_1_input_box_ae5ee048852636d3675318a630cfc0ec6}{R\+C\+\_\+\+Framework.\+Input\+Box}}, \mbox{\hyperlink{class_r_c___framework_1_1_grid_back_ground_a242904271618f793025f4dfae9681c13}{R\+C\+\_\+\+Framework.\+Grid\+Back\+Ground}}, \mbox{\hyperlink{class_r_c___framework_1_1_image_background_a1aaef38a9b320b21dc558e25d5a4c0af}{R\+C\+\_\+\+Framework.\+Image\+Background}}, \mbox{\hyperlink{class_r_c___framework_1_1_text_box_a4a237df7322d0a902b7c5144b0c7bf0d}{R\+C\+\_\+\+Framework.\+Text\+Box}}, \mbox{\hyperlink{class_r_c___framework_1_1_repeat_image_ad0d9de5911c47f93d7ed1dc48f531283}{R\+C\+\_\+\+Framework.\+Repeat\+Image}}, \mbox{\hyperlink{class_r_c___framework_1_1_button_s_i_a9527749f48994c13be5b72b2cb370b29}{R\+C\+\_\+\+Framework.\+Button\+SI}}, \mbox{\hyperlink{class_r_c___framework_1_1_blinking_boxes_a4e8a5e543c03905582bb27a0acfaa6cd}{R\+C\+\_\+\+Framework.\+Blinking\+Boxes}}, \mbox{\hyperlink{class_r_c___framework_1_1_renderable_frame_af07cf299871051c7e1c6ca455ba1bab9}{R\+C\+\_\+\+Framework.\+Renderable\+Frame}}, \mbox{\hyperlink{class_r_c___framework_1_1_button2_addc2770e16ca29d6bad27e7b234dddf3}{R\+C\+\_\+\+Framework.\+Button2}}, \mbox{\hyperlink{class_r_c___framework_1_1_particle_system_a2cb9a22f944e93697fff3128a1d3ddb6}{R\+C\+\_\+\+Framework.\+Particle\+System}}, \mbox{\hyperlink{class_r_c___framework_1_1_frame_ac27d7d9f33b34045c4dc90287f3eacee}{R\+C\+\_\+\+Framework.\+Frame}}, \mbox{\hyperlink{class_r_c___framework_1_1_scroll_back_ground_a7b9513679627c90648d41b952d4231d1}{R\+C\+\_\+\+Framework.\+Scroll\+Back\+Ground}}, \mbox{\hyperlink{class_r_c___framework_1_1_circle_fade_a75194b070e20dab4a4720c9ba43ae5ab}{R\+C\+\_\+\+Framework.\+Circle\+Fade}}, \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_a4100c8d4abaa1e7268c17607d70b539a}{R\+C\+\_\+\+Framework.\+Sprite\+List}}, \mbox{\hyperlink{class_r_c___framework_1_1_text_renderable_flash_ac917a0d6ed0b003f6565a7e822b517ba}{R\+C\+\_\+\+Framework.\+Text\+Renderable\+Flash}}, \mbox{\hyperlink{class_r_c___framework_1_1test_texture_list_ad9d3cd0a926c420d493e2a92fdadcab1}{R\+C\+\_\+\+Framework.\+test\+Texture\+List}}, \mbox{\hyperlink{class_r_c___framework_1_1_pan_zoom_sequence_a63516b58108ff5f5bcb03d24230128f3}{R\+C\+\_\+\+Framework.\+Pan\+Zoom\+Sequence}}, \mbox{\hyperlink{class_r_c___framework_1_1_text_renderable_fade_a6c0562ac01be810eb4e81f3f81e21bbd}{R\+C\+\_\+\+Framework.\+Text\+Renderable\+Fade}}, \mbox{\hyperlink{class_r_c___framework_1_1_attached_texture_fade_a93612655099524c9059b6ae9437bda59}{R\+C\+\_\+\+Framework.\+Attached\+Texture\+Fade}}, \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_list_a274ae54ac48b42415db6b3193587e8d4}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+List}}, \mbox{\hyperlink{class_r_c___framework_1_1_button_ann_ab513dd55d4cf3e1515761f0e4c5f9e44}{R\+C\+\_\+\+Framework.\+Button\+Ann}}, \mbox{\hyperlink{class_r_c___framework_1_1_multi_renderable_ae81e6924e30c2ff36c5b13204f3d2857}{R\+C\+\_\+\+Framework.\+Multi\+Renderable}}, \mbox{\hyperlink{class_r_c___framework_1_1_attached_text_a5972b29f469c9c005a46652ab448411c}{R\+C\+\_\+\+Framework.\+Attached\+Text}}, \mbox{\hyperlink{class_r_c___framework_1_1_texture_fade_ac5e515a49540f0609de47ba2f36ddc51}{R\+C\+\_\+\+Framework.\+Texture\+Fade}}, \mbox{\hyperlink{class_r_c___framework_1_1_r_c___gui_menu_renderable_a0c74b42e4af1cad77f708cfa174aa724}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Gui\+Menu\+Renderable}}, \mbox{\hyperlink{class_r_c___framework_1_1_text_renderable_bordered_a3242eaa3191281834da585239048f8ce}{R\+C\+\_\+\+Framework.\+Text\+Renderable\+Bordered}}, \mbox{\hyperlink{class_r_c___framework_1_1_pan_zoom_stage_a399538cd702d22cb14394f73b1bccff6}{R\+C\+\_\+\+Framework.\+Pan\+Zoom\+Stage}}, \mbox{\hyperlink{class_r_c___framework_1_1_multi_scroll_back_ground_ac59e7e1e7a2e1ccfc364883b98765f00}{R\+C\+\_\+\+Framework.\+Multi\+Scroll\+Back\+Ground}}, \mbox{\hyperlink{class_r_c___framework_1_1_r_c__resize_text_aa591010e25943e1c1a45555cecaa8fcc}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+resize\+Text}}, \mbox{\hyperlink{class_r_c___framework_1_1_health_bar_a8f53c56c52544e3c257db3d698fd2926}{R\+C\+\_\+\+Framework.\+Health\+Bar}}, \mbox{\hyperlink{class_r_c___framework_1_1_text_renderable_aea36ff48ac5dc6a336d998111457f019}{R\+C\+\_\+\+Framework.\+Text\+Renderable}}, and \mbox{\hyperlink{class_r_c___framework_1_1_color_field_a431503895c3a851dc8ca6586dd4686fe}{R\+C\+\_\+\+Framework.\+Color\+Field}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_a4066c494d71a398ce2dfb6b932027243}\label{class_r_c___framework_1_1_r_c___renderable_a4066c494d71a398ce2dfb6b932027243}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}!get\+Color@{get\+Color}}
+\index{get\+Color@{get\+Color}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}}
+\subsubsection{\texorpdfstring{get\+Color()}{getColor()}}
+{\footnotesize\ttfamily Color R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable.\+get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the sprite blend colour 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_a6258a044f185b02adb80d441fd9f29b2}\label{class_r_c___framework_1_1_r_c___renderable_a6258a044f185b02adb80d441fd9f29b2}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}!get\+Visible@{get\+Visible}}
+\index{get\+Visible@{get\+Visible}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}}
+\subsubsection{\texorpdfstring{get\+Visible()}{getVisible()}}
+{\footnotesize\ttfamily bool R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable.\+get\+Visible (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Um this should be obvious 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_a826da9b07316c475186e4c2f00648827}\label{class_r_c___framework_1_1_r_c___renderable_a826da9b07316c475186e4c2f00648827}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}!Key\+Hit\+Event@{Key\+Hit\+Event}}
+\index{Key\+Hit\+Event@{Key\+Hit\+Event}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}}
+\subsubsection{\texorpdfstring{Key\+Hit\+Event()}{KeyHitEvent()}}
+{\footnotesize\ttfamily virtual bool R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable.\+Key\+Hit\+Event (\begin{DoxyParamCaption}\item[{Keys}]{key\+Hit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_r_c___framework_1_1_string_list_box_a8b449ef1c2c786786b7e6cf52f416750}{R\+C\+\_\+\+Framework.\+String\+List\+Box}}, \mbox{\hyperlink{class_r_c___framework_1_1_input_box_a07ef881a281e4da95994e54ec1f7b496}{R\+C\+\_\+\+Framework.\+Input\+Box}}, \mbox{\hyperlink{class_r_c___framework_1_1_text_box_ae8c28e507b2c91aa042e2a5c2a300598}{R\+C\+\_\+\+Framework.\+Text\+Box}}, \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_list_a221a0bf056ff4f8e02d22e3b8b66de81}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+List}}, \mbox{\hyperlink{class_r_c___framework_1_1_g_u_i___control_a458eb00bda180db22ebe22e550a669a4}{R\+C\+\_\+\+Framework.\+G\+U\+I\+\_\+\+Control}}, and \mbox{\hyperlink{class_r_c___framework_1_1_r_c___gui_menu_renderable_a2a1be820f5693b0badd408b5457c81bd}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Gui\+Menu\+Renderable}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_ae5283e88f2cc34c2ef010ede22ab1bfb}\label{class_r_c___framework_1_1_r_c___renderable_ae5283e88f2cc34c2ef010ede22ab1bfb}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}!Load\+Content@{Load\+Content}}
+\index{Load\+Content@{Load\+Content}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}}
+\subsubsection{\texorpdfstring{Load\+Content()}{LoadContent()}}
+{\footnotesize\ttfamily virtual void R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable.\+Load\+Content (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_list_a953e8eb6f4422a7f0bebb17ee0455c42}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+List}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_af929e80b7c88bb21b01358f47ad36a64}\label{class_r_c___framework_1_1_r_c___renderable_af929e80b7c88bb21b01358f47ad36a64}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}!Mouse\+Click\+Event@{Mouse\+Click\+Event}}
+\index{Mouse\+Click\+Event@{Mouse\+Click\+Event}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}}
+\subsubsection{\texorpdfstring{Mouse\+Click\+Event()}{MouseClickEvent()}}
+{\footnotesize\ttfamily virtual bool R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable.\+Mouse\+Click\+Event (\begin{DoxyParamCaption}\item[{float}]{mouse\+\_\+x,  }\item[{float}]{mouse\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_list_ac275d3df45899b62e1378e01a100268d}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+List}}, and \mbox{\hyperlink{class_r_c___framework_1_1_r_c___gui_menu_renderable_a211b5eebda9524d97f8dfeb1f8024f32}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Gui\+Menu\+Renderable}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_a41d144d6fad27f219d861e61a2d9796e}\label{class_r_c___framework_1_1_r_c___renderable_a41d144d6fad27f219d861e61a2d9796e}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}!Mouse\+Down\+Event\+Left@{Mouse\+Down\+Event\+Left}}
+\index{Mouse\+Down\+Event\+Left@{Mouse\+Down\+Event\+Left}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}}
+\subsubsection{\texorpdfstring{Mouse\+Down\+Event\+Left()}{MouseDownEventLeft()}}
+{\footnotesize\ttfamily virtual bool R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable.\+Mouse\+Down\+Event\+Left (\begin{DoxyParamCaption}\item[{float}]{mouse\+\_\+x,  }\item[{float}]{mouse\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_r_c___framework_1_1_string_list_box_aabe8c72a90d47c67eb162c76b1e7f79c}{R\+C\+\_\+\+Framework.\+String\+List\+Box}}, \mbox{\hyperlink{class_r_c___framework_1_1_input_box_a7e57c860483df9645d726d6adbbc6dab}{R\+C\+\_\+\+Framework.\+Input\+Box}}, \mbox{\hyperlink{class_r_c___framework_1_1_text_box_a73f9a94392ff9bf3639a37a29470fb63}{R\+C\+\_\+\+Framework.\+Text\+Box}}, \mbox{\hyperlink{class_r_c___framework_1_1_button_s_i_a4323f8436749655b240fa35caa15daa6}{R\+C\+\_\+\+Framework.\+Button\+SI}}, \mbox{\hyperlink{class_r_c___framework_1_1_button2_ac15728fbc9e908a70990c159ecd5824f}{R\+C\+\_\+\+Framework.\+Button2}}, \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_list_adce00726f7093db725ed6195292156a7}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+List}}, and \mbox{\hyperlink{class_r_c___framework_1_1_g_u_i___control_a005e7f109afd21abd6576fdf70212af5}{R\+C\+\_\+\+Framework.\+G\+U\+I\+\_\+\+Control}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_a827d6c2bde928d9337b341f2ff60ac48}\label{class_r_c___framework_1_1_r_c___renderable_a827d6c2bde928d9337b341f2ff60ac48}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}!Mouse\+Down\+Event\+Right@{Mouse\+Down\+Event\+Right}}
+\index{Mouse\+Down\+Event\+Right@{Mouse\+Down\+Event\+Right}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}}
+\subsubsection{\texorpdfstring{Mouse\+Down\+Event\+Right()}{MouseDownEventRight()}}
+{\footnotesize\ttfamily virtual bool R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable.\+Mouse\+Down\+Event\+Right (\begin{DoxyParamCaption}\item[{float}]{mouse\+\_\+x,  }\item[{float}]{mouse\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_a64771aae3018662ed596c01ee36fb87f}\label{class_r_c___framework_1_1_r_c___renderable_a64771aae3018662ed596c01ee36fb87f}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}!Mouse\+Move\+Event@{Mouse\+Move\+Event}}
+\index{Mouse\+Move\+Event@{Mouse\+Move\+Event}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}}
+\subsubsection{\texorpdfstring{Mouse\+Move\+Event()}{MouseMoveEvent()}}
+{\footnotesize\ttfamily virtual bool R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable.\+Mouse\+Move\+Event (\begin{DoxyParamCaption}\item[{Mouse\+State}]{ms,  }\item[{Mouse\+State}]{previous\+Ms }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Events in the this class can be consumed so default behavious must be to return false this will indicate that the event was not consumed 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ms} & \\
+\hline
+{\em previous\+Ms} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_abd55ea96d88d7bd2207e3a4ede1f1a05}\label{class_r_c___framework_1_1_r_c___renderable_abd55ea96d88d7bd2207e3a4ede1f1a05}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}!Mouse\+Over@{Mouse\+Over}}
+\index{Mouse\+Over@{Mouse\+Over}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}}
+\subsubsection{\texorpdfstring{Mouse\+Over()}{MouseOver()}}
+{\footnotesize\ttfamily virtual bool R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable.\+Mouse\+Over (\begin{DoxyParamCaption}\item[{float}]{mouse\+\_\+x,  }\item[{float}]{mouse\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_list_a5867cf3044d40adda1bb7c2be3211a99}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+List}}, \mbox{\hyperlink{class_r_c___framework_1_1_g_u_i___control_ad5f72ceb3149305ce0a2891feff951a0}{R\+C\+\_\+\+Framework.\+G\+U\+I\+\_\+\+Control}}, and \mbox{\hyperlink{class_r_c___framework_1_1_button_ann_a387c65413a4dbfd360cab56476fc21a4}{R\+C\+\_\+\+Framework.\+Button\+Ann}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_a9545f4486eacd645e0c6680976020950}\label{class_r_c___framework_1_1_r_c___renderable_a9545f4486eacd645e0c6680976020950}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}!Mouse\+Up\+Event\+Left@{Mouse\+Up\+Event\+Left}}
+\index{Mouse\+Up\+Event\+Left@{Mouse\+Up\+Event\+Left}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}}
+\subsubsection{\texorpdfstring{Mouse\+Up\+Event\+Left()}{MouseUpEventLeft()}}
+{\footnotesize\ttfamily virtual bool R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable.\+Mouse\+Up\+Event\+Left (\begin{DoxyParamCaption}\item[{float}]{mouse\+\_\+x,  }\item[{float}]{mouse\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_afd14f09a6249144be45af3dcb9ebe1b2}\label{class_r_c___framework_1_1_r_c___renderable_afd14f09a6249144be45af3dcb9ebe1b2}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}!Mouse\+Up\+Event\+Right@{Mouse\+Up\+Event\+Right}}
+\index{Mouse\+Up\+Event\+Right@{Mouse\+Up\+Event\+Right}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}}
+\subsubsection{\texorpdfstring{Mouse\+Up\+Event\+Right()}{MouseUpEventRight()}}
+{\footnotesize\ttfamily virtual bool R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable.\+Mouse\+Up\+Event\+Right (\begin{DoxyParamCaption}\item[{float}]{mouse\+\_\+x,  }\item[{float}]{mouse\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_ae65ce69704d15963789f421b58618b1f}\label{class_r_c___framework_1_1_r_c___renderable_ae65ce69704d15963789f421b58618b1f}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}!reset@{reset}}
+\index{reset@{reset}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily virtual void R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable.\+reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_r_c___framework_1_1_grid_back_ground_aeaa4759b7da2f73fd760f0e9d59aa97c}{R\+C\+\_\+\+Framework.\+Grid\+Back\+Ground}}, \mbox{\hyperlink{class_r_c___framework_1_1_blinking_boxes_a2120dce99476eb2e086063a004acfd90}{R\+C\+\_\+\+Framework.\+Blinking\+Boxes}}, \mbox{\hyperlink{class_r_c___framework_1_1_scroll_back_ground_aeb2e92fd02bce76a76d4002aa94ff3d5}{R\+C\+\_\+\+Framework.\+Scroll\+Back\+Ground}}, \mbox{\hyperlink{class_r_c___framework_1_1_circle_fade_a7dd68138bc5eb6e9e6f2d031d9091a8a}{R\+C\+\_\+\+Framework.\+Circle\+Fade}}, \mbox{\hyperlink{class_r_c___framework_1_1_text_renderable_flash_a5caaf89017eb8df59bffaba6421b7b2e}{R\+C\+\_\+\+Framework.\+Text\+Renderable\+Flash}}, \mbox{\hyperlink{class_r_c___framework_1_1_attached_texture_fade_ad5760d7529afe100e6dd7fbe4ecc7b38}{R\+C\+\_\+\+Framework.\+Attached\+Texture\+Fade}}, \mbox{\hyperlink{class_r_c___framework_1_1_text_renderable_fade_ab37a0a521d74ac2b706023c5a0fc73ab}{R\+C\+\_\+\+Framework.\+Text\+Renderable\+Fade}}, \mbox{\hyperlink{class_r_c___framework_1_1_texture_fade_acd92f3d9604d6178ba52fb82a09967c5}{R\+C\+\_\+\+Framework.\+Texture\+Fade}}, \mbox{\hyperlink{class_r_c___framework_1_1_particle_system_ac96aa1743b45944d102ddf01d67452c1}{R\+C\+\_\+\+Framework.\+Particle\+System}}, \mbox{\hyperlink{class_r_c___framework_1_1_pan_zoom_sequence_ab235ec7298062b4e3a028979c5abad5c}{R\+C\+\_\+\+Framework.\+Pan\+Zoom\+Sequence}}, and \mbox{\hyperlink{class_r_c___framework_1_1_pan_zoom_stage_a9dc8dc75dab537e608713543ca314284}{R\+C\+\_\+\+Framework.\+Pan\+Zoom\+Stage}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_a21e5b1a68c7382443c82e7296fd2209a}\label{class_r_c___framework_1_1_r_c___renderable_a21e5b1a68c7382443c82e7296fd2209a}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}!scroll\+Move@{scroll\+Move}}
+\index{scroll\+Move@{scroll\+Move}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}}
+\subsubsection{\texorpdfstring{scroll\+Move()}{scrollMove()}}
+{\footnotesize\ttfamily virtual bool R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable.\+scroll\+Move (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Used to scroll the entire screen -\/ in renderable simple but increases in complexity as the parent child tree deepens (eg sprite3) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the amount to scroll in x \\
+\hline
+{\em y} & the amount to scroll in y\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if successfull 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_ab4c64556d7bcebf5ce538631ae9b5d6c}{R\+C\+\_\+\+Framework.\+Sprite3}}, \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_ac4dbeb822b300bdcbebeb20c15b7bc9a}{R\+C\+\_\+\+Framework.\+Sprite\+List}}, \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_bounded_a000dd516577e50fb39fc3e1acc774435}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+Bounded}}, and \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_list_ad7238f93a7ad63020771702a2db0ccfe}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+List}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_a73bf15681dc31644705e509c53f68833}\label{class_r_c___framework_1_1_r_c___renderable_a73bf15681dc31644705e509c53f68833}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}!set\+Color@{set\+Color}}
+\index{set\+Color@{set\+Color}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}}
+\subsubsection{\texorpdfstring{set\+Color()}{setColor()}}
+{\footnotesize\ttfamily virtual void R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable.\+set\+Color (\begin{DoxyParamCaption}\item[{Color}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sets the blend colour for the sprite if in doubt use Color.\+White 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_list_a8cba0458aba6bbf1b4d7b57217060f43}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+List}}, and \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_aba7adceacb386357f811b5099d8885ca}{R\+C\+\_\+\+Framework.\+Sprite\+List}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_a3fc6f1efc5735fb15ad0a02b1b821a62}\label{class_r_c___framework_1_1_r_c___renderable_a3fc6f1efc5735fb15ad0a02b1b821a62}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}!set\+Visible@{set\+Visible}}
+\index{set\+Visible@{set\+Visible}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}}
+\subsubsection{\texorpdfstring{set\+Visible()}{setVisible()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable.\+set\+Visible (\begin{DoxyParamCaption}\item[{bool}]{v }\end{DoxyParamCaption})}
+
+
+
+Set if the renderable is visible 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_a5745bedc7ba0587aa1e1d8563c357228}\label{class_r_c___framework_1_1_r_c___renderable_a5745bedc7ba0587aa1e1d8563c357228}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}!Update@{Update}}
+\index{Update@{Update}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily virtual void R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable.\+Update (\begin{DoxyParamCaption}\item[{Game\+Time}]{game\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a5473d37c4f1f44fa1685dd64c82dfd8c}{R\+C\+\_\+\+Framework.\+Sprite3}}, \mbox{\hyperlink{class_r_c___framework_1_1_string_list_box_a8466c2c89cf05f46f4abb281d1517ff5}{R\+C\+\_\+\+Framework.\+String\+List\+Box}}, \mbox{\hyperlink{class_r_c___framework_1_1_texture_flash_a84925900306ae16e7838be3a4620b2a7}{R\+C\+\_\+\+Framework.\+Texture\+Flash}}, \mbox{\hyperlink{class_r_c___framework_1_1_input_box_ac91004a57916d0f9f55a40c007cb72ce}{R\+C\+\_\+\+Framework.\+Input\+Box}}, \mbox{\hyperlink{class_r_c___framework_1_1_grid_back_ground_af43061e6a0067ad6c3043b6ddb080de4}{R\+C\+\_\+\+Framework.\+Grid\+Back\+Ground}}, \mbox{\hyperlink{class_r_c___framework_1_1_text_box_ad0faeeb8a2ffc1a9fc593e58a80e8376}{R\+C\+\_\+\+Framework.\+Text\+Box}}, \mbox{\hyperlink{class_r_c___framework_1_1_button_s_i_a28efd8765e3ec06c727477352d1e5c01}{R\+C\+\_\+\+Framework.\+Button\+SI}}, \mbox{\hyperlink{class_r_c___framework_1_1_blinking_boxes_ac168957c1b1d674b9449bc53b07cf704}{R\+C\+\_\+\+Framework.\+Blinking\+Boxes}}, \mbox{\hyperlink{class_r_c___framework_1_1_scroll_back_ground_ac999fc666d1abebe93d7d659e5a53e8a}{R\+C\+\_\+\+Framework.\+Scroll\+Back\+Ground}}, \mbox{\hyperlink{class_r_c___framework_1_1_g_u_i___control_a7aa3b0b6ba141d995ca830ff99ae3003}{R\+C\+\_\+\+Framework.\+G\+U\+I\+\_\+\+Control}}, \mbox{\hyperlink{class_r_c___framework_1_1_particle_system_a658681cf664bb153b4defb6a861bc721}{R\+C\+\_\+\+Framework.\+Particle\+System}}, \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_a816100deff7ad173c33904ac59f3ad79}{R\+C\+\_\+\+Framework.\+Sprite\+List}}, \mbox{\hyperlink{class_r_c___framework_1_1_circle_fade_ade4928b94a3b49c0d3ffbd43d37060e6}{R\+C\+\_\+\+Framework.\+Circle\+Fade}}, \mbox{\hyperlink{class_r_c___framework_1_1_text_renderable_flash_afbfac0d8d0ad1c2e3e8887d08dc87090}{R\+C\+\_\+\+Framework.\+Text\+Renderable\+Flash}}, \mbox{\hyperlink{class_r_c___framework_1_1_text_renderable_fade_acbfdaa774ae0bc55e6c5593b765c9c38}{R\+C\+\_\+\+Framework.\+Text\+Renderable\+Fade}}, \mbox{\hyperlink{class_r_c___framework_1_1_attached_texture_fade_a7da61ac25b6b39b6984b5c26547e2291}{R\+C\+\_\+\+Framework.\+Attached\+Texture\+Fade}}, \mbox{\hyperlink{class_r_c___framework_1_1_pan_zoom_sequence_a1c15ccaf96c79adece0f665f1419f95b}{R\+C\+\_\+\+Framework.\+Pan\+Zoom\+Sequence}}, \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_list_a2de302d2ee2f4df7c90fb7df36c4f3fe}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+List}}, \mbox{\hyperlink{class_r_c___framework_1_1_multi_renderable_a3eabd07384410252141e9b10e52b1783}{R\+C\+\_\+\+Framework.\+Multi\+Renderable}}, \mbox{\hyperlink{class_r_c___framework_1_1_texture_fade_afa4984388423a78ef4016442e781a058}{R\+C\+\_\+\+Framework.\+Texture\+Fade}}, \mbox{\hyperlink{class_r_c___framework_1_1_r_c___gui_menu_renderable_af69df1292acc0f8babaa578caebffd87}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Gui\+Menu\+Renderable}}, \mbox{\hyperlink{class_r_c___framework_1_1_pan_zoom_stage_a8463539aad705ab51a1ee3b7a64d3f35}{R\+C\+\_\+\+Framework.\+Pan\+Zoom\+Stage}}, and \mbox{\hyperlink{class_r_c___framework_1_1_multi_scroll_back_ground_aed0cdef9bd5f161cde89af98dcf63e24}{R\+C\+\_\+\+Framework.\+Multi\+Scroll\+Back\+Ground}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_a255c5d9294a719e56855890f3535d129}\label{class_r_c___framework_1_1_r_c___renderable_a255c5d9294a719e56855890f3535d129}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}!text@{text}}
+\index{text@{text}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}}
+\subsubsection{\texorpdfstring{text}{text}}
+{\footnotesize\ttfamily string R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable.\+text = \char`\"{}\char`\"{}}
+
+
+
+This variable called text is just for users to attach a string to the renderable or sprite it is used by the attached renderable \mbox{\hyperlink{class_r_c___framework_1_1_attached_text}{Attached\+Text}} and some other renderables (eg text ones and buttons) 
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_a192f8ec61fb5e94770fcb3a1f9ae3449}\label{class_r_c___framework_1_1_r_c___renderable_a192f8ec61fb5e94770fcb3a1f9ae3449}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}!active@{active}}
+\index{active@{active}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}}
+\subsubsection{\texorpdfstring{active}{active}}
+{\footnotesize\ttfamily bool R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable.\+active\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+this variable called active is used by things like renderable\+\_\+list, sprite\+\_\+list and gui\+\_\+list if a renderable is not active it means it can be deleted or overwritten it is used in conjunction with sprite list to manage activity of sprites in a list importantly inactive renderables should not be given Draw or update (or other UI) events 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_ad2731b86927b47a6f661f18446332afc}\label{class_r_c___framework_1_1_r_c___renderable_ad2731b86927b47a6f661f18446332afc}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}!colour@{colour}}
+\index{colour@{colour}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}}
+\subsubsection{\texorpdfstring{colour}{colour}}
+{\footnotesize\ttfamily Color R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable.\+colour\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+This is the render colour its usually pushed into the spritebatch draw unchanged 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_a892d384578d86317fc3975ce977f89ef}\label{class_r_c___framework_1_1_r_c___renderable_a892d384578d86317fc3975ce977f89ef}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}!tag@{tag}}
+\index{tag@{tag}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}}
+\subsubsection{\texorpdfstring{tag}{tag}}
+{\footnotesize\ttfamily float R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable.\+tag\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+this variable called tag is available for use by user code 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_ab429caeeb6b5ce111036e1828b5b3777}\label{class_r_c___framework_1_1_r_c___renderable_ab429caeeb6b5ce111036e1828b5b3777}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}!tag\+Int@{tag\+Int}}
+\index{tag\+Int@{tag\+Int}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}}
+\subsubsection{\texorpdfstring{tag\+Int}{tagInt}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable.\+tag\+Int\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+this variable called tag\+Int is available for use by user code 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_a27490992e58f8295c86cd3ed1d79d937}\label{class_r_c___framework_1_1_r_c___renderable_a27490992e58f8295c86cd3ed1d79d937}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}!visible@{visible}}
+\index{visible@{visible}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable}}
+\subsubsection{\texorpdfstring{visible}{visible}}
+{\footnotesize\ttfamily bool R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable.\+visible\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+is it visible 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+B/\+R\+C\+\_\+\+Framework2018/\+Source/\mbox{\hyperlink{_r_c___renderable_parents_8cs}{R\+C\+\_\+\+Renderable\+Parents.\+cs}}\end{DoxyCompactItemize}

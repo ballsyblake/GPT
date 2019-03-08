@@ -1,0 +1,213 @@
+\hypertarget{class_r_c___framework_1_1_g_u_i___globals}{}\section{R\+C\+\_\+\+Framework.\+G\+U\+I\+\_\+\+Globals Class Reference}
+\label{class_r_c___framework_1_1_g_u_i___globals}\index{R\+C\+\_\+\+Framework.\+G\+U\+I\+\_\+\+Globals@{R\+C\+\_\+\+Framework.\+G\+U\+I\+\_\+\+Globals}}
+
+
+Globals for all gui objects they must be initialised by calling init\+G\+U\+I\+Globals  
+
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_r_c___framework_1_1_g_u_i___globals_aeb5982129e2a0a38c7ce378ffb5426bf}{init\+G\+U\+I\+Globals}} (Graphics\+Device device, Sprite\+Font button\+Font, Sprite\+Font tool\+Tip\+Font, Color default\+Text\+ColorZ)
+\begin{DoxyCompactList}\small\item\em Initialise all gui gloabls \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_r_c___framework_1_1_g_u_i___globals_aee2de3108c9a937aaef3f152012eee9b}{draw\+Tool\+Tip}} (Sprite\+Batch sb)
+\begin{DoxyCompactList}\small\item\em Draw the tool tips on the screen this needs to be called late in the level draw routine usuall just before the mouse is drawn \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_r_c___framework_1_1_g_u_i___globals_a479ad86879c2b5d61eb0d1732d3531c3}{update\+Tool\+Tips}} ()
+\begin{DoxyCompactList}\small\item\em this needs to be piut in the level update routine to remove / update the tool tips \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static Sprite\+Font \mbox{\hyperlink{class_r_c___framework_1_1_g_u_i___globals_a0cb017063b9f1371c23ca904c0acfe4f}{t\+Tfont}}
+\begin{DoxyCompactList}\small\item\em tooltip font \end{DoxyCompactList}\item 
+static Sprite\+Font \mbox{\hyperlink{class_r_c___framework_1_1_g_u_i___globals_a526c8c29b59e49a36a694766d68be3a2}{but\+Fontfont}}
+\begin{DoxyCompactList}\small\item\em default button font \end{DoxyCompactList}\item 
+static Texture2D \mbox{\hyperlink{class_r_c___framework_1_1_g_u_i___globals_a15d0dc59ca1781f17cc4f9feff08a69d}{white\+Tex}}
+\begin{DoxyCompactList}\small\item\em texture of a white single pixel square created in init \end{DoxyCompactList}\item 
+static Color \mbox{\hyperlink{class_r_c___framework_1_1_g_u_i___globals_a149f6621702e4c688b77654976f43480}{default\+Text\+Color}} =Color.\+Black
+\begin{DoxyCompactList}\small\item\em colour of default text \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{class_r_c___framework_1_1_g_u_i___globals_ab8cd0d0d6d99f7d40fbb1e3c974003dc}{tool\+Tip\+Text}} = \char`\"{}\char`\"{}
+\begin{DoxyCompactList}\small\item\em the current tool tip text \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_r_c___framework_1_1_g_u_i___globals_a1f046b87c9f05d297f26881c2197368b}{tip\+Count}} = 0
+\begin{DoxyCompactList}\small\item\em Count to remove the tool tip \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_r_c___framework_1_1_g_u_i___globals_a7907ea8884a57d97bcdffe3ea0f93d07}{tip\+Max}} = 160
+\begin{DoxyCompactList}\small\item\em max ticks for tool tip to stay \end{DoxyCompactList}\item 
+static Vector2 \mbox{\hyperlink{class_r_c___framework_1_1_g_u_i___globals_a24e7b231c578228af8acefde92c5a4e3}{tip\+Pos}}
+\begin{DoxyCompactList}\small\item\em where the tool tip is displayed \end{DoxyCompactList}\item 
+static Color \mbox{\hyperlink{class_r_c___framework_1_1_g_u_i___globals_a22e887d900112f523014dfce318790ec}{t\+T\+Color}} = Color.\+Blue
+\begin{DoxyCompactList}\small\item\em the tool tip colour \end{DoxyCompactList}\item 
+static Color \mbox{\hyperlink{class_r_c___framework_1_1_g_u_i___globals_a7a429140fceba1fe5b940216f9af4284}{t\+T\+Color\+Back}} = Color.\+Yellow
+\begin{DoxyCompactList}\small\item\em Tool tip background colour \end{DoxyCompactList}\item 
+static Color \mbox{\hyperlink{class_r_c___framework_1_1_g_u_i___globals_ab42b7596d505bafeb6d99d8a05143f11}{default\+Text}} = Color.\+Black
+\begin{DoxyCompactList}\small\item\em Default text colour \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Globals for all gui objects they must be initialised by calling init\+G\+U\+I\+Globals 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_g_u_i___globals_aee2de3108c9a937aaef3f152012eee9b}\label{class_r_c___framework_1_1_g_u_i___globals_aee2de3108c9a937aaef3f152012eee9b}} 
+\index{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals}!draw\+Tool\+Tip@{draw\+Tool\+Tip}}
+\index{draw\+Tool\+Tip@{draw\+Tool\+Tip}!R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals}}
+\subsubsection{\texorpdfstring{draw\+Tool\+Tip()}{drawToolTip()}}
+{\footnotesize\ttfamily static void R\+C\+\_\+\+Framework.\+G\+U\+I\+\_\+\+Globals.\+draw\+Tool\+Tip (\begin{DoxyParamCaption}\item[{Sprite\+Batch}]{sb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Draw the tool tips on the screen this needs to be called late in the level draw routine usuall just before the mouse is drawn 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_g_u_i___globals_aeb5982129e2a0a38c7ce378ffb5426bf}\label{class_r_c___framework_1_1_g_u_i___globals_aeb5982129e2a0a38c7ce378ffb5426bf}} 
+\index{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals}!init\+G\+U\+I\+Globals@{init\+G\+U\+I\+Globals}}
+\index{init\+G\+U\+I\+Globals@{init\+G\+U\+I\+Globals}!R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals}}
+\subsubsection{\texorpdfstring{init\+G\+U\+I\+Globals()}{initGUIGlobals()}}
+{\footnotesize\ttfamily static void R\+C\+\_\+\+Framework.\+G\+U\+I\+\_\+\+Globals.\+init\+G\+U\+I\+Globals (\begin{DoxyParamCaption}\item[{Graphics\+Device}]{device,  }\item[{Sprite\+Font}]{button\+Font,  }\item[{Sprite\+Font}]{tool\+Tip\+Font,  }\item[{Color}]{default\+Text\+ColorZ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Initialise all gui gloabls 
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & \\
+\hline
+{\em button\+Font} & \\
+\hline
+{\em tool\+Tip\+Font} & \\
+\hline
+{\em default\+Text\+ColorZ} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_g_u_i___globals_a479ad86879c2b5d61eb0d1732d3531c3}\label{class_r_c___framework_1_1_g_u_i___globals_a479ad86879c2b5d61eb0d1732d3531c3}} 
+\index{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals}!update\+Tool\+Tips@{update\+Tool\+Tips}}
+\index{update\+Tool\+Tips@{update\+Tool\+Tips}!R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals}}
+\subsubsection{\texorpdfstring{update\+Tool\+Tips()}{updateToolTips()}}
+{\footnotesize\ttfamily static void R\+C\+\_\+\+Framework.\+G\+U\+I\+\_\+\+Globals.\+update\+Tool\+Tips (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+this needs to be piut in the level update routine to remove / update the tool tips 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_g_u_i___globals_a526c8c29b59e49a36a694766d68be3a2}\label{class_r_c___framework_1_1_g_u_i___globals_a526c8c29b59e49a36a694766d68be3a2}} 
+\index{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals}!but\+Fontfont@{but\+Fontfont}}
+\index{but\+Fontfont@{but\+Fontfont}!R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals}}
+\subsubsection{\texorpdfstring{but\+Fontfont}{butFontfont}}
+{\footnotesize\ttfamily Sprite\+Font R\+C\+\_\+\+Framework.\+G\+U\+I\+\_\+\+Globals.\+but\+Fontfont\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+default button font 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_g_u_i___globals_ab42b7596d505bafeb6d99d8a05143f11}\label{class_r_c___framework_1_1_g_u_i___globals_ab42b7596d505bafeb6d99d8a05143f11}} 
+\index{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals}!default\+Text@{default\+Text}}
+\index{default\+Text@{default\+Text}!R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals}}
+\subsubsection{\texorpdfstring{default\+Text}{defaultText}}
+{\footnotesize\ttfamily Color R\+C\+\_\+\+Framework.\+G\+U\+I\+\_\+\+Globals.\+default\+Text = Color.\+Black\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Default text colour 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_g_u_i___globals_a149f6621702e4c688b77654976f43480}\label{class_r_c___framework_1_1_g_u_i___globals_a149f6621702e4c688b77654976f43480}} 
+\index{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals}!default\+Text\+Color@{default\+Text\+Color}}
+\index{default\+Text\+Color@{default\+Text\+Color}!R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals}}
+\subsubsection{\texorpdfstring{default\+Text\+Color}{defaultTextColor}}
+{\footnotesize\ttfamily Color R\+C\+\_\+\+Framework.\+G\+U\+I\+\_\+\+Globals.\+default\+Text\+Color =Color.\+Black\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+colour of default text 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_g_u_i___globals_a1f046b87c9f05d297f26881c2197368b}\label{class_r_c___framework_1_1_g_u_i___globals_a1f046b87c9f05d297f26881c2197368b}} 
+\index{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals}!tip\+Count@{tip\+Count}}
+\index{tip\+Count@{tip\+Count}!R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals}}
+\subsubsection{\texorpdfstring{tip\+Count}{tipCount}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+G\+U\+I\+\_\+\+Globals.\+tip\+Count = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Count to remove the tool tip 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_g_u_i___globals_a7907ea8884a57d97bcdffe3ea0f93d07}\label{class_r_c___framework_1_1_g_u_i___globals_a7907ea8884a57d97bcdffe3ea0f93d07}} 
+\index{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals}!tip\+Max@{tip\+Max}}
+\index{tip\+Max@{tip\+Max}!R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals}}
+\subsubsection{\texorpdfstring{tip\+Max}{tipMax}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+G\+U\+I\+\_\+\+Globals.\+tip\+Max = 160\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+max ticks for tool tip to stay 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_g_u_i___globals_a24e7b231c578228af8acefde92c5a4e3}\label{class_r_c___framework_1_1_g_u_i___globals_a24e7b231c578228af8acefde92c5a4e3}} 
+\index{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals}!tip\+Pos@{tip\+Pos}}
+\index{tip\+Pos@{tip\+Pos}!R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals}}
+\subsubsection{\texorpdfstring{tip\+Pos}{tipPos}}
+{\footnotesize\ttfamily Vector2 R\+C\+\_\+\+Framework.\+G\+U\+I\+\_\+\+Globals.\+tip\+Pos\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+where the tool tip is displayed 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_g_u_i___globals_ab8cd0d0d6d99f7d40fbb1e3c974003dc}\label{class_r_c___framework_1_1_g_u_i___globals_ab8cd0d0d6d99f7d40fbb1e3c974003dc}} 
+\index{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals}!tool\+Tip\+Text@{tool\+Tip\+Text}}
+\index{tool\+Tip\+Text@{tool\+Tip\+Text}!R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals}}
+\subsubsection{\texorpdfstring{tool\+Tip\+Text}{toolTipText}}
+{\footnotesize\ttfamily String R\+C\+\_\+\+Framework.\+G\+U\+I\+\_\+\+Globals.\+tool\+Tip\+Text = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+the current tool tip text 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_g_u_i___globals_a22e887d900112f523014dfce318790ec}\label{class_r_c___framework_1_1_g_u_i___globals_a22e887d900112f523014dfce318790ec}} 
+\index{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals}!t\+T\+Color@{t\+T\+Color}}
+\index{t\+T\+Color@{t\+T\+Color}!R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals}}
+\subsubsection{\texorpdfstring{t\+T\+Color}{tTColor}}
+{\footnotesize\ttfamily Color R\+C\+\_\+\+Framework.\+G\+U\+I\+\_\+\+Globals.\+t\+T\+Color = Color.\+Blue\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+the tool tip colour 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_g_u_i___globals_a7a429140fceba1fe5b940216f9af4284}\label{class_r_c___framework_1_1_g_u_i___globals_a7a429140fceba1fe5b940216f9af4284}} 
+\index{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals}!t\+T\+Color\+Back@{t\+T\+Color\+Back}}
+\index{t\+T\+Color\+Back@{t\+T\+Color\+Back}!R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals}}
+\subsubsection{\texorpdfstring{t\+T\+Color\+Back}{tTColorBack}}
+{\footnotesize\ttfamily Color R\+C\+\_\+\+Framework.\+G\+U\+I\+\_\+\+Globals.\+t\+T\+Color\+Back = Color.\+Yellow\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Tool tip background colour 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_g_u_i___globals_a0cb017063b9f1371c23ca904c0acfe4f}\label{class_r_c___framework_1_1_g_u_i___globals_a0cb017063b9f1371c23ca904c0acfe4f}} 
+\index{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals}!t\+Tfont@{t\+Tfont}}
+\index{t\+Tfont@{t\+Tfont}!R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals}}
+\subsubsection{\texorpdfstring{t\+Tfont}{tTfont}}
+{\footnotesize\ttfamily Sprite\+Font R\+C\+\_\+\+Framework.\+G\+U\+I\+\_\+\+Globals.\+t\+Tfont\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+tooltip font 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_g_u_i___globals_a15d0dc59ca1781f17cc4f9feff08a69d}\label{class_r_c___framework_1_1_g_u_i___globals_a15d0dc59ca1781f17cc4f9feff08a69d}} 
+\index{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals}!white\+Tex@{white\+Tex}}
+\index{white\+Tex@{white\+Tex}!R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Globals}}
+\subsubsection{\texorpdfstring{white\+Tex}{whiteTex}}
+{\footnotesize\ttfamily Texture2D R\+C\+\_\+\+Framework.\+G\+U\+I\+\_\+\+Globals.\+white\+Tex\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+texture of a white single pixel square created in init 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+B/\+R\+C\+\_\+\+Framework2018/\+Source/\mbox{\hyperlink{_r_c___g_u_i_8cs}{R\+C\+\_\+\+G\+U\+I.\+cs}}\end{DoxyCompactItemize}

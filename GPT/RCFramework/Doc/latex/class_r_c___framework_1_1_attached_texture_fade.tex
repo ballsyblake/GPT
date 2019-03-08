@@ -1,0 +1,121 @@
+\hypertarget{class_r_c___framework_1_1_attached_texture_fade}{}\section{R\+C\+\_\+\+Framework.\+Attached\+Texture\+Fade Class Reference}
+\label{class_r_c___framework_1_1_attached_texture_fade}\index{R\+C\+\_\+\+Framework.\+Attached\+Texture\+Fade@{R\+C\+\_\+\+Framework.\+Attached\+Texture\+Fade}}
+
+
+Fades and resizes a texture At end it can loop , go inactive or reverse its a fairly sophisticated tool usable for a lot of diferent eye candy effects remeber to run update  
+
+
+Inheritance diagram for R\+C\+\_\+\+Framework.\+Attached\+Texture\+Fade\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_r_c___framework_1_1_attached_texture_fade}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_attached_texture_fade_a48153baf36d718ea055287af0688a691}{Attached\+Texture\+Fade}} (Texture2D texZ, Rectangle init\+FrameZ, Rectangle final\+FrameZ, Color init\+ColourZ, Color final\+ColourZ, int fade\+TicksZ)
+\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_attached_texture_fade_a8b51be50a28199ec67abb43faeedfa73}{setloop}} (int loopQ)
+\item 
+override void \mbox{\hyperlink{class_r_c___framework_1_1_attached_texture_fade_a93612655099524c9059b6ae9437bda59}{Draw}} (Sprite\+Batch sb)
+\begin{DoxyCompactList}\small\item\em Standard draw routine which assumes the renderable knows where it is \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_r_c___framework_1_1_attached_texture_fade_a7da61ac25b6b39b6984b5c26547e2291}{Update}} (Game\+Time game\+Time)
+\item 
+override void \mbox{\hyperlink{class_r_c___framework_1_1_attached_texture_fade_ad5760d7529afe100e6dd7fbe4ecc7b38}{reset}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_attached_texture_fade_a4e1a8e468a64463a598f43f3a347e7c4}{loop}}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Rectangle \mbox{\hyperlink{class_r_c___framework_1_1_attached_texture_fade_a2b22f8a915cad35ae249c3cab1b8272b}{source\+Frame}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Fades and resizes a texture At end it can loop , go inactive or reverse its a fairly sophisticated tool usable for a lot of diferent eye candy effects remeber to run update 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_attached_texture_fade_a48153baf36d718ea055287af0688a691}\label{class_r_c___framework_1_1_attached_texture_fade_a48153baf36d718ea055287af0688a691}} 
+\index{R\+C\+\_\+\+Framework\+::\+Attached\+Texture\+Fade@{R\+C\+\_\+\+Framework\+::\+Attached\+Texture\+Fade}!Attached\+Texture\+Fade@{Attached\+Texture\+Fade}}
+\index{Attached\+Texture\+Fade@{Attached\+Texture\+Fade}!R\+C\+\_\+\+Framework\+::\+Attached\+Texture\+Fade@{R\+C\+\_\+\+Framework\+::\+Attached\+Texture\+Fade}}
+\subsubsection{\texorpdfstring{Attached\+Texture\+Fade()}{AttachedTextureFade()}}
+{\footnotesize\ttfamily R\+C\+\_\+\+Framework.\+Attached\+Texture\+Fade.\+Attached\+Texture\+Fade (\begin{DoxyParamCaption}\item[{Texture2D}]{texZ,  }\item[{Rectangle}]{init\+FrameZ,  }\item[{Rectangle}]{final\+FrameZ,  }\item[{Color}]{init\+ColourZ,  }\item[{Color}]{final\+ColourZ,  }\item[{int}]{fade\+TicksZ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_attached_texture_fade_a93612655099524c9059b6ae9437bda59}\label{class_r_c___framework_1_1_attached_texture_fade_a93612655099524c9059b6ae9437bda59}} 
+\index{R\+C\+\_\+\+Framework\+::\+Attached\+Texture\+Fade@{R\+C\+\_\+\+Framework\+::\+Attached\+Texture\+Fade}!Draw@{Draw}}
+\index{Draw@{Draw}!R\+C\+\_\+\+Framework\+::\+Attached\+Texture\+Fade@{R\+C\+\_\+\+Framework\+::\+Attached\+Texture\+Fade}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily override void R\+C\+\_\+\+Framework.\+Attached\+Texture\+Fade.\+Draw (\begin{DoxyParamCaption}\item[{Sprite\+Batch}]{sb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Standard draw routine which assumes the renderable knows where it is 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_acc26db34e382a25a989c4c0dd0354b23}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_attached_texture_fade_ad5760d7529afe100e6dd7fbe4ecc7b38}\label{class_r_c___framework_1_1_attached_texture_fade_ad5760d7529afe100e6dd7fbe4ecc7b38}} 
+\index{R\+C\+\_\+\+Framework\+::\+Attached\+Texture\+Fade@{R\+C\+\_\+\+Framework\+::\+Attached\+Texture\+Fade}!reset@{reset}}
+\index{reset@{reset}!R\+C\+\_\+\+Framework\+::\+Attached\+Texture\+Fade@{R\+C\+\_\+\+Framework\+::\+Attached\+Texture\+Fade}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily override void R\+C\+\_\+\+Framework.\+Attached\+Texture\+Fade.\+reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_ae65ce69704d15963789f421b58618b1f}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_attached_texture_fade_a8b51be50a28199ec67abb43faeedfa73}\label{class_r_c___framework_1_1_attached_texture_fade_a8b51be50a28199ec67abb43faeedfa73}} 
+\index{R\+C\+\_\+\+Framework\+::\+Attached\+Texture\+Fade@{R\+C\+\_\+\+Framework\+::\+Attached\+Texture\+Fade}!setloop@{setloop}}
+\index{setloop@{setloop}!R\+C\+\_\+\+Framework\+::\+Attached\+Texture\+Fade@{R\+C\+\_\+\+Framework\+::\+Attached\+Texture\+Fade}}
+\subsubsection{\texorpdfstring{setloop()}{setloop()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Attached\+Texture\+Fade.\+setloop (\begin{DoxyParamCaption}\item[{int}]{loopQ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_attached_texture_fade_a7da61ac25b6b39b6984b5c26547e2291}\label{class_r_c___framework_1_1_attached_texture_fade_a7da61ac25b6b39b6984b5c26547e2291}} 
+\index{R\+C\+\_\+\+Framework\+::\+Attached\+Texture\+Fade@{R\+C\+\_\+\+Framework\+::\+Attached\+Texture\+Fade}!Update@{Update}}
+\index{Update@{Update}!R\+C\+\_\+\+Framework\+::\+Attached\+Texture\+Fade@{R\+C\+\_\+\+Framework\+::\+Attached\+Texture\+Fade}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily override void R\+C\+\_\+\+Framework.\+Attached\+Texture\+Fade.\+Update (\begin{DoxyParamCaption}\item[{Game\+Time}]{game\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_a5745bedc7ba0587aa1e1d8563c357228}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_attached_texture_fade_a4e1a8e468a64463a598f43f3a347e7c4}\label{class_r_c___framework_1_1_attached_texture_fade_a4e1a8e468a64463a598f43f3a347e7c4}} 
+\index{R\+C\+\_\+\+Framework\+::\+Attached\+Texture\+Fade@{R\+C\+\_\+\+Framework\+::\+Attached\+Texture\+Fade}!loop@{loop}}
+\index{loop@{loop}!R\+C\+\_\+\+Framework\+::\+Attached\+Texture\+Fade@{R\+C\+\_\+\+Framework\+::\+Attached\+Texture\+Fade}}
+\subsubsection{\texorpdfstring{loop}{loop}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Attached\+Texture\+Fade.\+loop}
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_attached_texture_fade_a2b22f8a915cad35ae249c3cab1b8272b}\label{class_r_c___framework_1_1_attached_texture_fade_a2b22f8a915cad35ae249c3cab1b8272b}} 
+\index{R\+C\+\_\+\+Framework\+::\+Attached\+Texture\+Fade@{R\+C\+\_\+\+Framework\+::\+Attached\+Texture\+Fade}!source\+Frame@{source\+Frame}}
+\index{source\+Frame@{source\+Frame}!R\+C\+\_\+\+Framework\+::\+Attached\+Texture\+Fade@{R\+C\+\_\+\+Framework\+::\+Attached\+Texture\+Fade}}
+\subsubsection{\texorpdfstring{source\+Frame}{sourceFrame}}
+{\footnotesize\ttfamily Rectangle R\+C\+\_\+\+Framework.\+Attached\+Texture\+Fade.\+source\+Frame\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+B/\+R\+C\+\_\+\+Framework2018/\+Source/\mbox{\hyperlink{_r_c___renderable_attached_8cs}{R\+C\+\_\+\+Renderable\+Attached.\+cs}}\end{DoxyCompactItemize}

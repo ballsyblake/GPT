@@ -1,0 +1,374 @@
+\hypertarget{class_r_c___framework_1_1_g_u_i___control}{}\section{R\+C\+\_\+\+Framework.\+G\+U\+I\+\_\+\+Control Class Reference}
+\label{class_r_c___framework_1_1_g_u_i___control}\index{R\+C\+\_\+\+Framework.\+G\+U\+I\+\_\+\+Control@{R\+C\+\_\+\+Framework.\+G\+U\+I\+\_\+\+Control}}
+
+
+G\+UI parent class This is the parent class for all gui objects  
+
+
+Inheritance diagram for R\+C\+\_\+\+Framework.\+G\+U\+I\+\_\+\+Control\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.493333cm]{class_r_c___framework_1_1_g_u_i___control}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override bool \mbox{\hyperlink{class_r_c___framework_1_1_g_u_i___control_a005e7f109afd21abd6576fdf70212af5}{Mouse\+Down\+Event\+Left}} (float mouse\+\_\+x, float mouse\+\_\+y)
+\begin{DoxyCompactList}\small\item\em Handle left mouse click \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_r_c___framework_1_1_g_u_i___control_ad5f72ceb3149305ce0a2891feff951a0}{Mouse\+Over}} (float mouse\+\_\+x, float mouse\+\_\+y)
+\begin{DoxyCompactList}\small\item\em handle mouse over event (eg tool tips) \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_r_c___framework_1_1_g_u_i___control_a5e2a0dbd0e76b4753ee7e33c5873f099}{draw\+Sub\+Controls}} (Sprite\+Batch sb)
+\begin{DoxyCompactList}\small\item\em draw my sub controls if any \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_g_u_i___control_aba58c5937d3c44703c5b4c7be4701a47}{G\+U\+I\+\_\+\+Control}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_g_u_i___control_ae53955f2d8f4a2be9dffbfabfe0901d7}{set\+Tool\+Tip}} (String \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_a255c5d9294a719e56855890f3535d129}{text}})
+\begin{DoxyCompactList}\small\item\em Set the tool tip for this control \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_g_u_i___control_a55f2748c142671a1e73a188204768f93}{Clear}} ()
+\begin{DoxyCompactList}\small\item\em remove all sub controls \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_g_u_i___control_a462903d09f92efd24da0bde3c689b3ef}{Add\+Control}} (\mbox{\hyperlink{class_r_c___framework_1_1_g_u_i___control}{G\+U\+I\+\_\+\+Control}} c)
+\begin{DoxyCompactList}\small\item\em add a sub control making me its parent \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_g_u_i___control}{G\+U\+I\+\_\+\+Control}} \mbox{\hyperlink{class_r_c___framework_1_1_g_u_i___control_a2808c23510a4448a8928d4393eaa3751}{get\+Control}} (int cnum)
+\begin{DoxyCompactList}\small\item\em get a control if you know its index \end{DoxyCompactList}\item 
+Boolean \mbox{\hyperlink{class_r_c___framework_1_1_g_u_i___control_a810c7c0dfb643da1861b8e2627642aa1}{inside}} (float x, float y)
+\begin{DoxyCompactList}\small\item\em Return a boolean that is true if the point is inside the bounds and the control is visible \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_g_u_i___control_a31b8425ebb4e7f35ddae9736e98e8d5c}{clear\+Focus}} (bool clear\+Parent)
+\begin{DoxyCompactList}\small\item\em clear focus on me and my sub controlls \end{DoxyCompactList}\item 
+Vector2 \mbox{\hyperlink{class_r_c___framework_1_1_g_u_i___control_aec3a07f10f946dff6dd7563eff7a786d}{get\+Screen\+Pos}} ()
+\begin{DoxyCompactList}\small\item\em Get my position on the actual screen as adjusted by my parents position \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_r_c___framework_1_1_g_u_i___control_a458eb00bda180db22ebe22e550a669a4}{Key\+Hit\+Event}} (Keys key\+Hit)
+\begin{DoxyCompactList}\small\item\em key hit handling \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_r_c___framework_1_1_g_u_i___control_a8e4abd4dc7a2243fc309fb80c984ef9e}{pass\+On\+Keyhit}} (Keys key\+Hit)
+\begin{DoxyCompactList}\small\item\em Send the key hit to my sub controls \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_r_c___framework_1_1_g_u_i___control_a7aa3b0b6ba141d995ca830ff99ae3003}{Update}} (Game\+Time game\+Time)
+\begin{DoxyCompactList}\small\item\em Update \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_g_u_i___control_a19b896ae0239a880458192de438e217c}{set\+Color}} (Color c, bool pass\+On)
+\begin{DoxyCompactList}\small\item\em Set my colour and all my sub controlls colour usefull to control transparency \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{class_r_c___framework_1_1_g_u_i___control}{G\+U\+I\+\_\+\+Control}} $>$ \mbox{\hyperlink{class_r_c___framework_1_1_g_u_i___control_a38f8a94f8ae576e42dbce0c043ee31fb}{controls}} = null
+\begin{DoxyCompactList}\small\item\em Ny list of sub controls -\/ usually you dont need to touch this \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_r_c___framework_1_1_g_u_i___control_a51a1c0b4ed5abd5322dd3975d28c9cec}{focus}} =false
+\begin{DoxyCompactList}\small\item\em Do i have focus \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_g_u_i___control}{G\+U\+I\+\_\+\+Control}} \mbox{\hyperlink{class_r_c___framework_1_1_g_u_i___control_ac1d70b73574da322d588be9d890a5167}{parent}} =null
+\begin{DoxyCompactList}\small\item\em My parent control or null \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_r_c___framework_1_1_g_u_i___control_a815044c81674b4e0f31124e9dc66978b}{t\+Ttext}} =\char`\"{}\char`\"{}
+\begin{DoxyCompactList}\small\item\em tool tip text string \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+G\+UI parent class This is the parent class for all gui objects 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_g_u_i___control_aba58c5937d3c44703c5b4c7be4701a47}\label{class_r_c___framework_1_1_g_u_i___control_aba58c5937d3c44703c5b4c7be4701a47}} 
+\index{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control}!G\+U\+I\+\_\+\+Control@{G\+U\+I\+\_\+\+Control}}
+\index{G\+U\+I\+\_\+\+Control@{G\+U\+I\+\_\+\+Control}!R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control}}
+\subsubsection{\texorpdfstring{G\+U\+I\+\_\+\+Control()}{GUI\_Control()}}
+{\footnotesize\ttfamily R\+C\+\_\+\+Framework.\+G\+U\+I\+\_\+\+Control.\+G\+U\+I\+\_\+\+Control (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_g_u_i___control_a462903d09f92efd24da0bde3c689b3ef}\label{class_r_c___framework_1_1_g_u_i___control_a462903d09f92efd24da0bde3c689b3ef}} 
+\index{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control}!Add\+Control@{Add\+Control}}
+\index{Add\+Control@{Add\+Control}!R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control}}
+\subsubsection{\texorpdfstring{Add\+Control()}{AddControl()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+G\+U\+I\+\_\+\+Control.\+Add\+Control (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_r_c___framework_1_1_g_u_i___control}{G\+U\+I\+\_\+\+Control}}}]{c }\end{DoxyParamCaption})}
+
+
+
+add a sub control making me its parent 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_g_u_i___control_a55f2748c142671a1e73a188204768f93}\label{class_r_c___framework_1_1_g_u_i___control_a55f2748c142671a1e73a188204768f93}} 
+\index{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control}!Clear@{Clear}}
+\index{Clear@{Clear}!R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control}}
+\subsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+G\+U\+I\+\_\+\+Control.\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+remove all sub controls 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_g_u_i___control_a31b8425ebb4e7f35ddae9736e98e8d5c}\label{class_r_c___framework_1_1_g_u_i___control_a31b8425ebb4e7f35ddae9736e98e8d5c}} 
+\index{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control}!clear\+Focus@{clear\+Focus}}
+\index{clear\+Focus@{clear\+Focus}!R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control}}
+\subsubsection{\texorpdfstring{clear\+Focus()}{clearFocus()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+G\+U\+I\+\_\+\+Control.\+clear\+Focus (\begin{DoxyParamCaption}\item[{bool}]{clear\+Parent }\end{DoxyParamCaption})}
+
+
+
+clear focus on me and my sub controlls 
+
+
+\begin{DoxyParams}{Parameters}
+{\em clear\+Parent} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_g_u_i___control_a5e2a0dbd0e76b4753ee7e33c5873f099}\label{class_r_c___framework_1_1_g_u_i___control_a5e2a0dbd0e76b4753ee7e33c5873f099}} 
+\index{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control}!draw\+Sub\+Controls@{draw\+Sub\+Controls}}
+\index{draw\+Sub\+Controls@{draw\+Sub\+Controls}!R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control}}
+\subsubsection{\texorpdfstring{draw\+Sub\+Controls()}{drawSubControls()}}
+{\footnotesize\ttfamily virtual void R\+C\+\_\+\+Framework.\+G\+U\+I\+\_\+\+Control.\+draw\+Sub\+Controls (\begin{DoxyParamCaption}\item[{Sprite\+Batch}]{sb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+draw my sub controls if any 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_g_u_i___control_a2808c23510a4448a8928d4393eaa3751}\label{class_r_c___framework_1_1_g_u_i___control_a2808c23510a4448a8928d4393eaa3751}} 
+\index{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control}!get\+Control@{get\+Control}}
+\index{get\+Control@{get\+Control}!R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control}}
+\subsubsection{\texorpdfstring{get\+Control()}{getControl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_r_c___framework_1_1_g_u_i___control}{G\+U\+I\+\_\+\+Control}} R\+C\+\_\+\+Framework.\+G\+U\+I\+\_\+\+Control.\+get\+Control (\begin{DoxyParamCaption}\item[{int}]{cnum }\end{DoxyParamCaption})}
+
+
+
+get a control if you know its index 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cnum} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_g_u_i___control_aec3a07f10f946dff6dd7563eff7a786d}\label{class_r_c___framework_1_1_g_u_i___control_aec3a07f10f946dff6dd7563eff7a786d}} 
+\index{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control}!get\+Screen\+Pos@{get\+Screen\+Pos}}
+\index{get\+Screen\+Pos@{get\+Screen\+Pos}!R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control}}
+\subsubsection{\texorpdfstring{get\+Screen\+Pos()}{getScreenPos()}}
+{\footnotesize\ttfamily Vector2 R\+C\+\_\+\+Framework.\+G\+U\+I\+\_\+\+Control.\+get\+Screen\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get my position on the actual screen as adjusted by my parents position 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_g_u_i___control_a810c7c0dfb643da1861b8e2627642aa1}\label{class_r_c___framework_1_1_g_u_i___control_a810c7c0dfb643da1861b8e2627642aa1}} 
+\index{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control}!inside@{inside}}
+\index{inside@{inside}!R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control}}
+\subsubsection{\texorpdfstring{inside()}{inside()}}
+{\footnotesize\ttfamily Boolean R\+C\+\_\+\+Framework.\+G\+U\+I\+\_\+\+Control.\+inside (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+
+
+Return a boolean that is true if the point is inside the bounds and the control is visible 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_g_u_i___control_a458eb00bda180db22ebe22e550a669a4}\label{class_r_c___framework_1_1_g_u_i___control_a458eb00bda180db22ebe22e550a669a4}} 
+\index{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control}!Key\+Hit\+Event@{Key\+Hit\+Event}}
+\index{Key\+Hit\+Event@{Key\+Hit\+Event}!R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control}}
+\subsubsection{\texorpdfstring{Key\+Hit\+Event()}{KeyHitEvent()}}
+{\footnotesize\ttfamily override bool R\+C\+\_\+\+Framework.\+G\+U\+I\+\_\+\+Control.\+Key\+Hit\+Event (\begin{DoxyParamCaption}\item[{Keys}]{key\+Hit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+key hit handling 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Hit} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_a826da9b07316c475186e4c2f00648827}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_r_c___framework_1_1_string_list_box_a8b449ef1c2c786786b7e6cf52f416750}{R\+C\+\_\+\+Framework.\+String\+List\+Box}}, \mbox{\hyperlink{class_r_c___framework_1_1_input_box_a07ef881a281e4da95994e54ec1f7b496}{R\+C\+\_\+\+Framework.\+Input\+Box}}, and \mbox{\hyperlink{class_r_c___framework_1_1_text_box_ae8c28e507b2c91aa042e2a5c2a300598}{R\+C\+\_\+\+Framework.\+Text\+Box}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_g_u_i___control_a005e7f109afd21abd6576fdf70212af5}\label{class_r_c___framework_1_1_g_u_i___control_a005e7f109afd21abd6576fdf70212af5}} 
+\index{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control}!Mouse\+Down\+Event\+Left@{Mouse\+Down\+Event\+Left}}
+\index{Mouse\+Down\+Event\+Left@{Mouse\+Down\+Event\+Left}!R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control}}
+\subsubsection{\texorpdfstring{Mouse\+Down\+Event\+Left()}{MouseDownEventLeft()}}
+{\footnotesize\ttfamily override bool R\+C\+\_\+\+Framework.\+G\+U\+I\+\_\+\+Control.\+Mouse\+Down\+Event\+Left (\begin{DoxyParamCaption}\item[{float}]{mouse\+\_\+x,  }\item[{float}]{mouse\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Handle left mouse click 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+\_\+x} & \\
+\hline
+{\em mouse\+\_\+y} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_a41d144d6fad27f219d861e61a2d9796e}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_r_c___framework_1_1_string_list_box_aabe8c72a90d47c67eb162c76b1e7f79c}{R\+C\+\_\+\+Framework.\+String\+List\+Box}}, \mbox{\hyperlink{class_r_c___framework_1_1_input_box_a7e57c860483df9645d726d6adbbc6dab}{R\+C\+\_\+\+Framework.\+Input\+Box}}, \mbox{\hyperlink{class_r_c___framework_1_1_text_box_a73f9a94392ff9bf3639a37a29470fb63}{R\+C\+\_\+\+Framework.\+Text\+Box}}, \mbox{\hyperlink{class_r_c___framework_1_1_button_s_i_a4323f8436749655b240fa35caa15daa6}{R\+C\+\_\+\+Framework.\+Button\+SI}}, and \mbox{\hyperlink{class_r_c___framework_1_1_button2_ac15728fbc9e908a70990c159ecd5824f}{R\+C\+\_\+\+Framework.\+Button2}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_g_u_i___control_ad5f72ceb3149305ce0a2891feff951a0}\label{class_r_c___framework_1_1_g_u_i___control_ad5f72ceb3149305ce0a2891feff951a0}} 
+\index{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control}!Mouse\+Over@{Mouse\+Over}}
+\index{Mouse\+Over@{Mouse\+Over}!R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control}}
+\subsubsection{\texorpdfstring{Mouse\+Over()}{MouseOver()}}
+{\footnotesize\ttfamily override bool R\+C\+\_\+\+Framework.\+G\+U\+I\+\_\+\+Control.\+Mouse\+Over (\begin{DoxyParamCaption}\item[{float}]{mouse\+\_\+x,  }\item[{float}]{mouse\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+handle mouse over event (eg tool tips) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+\_\+x} & \\
+\hline
+{\em mouse\+\_\+y} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_abd55ea96d88d7bd2207e3a4ede1f1a05}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_g_u_i___control_a8e4abd4dc7a2243fc309fb80c984ef9e}\label{class_r_c___framework_1_1_g_u_i___control_a8e4abd4dc7a2243fc309fb80c984ef9e}} 
+\index{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control}!pass\+On\+Keyhit@{pass\+On\+Keyhit}}
+\index{pass\+On\+Keyhit@{pass\+On\+Keyhit}!R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control}}
+\subsubsection{\texorpdfstring{pass\+On\+Keyhit()}{passOnKeyhit()}}
+{\footnotesize\ttfamily bool R\+C\+\_\+\+Framework.\+G\+U\+I\+\_\+\+Control.\+pass\+On\+Keyhit (\begin{DoxyParamCaption}\item[{Keys}]{key\+Hit }\end{DoxyParamCaption})}
+
+
+
+Send the key hit to my sub controls 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Hit} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_g_u_i___control_a19b896ae0239a880458192de438e217c}\label{class_r_c___framework_1_1_g_u_i___control_a19b896ae0239a880458192de438e217c}} 
+\index{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control}!set\+Color@{set\+Color}}
+\index{set\+Color@{set\+Color}!R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control}}
+\subsubsection{\texorpdfstring{set\+Color()}{setColor()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+G\+U\+I\+\_\+\+Control.\+set\+Color (\begin{DoxyParamCaption}\item[{Color}]{c,  }\item[{bool}]{pass\+On }\end{DoxyParamCaption})}
+
+
+
+Set my colour and all my sub controlls colour usefull to control transparency 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & \\
+\hline
+{\em pass\+On} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_g_u_i___control_ae53955f2d8f4a2be9dffbfabfe0901d7}\label{class_r_c___framework_1_1_g_u_i___control_ae53955f2d8f4a2be9dffbfabfe0901d7}} 
+\index{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control}!set\+Tool\+Tip@{set\+Tool\+Tip}}
+\index{set\+Tool\+Tip@{set\+Tool\+Tip}!R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control}}
+\subsubsection{\texorpdfstring{set\+Tool\+Tip()}{setToolTip()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+G\+U\+I\+\_\+\+Control.\+set\+Tool\+Tip (\begin{DoxyParamCaption}\item[{String}]{text }\end{DoxyParamCaption})}
+
+
+
+Set the tool tip for this control 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_g_u_i___control_a7aa3b0b6ba141d995ca830ff99ae3003}\label{class_r_c___framework_1_1_g_u_i___control_a7aa3b0b6ba141d995ca830ff99ae3003}} 
+\index{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control}!Update@{Update}}
+\index{Update@{Update}!R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily override void R\+C\+\_\+\+Framework.\+G\+U\+I\+\_\+\+Control.\+Update (\begin{DoxyParamCaption}\item[{Game\+Time}]{game\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Update 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Time} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_a5745bedc7ba0587aa1e1d8563c357228}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_r_c___framework_1_1_string_list_box_a8466c2c89cf05f46f4abb281d1517ff5}{R\+C\+\_\+\+Framework.\+String\+List\+Box}}, \mbox{\hyperlink{class_r_c___framework_1_1_input_box_ac91004a57916d0f9f55a40c007cb72ce}{R\+C\+\_\+\+Framework.\+Input\+Box}}, \mbox{\hyperlink{class_r_c___framework_1_1_text_box_ad0faeeb8a2ffc1a9fc593e58a80e8376}{R\+C\+\_\+\+Framework.\+Text\+Box}}, and \mbox{\hyperlink{class_r_c___framework_1_1_button_s_i_a28efd8765e3ec06c727477352d1e5c01}{R\+C\+\_\+\+Framework.\+Button\+SI}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_g_u_i___control_a38f8a94f8ae576e42dbce0c043ee31fb}\label{class_r_c___framework_1_1_g_u_i___control_a38f8a94f8ae576e42dbce0c043ee31fb}} 
+\index{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control}!controls@{controls}}
+\index{controls@{controls}!R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control}}
+\subsubsection{\texorpdfstring{controls}{controls}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_r_c___framework_1_1_g_u_i___control}{G\+U\+I\+\_\+\+Control}}$>$ R\+C\+\_\+\+Framework.\+G\+U\+I\+\_\+\+Control.\+controls = null}
+
+
+
+Ny list of sub controls -\/ usually you dont need to touch this 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_g_u_i___control_a51a1c0b4ed5abd5322dd3975d28c9cec}\label{class_r_c___framework_1_1_g_u_i___control_a51a1c0b4ed5abd5322dd3975d28c9cec}} 
+\index{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control}!focus@{focus}}
+\index{focus@{focus}!R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control}}
+\subsubsection{\texorpdfstring{focus}{focus}}
+{\footnotesize\ttfamily bool R\+C\+\_\+\+Framework.\+G\+U\+I\+\_\+\+Control.\+focus =false}
+
+
+
+Do i have focus 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_g_u_i___control_ac1d70b73574da322d588be9d890a5167}\label{class_r_c___framework_1_1_g_u_i___control_ac1d70b73574da322d588be9d890a5167}} 
+\index{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control}!parent@{parent}}
+\index{parent@{parent}!R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control}}
+\subsubsection{\texorpdfstring{parent}{parent}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_r_c___framework_1_1_g_u_i___control}{G\+U\+I\+\_\+\+Control}} R\+C\+\_\+\+Framework.\+G\+U\+I\+\_\+\+Control.\+parent =null}
+
+
+
+My parent control or null 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_g_u_i___control_a815044c81674b4e0f31124e9dc66978b}\label{class_r_c___framework_1_1_g_u_i___control_a815044c81674b4e0f31124e9dc66978b}} 
+\index{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control}!t\+Ttext@{t\+Ttext}}
+\index{t\+Ttext@{t\+Ttext}!R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control@{R\+C\+\_\+\+Framework\+::\+G\+U\+I\+\_\+\+Control}}
+\subsubsection{\texorpdfstring{t\+Ttext}{tTtext}}
+{\footnotesize\ttfamily String R\+C\+\_\+\+Framework.\+G\+U\+I\+\_\+\+Control.\+t\+Ttext =\char`\"{}\char`\"{}}
+
+
+
+tool tip text string 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+B/\+R\+C\+\_\+\+Framework2018/\+Source/\mbox{\hyperlink{_r_c___g_u_i_8cs}{R\+C\+\_\+\+G\+U\+I.\+cs}}\end{DoxyCompactItemize}

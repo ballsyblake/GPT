@@ -1,0 +1,574 @@
+\hypertarget{class_r_c___framework_1_1_r_c___renderable_list}{}\section{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+List Class Reference}
+\label{class_r_c___framework_1_1_r_c___renderable_list}\index{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+List}}
+
+
+a list of renderables the idea of the active flag is is that inactive renderables can have their place re-\/used and are no longer needed  
+
+
+Inheritance diagram for R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+List\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.704718cm]{class_r_c___framework_1_1_r_c___renderable_list}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_list_a9fa56c1b694187351daa9b464722ec1b}{R\+C\+\_\+\+Renderable\+List}} ()
+\item 
+bool \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_list_a2974cbded928cdb237fadf5c8adbdd2c}{Move\+Next}} ()
+\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_list_ac70aff9f6f35ecb69378a70ad8e41f0e}{Reset}} ()
+\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_list_aaae1bbc19f649e2930c8c829625c9a5e}{Dispose}} ()
+\item 
+I\+Enumerator \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_list_a0c8e476d6928961b5e6e4e4a3d37bba9}{Get\+Enumerator}} ()
+\item 
+override void \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_list_a274ae54ac48b42415db6b3193587e8d4}{Draw}} (Sprite\+Batch sb)
+\begin{DoxyCompactList}\small\item\em draw the list of renderables renderables are responsible for knowing their position \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_list_a2de302d2ee2f4df7c90fb7df36c4f3fe}{Update}} (Game\+Time game\+Time)
+\begin{DoxyCompactList}\small\item\em run update on the entire list of renderables \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_list_ad7238f93a7ad63020771702a2db0ccfe}{scroll\+Move}} (float x, float y)
+\begin{DoxyCompactList}\small\item\em runs scroll move on all renderables used to scroll the screen \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_list_a953e8eb6f4422a7f0bebb17ee0455c42}{Load\+Content}} ()
+\begin{DoxyCompactList}\small\item\em For initialisation \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_list_acc544e521274aaf092219cd33b59cf86}{Index\+Of}} (\mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable}{R\+C\+\_\+\+Renderable}} item)
+\begin{DoxyCompactList}\small\item\em This returns the index of a given renderable \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_list_aa18cdc63b500d558e79c9a73ae668b30}{Index\+Of\+Previous}} (\mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable}{R\+C\+\_\+\+Renderable}} item)
+\begin{DoxyCompactList}\small\item\em This returns the index of the previous renderable in most cases it makes no senseits probably only usefull in gui applications it assumes the renderables are placed in the list an a meaningfull order \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_list_a8871117c0fd0d66d14f3b3049e3c7712}{Index\+Of\+Next}} (\mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable}{R\+C\+\_\+\+Renderable}} item)
+\begin{DoxyCompactList}\small\item\em This returns the index of the next renderable in most cases it makes no senseits probably only usefull in gui applications it assumes the renderables are placed in the list an a meaningfull order \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_list_aa03dda23b963f5392732f0ee59cfc388}{add\+Reuse}} (\mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable}{R\+C\+\_\+\+Renderable}} r)
+\begin{DoxyCompactList}\small\item\em standard way to add things to the list reusing old space to stop the list growing to long \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_list_a9b760ae083aa63818a0789ba10d0af40}{add\+To\+End}} (\mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable}{R\+C\+\_\+\+Renderable}} r)
+\begin{DoxyCompactList}\small\item\em Adds to the list -\/ fast but usually we would use the \textquotesingle{}add\+Reuse\textquotesingle{} method \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_list_aefabaf7b1a4e5e163d4a6e77cc07b94a}{find\+Inactive}} ()
+\begin{DoxyCompactList}\small\item\em internal use mainly \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable}{R\+C\+\_\+\+Renderable}} \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_list_abb4dfff8d5e8ac2e96034e591c96d811}{replace}} (int num, \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable}{R\+C\+\_\+\+Renderable}} r)
+\begin{DoxyCompactList}\small\item\em replaces returning the old value -\/ not especially usefull \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable}{R\+C\+\_\+\+Renderable}} \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_list_a75b4ae92f064d35358185fe12bda892c}{get\+Renderable}} (int i)
+\begin{DoxyCompactList}\small\item\em gets a renderable i \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_list_a89f525ac211787c14d1b16f925bc4558}{Count}} ()
+\begin{DoxyCompactList}\small\item\em Count of renderable \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_list_afab33aa056d75a88414f62576aa0cbd9}{Contains}} (float x, float y)
+\begin{DoxyCompactList}\small\item\em If the renderable list contains \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_bounded}{R\+C\+\_\+\+Renderable\+Bounded}} it will return the first renderable index that this point in bounds or -\/1 if not found \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_list_aa38871296e0b22f5c1c80ba82605f0ba}{collision}} (Rectangle r)
+\begin{DoxyCompactList}\small\item\em Checks for collision with rectangle for bounded renderables only \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_list_a8cba0458aba6bbf1b4d7b57217060f43}{set\+Color}} (Color c)
+\begin{DoxyCompactList}\small\item\em Sets colour for all active renderables \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_list_a343637f6337ee79256fcba579e2a69be}{count\+Of\+Active}} ()
+\begin{DoxyCompactList}\small\item\em Counts the active renderables deprecated please use count\+Active \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_list_a5867cf3044d40adda1bb7c2be3211a99}{Mouse\+Over}} (float mouse\+\_\+x, float mouse\+\_\+y)
+\item 
+override bool \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_list_adce00726f7093db725ed6195292156a7}{Mouse\+Down\+Event\+Left}} (float mouse\+\_\+x, float mouse\+\_\+y)
+\begin{DoxyCompactList}\small\item\em Propagates a mouse down on left button till consumed \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_list_ac275d3df45899b62e1378e01a100268d}{Mouse\+Click\+Event}} (float mouse\+\_\+x, float mouse\+\_\+y)
+\begin{DoxyCompactList}\small\item\em Propagates a mouse click till consumed \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_list_a221a0bf056ff4f8e02d22e3b8b66de81}{Key\+Hit\+Event}} (Keys key\+Hit)
+\begin{DoxyCompactList}\small\item\em propagates a keyhit event till its consumed \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_list_a5743c82009f4d250d03bdbf1ee32bdcc}{count\+Active}} ()
+\begin{DoxyCompactList}\small\item\em count of active renderable \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_list_a65b0bbae9d1d83579d269d756a3626e3}{Run\+The\+Method}} (Func$<$ \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable}{R\+C\+\_\+\+Renderable}}, bool $>$ method\+Name)
+\begin{DoxyCompactList}\small\item\em Run the method on each active renderables return true only if all functions return true or there are no active renderables the function has the formal parameters bool name(\+R\+C\+\_\+\+Renderable s) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable}{R\+C\+\_\+\+Renderable}} $>$ \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_list_ab54b7af85213b25a5d66cd169c27b352}{rlist}}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable}{R\+C\+\_\+\+Renderable}} \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_list_a8a63966970b03403ce48e9bcca4f795d}{this\mbox{[}int key\mbox{]}}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Overload \mbox{[} and \mbox{]} for ease of use \end{DoxyCompactList}\item 
+object \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_list_ad9d22dbadf2d32491b2bfad15acb37dd}{Current}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+a list of renderables the idea of the active flag is is that inactive renderables can have their place re-\/used and are no longer needed 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_list_a9fa56c1b694187351daa9b464722ec1b}\label{class_r_c___framework_1_1_r_c___renderable_list_a9fa56c1b694187351daa9b464722ec1b}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}!R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Renderable\+List}}
+\index{R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Renderable\+List}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}}
+\subsubsection{\texorpdfstring{R\+C\+\_\+\+Renderable\+List()}{RC\_RenderableList()}}
+{\footnotesize\ttfamily R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+List.\+R\+C\+\_\+\+Renderable\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_list_aa03dda23b963f5392732f0ee59cfc388}\label{class_r_c___framework_1_1_r_c___renderable_list_aa03dda23b963f5392732f0ee59cfc388}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}!add\+Reuse@{add\+Reuse}}
+\index{add\+Reuse@{add\+Reuse}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}}
+\subsubsection{\texorpdfstring{add\+Reuse()}{addReuse()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+List.\+add\+Reuse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable}{R\+C\+\_\+\+Renderable}}}]{r }\end{DoxyParamCaption})}
+
+
+
+standard way to add things to the list reusing old space to stop the list growing to long 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_list_a9b760ae083aa63818a0789ba10d0af40}\label{class_r_c___framework_1_1_r_c___renderable_list_a9b760ae083aa63818a0789ba10d0af40}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}!add\+To\+End@{add\+To\+End}}
+\index{add\+To\+End@{add\+To\+End}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}}
+\subsubsection{\texorpdfstring{add\+To\+End()}{addToEnd()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+List.\+add\+To\+End (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable}{R\+C\+\_\+\+Renderable}}}]{r }\end{DoxyParamCaption})}
+
+
+
+Adds to the list -\/ fast but usually we would use the \textquotesingle{}add\+Reuse\textquotesingle{} method 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_list_aa38871296e0b22f5c1c80ba82605f0ba}\label{class_r_c___framework_1_1_r_c___renderable_list_aa38871296e0b22f5c1c80ba82605f0ba}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}!collision@{collision}}
+\index{collision@{collision}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}}
+\subsubsection{\texorpdfstring{collision()}{collision()}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+List.\+collision (\begin{DoxyParamCaption}\item[{Rectangle}]{r }\end{DoxyParamCaption})}
+
+
+
+Checks for collision with rectangle for bounded renderables only 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_list_afab33aa056d75a88414f62576aa0cbd9}\label{class_r_c___framework_1_1_r_c___renderable_list_afab33aa056d75a88414f62576aa0cbd9}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}!Contains@{Contains}}
+\index{Contains@{Contains}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}}
+\subsubsection{\texorpdfstring{Contains()}{Contains()}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+List.\+Contains (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+
+
+If the renderable list contains \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_bounded}{R\+C\+\_\+\+Renderable\+Bounded}} it will return the first renderable index that this point in bounds or -\/1 if not found 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_list_a89f525ac211787c14d1b16f925bc4558}\label{class_r_c___framework_1_1_r_c___renderable_list_a89f525ac211787c14d1b16f925bc4558}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}!Count@{Count}}
+\index{Count@{Count}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}}
+\subsubsection{\texorpdfstring{Count()}{Count()}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+List.\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Count of renderable 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_list_a5743c82009f4d250d03bdbf1ee32bdcc}\label{class_r_c___framework_1_1_r_c___renderable_list_a5743c82009f4d250d03bdbf1ee32bdcc}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}!count\+Active@{count\+Active}}
+\index{count\+Active@{count\+Active}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}}
+\subsubsection{\texorpdfstring{count\+Active()}{countActive()}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+List.\+count\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+count of active renderable 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_list_a343637f6337ee79256fcba579e2a69be}\label{class_r_c___framework_1_1_r_c___renderable_list_a343637f6337ee79256fcba579e2a69be}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}!count\+Of\+Active@{count\+Of\+Active}}
+\index{count\+Of\+Active@{count\+Of\+Active}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}}
+\subsubsection{\texorpdfstring{count\+Of\+Active()}{countOfActive()}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+List.\+count\+Of\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Counts the active renderables deprecated please use count\+Active 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_list_aaae1bbc19f649e2930c8c829625c9a5e}\label{class_r_c___framework_1_1_r_c___renderable_list_aaae1bbc19f649e2930c8c829625c9a5e}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}}
+\subsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+List.\+Dispose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_list_a274ae54ac48b42415db6b3193587e8d4}\label{class_r_c___framework_1_1_r_c___renderable_list_a274ae54ac48b42415db6b3193587e8d4}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}!Draw@{Draw}}
+\index{Draw@{Draw}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily override void R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+List.\+Draw (\begin{DoxyParamCaption}\item[{Sprite\+Batch}]{sb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+draw the list of renderables renderables are responsible for knowing their position 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_acc26db34e382a25a989c4c0dd0354b23}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_list_aefabaf7b1a4e5e163d4a6e77cc07b94a}\label{class_r_c___framework_1_1_r_c___renderable_list_aefabaf7b1a4e5e163d4a6e77cc07b94a}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}!find\+Inactive@{find\+Inactive}}
+\index{find\+Inactive@{find\+Inactive}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}}
+\subsubsection{\texorpdfstring{find\+Inactive()}{findInactive()}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+List.\+find\+Inactive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+internal use mainly 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_list_a0c8e476d6928961b5e6e4e4a3d37bba9}\label{class_r_c___framework_1_1_r_c___renderable_list_a0c8e476d6928961b5e6e4e4a3d37bba9}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}!Get\+Enumerator@{Get\+Enumerator}}
+\index{Get\+Enumerator@{Get\+Enumerator}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}}
+\subsubsection{\texorpdfstring{Get\+Enumerator()}{GetEnumerator()}}
+{\footnotesize\ttfamily I\+Enumerator R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+List.\+Get\+Enumerator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_list_a75b4ae92f064d35358185fe12bda892c}\label{class_r_c___framework_1_1_r_c___renderable_list_a75b4ae92f064d35358185fe12bda892c}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}!get\+Renderable@{get\+Renderable}}
+\index{get\+Renderable@{get\+Renderable}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}}
+\subsubsection{\texorpdfstring{get\+Renderable()}{getRenderable()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable}{R\+C\+\_\+\+Renderable}} R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+List.\+get\+Renderable (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+gets a renderable i 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_list_acc544e521274aaf092219cd33b59cf86}\label{class_r_c___framework_1_1_r_c___renderable_list_acc544e521274aaf092219cd33b59cf86}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}!Index\+Of@{Index\+Of}}
+\index{Index\+Of@{Index\+Of}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}}
+\subsubsection{\texorpdfstring{Index\+Of()}{IndexOf()}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+List.\+Index\+Of (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable}{R\+C\+\_\+\+Renderable}}}]{item }\end{DoxyParamCaption})}
+
+
+
+This returns the index of a given renderable 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_list_a8871117c0fd0d66d14f3b3049e3c7712}\label{class_r_c___framework_1_1_r_c___renderable_list_a8871117c0fd0d66d14f3b3049e3c7712}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}!Index\+Of\+Next@{Index\+Of\+Next}}
+\index{Index\+Of\+Next@{Index\+Of\+Next}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}}
+\subsubsection{\texorpdfstring{Index\+Of\+Next()}{IndexOfNext()}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+List.\+Index\+Of\+Next (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable}{R\+C\+\_\+\+Renderable}}}]{item }\end{DoxyParamCaption})}
+
+
+
+This returns the index of the next renderable in most cases it makes no senseits probably only usefull in gui applications it assumes the renderables are placed in the list an a meaningfull order 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_list_aa18cdc63b500d558e79c9a73ae668b30}\label{class_r_c___framework_1_1_r_c___renderable_list_aa18cdc63b500d558e79c9a73ae668b30}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}!Index\+Of\+Previous@{Index\+Of\+Previous}}
+\index{Index\+Of\+Previous@{Index\+Of\+Previous}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}}
+\subsubsection{\texorpdfstring{Index\+Of\+Previous()}{IndexOfPrevious()}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+List.\+Index\+Of\+Previous (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable}{R\+C\+\_\+\+Renderable}}}]{item }\end{DoxyParamCaption})}
+
+
+
+This returns the index of the previous renderable in most cases it makes no senseits probably only usefull in gui applications it assumes the renderables are placed in the list an a meaningfull order 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_list_a221a0bf056ff4f8e02d22e3b8b66de81}\label{class_r_c___framework_1_1_r_c___renderable_list_a221a0bf056ff4f8e02d22e3b8b66de81}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}!Key\+Hit\+Event@{Key\+Hit\+Event}}
+\index{Key\+Hit\+Event@{Key\+Hit\+Event}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}}
+\subsubsection{\texorpdfstring{Key\+Hit\+Event()}{KeyHitEvent()}}
+{\footnotesize\ttfamily override bool R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+List.\+Key\+Hit\+Event (\begin{DoxyParamCaption}\item[{Keys}]{key\+Hit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+propagates a keyhit event till its consumed 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Hit} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_a826da9b07316c475186e4c2f00648827}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_list_a953e8eb6f4422a7f0bebb17ee0455c42}\label{class_r_c___framework_1_1_r_c___renderable_list_a953e8eb6f4422a7f0bebb17ee0455c42}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}!Load\+Content@{Load\+Content}}
+\index{Load\+Content@{Load\+Content}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}}
+\subsubsection{\texorpdfstring{Load\+Content()}{LoadContent()}}
+{\footnotesize\ttfamily override void R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+List.\+Load\+Content (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+For initialisation 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_ae5283e88f2cc34c2ef010ede22ab1bfb}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_list_ac275d3df45899b62e1378e01a100268d}\label{class_r_c___framework_1_1_r_c___renderable_list_ac275d3df45899b62e1378e01a100268d}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}!Mouse\+Click\+Event@{Mouse\+Click\+Event}}
+\index{Mouse\+Click\+Event@{Mouse\+Click\+Event}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}}
+\subsubsection{\texorpdfstring{Mouse\+Click\+Event()}{MouseClickEvent()}}
+{\footnotesize\ttfamily override bool R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+List.\+Mouse\+Click\+Event (\begin{DoxyParamCaption}\item[{float}]{mouse\+\_\+x,  }\item[{float}]{mouse\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Propagates a mouse click till consumed 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+\_\+x} & \\
+\hline
+{\em mouse\+\_\+y} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_af929e80b7c88bb21b01358f47ad36a64}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_list_adce00726f7093db725ed6195292156a7}\label{class_r_c___framework_1_1_r_c___renderable_list_adce00726f7093db725ed6195292156a7}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}!Mouse\+Down\+Event\+Left@{Mouse\+Down\+Event\+Left}}
+\index{Mouse\+Down\+Event\+Left@{Mouse\+Down\+Event\+Left}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}}
+\subsubsection{\texorpdfstring{Mouse\+Down\+Event\+Left()}{MouseDownEventLeft()}}
+{\footnotesize\ttfamily override bool R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+List.\+Mouse\+Down\+Event\+Left (\begin{DoxyParamCaption}\item[{float}]{mouse\+\_\+x,  }\item[{float}]{mouse\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Propagates a mouse down on left button till consumed 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+\_\+x} & \\
+\hline
+{\em mouse\+\_\+y} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_a41d144d6fad27f219d861e61a2d9796e}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_list_a5867cf3044d40adda1bb7c2be3211a99}\label{class_r_c___framework_1_1_r_c___renderable_list_a5867cf3044d40adda1bb7c2be3211a99}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}!Mouse\+Over@{Mouse\+Over}}
+\index{Mouse\+Over@{Mouse\+Over}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}}
+\subsubsection{\texorpdfstring{Mouse\+Over()}{MouseOver()}}
+{\footnotesize\ttfamily override bool R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+List.\+Mouse\+Over (\begin{DoxyParamCaption}\item[{float}]{mouse\+\_\+x,  }\item[{float}]{mouse\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_abd55ea96d88d7bd2207e3a4ede1f1a05}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_list_a2974cbded928cdb237fadf5c8adbdd2c}\label{class_r_c___framework_1_1_r_c___renderable_list_a2974cbded928cdb237fadf5c8adbdd2c}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}!Move\+Next@{Move\+Next}}
+\index{Move\+Next@{Move\+Next}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}}
+\subsubsection{\texorpdfstring{Move\+Next()}{MoveNext()}}
+{\footnotesize\ttfamily bool R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+List.\+Move\+Next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_list_abb4dfff8d5e8ac2e96034e591c96d811}\label{class_r_c___framework_1_1_r_c___renderable_list_abb4dfff8d5e8ac2e96034e591c96d811}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}!replace@{replace}}
+\index{replace@{replace}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}}
+\subsubsection{\texorpdfstring{replace()}{replace()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable}{R\+C\+\_\+\+Renderable}} R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+List.\+replace (\begin{DoxyParamCaption}\item[{int}]{num,  }\item[{\mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable}{R\+C\+\_\+\+Renderable}}}]{r }\end{DoxyParamCaption})}
+
+
+
+replaces returning the old value -\/ not especially usefull 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & \\
+\hline
+{\em r} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_list_ac70aff9f6f35ecb69378a70ad8e41f0e}\label{class_r_c___framework_1_1_r_c___renderable_list_ac70aff9f6f35ecb69378a70ad8e41f0e}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}!Reset@{Reset}}
+\index{Reset@{Reset}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}}
+\subsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+List.\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_list_a65b0bbae9d1d83579d269d756a3626e3}\label{class_r_c___framework_1_1_r_c___renderable_list_a65b0bbae9d1d83579d269d756a3626e3}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}!Run\+The\+Method@{Run\+The\+Method}}
+\index{Run\+The\+Method@{Run\+The\+Method}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}}
+\subsubsection{\texorpdfstring{Run\+The\+Method()}{RunTheMethod()}}
+{\footnotesize\ttfamily bool R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+List.\+Run\+The\+Method (\begin{DoxyParamCaption}\item[{Func$<$ \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable}{R\+C\+\_\+\+Renderable}}, bool $>$}]{method\+Name }\end{DoxyParamCaption})}
+
+
+
+Run the method on each active renderables return true only if all functions return true or there are no active renderables the function has the formal parameters bool name(\+R\+C\+\_\+\+Renderable s) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em method\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_list_ad7238f93a7ad63020771702a2db0ccfe}\label{class_r_c___framework_1_1_r_c___renderable_list_ad7238f93a7ad63020771702a2db0ccfe}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}!scroll\+Move@{scroll\+Move}}
+\index{scroll\+Move@{scroll\+Move}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}}
+\subsubsection{\texorpdfstring{scroll\+Move()}{scrollMove()}}
+{\footnotesize\ttfamily override bool R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+List.\+scroll\+Move (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+runs scroll move on all renderables used to scroll the screen 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_a21e5b1a68c7382443c82e7296fd2209a}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_list_a8cba0458aba6bbf1b4d7b57217060f43}\label{class_r_c___framework_1_1_r_c___renderable_list_a8cba0458aba6bbf1b4d7b57217060f43}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}!set\+Color@{set\+Color}}
+\index{set\+Color@{set\+Color}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}}
+\subsubsection{\texorpdfstring{set\+Color()}{setColor()}}
+{\footnotesize\ttfamily override void R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+List.\+set\+Color (\begin{DoxyParamCaption}\item[{Color}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sets colour for all active renderables 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_a73bf15681dc31644705e509c53f68833}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_list_a2de302d2ee2f4df7c90fb7df36c4f3fe}\label{class_r_c___framework_1_1_r_c___renderable_list_a2de302d2ee2f4df7c90fb7df36c4f3fe}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}!Update@{Update}}
+\index{Update@{Update}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily override void R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+List.\+Update (\begin{DoxyParamCaption}\item[{Game\+Time}]{game\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+run update on the entire list of renderables 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Time} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_a5745bedc7ba0587aa1e1d8563c357228}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_list_ab54b7af85213b25a5d66cd169c27b352}\label{class_r_c___framework_1_1_r_c___renderable_list_ab54b7af85213b25a5d66cd169c27b352}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}!rlist@{rlist}}
+\index{rlist@{rlist}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}}
+\subsubsection{\texorpdfstring{rlist}{rlist}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable}{R\+C\+\_\+\+Renderable}}$>$ R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+List.\+rlist}
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_list_ad9d22dbadf2d32491b2bfad15acb37dd}\label{class_r_c___framework_1_1_r_c___renderable_list_ad9d22dbadf2d32491b2bfad15acb37dd}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}!Current@{Current}}
+\index{Current@{Current}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}}
+\subsubsection{\texorpdfstring{Current}{Current}}
+{\footnotesize\ttfamily object R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+List.\+Current\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_list_a8a63966970b03403ce48e9bcca4f795d}\label{class_r_c___framework_1_1_r_c___renderable_list_a8a63966970b03403ce48e9bcca4f795d}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}!this\mbox{[}int key\mbox{]}@{this[int key]}}
+\index{this\mbox{[}int key\mbox{]}@{this[int key]}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+List}}
+\subsubsection{\texorpdfstring{this[int key]}{this[int key]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable}{R\+C\+\_\+\+Renderable}} R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+List.\+this\mbox{[}int key\mbox{]}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Overload \mbox{[} and \mbox{]} for ease of use 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+B/\+R\+C\+\_\+\+Framework2018/\+Source/\mbox{\hyperlink{_r_c___renderable_list_8cs}{R\+C\+\_\+\+Renderable\+List.\+cs}}\end{DoxyCompactItemize}

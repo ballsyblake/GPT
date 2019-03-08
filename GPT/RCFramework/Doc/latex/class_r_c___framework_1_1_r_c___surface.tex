@@ -1,0 +1,366 @@
+\hypertarget{class_r_c___framework_1_1_r_c___surface}{}\section{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Surface Class Reference}
+\label{class_r_c___framework_1_1_r_c___surface}\index{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Surface@{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Surface}}
+
+
+The Purpose of this class is to provide a canvas (perhaps it sould have been labled R\+C\+\_\+canvas) It provides a few routines to work with actual pixels witout needing to load an image use \mbox{\hyperlink{class_r_c___framework_1_1_r_c___surface_a88a1b5fd5ab87f2f3cdb9bf0bc825ffc}{create\+Tex(\+Graphics\+Device device)}} to convert it to a texture which is what you need to actually render the surface Surfaces are always rectanglar  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_r_c___surface_aa0ebfc848c2efcf738168ba4ae24a700}{R\+C\+\_\+\+Surface}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor produces 1 white pixel the idea being that you then run init to get a meaningfull surface \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_r_c___surface_a8cf9c7bd5f30e2ce9a6fe58fb64cd301}{R\+C\+\_\+\+Surface}} (int width, int height, Color c)
+\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_r_c___surface_ada89bd248fe4aea65a1cd8f579f17fa1}{R\+C\+\_\+\+Surface}} (int width, int height, Color top\+LeftC, Color top\+RightC, Color bot\+LeftC, Color bot\+RightC)
+\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_r_c___surface_ad5778d6547c7ecca1f0c35264a71f7d5}{R\+C\+\_\+\+Surface}} (String\mbox{[}$\,$\mbox{]} lines, Color\mbox{[}$\,$\mbox{]} pal, String pal\+Index)
+\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_r_c___surface_ac79ed2e2afed744ec647c8e3587bfc17}{R\+C\+\_\+\+Surface}} (\mbox{\hyperlink{class_r_c___framework_1_1_r_c___surface}{R\+C\+\_\+\+Surface}} sur, int x\+Factor, int y\+Factor, int x\+Gap, int y\+Gap, Color def\+Color, int x\+Pad, int y\+Pad)
+\begin{DoxyCompactList}\small\item\em Enlarges a surface -\/ possibly with a gap between pixels and with the possibility of padding it out a bit to get a power of 2 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_r_c___surface_a88c34f3e232de3dd02f82c3145239553}{init}} (int width, int height, Color top\+LeftC, Color top\+RightC, Color bot\+LeftC, Color bot\+RightC)
+\begin{DoxyCompactList}\small\item\em Initialise a colour field with a diferent colour at each corner \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_r_c___surface_a163695b3e6c5df4a9cbacc5d3f33ab44}{set\+Color}} (int x, int y, Color c)
+\begin{DoxyCompactList}\small\item\em Set a pixel colour \end{DoxyCompactList}\item 
+Color \mbox{\hyperlink{class_r_c___framework_1_1_r_c___surface_acafd7281d388d077a1b1afaea6743718}{get\+Color}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em get or retreive a pixel colour \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_r_c___surface_a131d4ac4006056b9e6a62ae82aaae603}{set\+In\+Texture2D}} (Texture2D tex)
+\begin{DoxyCompactList}\small\item\em Copies the surface to an already existing texture \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_r_c___surface_a93d79ef4363e12e80a454dc49a80770a}{get\+From\+Texture2D}} (Texture2D tex)
+\begin{DoxyCompactList}\small\item\em gets pixel data from an existing texture \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_r_c___surface_abab645c5b58a88c3b1e13d1624163272}{add\+Line\+Rectangle}} (Rectangle r, Color c)
+\begin{DoxyCompactList}\small\item\em Draws a 1 pixel wide rectangle of a given colour on the surface \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_r_c___surface_a93af5231a5d6cb46ce86fc9895a3cd29}{add\+Fill\+Rectangle}} (Rectangle r, Color c)
+\begin{DoxyCompactList}\small\item\em Draws a filled rectangle of a given colour (can be slow. it often is if its any significant size) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_r_c___surface_adc92e7c233e99edec13e4831b413a531}{set\+Color}} (Color c)
+\begin{DoxyCompactList}\small\item\em Sets a colour in the entire surface \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_r_c___surface_afe965ef242eba8173932ac8bc19ec6e9}{add\+Border}} (int border\+Width, Color border\+Color)
+\begin{DoxyCompactList}\small\item\em Draws a coloured border on the surface \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_r_c___surface_ad16458caf26de6edba572ce3ac85342c}{add\+Sculpted\+Border}} (Rectangle r, Color c\+Left\+Top, Color c\+Bot\+Right, int b\+Width)
+\begin{DoxyCompactList}\small\item\em Adds a border in which the top and left are a diferent colour to the rest of the border can be used to create a 3D look \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_r_c___surface_ad339e6a77515c0d9a59f55f886246a9d}{draw\+Hline}} (int x1, int y, int x2, Color x1C, Color x2C)
+\begin{DoxyCompactList}\small\item\em Draws a horizontal line \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_r_c___surface_adfa7830cd882206d779179da1a9622ac}{draw\+Vline}} (int x, int y1, int y2, Color y1C, Color y2C)
+\begin{DoxyCompactList}\small\item\em Draws a vertical line \end{DoxyCompactList}\item 
+Texture2D \mbox{\hyperlink{class_r_c___framework_1_1_r_c___surface_a88a1b5fd5ab87f2f3cdb9bf0bc825ffc}{create\+Tex}} (Graphics\+Device device)
+\begin{DoxyCompactList}\small\item\em creates a new texture that has a copy of the existing surface image \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The Purpose of this class is to provide a canvas (perhaps it sould have been labled R\+C\+\_\+canvas) It provides a few routines to work with actual pixels witout needing to load an image use \mbox{\hyperlink{class_r_c___framework_1_1_r_c___surface_a88a1b5fd5ab87f2f3cdb9bf0bc825ffc}{create\+Tex(\+Graphics\+Device device)}} to convert it to a texture which is what you need to actually render the surface Surfaces are always rectanglar 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___surface_aa0ebfc848c2efcf738168ba4ae24a700}\label{class_r_c___framework_1_1_r_c___surface_aa0ebfc848c2efcf738168ba4ae24a700}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface}!R\+C\+\_\+\+Surface@{R\+C\+\_\+\+Surface}}
+\index{R\+C\+\_\+\+Surface@{R\+C\+\_\+\+Surface}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface}}
+\subsubsection{\texorpdfstring{R\+C\+\_\+\+Surface()}{RC\_Surface()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Surface.\+R\+C\+\_\+\+Surface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor produces 1 white pixel the idea being that you then run init to get a meaningfull surface 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___surface_a8cf9c7bd5f30e2ce9a6fe58fb64cd301}\label{class_r_c___framework_1_1_r_c___surface_a8cf9c7bd5f30e2ce9a6fe58fb64cd301}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface}!R\+C\+\_\+\+Surface@{R\+C\+\_\+\+Surface}}
+\index{R\+C\+\_\+\+Surface@{R\+C\+\_\+\+Surface}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface}}
+\subsubsection{\texorpdfstring{R\+C\+\_\+\+Surface()}{RC\_Surface()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Surface.\+R\+C\+\_\+\+Surface (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height,  }\item[{Color}]{c }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___surface_ada89bd248fe4aea65a1cd8f579f17fa1}\label{class_r_c___framework_1_1_r_c___surface_ada89bd248fe4aea65a1cd8f579f17fa1}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface}!R\+C\+\_\+\+Surface@{R\+C\+\_\+\+Surface}}
+\index{R\+C\+\_\+\+Surface@{R\+C\+\_\+\+Surface}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface}}
+\subsubsection{\texorpdfstring{R\+C\+\_\+\+Surface()}{RC\_Surface()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Surface.\+R\+C\+\_\+\+Surface (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height,  }\item[{Color}]{top\+LeftC,  }\item[{Color}]{top\+RightC,  }\item[{Color}]{bot\+LeftC,  }\item[{Color}]{bot\+RightC }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___surface_ad5778d6547c7ecca1f0c35264a71f7d5}\label{class_r_c___framework_1_1_r_c___surface_ad5778d6547c7ecca1f0c35264a71f7d5}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface}!R\+C\+\_\+\+Surface@{R\+C\+\_\+\+Surface}}
+\index{R\+C\+\_\+\+Surface@{R\+C\+\_\+\+Surface}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface}}
+\subsubsection{\texorpdfstring{R\+C\+\_\+\+Surface()}{RC\_Surface()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Surface.\+R\+C\+\_\+\+Surface (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{lines,  }\item[{Color \mbox{[}$\,$\mbox{]}}]{pal,  }\item[{String}]{pal\+Index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___surface_ac79ed2e2afed744ec647c8e3587bfc17}\label{class_r_c___framework_1_1_r_c___surface_ac79ed2e2afed744ec647c8e3587bfc17}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface}!R\+C\+\_\+\+Surface@{R\+C\+\_\+\+Surface}}
+\index{R\+C\+\_\+\+Surface@{R\+C\+\_\+\+Surface}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface}}
+\subsubsection{\texorpdfstring{R\+C\+\_\+\+Surface()}{RC\_Surface()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Surface.\+R\+C\+\_\+\+Surface (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_r_c___framework_1_1_r_c___surface}{R\+C\+\_\+\+Surface}}}]{sur,  }\item[{int}]{x\+Factor,  }\item[{int}]{y\+Factor,  }\item[{int}]{x\+Gap,  }\item[{int}]{y\+Gap,  }\item[{Color}]{def\+Color,  }\item[{int}]{x\+Pad,  }\item[{int}]{y\+Pad }\end{DoxyParamCaption})}
+
+
+
+Enlarges a surface -\/ possibly with a gap between pixels and with the possibility of padding it out a bit to get a power of 2 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sur} & \\
+\hline
+{\em x\+Factor} & \\
+\hline
+{\em y\+Factor} & \\
+\hline
+{\em x\+Gap} & \\
+\hline
+{\em y\+Gap} & \\
+\hline
+{\em def\+Color} & \\
+\hline
+{\em x\+Pad} & \\
+\hline
+{\em y\+Pad} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___surface_afe965ef242eba8173932ac8bc19ec6e9}\label{class_r_c___framework_1_1_r_c___surface_afe965ef242eba8173932ac8bc19ec6e9}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface}!add\+Border@{add\+Border}}
+\index{add\+Border@{add\+Border}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface}}
+\subsubsection{\texorpdfstring{add\+Border()}{addBorder()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Surface.\+add\+Border (\begin{DoxyParamCaption}\item[{int}]{border\+Width,  }\item[{Color}]{border\+Color }\end{DoxyParamCaption})}
+
+
+
+Draws a coloured border on the surface 
+
+
+\begin{DoxyParams}{Parameters}
+{\em border\+Width} & \\
+\hline
+{\em border\+Color} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___surface_a93af5231a5d6cb46ce86fc9895a3cd29}\label{class_r_c___framework_1_1_r_c___surface_a93af5231a5d6cb46ce86fc9895a3cd29}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface}!add\+Fill\+Rectangle@{add\+Fill\+Rectangle}}
+\index{add\+Fill\+Rectangle@{add\+Fill\+Rectangle}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface}}
+\subsubsection{\texorpdfstring{add\+Fill\+Rectangle()}{addFillRectangle()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Surface.\+add\+Fill\+Rectangle (\begin{DoxyParamCaption}\item[{Rectangle}]{r,  }\item[{Color}]{c }\end{DoxyParamCaption})}
+
+
+
+Draws a filled rectangle of a given colour (can be slow. it often is if its any significant size) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & \\
+\hline
+{\em c} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___surface_abab645c5b58a88c3b1e13d1624163272}\label{class_r_c___framework_1_1_r_c___surface_abab645c5b58a88c3b1e13d1624163272}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface}!add\+Line\+Rectangle@{add\+Line\+Rectangle}}
+\index{add\+Line\+Rectangle@{add\+Line\+Rectangle}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface}}
+\subsubsection{\texorpdfstring{add\+Line\+Rectangle()}{addLineRectangle()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Surface.\+add\+Line\+Rectangle (\begin{DoxyParamCaption}\item[{Rectangle}]{r,  }\item[{Color}]{c }\end{DoxyParamCaption})}
+
+
+
+Draws a 1 pixel wide rectangle of a given colour on the surface 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & \\
+\hline
+{\em c} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___surface_ad16458caf26de6edba572ce3ac85342c}\label{class_r_c___framework_1_1_r_c___surface_ad16458caf26de6edba572ce3ac85342c}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface}!add\+Sculpted\+Border@{add\+Sculpted\+Border}}
+\index{add\+Sculpted\+Border@{add\+Sculpted\+Border}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface}}
+\subsubsection{\texorpdfstring{add\+Sculpted\+Border()}{addSculptedBorder()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Surface.\+add\+Sculpted\+Border (\begin{DoxyParamCaption}\item[{Rectangle}]{r,  }\item[{Color}]{c\+Left\+Top,  }\item[{Color}]{c\+Bot\+Right,  }\item[{int}]{b\+Width }\end{DoxyParamCaption})}
+
+
+
+Adds a border in which the top and left are a diferent colour to the rest of the border can be used to create a 3D look 
+
+The following lines are a hint on how to get a 3d border look Color c\+Light = \mbox{\hyperlink{class_r_c___framework_1_1_util_a88559e70851ee1e21bdc1375b862919d}{Util.\+lighter\+Or\+Darker}}(c, 1.\+4f); Color c\+Dark = \mbox{\hyperlink{class_r_c___framework_1_1_util_a88559e70851ee1e21bdc1375b862919d}{Util.\+lighter\+Or\+Darker}}(c, 0.\+6f); 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & \\
+\hline
+{\em c\+Left\+Top} & \\
+\hline
+{\em c\+Bot\+Right} & \\
+\hline
+{\em b\+Width} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___surface_a88a1b5fd5ab87f2f3cdb9bf0bc825ffc}\label{class_r_c___framework_1_1_r_c___surface_a88a1b5fd5ab87f2f3cdb9bf0bc825ffc}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface}!create\+Tex@{create\+Tex}}
+\index{create\+Tex@{create\+Tex}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface}}
+\subsubsection{\texorpdfstring{create\+Tex()}{createTex()}}
+{\footnotesize\ttfamily Texture2D R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Surface.\+create\+Tex (\begin{DoxyParamCaption}\item[{Graphics\+Device}]{device }\end{DoxyParamCaption})}
+
+
+
+creates a new texture that has a copy of the existing surface image 
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___surface_ad339e6a77515c0d9a59f55f886246a9d}\label{class_r_c___framework_1_1_r_c___surface_ad339e6a77515c0d9a59f55f886246a9d}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface}!draw\+Hline@{draw\+Hline}}
+\index{draw\+Hline@{draw\+Hline}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface}}
+\subsubsection{\texorpdfstring{draw\+Hline()}{drawHline()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Surface.\+draw\+Hline (\begin{DoxyParamCaption}\item[{int}]{x1,  }\item[{int}]{y,  }\item[{int}]{x2,  }\item[{Color}]{x1C,  }\item[{Color}]{x2C }\end{DoxyParamCaption})}
+
+
+
+Draws a horizontal line 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x1} & \\
+\hline
+{\em y} & \\
+\hline
+{\em x2} & \\
+\hline
+{\em x1C} & \\
+\hline
+{\em x2C} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___surface_adfa7830cd882206d779179da1a9622ac}\label{class_r_c___framework_1_1_r_c___surface_adfa7830cd882206d779179da1a9622ac}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface}!draw\+Vline@{draw\+Vline}}
+\index{draw\+Vline@{draw\+Vline}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface}}
+\subsubsection{\texorpdfstring{draw\+Vline()}{drawVline()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Surface.\+draw\+Vline (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y1,  }\item[{int}]{y2,  }\item[{Color}]{y1C,  }\item[{Color}]{y2C }\end{DoxyParamCaption})}
+
+
+
+Draws a vertical line 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y1} & \\
+\hline
+{\em y2} & \\
+\hline
+{\em y1C} & \\
+\hline
+{\em y2C} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___surface_acafd7281d388d077a1b1afaea6743718}\label{class_r_c___framework_1_1_r_c___surface_acafd7281d388d077a1b1afaea6743718}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface}!get\+Color@{get\+Color}}
+\index{get\+Color@{get\+Color}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface}}
+\subsubsection{\texorpdfstring{get\+Color()}{getColor()}}
+{\footnotesize\ttfamily Color R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Surface.\+get\+Color (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+get or retreive a pixel colour 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___surface_a93d79ef4363e12e80a454dc49a80770a}\label{class_r_c___framework_1_1_r_c___surface_a93d79ef4363e12e80a454dc49a80770a}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface}!get\+From\+Texture2D@{get\+From\+Texture2D}}
+\index{get\+From\+Texture2D@{get\+From\+Texture2D}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface}}
+\subsubsection{\texorpdfstring{get\+From\+Texture2\+D()}{getFromTexture2D()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Surface.\+get\+From\+Texture2D (\begin{DoxyParamCaption}\item[{Texture2D}]{tex }\end{DoxyParamCaption})}
+
+
+
+gets pixel data from an existing texture 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tex} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___surface_a88c34f3e232de3dd02f82c3145239553}\label{class_r_c___framework_1_1_r_c___surface_a88c34f3e232de3dd02f82c3145239553}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface}!init@{init}}
+\index{init@{init}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Surface.\+init (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height,  }\item[{Color}]{top\+LeftC,  }\item[{Color}]{top\+RightC,  }\item[{Color}]{bot\+LeftC,  }\item[{Color}]{bot\+RightC }\end{DoxyParamCaption})}
+
+
+
+Initialise a colour field with a diferent colour at each corner 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & \\
+\hline
+{\em height} & \\
+\hline
+{\em top\+LeftC} & \\
+\hline
+{\em top\+RightC} & \\
+\hline
+{\em bot\+LeftC} & \\
+\hline
+{\em bot\+RightC} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___surface_a163695b3e6c5df4a9cbacc5d3f33ab44}\label{class_r_c___framework_1_1_r_c___surface_a163695b3e6c5df4a9cbacc5d3f33ab44}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface}!set\+Color@{set\+Color}}
+\index{set\+Color@{set\+Color}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface}}
+\subsubsection{\texorpdfstring{set\+Color()}{setColor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Surface.\+set\+Color (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{Color}]{c }\end{DoxyParamCaption})}
+
+
+
+Set a pixel colour 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+{\em c} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___surface_adc92e7c233e99edec13e4831b413a531}\label{class_r_c___framework_1_1_r_c___surface_adc92e7c233e99edec13e4831b413a531}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface}!set\+Color@{set\+Color}}
+\index{set\+Color@{set\+Color}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface}}
+\subsubsection{\texorpdfstring{set\+Color()}{setColor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Surface.\+set\+Color (\begin{DoxyParamCaption}\item[{Color}]{c }\end{DoxyParamCaption})}
+
+
+
+Sets a colour in the entire surface 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___surface_a131d4ac4006056b9e6a62ae82aaae603}\label{class_r_c___framework_1_1_r_c___surface_a131d4ac4006056b9e6a62ae82aaae603}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface}!set\+In\+Texture2D@{set\+In\+Texture2D}}
+\index{set\+In\+Texture2D@{set\+In\+Texture2D}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Surface}}
+\subsubsection{\texorpdfstring{set\+In\+Texture2\+D()}{setInTexture2D()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Surface.\+set\+In\+Texture2D (\begin{DoxyParamCaption}\item[{Texture2D}]{tex }\end{DoxyParamCaption})}
+
+
+
+Copies the surface to an already existing texture 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tex} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+B/\+R\+C\+\_\+\+Framework2018/\+Source/\mbox{\hyperlink{_r_c___surface_8cs}{R\+C\+\_\+\+Surface.\+cs}}\end{DoxyCompactItemize}

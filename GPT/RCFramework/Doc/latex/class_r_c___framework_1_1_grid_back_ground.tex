@@ -1,0 +1,165 @@
+\hypertarget{class_r_c___framework_1_1_grid_back_ground}{}\section{R\+C\+\_\+\+Framework.\+Grid\+Back\+Ground Class Reference}
+\label{class_r_c___framework_1_1_grid_back_ground}\index{R\+C\+\_\+\+Framework.\+Grid\+Back\+Ground@{R\+C\+\_\+\+Framework.\+Grid\+Back\+Ground}}
+
+
+Draws a grid in a rectangle It can be acurately positioned by changing Offset It can be animated by changing delta and update\+Modulo Vertoical or horizontal lines may be omitted by setting draw\+Vertical or draw\+Horizontal to false  
+
+
+Inheritance diagram for R\+C\+\_\+\+Framework.\+Grid\+Back\+Ground\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_r_c___framework_1_1_grid_back_ground}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_grid_back_ground_ac58b15afcc3b7fddc9aaa0f8decd3d7c}{Grid\+Back\+Ground}} (Rectangle boundZ, Color line\+Color, Color back\+Color, Vector2 spacing, int line\+WidthZ)
+\item 
+override void \mbox{\hyperlink{class_r_c___framework_1_1_grid_back_ground_a242904271618f793025f4dfae9681c13}{Draw}} (Sprite\+Batch sb)
+\begin{DoxyCompactList}\small\item\em Standard draw routine which assumes the renderable knows where it is \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_r_c___framework_1_1_grid_back_ground_af43061e6a0067ad6c3043b6ddb080de4}{Update}} (Game\+Time game\+Time)
+\item 
+override void \mbox{\hyperlink{class_r_c___framework_1_1_grid_back_ground_aeaa4759b7da2f73fd760f0e9d59aa97c}{reset}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Color \mbox{\hyperlink{class_r_c___framework_1_1_grid_back_ground_aea6b48adc0f7198e7e174272e27a38fc}{line\+Colour2}} = Color.\+Black
+\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_grid_back_ground_a70bd87e07cf3c796c46bfabbf5deb484}{ticks\+To\+Lerp}} = 1
+\item 
+Vector2 \mbox{\hyperlink{class_r_c___framework_1_1_grid_back_ground_a218136f423b8aa4b2bf9294628f3a9b7}{offset}}
+\item 
+Vector2 \mbox{\hyperlink{class_r_c___framework_1_1_grid_back_ground_a52aae8ab0c66a1ba7a83874828742c81}{delta}}
+\item 
+bool \mbox{\hyperlink{class_r_c___framework_1_1_grid_back_ground_a72db0e3bc139d962dd84d918f3f443b7}{draw\+Background}} = true
+\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_grid_back_ground_a3995a8339610de394109a7d00c91cf12}{update\+Modulo}} =1
+\item 
+bool \mbox{\hyperlink{class_r_c___framework_1_1_grid_back_ground_ad2dcba9e3bd46129cc3066fe7a4fafe4}{draw\+Vertical}} = true
+\item 
+bool \mbox{\hyperlink{class_r_c___framework_1_1_grid_back_ground_aaa1851c8b283367cc1d79bdb8c27ce32}{draw\+Horizontal}} = true
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Draws a grid in a rectangle It can be acurately positioned by changing Offset It can be animated by changing delta and update\+Modulo Vertoical or horizontal lines may be omitted by setting draw\+Vertical or draw\+Horizontal to false 
+
+Ticks to lerp and linecolour2 can be set to change the grid colour so it sort of pulsates colour example setup may be\+: r9b = new \mbox{\hyperlink{class_r_c___framework_1_1_grid_back_ground}{Grid\+Back\+Ground}}(new Rectangle(10, 300, 200, 200), Color.\+Red, Color.\+Blanched\+Almond, new Vector2(30, 20), 2); r9b.\+delta = new Vector2(1, 0); // speed of animation r9b.\+update\+Modulo = 2; // try 30 to slow it a bit
+
+or\+: ~\newline
+\begin{DoxyVerb}  r9c = new GridBackGround(new Rectangle(260, 10, 200, 200), Color.Red, Color.Silver, new Vector2(30, 20), 2);
+  r9c.delta = new Vector2(0f,0.2f); // speed of animation
+  r9c.updateModulo = 2; // try 30 to slow it a bit
+  r9c.ticksToLerp = 120;
+  r9c.lineColour2 = new Color(255, 255, 255);
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_grid_back_ground_ac58b15afcc3b7fddc9aaa0f8decd3d7c}\label{class_r_c___framework_1_1_grid_back_ground_ac58b15afcc3b7fddc9aaa0f8decd3d7c}} 
+\index{R\+C\+\_\+\+Framework\+::\+Grid\+Back\+Ground@{R\+C\+\_\+\+Framework\+::\+Grid\+Back\+Ground}!Grid\+Back\+Ground@{Grid\+Back\+Ground}}
+\index{Grid\+Back\+Ground@{Grid\+Back\+Ground}!R\+C\+\_\+\+Framework\+::\+Grid\+Back\+Ground@{R\+C\+\_\+\+Framework\+::\+Grid\+Back\+Ground}}
+\subsubsection{\texorpdfstring{Grid\+Back\+Ground()}{GridBackGround()}}
+{\footnotesize\ttfamily R\+C\+\_\+\+Framework.\+Grid\+Back\+Ground.\+Grid\+Back\+Ground (\begin{DoxyParamCaption}\item[{Rectangle}]{boundZ,  }\item[{Color}]{line\+Color,  }\item[{Color}]{back\+Color,  }\item[{Vector2}]{spacing,  }\item[{int}]{line\+WidthZ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_grid_back_ground_a242904271618f793025f4dfae9681c13}\label{class_r_c___framework_1_1_grid_back_ground_a242904271618f793025f4dfae9681c13}} 
+\index{R\+C\+\_\+\+Framework\+::\+Grid\+Back\+Ground@{R\+C\+\_\+\+Framework\+::\+Grid\+Back\+Ground}!Draw@{Draw}}
+\index{Draw@{Draw}!R\+C\+\_\+\+Framework\+::\+Grid\+Back\+Ground@{R\+C\+\_\+\+Framework\+::\+Grid\+Back\+Ground}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily override void R\+C\+\_\+\+Framework.\+Grid\+Back\+Ground.\+Draw (\begin{DoxyParamCaption}\item[{Sprite\+Batch}]{sb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Standard draw routine which assumes the renderable knows where it is 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_acc26db34e382a25a989c4c0dd0354b23}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_grid_back_ground_aeaa4759b7da2f73fd760f0e9d59aa97c}\label{class_r_c___framework_1_1_grid_back_ground_aeaa4759b7da2f73fd760f0e9d59aa97c}} 
+\index{R\+C\+\_\+\+Framework\+::\+Grid\+Back\+Ground@{R\+C\+\_\+\+Framework\+::\+Grid\+Back\+Ground}!reset@{reset}}
+\index{reset@{reset}!R\+C\+\_\+\+Framework\+::\+Grid\+Back\+Ground@{R\+C\+\_\+\+Framework\+::\+Grid\+Back\+Ground}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily override void R\+C\+\_\+\+Framework.\+Grid\+Back\+Ground.\+reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_ae65ce69704d15963789f421b58618b1f}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_grid_back_ground_af43061e6a0067ad6c3043b6ddb080de4}\label{class_r_c___framework_1_1_grid_back_ground_af43061e6a0067ad6c3043b6ddb080de4}} 
+\index{R\+C\+\_\+\+Framework\+::\+Grid\+Back\+Ground@{R\+C\+\_\+\+Framework\+::\+Grid\+Back\+Ground}!Update@{Update}}
+\index{Update@{Update}!R\+C\+\_\+\+Framework\+::\+Grid\+Back\+Ground@{R\+C\+\_\+\+Framework\+::\+Grid\+Back\+Ground}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily override void R\+C\+\_\+\+Framework.\+Grid\+Back\+Ground.\+Update (\begin{DoxyParamCaption}\item[{Game\+Time}]{game\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_a5745bedc7ba0587aa1e1d8563c357228}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_grid_back_ground_a52aae8ab0c66a1ba7a83874828742c81}\label{class_r_c___framework_1_1_grid_back_ground_a52aae8ab0c66a1ba7a83874828742c81}} 
+\index{R\+C\+\_\+\+Framework\+::\+Grid\+Back\+Ground@{R\+C\+\_\+\+Framework\+::\+Grid\+Back\+Ground}!delta@{delta}}
+\index{delta@{delta}!R\+C\+\_\+\+Framework\+::\+Grid\+Back\+Ground@{R\+C\+\_\+\+Framework\+::\+Grid\+Back\+Ground}}
+\subsubsection{\texorpdfstring{delta}{delta}}
+{\footnotesize\ttfamily Vector2 R\+C\+\_\+\+Framework.\+Grid\+Back\+Ground.\+delta}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_grid_back_ground_a72db0e3bc139d962dd84d918f3f443b7}\label{class_r_c___framework_1_1_grid_back_ground_a72db0e3bc139d962dd84d918f3f443b7}} 
+\index{R\+C\+\_\+\+Framework\+::\+Grid\+Back\+Ground@{R\+C\+\_\+\+Framework\+::\+Grid\+Back\+Ground}!draw\+Background@{draw\+Background}}
+\index{draw\+Background@{draw\+Background}!R\+C\+\_\+\+Framework\+::\+Grid\+Back\+Ground@{R\+C\+\_\+\+Framework\+::\+Grid\+Back\+Ground}}
+\subsubsection{\texorpdfstring{draw\+Background}{drawBackground}}
+{\footnotesize\ttfamily bool R\+C\+\_\+\+Framework.\+Grid\+Back\+Ground.\+draw\+Background = true}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_grid_back_ground_aaa1851c8b283367cc1d79bdb8c27ce32}\label{class_r_c___framework_1_1_grid_back_ground_aaa1851c8b283367cc1d79bdb8c27ce32}} 
+\index{R\+C\+\_\+\+Framework\+::\+Grid\+Back\+Ground@{R\+C\+\_\+\+Framework\+::\+Grid\+Back\+Ground}!draw\+Horizontal@{draw\+Horizontal}}
+\index{draw\+Horizontal@{draw\+Horizontal}!R\+C\+\_\+\+Framework\+::\+Grid\+Back\+Ground@{R\+C\+\_\+\+Framework\+::\+Grid\+Back\+Ground}}
+\subsubsection{\texorpdfstring{draw\+Horizontal}{drawHorizontal}}
+{\footnotesize\ttfamily bool R\+C\+\_\+\+Framework.\+Grid\+Back\+Ground.\+draw\+Horizontal = true}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_grid_back_ground_ad2dcba9e3bd46129cc3066fe7a4fafe4}\label{class_r_c___framework_1_1_grid_back_ground_ad2dcba9e3bd46129cc3066fe7a4fafe4}} 
+\index{R\+C\+\_\+\+Framework\+::\+Grid\+Back\+Ground@{R\+C\+\_\+\+Framework\+::\+Grid\+Back\+Ground}!draw\+Vertical@{draw\+Vertical}}
+\index{draw\+Vertical@{draw\+Vertical}!R\+C\+\_\+\+Framework\+::\+Grid\+Back\+Ground@{R\+C\+\_\+\+Framework\+::\+Grid\+Back\+Ground}}
+\subsubsection{\texorpdfstring{draw\+Vertical}{drawVertical}}
+{\footnotesize\ttfamily bool R\+C\+\_\+\+Framework.\+Grid\+Back\+Ground.\+draw\+Vertical = true}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_grid_back_ground_aea6b48adc0f7198e7e174272e27a38fc}\label{class_r_c___framework_1_1_grid_back_ground_aea6b48adc0f7198e7e174272e27a38fc}} 
+\index{R\+C\+\_\+\+Framework\+::\+Grid\+Back\+Ground@{R\+C\+\_\+\+Framework\+::\+Grid\+Back\+Ground}!line\+Colour2@{line\+Colour2}}
+\index{line\+Colour2@{line\+Colour2}!R\+C\+\_\+\+Framework\+::\+Grid\+Back\+Ground@{R\+C\+\_\+\+Framework\+::\+Grid\+Back\+Ground}}
+\subsubsection{\texorpdfstring{line\+Colour2}{lineColour2}}
+{\footnotesize\ttfamily Color R\+C\+\_\+\+Framework.\+Grid\+Back\+Ground.\+line\+Colour2 = Color.\+Black}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_grid_back_ground_a218136f423b8aa4b2bf9294628f3a9b7}\label{class_r_c___framework_1_1_grid_back_ground_a218136f423b8aa4b2bf9294628f3a9b7}} 
+\index{R\+C\+\_\+\+Framework\+::\+Grid\+Back\+Ground@{R\+C\+\_\+\+Framework\+::\+Grid\+Back\+Ground}!offset@{offset}}
+\index{offset@{offset}!R\+C\+\_\+\+Framework\+::\+Grid\+Back\+Ground@{R\+C\+\_\+\+Framework\+::\+Grid\+Back\+Ground}}
+\subsubsection{\texorpdfstring{offset}{offset}}
+{\footnotesize\ttfamily Vector2 R\+C\+\_\+\+Framework.\+Grid\+Back\+Ground.\+offset}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_grid_back_ground_a70bd87e07cf3c796c46bfabbf5deb484}\label{class_r_c___framework_1_1_grid_back_ground_a70bd87e07cf3c796c46bfabbf5deb484}} 
+\index{R\+C\+\_\+\+Framework\+::\+Grid\+Back\+Ground@{R\+C\+\_\+\+Framework\+::\+Grid\+Back\+Ground}!ticks\+To\+Lerp@{ticks\+To\+Lerp}}
+\index{ticks\+To\+Lerp@{ticks\+To\+Lerp}!R\+C\+\_\+\+Framework\+::\+Grid\+Back\+Ground@{R\+C\+\_\+\+Framework\+::\+Grid\+Back\+Ground}}
+\subsubsection{\texorpdfstring{ticks\+To\+Lerp}{ticksToLerp}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Grid\+Back\+Ground.\+ticks\+To\+Lerp = 1}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_grid_back_ground_a3995a8339610de394109a7d00c91cf12}\label{class_r_c___framework_1_1_grid_back_ground_a3995a8339610de394109a7d00c91cf12}} 
+\index{R\+C\+\_\+\+Framework\+::\+Grid\+Back\+Ground@{R\+C\+\_\+\+Framework\+::\+Grid\+Back\+Ground}!update\+Modulo@{update\+Modulo}}
+\index{update\+Modulo@{update\+Modulo}!R\+C\+\_\+\+Framework\+::\+Grid\+Back\+Ground@{R\+C\+\_\+\+Framework\+::\+Grid\+Back\+Ground}}
+\subsubsection{\texorpdfstring{update\+Modulo}{updateModulo}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Grid\+Back\+Ground.\+update\+Modulo =1}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+B/\+R\+C\+\_\+\+Framework2018/\+Source/\mbox{\hyperlink{_r_c___renderable_bounded_8cs}{R\+C\+\_\+\+Renderable\+Bounded.\+cs}}\end{DoxyCompactItemize}

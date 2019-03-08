@@ -1,0 +1,99 @@
+SpriteLib_GPL (SpriteLib General Public License)
+
+Copyright (c) 1996-2002 by Ari Feldman ari@arifeldman
+http://www.arifeldman.com
+=======================================================
+
+
+WHAT IS THIS????
+
+SpriteLib is a collection of FREE pre-made game objects and tiles. I
+first released it publically back in 1996 to a fairly enthusiastic
+response among the hobbyist game programming community. Since that time,
+SpriteLib has been downloaded hundreds of thousands of times and bundled
+on the CD-ROMs of at least seven major computer game programming books.
+
+After considerable deliberation, I decided to remove SpriteLib for
+public distribution in 2002 because the artwork featured in it was old
+and no longer reflected my true skills. However, despite my best efforts
+to kill SpriteLib it wouldn't die! People still wanted it!
+
+So, it's time I made SpriteLib available again but with some changes,
+including:
+
+
+I. Contents
+
+The contents of this SpriteLib re-release have changed. I have
+eliminated items I didn't like and added several other sprite sets that
+better reflect my artistic abilities.
+
+SpriteLib now contains four directories:
+
+* Platform - a collection of platform-oriented sprites and tile sets.
+
+* Paddle - a set of sprites and tiles suitable for a variety of
+Breakout, Pong and Arkanoid games.
+
+* Maze - a set of military sprites suitable for making your own version
+of Combat or Tank Force.
+
+* Shooter - a set of shoot 'em up sprites suitable for making your own
+version of the game 1943.
+
+
+II. Usage License & Restrictions:
+
+The objects and animations contained in this archive are FREE to use for
+ANY freeware or shareware games (either online or offline) you create as
+long as the following criteria are met:
+
+You must give me credit somewhere on the game's title screen. Credit
+must include the following text blurb:
+
+"Game artwork created by Ari Feldman ari@arifeldman.com"
+
+I don't care about text size or placement as long as its clearly
+visible.
+
+
+NOTE: The one exception here pertains to licensed games. You cannot use
+the artwork included in this archive if you intend to create a custom
+game and license it to any game site. Similarly, you cannot use the
+artwork in this file for ANY custom, paid projects (online or offline).
+
+Freeware games are fine as they give something back to the community.
+
+Shareware games (which you can sell for a profit) are fine as well. If
+your game is good enough and you market it right, you can make money.
+
+
+B) Any games you create with this artwork cannot contain banner ads or
+use in-game ad technologies such as those from Cydoor, etc.
+
+
+
+OTHER NOTES:
+
+This file can only be distributed from my web site,
+http://www.arifeldman.com or from others with my express, written
+permission.
+
+I fully support hobbyist game developers and will usually grant
+distribution requests as well as special dispensations to my license
+restrictions if asked.
+
+
+Have fun!
+
+
+Ari
+
+
+
+
+
+
+
+
+

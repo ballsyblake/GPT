@@ -1,0 +1,200 @@
+\hypertarget{class_r_c___framework_1_1_polygon12}{}\section{R\+C\+\_\+\+Framework.\+Polygon12 Class Reference}
+\label{class_r_c___framework_1_1_polygon12}\index{R\+C\+\_\+\+Framework.\+Polygon12@{R\+C\+\_\+\+Framework.\+Polygon12}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_polygon12_aec7781453e11e5b0be7574d23010ac07}{Polygon12}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor (0,0) (0,0) (0,0) (0,0)\end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_polygon12_a178f002cc94e9183d9c3c9e9c919d7fb}{Polygon12}} (Rectangle r)
+\begin{DoxyCompactList}\small\item\em Construct from Rectangle clockwise winding \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_polygon12_ac40541254b4ea029af66289a6657086e}{Polygon12}} (\mbox{\hyperlink{class_r_c___framework_1_1_rect4}{Rect4}} r)
+\begin{DoxyCompactList}\small\item\em Construct from \mbox{\hyperlink{class_r_c___framework_1_1_rect4}{Rect4}} clockwise winding \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_polygon12_a6f19bbead12cf9ee65458f023de697d2}{Polygon12}} (Vector2 center, int sides, float radius, float initial\+Angle\+Radians)
+\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_polygon12_a9ac9fba6dd81e8c7a83dc3ccd9a799da}{Polygon12}} (\mbox{\hyperlink{class_r_c___framework_1_1_polygon12}{Polygon12}} r)
+\begin{DoxyCompactList}\small\item\em Copy Constructor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_polygon12_a4a4389b28bd9d598da3a35221b16ec6c}{add\+Point}} (Vector2 pointQ)
+\begin{DoxyCompactList}\small\item\em Adds a point to the polygon silently fails if 12 points already used \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_polygon12_a249a0044355228c11129a72691f1f9ce}{add\+Point}} (float x, float y)
+\begin{DoxyCompactList}\small\item\em Adds a point to the polygon silently fails if 12 points already used \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_polygon12_a652b0913ffee96a6c53e56d6e26aba45}{rotate\+Polygon12}} (Vector2 center\+Of\+Rotation, float angle\+In\+Radians)
+\begin{DoxyCompactList}\small\item\em Rotates the \mbox{\hyperlink{class_r_c___framework_1_1_polygon12}{Polygon12}} by a given angle in radians \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_polygon12_a41b3194bb88382ab68f1252b673548a5}{rotate\+Polygon12\+Deg}} (Vector2 center\+Of\+Rotation, float angle\+In\+Degrees)
+\begin{DoxyCompactList}\small\item\em Rotates the \mbox{\hyperlink{class_r_c___framework_1_1_polygon12}{Polygon12}} by a given angle in degrees \end{DoxyCompactList}\item 
+Rectangle \mbox{\hyperlink{class_r_c___framework_1_1_polygon12_ae0d2f0fb8ef452a5d8affebe08403f0c}{get\+A\+A\+Bounding\+Rect}} ()
+\begin{DoxyCompactList}\small\item\em This returns an axis aligned bounding box based on the four corners of \mbox{\hyperlink{class_r_c___framework_1_1_rect4}{Rect4}}. The points should be a convex polygon, but this routine will work in all cases (note it can probably be done faster using the Max and Min functions but it deliberately this way so students can understand it) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Vector2 \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_r_c___framework_1_1_polygon12_a4579622849fdf2d01c9f40b54dfe3f04}{point}}
+\begin{DoxyCompactList}\small\item\em The data in the poly12 class called \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_polygon12_abe72eb58151bde5aba872ae5653445b8}{num\+Of\+Points}} = 0
+\item 
+const int \mbox{\hyperlink{class_r_c___framework_1_1_polygon12_a2ad1aadef9d62f58a113524d8d9aa48e}{max\+Num\+Of\+Points}} = 12
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_polygon12_aec7781453e11e5b0be7574d23010ac07}\label{class_r_c___framework_1_1_polygon12_aec7781453e11e5b0be7574d23010ac07}} 
+\index{R\+C\+\_\+\+Framework\+::\+Polygon12@{R\+C\+\_\+\+Framework\+::\+Polygon12}!Polygon12@{Polygon12}}
+\index{Polygon12@{Polygon12}!R\+C\+\_\+\+Framework\+::\+Polygon12@{R\+C\+\_\+\+Framework\+::\+Polygon12}}
+\subsubsection{\texorpdfstring{Polygon12()}{Polygon12()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily R\+C\+\_\+\+Framework.\+Polygon12.\+Polygon12 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor (0,0) (0,0) (0,0) (0,0)
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_polygon12_a178f002cc94e9183d9c3c9e9c919d7fb}\label{class_r_c___framework_1_1_polygon12_a178f002cc94e9183d9c3c9e9c919d7fb}} 
+\index{R\+C\+\_\+\+Framework\+::\+Polygon12@{R\+C\+\_\+\+Framework\+::\+Polygon12}!Polygon12@{Polygon12}}
+\index{Polygon12@{Polygon12}!R\+C\+\_\+\+Framework\+::\+Polygon12@{R\+C\+\_\+\+Framework\+::\+Polygon12}}
+\subsubsection{\texorpdfstring{Polygon12()}{Polygon12()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily R\+C\+\_\+\+Framework.\+Polygon12.\+Polygon12 (\begin{DoxyParamCaption}\item[{Rectangle}]{r }\end{DoxyParamCaption})}
+
+
+
+Construct from Rectangle clockwise winding 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_polygon12_ac40541254b4ea029af66289a6657086e}\label{class_r_c___framework_1_1_polygon12_ac40541254b4ea029af66289a6657086e}} 
+\index{R\+C\+\_\+\+Framework\+::\+Polygon12@{R\+C\+\_\+\+Framework\+::\+Polygon12}!Polygon12@{Polygon12}}
+\index{Polygon12@{Polygon12}!R\+C\+\_\+\+Framework\+::\+Polygon12@{R\+C\+\_\+\+Framework\+::\+Polygon12}}
+\subsubsection{\texorpdfstring{Polygon12()}{Polygon12()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily R\+C\+\_\+\+Framework.\+Polygon12.\+Polygon12 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_r_c___framework_1_1_rect4}{Rect4}}}]{r }\end{DoxyParamCaption})}
+
+
+
+Construct from \mbox{\hyperlink{class_r_c___framework_1_1_rect4}{Rect4}} clockwise winding 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_polygon12_a6f19bbead12cf9ee65458f023de697d2}\label{class_r_c___framework_1_1_polygon12_a6f19bbead12cf9ee65458f023de697d2}} 
+\index{R\+C\+\_\+\+Framework\+::\+Polygon12@{R\+C\+\_\+\+Framework\+::\+Polygon12}!Polygon12@{Polygon12}}
+\index{Polygon12@{Polygon12}!R\+C\+\_\+\+Framework\+::\+Polygon12@{R\+C\+\_\+\+Framework\+::\+Polygon12}}
+\subsubsection{\texorpdfstring{Polygon12()}{Polygon12()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily R\+C\+\_\+\+Framework.\+Polygon12.\+Polygon12 (\begin{DoxyParamCaption}\item[{Vector2}]{center,  }\item[{int}]{sides,  }\item[{float}]{radius,  }\item[{float}]{initial\+Angle\+Radians }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_polygon12_a9ac9fba6dd81e8c7a83dc3ccd9a799da}\label{class_r_c___framework_1_1_polygon12_a9ac9fba6dd81e8c7a83dc3ccd9a799da}} 
+\index{R\+C\+\_\+\+Framework\+::\+Polygon12@{R\+C\+\_\+\+Framework\+::\+Polygon12}!Polygon12@{Polygon12}}
+\index{Polygon12@{Polygon12}!R\+C\+\_\+\+Framework\+::\+Polygon12@{R\+C\+\_\+\+Framework\+::\+Polygon12}}
+\subsubsection{\texorpdfstring{Polygon12()}{Polygon12()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily R\+C\+\_\+\+Framework.\+Polygon12.\+Polygon12 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_r_c___framework_1_1_polygon12}{Polygon12}}}]{r }\end{DoxyParamCaption})}
+
+
+
+Copy Constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_polygon12_a4a4389b28bd9d598da3a35221b16ec6c}\label{class_r_c___framework_1_1_polygon12_a4a4389b28bd9d598da3a35221b16ec6c}} 
+\index{R\+C\+\_\+\+Framework\+::\+Polygon12@{R\+C\+\_\+\+Framework\+::\+Polygon12}!add\+Point@{add\+Point}}
+\index{add\+Point@{add\+Point}!R\+C\+\_\+\+Framework\+::\+Polygon12@{R\+C\+\_\+\+Framework\+::\+Polygon12}}
+\subsubsection{\texorpdfstring{add\+Point()}{addPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Polygon12.\+add\+Point (\begin{DoxyParamCaption}\item[{Vector2}]{pointQ }\end{DoxyParamCaption})}
+
+
+
+Adds a point to the polygon silently fails if 12 points already used 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pointQ} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_polygon12_a249a0044355228c11129a72691f1f9ce}\label{class_r_c___framework_1_1_polygon12_a249a0044355228c11129a72691f1f9ce}} 
+\index{R\+C\+\_\+\+Framework\+::\+Polygon12@{R\+C\+\_\+\+Framework\+::\+Polygon12}!add\+Point@{add\+Point}}
+\index{add\+Point@{add\+Point}!R\+C\+\_\+\+Framework\+::\+Polygon12@{R\+C\+\_\+\+Framework\+::\+Polygon12}}
+\subsubsection{\texorpdfstring{add\+Point()}{addPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Polygon12.\+add\+Point (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+
+
+Adds a point to the polygon silently fails if 12 points already used 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_polygon12_ae0d2f0fb8ef452a5d8affebe08403f0c}\label{class_r_c___framework_1_1_polygon12_ae0d2f0fb8ef452a5d8affebe08403f0c}} 
+\index{R\+C\+\_\+\+Framework\+::\+Polygon12@{R\+C\+\_\+\+Framework\+::\+Polygon12}!get\+A\+A\+Bounding\+Rect@{get\+A\+A\+Bounding\+Rect}}
+\index{get\+A\+A\+Bounding\+Rect@{get\+A\+A\+Bounding\+Rect}!R\+C\+\_\+\+Framework\+::\+Polygon12@{R\+C\+\_\+\+Framework\+::\+Polygon12}}
+\subsubsection{\texorpdfstring{get\+A\+A\+Bounding\+Rect()}{getAABoundingRect()}}
+{\footnotesize\ttfamily Rectangle R\+C\+\_\+\+Framework.\+Polygon12.\+get\+A\+A\+Bounding\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This returns an axis aligned bounding box based on the four corners of \mbox{\hyperlink{class_r_c___framework_1_1_rect4}{Rect4}}. The points should be a convex polygon, but this routine will work in all cases (note it can probably be done faster using the Max and Min functions but it deliberately this way so students can understand it) 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_polygon12_a652b0913ffee96a6c53e56d6e26aba45}\label{class_r_c___framework_1_1_polygon12_a652b0913ffee96a6c53e56d6e26aba45}} 
+\index{R\+C\+\_\+\+Framework\+::\+Polygon12@{R\+C\+\_\+\+Framework\+::\+Polygon12}!rotate\+Polygon12@{rotate\+Polygon12}}
+\index{rotate\+Polygon12@{rotate\+Polygon12}!R\+C\+\_\+\+Framework\+::\+Polygon12@{R\+C\+\_\+\+Framework\+::\+Polygon12}}
+\subsubsection{\texorpdfstring{rotate\+Polygon12()}{rotatePolygon12()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Polygon12.\+rotate\+Polygon12 (\begin{DoxyParamCaption}\item[{Vector2}]{center\+Of\+Rotation,  }\item[{float}]{angle\+In\+Radians }\end{DoxyParamCaption})}
+
+
+
+Rotates the \mbox{\hyperlink{class_r_c___framework_1_1_polygon12}{Polygon12}} by a given angle in radians 
+
+
+\begin{DoxyParams}{Parameters}
+{\em center\+Of\+Rotation} & \\
+\hline
+{\em angle\+In\+Radians} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_polygon12_a41b3194bb88382ab68f1252b673548a5}\label{class_r_c___framework_1_1_polygon12_a41b3194bb88382ab68f1252b673548a5}} 
+\index{R\+C\+\_\+\+Framework\+::\+Polygon12@{R\+C\+\_\+\+Framework\+::\+Polygon12}!rotate\+Polygon12\+Deg@{rotate\+Polygon12\+Deg}}
+\index{rotate\+Polygon12\+Deg@{rotate\+Polygon12\+Deg}!R\+C\+\_\+\+Framework\+::\+Polygon12@{R\+C\+\_\+\+Framework\+::\+Polygon12}}
+\subsubsection{\texorpdfstring{rotate\+Polygon12\+Deg()}{rotatePolygon12Deg()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Polygon12.\+rotate\+Polygon12\+Deg (\begin{DoxyParamCaption}\item[{Vector2}]{center\+Of\+Rotation,  }\item[{float}]{angle\+In\+Degrees }\end{DoxyParamCaption})}
+
+
+
+Rotates the \mbox{\hyperlink{class_r_c___framework_1_1_polygon12}{Polygon12}} by a given angle in degrees 
+
+
+\begin{DoxyParams}{Parameters}
+{\em center\+Of\+Rotation} & \\
+\hline
+{\em angle\+In\+Degrees} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_polygon12_a2ad1aadef9d62f58a113524d8d9aa48e}\label{class_r_c___framework_1_1_polygon12_a2ad1aadef9d62f58a113524d8d9aa48e}} 
+\index{R\+C\+\_\+\+Framework\+::\+Polygon12@{R\+C\+\_\+\+Framework\+::\+Polygon12}!max\+Num\+Of\+Points@{max\+Num\+Of\+Points}}
+\index{max\+Num\+Of\+Points@{max\+Num\+Of\+Points}!R\+C\+\_\+\+Framework\+::\+Polygon12@{R\+C\+\_\+\+Framework\+::\+Polygon12}}
+\subsubsection{\texorpdfstring{max\+Num\+Of\+Points}{maxNumOfPoints}}
+{\footnotesize\ttfamily const int R\+C\+\_\+\+Framework.\+Polygon12.\+max\+Num\+Of\+Points = 12}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_polygon12_abe72eb58151bde5aba872ae5653445b8}\label{class_r_c___framework_1_1_polygon12_abe72eb58151bde5aba872ae5653445b8}} 
+\index{R\+C\+\_\+\+Framework\+::\+Polygon12@{R\+C\+\_\+\+Framework\+::\+Polygon12}!num\+Of\+Points@{num\+Of\+Points}}
+\index{num\+Of\+Points@{num\+Of\+Points}!R\+C\+\_\+\+Framework\+::\+Polygon12@{R\+C\+\_\+\+Framework\+::\+Polygon12}}
+\subsubsection{\texorpdfstring{num\+Of\+Points}{numOfPoints}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Polygon12.\+num\+Of\+Points = 0}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_polygon12_a4579622849fdf2d01c9f40b54dfe3f04}\label{class_r_c___framework_1_1_polygon12_a4579622849fdf2d01c9f40b54dfe3f04}} 
+\index{R\+C\+\_\+\+Framework\+::\+Polygon12@{R\+C\+\_\+\+Framework\+::\+Polygon12}!point@{point}}
+\index{point@{point}!R\+C\+\_\+\+Framework\+::\+Polygon12@{R\+C\+\_\+\+Framework\+::\+Polygon12}}
+\subsubsection{\texorpdfstring{point}{point}}
+{\footnotesize\ttfamily Vector2 \mbox{[}$\,$\mbox{]} R\+C\+\_\+\+Framework.\+Polygon12.\+point}
+
+
+
+The data in the poly12 class called 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+B/\+R\+C\+\_\+\+Framework2018/\+Source/\mbox{\hyperlink{_r_c___utils2_8cs}{R\+C\+\_\+\+Utils2.\+cs}}\end{DoxyCompactItemize}

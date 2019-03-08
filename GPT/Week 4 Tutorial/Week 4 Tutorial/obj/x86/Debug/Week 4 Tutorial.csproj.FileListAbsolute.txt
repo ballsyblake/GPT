@@ -1,0 +1,23 @@
+H:\GPT\Week 4 Tutorial\Week 4 Tutorial\bin\Windows\x86\Debug\Week 4 Tutorial.exe
+H:\GPT\Week 4 Tutorial\Week 4 Tutorial\bin\Windows\x86\Debug\Week 4 Tutorial.pdb
+H:\GPT\Week 4 Tutorial\Week 4 Tutorial\bin\Windows\x86\Debug\MonoGame.Framework.dll
+H:\GPT\Week 4 Tutorial\Week 4 Tutorial\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+H:\GPT\Week 4 Tutorial\Week 4 Tutorial\bin\Windows\x86\Debug\SharpDX.dll
+H:\GPT\Week 4 Tutorial\Week 4 Tutorial\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+H:\GPT\Week 4 Tutorial\Week 4 Tutorial\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+H:\GPT\Week 4 Tutorial\Week 4 Tutorial\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+H:\GPT\Week 4 Tutorial\Week 4 Tutorial\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+H:\GPT\Week 4 Tutorial\Week 4 Tutorial\bin\Windows\x86\Debug\SharpDX.XInput.dll
+H:\GPT\Week 4 Tutorial\Week 4 Tutorial\bin\Windows\x86\Debug\MonoGame.Framework.xml
+H:\GPT\Week 4 Tutorial\Week 4 Tutorial\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+H:\GPT\Week 4 Tutorial\Week 4 Tutorial\bin\Windows\x86\Debug\SharpDX.xml
+H:\GPT\Week 4 Tutorial\Week 4 Tutorial\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+H:\GPT\Week 4 Tutorial\Week 4 Tutorial\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+H:\GPT\Week 4 Tutorial\Week 4 Tutorial\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+H:\GPT\Week 4 Tutorial\Week 4 Tutorial\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+H:\GPT\Week 4 Tutorial\Week 4 Tutorial\bin\Windows\x86\Debug\SharpDX.XInput.xml
+H:\GPT\Week 4 Tutorial\Week 4 Tutorial\obj\x86\Debug\Week 4 Tutorial.csprojAssemblyReference.cache
+H:\GPT\Week 4 Tutorial\Week 4 Tutorial\obj\x86\Debug\Week 4 Tutorial.csproj.CoreCompileInputs.cache
+H:\GPT\Week 4 Tutorial\Week 4 Tutorial\obj\x86\Debug\Week 4 Tutorial.csproj.CopyComplete
+H:\GPT\Week 4 Tutorial\Week 4 Tutorial\obj\x86\Debug\Week 4 Tutorial.exe
+H:\GPT\Week 4 Tutorial\Week 4 Tutorial\obj\x86\Debug\Week 4 Tutorial.pdb

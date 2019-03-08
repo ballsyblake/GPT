@@ -1,0 +1,240 @@
+\hypertarget{class_r_c___framework_1_1_button_s_i}{}\section{R\+C\+\_\+\+Framework.\+Button\+SI Class Reference}
+\label{class_r_c___framework_1_1_button_s_i}\index{R\+C\+\_\+\+Framework.\+Button\+SI@{R\+C\+\_\+\+Framework.\+Button\+SI}}
+
+
+\mbox{\hyperlink{class_r_c___framework_1_1_button_s_i}{Button\+SI}} Simple Gui button with 1 image but two colours to show when clicked  
+
+
+Inheritance diagram for R\+C\+\_\+\+Framework.\+Button\+SI\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_r_c___framework_1_1_button_s_i}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_button_s_i_af419ab3d1513150939d673226bb4b3c8}{Button\+SI}} (Texture2D upZ, Color c\+Clicked, Vector2 pos)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_r_c___framework_1_1_button_s_i}{Button\+SI}} Constructor -\/ resizes to texture \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_button_s_i_aa1e864edccf775be2a5e87d1ac02b89a}{Button\+SI}} (Texture2D upZ, Color c\+Clicked, Rectangle pos)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_r_c___framework_1_1_button_s_i}{Button\+SI}} Constructor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_button_s_i_a4e0e489ebc76dd36dd5a6f0750dbe78b}{set\+Text}} (String t, Sprite\+Font f)
+\begin{DoxyCompactList}\small\item\em set the text and font \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_r_c___framework_1_1_button_s_i_a9527749f48994c13be5b72b2cb370b29}{Draw}} (Sprite\+Batch sb)
+\begin{DoxyCompactList}\small\item\em Draw draw draw B\+O\+R\+E\+I\+NG \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_r_c___framework_1_1_button_s_i_a4323f8436749655b240fa35caa15daa6}{Mouse\+Down\+Event\+Left}} (float mouse\+\_\+x, float mouse\+\_\+y)
+\begin{DoxyCompactList}\small\item\em Handle mouse click \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_r_c___framework_1_1_button_s_i_a28efd8765e3ec06c727477352d1e5c01}{Update}} (Game\+Time game\+Time)
+\begin{DoxyCompactList}\small\item\em straightforward Update \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_button_s_i_a7276e83d5155487cc26b770d71beab2c}{state}}
+\begin{DoxyCompactList}\small\item\em 0=up 1=down \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_r_c___framework_1_1_button_s_i_af137c098b87fc391e613d52ba00db7e4}{was\+Clicked}}
+\begin{DoxyCompactList}\small\item\em true if clicked -\/ you poll this in update and once the click is actiopned you reset it \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_button_s_i_af149eec1943e7fc1e6602bf0bb81af57}{click\+Time\+Max}} = 30
+\begin{DoxyCompactList}\small\item\em Time in ticks to show click \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_r_c___framework_1_1_button_s_i_a8269aae4c3e59b9b784ce4f0bcd092a7}{Text\+To\+Display}} =\char`\"{}\char`\"{}
+\begin{DoxyCompactList}\small\item\em Optional text string \end{DoxyCompactList}\item 
+Sprite\+Font \mbox{\hyperlink{class_r_c___framework_1_1_button_s_i_a9e1b4799a8570e57594d051479ead0f0}{tfont}}
+\begin{DoxyCompactList}\small\item\em Font to display text \end{DoxyCompactList}\item 
+Vector2 \mbox{\hyperlink{class_r_c___framework_1_1_button_s_i_a829f3c4b72f84fcecb06422f526d5c86}{text\+Offset}} = new Vector2(5, 3)
+\begin{DoxyCompactList}\small\item\em Where to show the text \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_r_c___framework_1_1_button_s_i}{Button\+SI}} Simple Gui button with 1 image but two colours to show when clicked 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_button_s_i_af419ab3d1513150939d673226bb4b3c8}\label{class_r_c___framework_1_1_button_s_i_af419ab3d1513150939d673226bb4b3c8}} 
+\index{R\+C\+\_\+\+Framework\+::\+Button\+SI@{R\+C\+\_\+\+Framework\+::\+Button\+SI}!Button\+SI@{Button\+SI}}
+\index{Button\+SI@{Button\+SI}!R\+C\+\_\+\+Framework\+::\+Button\+SI@{R\+C\+\_\+\+Framework\+::\+Button\+SI}}
+\subsubsection{\texorpdfstring{Button\+S\+I()}{ButtonSI()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily R\+C\+\_\+\+Framework.\+Button\+S\+I.\+Button\+SI (\begin{DoxyParamCaption}\item[{Texture2D}]{upZ,  }\item[{Color}]{c\+Clicked,  }\item[{Vector2}]{pos }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_r_c___framework_1_1_button_s_i}{Button\+SI}} Constructor -\/ resizes to texture 
+
+
+\begin{DoxyParams}{Parameters}
+{\em upZ} & \\
+\hline
+{\em c\+Clicked} & \\
+\hline
+{\em pos} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_button_s_i_aa1e864edccf775be2a5e87d1ac02b89a}\label{class_r_c___framework_1_1_button_s_i_aa1e864edccf775be2a5e87d1ac02b89a}} 
+\index{R\+C\+\_\+\+Framework\+::\+Button\+SI@{R\+C\+\_\+\+Framework\+::\+Button\+SI}!Button\+SI@{Button\+SI}}
+\index{Button\+SI@{Button\+SI}!R\+C\+\_\+\+Framework\+::\+Button\+SI@{R\+C\+\_\+\+Framework\+::\+Button\+SI}}
+\subsubsection{\texorpdfstring{Button\+S\+I()}{ButtonSI()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily R\+C\+\_\+\+Framework.\+Button\+S\+I.\+Button\+SI (\begin{DoxyParamCaption}\item[{Texture2D}]{upZ,  }\item[{Color}]{c\+Clicked,  }\item[{Rectangle}]{pos }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_r_c___framework_1_1_button_s_i}{Button\+SI}} Constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em upZ} & \\
+\hline
+{\em c\+Clicked} & \\
+\hline
+{\em pos} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_button_s_i_a9527749f48994c13be5b72b2cb370b29}\label{class_r_c___framework_1_1_button_s_i_a9527749f48994c13be5b72b2cb370b29}} 
+\index{R\+C\+\_\+\+Framework\+::\+Button\+SI@{R\+C\+\_\+\+Framework\+::\+Button\+SI}!Draw@{Draw}}
+\index{Draw@{Draw}!R\+C\+\_\+\+Framework\+::\+Button\+SI@{R\+C\+\_\+\+Framework\+::\+Button\+SI}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily override void R\+C\+\_\+\+Framework.\+Button\+S\+I.\+Draw (\begin{DoxyParamCaption}\item[{Sprite\+Batch}]{sb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Draw draw draw B\+O\+R\+E\+I\+NG 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_acc26db34e382a25a989c4c0dd0354b23}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_button_s_i_a4323f8436749655b240fa35caa15daa6}\label{class_r_c___framework_1_1_button_s_i_a4323f8436749655b240fa35caa15daa6}} 
+\index{R\+C\+\_\+\+Framework\+::\+Button\+SI@{R\+C\+\_\+\+Framework\+::\+Button\+SI}!Mouse\+Down\+Event\+Left@{Mouse\+Down\+Event\+Left}}
+\index{Mouse\+Down\+Event\+Left@{Mouse\+Down\+Event\+Left}!R\+C\+\_\+\+Framework\+::\+Button\+SI@{R\+C\+\_\+\+Framework\+::\+Button\+SI}}
+\subsubsection{\texorpdfstring{Mouse\+Down\+Event\+Left()}{MouseDownEventLeft()}}
+{\footnotesize\ttfamily override bool R\+C\+\_\+\+Framework.\+Button\+S\+I.\+Mouse\+Down\+Event\+Left (\begin{DoxyParamCaption}\item[{float}]{mouse\+\_\+x,  }\item[{float}]{mouse\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Handle mouse click 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+\_\+x} & \\
+\hline
+{\em mouse\+\_\+y} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_r_c___framework_1_1_g_u_i___control_a005e7f109afd21abd6576fdf70212af5}{R\+C\+\_\+\+Framework.\+G\+U\+I\+\_\+\+Control}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_button_s_i_a4e0e489ebc76dd36dd5a6f0750dbe78b}\label{class_r_c___framework_1_1_button_s_i_a4e0e489ebc76dd36dd5a6f0750dbe78b}} 
+\index{R\+C\+\_\+\+Framework\+::\+Button\+SI@{R\+C\+\_\+\+Framework\+::\+Button\+SI}!set\+Text@{set\+Text}}
+\index{set\+Text@{set\+Text}!R\+C\+\_\+\+Framework\+::\+Button\+SI@{R\+C\+\_\+\+Framework\+::\+Button\+SI}}
+\subsubsection{\texorpdfstring{set\+Text()}{setText()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Button\+S\+I.\+set\+Text (\begin{DoxyParamCaption}\item[{String}]{t,  }\item[{Sprite\+Font}]{f }\end{DoxyParamCaption})}
+
+
+
+set the text and font 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & \\
+\hline
+{\em f} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_button_s_i_a28efd8765e3ec06c727477352d1e5c01}\label{class_r_c___framework_1_1_button_s_i_a28efd8765e3ec06c727477352d1e5c01}} 
+\index{R\+C\+\_\+\+Framework\+::\+Button\+SI@{R\+C\+\_\+\+Framework\+::\+Button\+SI}!Update@{Update}}
+\index{Update@{Update}!R\+C\+\_\+\+Framework\+::\+Button\+SI@{R\+C\+\_\+\+Framework\+::\+Button\+SI}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily override void R\+C\+\_\+\+Framework.\+Button\+S\+I.\+Update (\begin{DoxyParamCaption}\item[{Game\+Time}]{game\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+straightforward Update 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Time} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_r_c___framework_1_1_g_u_i___control_a7aa3b0b6ba141d995ca830ff99ae3003}{R\+C\+\_\+\+Framework.\+G\+U\+I\+\_\+\+Control}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_button_s_i_af149eec1943e7fc1e6602bf0bb81af57}\label{class_r_c___framework_1_1_button_s_i_af149eec1943e7fc1e6602bf0bb81af57}} 
+\index{R\+C\+\_\+\+Framework\+::\+Button\+SI@{R\+C\+\_\+\+Framework\+::\+Button\+SI}!click\+Time\+Max@{click\+Time\+Max}}
+\index{click\+Time\+Max@{click\+Time\+Max}!R\+C\+\_\+\+Framework\+::\+Button\+SI@{R\+C\+\_\+\+Framework\+::\+Button\+SI}}
+\subsubsection{\texorpdfstring{click\+Time\+Max}{clickTimeMax}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Button\+S\+I.\+click\+Time\+Max = 30}
+
+
+
+Time in ticks to show click 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_button_s_i_a7276e83d5155487cc26b770d71beab2c}\label{class_r_c___framework_1_1_button_s_i_a7276e83d5155487cc26b770d71beab2c}} 
+\index{R\+C\+\_\+\+Framework\+::\+Button\+SI@{R\+C\+\_\+\+Framework\+::\+Button\+SI}!state@{state}}
+\index{state@{state}!R\+C\+\_\+\+Framework\+::\+Button\+SI@{R\+C\+\_\+\+Framework\+::\+Button\+SI}}
+\subsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Button\+S\+I.\+state}
+
+
+
+0=up 1=down 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_button_s_i_a829f3c4b72f84fcecb06422f526d5c86}\label{class_r_c___framework_1_1_button_s_i_a829f3c4b72f84fcecb06422f526d5c86}} 
+\index{R\+C\+\_\+\+Framework\+::\+Button\+SI@{R\+C\+\_\+\+Framework\+::\+Button\+SI}!text\+Offset@{text\+Offset}}
+\index{text\+Offset@{text\+Offset}!R\+C\+\_\+\+Framework\+::\+Button\+SI@{R\+C\+\_\+\+Framework\+::\+Button\+SI}}
+\subsubsection{\texorpdfstring{text\+Offset}{textOffset}}
+{\footnotesize\ttfamily Vector2 R\+C\+\_\+\+Framework.\+Button\+S\+I.\+text\+Offset = new Vector2(5, 3)}
+
+
+
+Where to show the text 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_button_s_i_a8269aae4c3e59b9b784ce4f0bcd092a7}\label{class_r_c___framework_1_1_button_s_i_a8269aae4c3e59b9b784ce4f0bcd092a7}} 
+\index{R\+C\+\_\+\+Framework\+::\+Button\+SI@{R\+C\+\_\+\+Framework\+::\+Button\+SI}!Text\+To\+Display@{Text\+To\+Display}}
+\index{Text\+To\+Display@{Text\+To\+Display}!R\+C\+\_\+\+Framework\+::\+Button\+SI@{R\+C\+\_\+\+Framework\+::\+Button\+SI}}
+\subsubsection{\texorpdfstring{Text\+To\+Display}{TextToDisplay}}
+{\footnotesize\ttfamily String R\+C\+\_\+\+Framework.\+Button\+S\+I.\+Text\+To\+Display =\char`\"{}\char`\"{}}
+
+
+
+Optional text string 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_button_s_i_a9e1b4799a8570e57594d051479ead0f0}\label{class_r_c___framework_1_1_button_s_i_a9e1b4799a8570e57594d051479ead0f0}} 
+\index{R\+C\+\_\+\+Framework\+::\+Button\+SI@{R\+C\+\_\+\+Framework\+::\+Button\+SI}!tfont@{tfont}}
+\index{tfont@{tfont}!R\+C\+\_\+\+Framework\+::\+Button\+SI@{R\+C\+\_\+\+Framework\+::\+Button\+SI}}
+\subsubsection{\texorpdfstring{tfont}{tfont}}
+{\footnotesize\ttfamily Sprite\+Font R\+C\+\_\+\+Framework.\+Button\+S\+I.\+tfont}
+
+
+
+Font to display text 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_button_s_i_af137c098b87fc391e613d52ba00db7e4}\label{class_r_c___framework_1_1_button_s_i_af137c098b87fc391e613d52ba00db7e4}} 
+\index{R\+C\+\_\+\+Framework\+::\+Button\+SI@{R\+C\+\_\+\+Framework\+::\+Button\+SI}!was\+Clicked@{was\+Clicked}}
+\index{was\+Clicked@{was\+Clicked}!R\+C\+\_\+\+Framework\+::\+Button\+SI@{R\+C\+\_\+\+Framework\+::\+Button\+SI}}
+\subsubsection{\texorpdfstring{was\+Clicked}{wasClicked}}
+{\footnotesize\ttfamily bool R\+C\+\_\+\+Framework.\+Button\+S\+I.\+was\+Clicked}
+
+
+
+true if clicked -\/ you poll this in update and once the click is actiopned you reset it 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+B/\+R\+C\+\_\+\+Framework2018/\+Source/\mbox{\hyperlink{_r_c___g_u_i_8cs}{R\+C\+\_\+\+G\+U\+I.\+cs}}\end{DoxyCompactItemize}

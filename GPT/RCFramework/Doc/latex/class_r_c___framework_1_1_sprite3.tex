@@ -1,0 +1,2397 @@
+\hypertarget{class_r_c___framework_1_1_sprite3}{}\section{R\+C\+\_\+\+Framework.\+Sprite3 Class Reference}
+\label{class_r_c___framework_1_1_sprite3}\index{R\+C\+\_\+\+Framework.\+Sprite3@{R\+C\+\_\+\+Framework.\+Sprite3}}
+
+
+The \mbox{\hyperlink{namespace_r_c___framework}{R\+C\+\_\+\+Framework}} \mbox{\hyperlink{class_r_c___framework_1_1_sprite3}{Sprite3}} Class This class assumes that the position and hotspot are the same place and that this place is also the center of rotation, as a result all movement / rotation and collision routines make use of this place note properties active, visible and colour are inherited from renderable  
+
+
+Inheritance diagram for R\+C\+\_\+\+Framework.\+Sprite3\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{class_r_c___framework_1_1_sprite3}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a92d70269202bf98ede05cbc45ca3690a}{Sprite3}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a497f021ee596994c26f0d83135b676f5}{Sprite3}} (bool visibleZ, Texture2D texZ, float x, float y)
+\begin{DoxyCompactList}\small\item\em Standard Constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a5157f6fac4128e14e3a28ba540daec37}{Sprite3}} (bool visibleZ, Texture2D texZ, String nameZ, float x, float y)
+\begin{DoxyCompactList}\small\item\em named Constructor with level \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a4ffc487d5c332dee276909dad3dba57a}{restore\+Position}} ()
+\begin{DoxyCompactList}\small\item\em restore the current position \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_ae4733340c18c8098b250418081020c6a}{save\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Save the current position \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_afa836f90205eb82c09f948e01c0e47ca}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em gets the sprite name if one was set or \char`\"{}\char`\"{} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a95f9492fffdbd603d9aa087b4bc108f4}{set\+Texture}} (Texture2D tw, bool compute\+New\+Size)
+\begin{DoxyCompactList}\small\item\em set the texture -\/ and set a default texture width and height W\+A\+R\+N\+I\+NG if compute\+New\+Size is true all size information will be recomputed Xframes, Yframes W\+A\+R\+N\+I\+NG if compute\+New\+Size is false no size information will be recomputed Think about the value of compute\+New\+Size its not always that obvious \end{DoxyCompactList}\item 
+Texture2D \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a32b080ce4ed442a34af48551b05c4847}{get\+Texture\+Base}} ()
+\begin{DoxyCompactList}\small\item\em get the texturewrapper \end{DoxyCompactList}\item 
+Texture2D \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a5a3eda5b5e64a44638051ece772411ca}{get\+Texture\+Frame}} ()
+\item 
+Rectangle \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a438ffa0b834a51a9f9cf35e372457d41}{image\+Rectangle}} ()
+\begin{DoxyCompactList}\small\item\em Return a Rectangle structure which is the sprite boundary for screen graphic purposes I am not sure if this is used or of value any more (deprecated) \end{DoxyCompactList}\item 
+Rectangle \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a1069512793423e1c5f3205d053e11d66}{get\+Bounding\+Box\+AA}} ()
+\begin{DoxyCompactList}\small\item\em Return the axis aligned bounding box at the current position even if the display is rotated \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_polygon12}{Polygon12}} \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a9ed1e862b6f3f6a28f65b5c53fbb34e1}{set\+Bounding\+Poly\+From\+BB}} ()
+\begin{DoxyCompactList}\small\item\em Gets a \mbox{\hyperlink{class_r_c___framework_1_1_polygon12}{Polygon12}} structure which is the non axis aligned bounding box from the \mbox{\hyperlink{class_r_c___framework_1_1_rect4}{Rect4}} its a fairly slow routine, if you use \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a1069512793423e1c5f3205d053e11d66}{get\+Bounding\+Box\+A\+A()}} anyway just do copy\+Rect4temp\+To\+B\+B() its faster \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_af5a02783f1305245a178fbe1cc1cc47a}{copy\+Rect4temp\+To\+Bounding\+Poly}} ()
+\begin{DoxyCompactList}\small\item\em copies the temp rect4 structure to non axis aligned bounding box ~\newline
+\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_ab430c66998577533366d5e4b1b85e2f4}{compute\+Bounding\+Poly\+From\+Pos}} ()
+\begin{DoxyCompactList}\small\item\em Computes the bounding polygon from the offsets and position \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_polygon12}{Polygon12}} \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_afd66805a5662cad934b912d4b204819d}{get\+Bounding\+Poly}} ()
+\begin{DoxyCompactList}\small\item\em retreives the bounding pollygon -\/ which assumed that the user called necessary routines to set it one of\+: \end{DoxyCompactList}\item 
+Vector2 \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a01208614a05673dd6b6d747910394657}{get\+Bounding\+Box\+Middle}} ()
+\begin{DoxyCompactList}\small\item\em Return the mid point of the axis aligned bounding box at the current position \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a91ecfec14fcf4e3d45968c46f17fd83b}{collision}} (\mbox{\hyperlink{class_r_c___framework_1_1_sprite3}{Sprite3}} s2)
+\begin{DoxyCompactList}\small\item\em Return true if two sprites axis aligned bounding boxes collide at their current locations \end{DoxyCompactList}\item 
+Rectangle \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a50c663717778826a66395efd510aec62}{collision\+Rect}} (\mbox{\hyperlink{class_r_c___framework_1_1_sprite3}{Sprite3}} s2)
+\begin{DoxyCompactList}\small\item\em Return a rectangle that represents a collision rectangle (the intersection of the two rectangles)\end{DoxyCompactList}\item 
+Boolean \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_addc1a2eb2b33095855d15652afac06e9}{inside}} (float x, float y)
+\begin{DoxyCompactList}\small\item\em Return a boolean that is true if the point is inside the AA bounding box of the sprite\end{DoxyCompactList}\item 
+Boolean \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_abdaf66e3a0bcc82d446a2c3f059c3fba}{inside\+Or\+Eq}} (float x, float y)
+\begin{DoxyCompactList}\small\item\em Return a boolean that is true if the point is inside or on the AA bounding box of the sprite\end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_ab4c64556d7bcebf5ce538631ae9b5d6c}{scroll\+Move}} (float x, float y)
+\begin{DoxyCompactList}\small\item\em Used to scroll the entire screen -\/ while preserving old position usually called in spritelist \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a39a0fe699940c7d7f57971dd2edabe88}{move\+By\+Delta\+XY}} ()
+\begin{DoxyCompactList}\small\item\em Moves the sprite by the delta x and delta y in delta\+Speed use \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a9a00bb05c798cc43c3518bb5ae6d0186}{set\+Delta\+Speed(\+Vector2 ds)}} to set the movement \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a0cbdba681e9a06a6270415b1a527536e}{move\+By\+Delta\+XY}} (Vector2 ds)
+\begin{DoxyCompactList}\small\item\em Moves the sprite by the delta x and delta y in delta\+Speed uses an input delta so no need to call \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a9a00bb05c798cc43c3518bb5ae6d0186}{set\+Delta\+Speed(\+Vector2 ds)}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a6240d1baac5370a9be06ebaa4c188a95}{move\+By\+DeltaX}} (float dx)
+\begin{DoxyCompactList}\small\item\em Moves the sprite by the delta x in dx used to separate x and y when using dx/dy movement mainly to assist in two part collision detection \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a1f6400b76f55f9714cbbba19db329aa0}{move\+By\+DeltaY}} (float dy)
+\begin{DoxyCompactList}\small\item\em Moves the sprite by the delta y in dy used to separate x and y when using dx/dy movement mainly to assist in two part collision detection \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_abe2751690c88083e769e0742f6707fc8}{move\+To}} (Vector2 posZ, float speed, bool set\+Display\+Angle)
+\begin{DoxyCompactList}\small\item\em Moves the sprite towards the position pos \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_ad9e41fed1c73323a3375173c9be541be}{move\+To}} (\mbox{\hyperlink{class_r_c___framework_1_1_way_point}{Way\+Point}} way\+Point, bool set\+Display\+Angle)
+\begin{DoxyCompactList}\small\item\em Moves the sprite towards the waypoint \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a7f4a44725a3873c534b0466b7b49a990}{move\+Way\+Point\+List}} (bool set\+Display\+Angle)
+\begin{DoxyCompactList}\small\item\em Move the sprite around the waypoint list \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a0dc780cf6c8438ad43880143e9e273c1}{move\+To\+Start\+Of\+Way\+Points}} ()
+\begin{DoxyCompactList}\small\item\em Puts the sprite at the start of the waypoint list \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a8566054426bf9eb7093c101a2c26407e}{move\+By\+Angle\+Speed}} ()
+\begin{DoxyCompactList}\small\item\em Moves the sprite by the delta x and delta y in delta\+Speed \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_ad6501c04436015bde3919a8ca6d7d4a0}{adjust\+Angles}} ()
+\begin{DoxyCompactList}\small\item\em Adjust \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a07e6bec661635476eb17c60f72cfff68}{move\+By\+Angle\+Speed\+Limit}} (Rectangle r)
+\begin{DoxyCompactList}\small\item\em Move with screen (or world wrap) \end{DoxyCompactList}\item 
+Sprite\+Effects \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_af559b399e3825aedda707573275f64df}{get\+Flip}} ()
+\begin{DoxyCompactList}\small\item\em gets the flip parameter (which sets sprite effects for horizontal and vertical flipping) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a89a3746f82cb41211df31fc775654e8c}{set\+Flip}} (Sprite\+Effects se)
+\begin{DoxyCompactList}\small\item\em sets the flip paramentser \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_ac7c6f7b2d84cfae1559eb4c84cb37f59}{set\+Width\+Height}} (float w, float h)
+\begin{DoxyCompactList}\small\item\em sets the width and height of the sprite in display pixels \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a05dbc29987c0c2552cb69e81ea3fcdab}{set\+Width\+Height\+To\+Tex}} ()
+\begin{DoxyCompactList}\small\item\em sets the width and height of the sprite to what was read in from the texture This is usefull when you want the whole image \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a6c0cc3a2227564aba7ee4d66d0c620fe}{set\+Width}} (float w)
+\begin{DoxyCompactList}\small\item\em Just set the sprite width in display pixels \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_ad1f24cf43143791cb73c80a4af1881f0}{set\+Height}} (float h)
+\begin{DoxyCompactList}\small\item\em just set the sprite height in display pixels \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a0368a20bd12250f8f55c0788531e454a}{get\+Width}} ()
+\begin{DoxyCompactList}\small\item\em get the width in display pixels \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a67a30fb7ba96da33d63134b34e6dbc0c}{get\+Height}} ()
+\begin{DoxyCompactList}\small\item\em get the height in display pixels \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_aced9c5f15e8334fd68852b3c9e67f2d8}{set\+Width\+Height\+Of\+Tex}} (float w, float h)
+\begin{DoxyCompactList}\small\item\em This sets the usefull part of the texture (which is assumed to be the top left bit) its necessary because not all textures conform to the power of 2 rule and are upsized to a power of two \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_ad1f6bebc12d9d8f9bdf4ba13f3907bc3}{set\+Width\+Height\+Of\+Tex\+To\+Tex}} ()
+\begin{DoxyCompactList}\small\item\em Just sets the active part of the texture to the whole texture \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_ac73292a1b053056aa28ecae03165c71d}{set\+Image\+Source}} (Rectangle r)
+\begin{DoxyCompactList}\small\item\em Sets a source image for the sprite (usually less than the total texture) W\+A\+R\+N\+I\+NG This will alter the Xframes, Yframes \end{DoxyCompactList}\item 
+Rectangle \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a87dbfe3899e44fc7376837fe4cff0bd6}{get\+Image\+Source}} ()
+\begin{DoxyCompactList}\small\item\em returns the image source parameter for the sprite for the current frame use \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a376a1cca122797eb306bc81d31e91551}{get\+Actual\+Image\+Source()}} \end{DoxyCompactList}\item 
+Rectangle \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a376a1cca122797eb306bc81d31e91551}{get\+Actual\+Image\+Source}} ()
+\begin{DoxyCompactList}\small\item\em Where we get the sprite image from not intended for external use \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a79b8e18ee29cd62719307a059e4cb6df}{Draw}} (Sprite\+Batch sb)
+\begin{DoxyCompactList}\small\item\em Draws the sprite if it is Visible (ie if the visible property is set) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_afc737761beac47c71402bea9f5cc0b2a}{prepare\+To\+Draw}} ()
+\begin{DoxyCompactList}\small\item\em Prepares the internal variables src,dest and rotate\+Image for drawing It can be used for -\/ writing virtual screen handlers that zoom, resize and pan \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a4a9fc342f033b500edb18fbf9b921879}{draw}} (Sprite\+Batch sb)
+\begin{DoxyCompactList}\small\item\em Draws the sprite if it is Visible (ie if the visible property is set) \end{DoxyCompactList}\item 
+Vector2 \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_aae022ecd2e51d1ad3654854b8594494f}{get\+Rotate\+Image}} ()
+\begin{DoxyCompactList}\small\item\em Gets the point about which to rotate the image in Image co-\/ordinates \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a0901ebb278e50e5244e4b7f0fbd57242}{set\+BB}} (float bb\+Xoffset, float bb\+Yoffset, float bb\+WidthZ, float bb\+HeightZ)
+\begin{DoxyCompactList}\small\item\em Sets the bounding box relative to the hotspot (or position) if the hotspot is in the middle of the source image there is a fair chance that bb.\+X and bb.\+Y will be negative \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a352f91941f5ca2df898d966564e4c875}{set\+B\+B\+To\+Texture}} ()
+\begin{DoxyCompactList}\small\item\em lol for basic sprites set the BB to the texture with and height \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_aca02729a3919f4f31c4c63f814ea0150}{set\+B\+B\+To\+WH}} ()
+\begin{DoxyCompactList}\small\item\em set the bounding box to the width and height of the sprite typically this is a bounding box that follows the image boundary with a hotspot in the image top left corner \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a820e5316676eee1ef5fccdc9ac07cf15}{set\+B\+B\+To\+Frame\+In\+Tex}} ()
+\begin{DoxyCompactList}\small\item\em set the bounding box to the width and height of A single frame typically this is a bounding box that follows the image boundary with a hotspot in the image top left corner \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_ad599fbce8c9402618ead1232fc9d0539}{set\+B\+B\+Fraction\+Of\+Tex\+Centered}} (float f)
+\begin{DoxyCompactList}\small\item\em Sets the bounding box to a fraction of the texture width and height eg set\+B\+B\+To\+Fraction(0.\+6) would creat a small bounding box whose dimensions are 0.\+6 of the full sprite dimensions with the bboffset sane if the hotspot is 0,0 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a899837f4fa3d7c5736a31b30de845707}{set\+B\+B\+Fraction\+Of\+Tex}} (float f, int xoffset, int yoffset)
+\begin{DoxyCompactList}\small\item\em Sets the bounding box to a fraction of the texture width and height eg set\+B\+B\+To\+Fraction(0.\+6, 5, 7) would creat a small bounding box whose dimensions are 0.\+6 of the full sprite dimensions with the bboffset at 5,7 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a4c84dca0a120793e378451cefefb4183}{set\+B\+Band\+H\+S\+Fraction\+Of\+Tex\+Centered}} (float f)
+\begin{DoxyCompactList}\small\item\em Sets the bounding box to a fraction of the texture width and height eg set\+B\+B\+To\+Fraction(0.\+6) would creat a small bounding box whose dimensions are 0.\+6 of the full sprite dimensions with the bboffset sane if the hotspot is 0,0 \end{DoxyCompactList}\item 
+Rectangle \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a16549a56813ed7daed2a64f6d2c3fdaf}{get\+BB}} ()
+\begin{DoxyCompactList}\small\item\em Get the bouding rectange in screen co ordinates -\/ relative to the sprite pos \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a2551e6efc55ccfb3596b0f5bff398fc1}{set\+H\+Soffset}} (Vector2 offset)
+\begin{DoxyCompactList}\small\item\em Set the hotspot offset Note that this is in original image pixels not pixels after resize \end{DoxyCompactList}\item 
+Vector2 \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a8f296827e1659e0b370699146d18536b}{get\+H\+S\+Offset}} ()
+\begin{DoxyCompactList}\small\item\em set the Hotspot offset \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a0b6d0934cd9eea34b1d517a1d09102be}{draw\+BB}} (Sprite\+Batch sb, Color c)
+\begin{DoxyCompactList}\small\item\em draws a bounding box \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_aa82450ed1a30116c7419e79c34c374f4}{draw\+HS}} (Sprite\+Batch sb, Color c)
+\begin{DoxyCompactList}\small\item\em Draws the hotspot/position of the sprite \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a1f1acda2345b760c30d0f1c4c0815d4c}{draw\+Info}} (Sprite\+Batch sb, Color color\+BB, Color color\+HS)
+\begin{DoxyCompactList}\small\item\em draw bounding box and hotspot \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a33bc86bddbc57f002991ccf17c97d80a}{draw\+Bounding\+Sphere}} (Sprite\+Batch sb, Color color\+BS)
+\begin{DoxyCompactList}\small\item\em draw bounding sphere if not zero \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a3787b8d78c1aedee770e6d2871e78156}{draw\+Bounding\+Poly}} (Sprite\+Batch sb, Color color\+BB, Color color\+HS)
+\begin{DoxyCompactList}\small\item\em Draws the bounding polygon and the hotspot if it exists \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a0ef49f4248eee1b81e48a2a8125fa477}{draw\+Rect4}} (Sprite\+Batch sb, Color c)
+\begin{DoxyCompactList}\small\item\em For debugging only to make sure rotations are where they are expected to be You must have called get bounding box Axis aligned first \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a9a00bb05c798cc43c3518bb5ae6d0186}{set\+Delta\+Speed}} (Vector2 ds)
+\begin{DoxyCompactList}\small\item\em Set a speed vector for the deltax/deltay move system \end{DoxyCompactList}\item 
+Vector2 \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a07bcebd23820bced67a5d2a34eeda633}{get\+Delta\+Speed}} ()
+\begin{DoxyCompactList}\small\item\em get the speed deltas for the deltax deltay move system \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a71a24dd1eb93a65918e2b1db390a5546}{get\+Move\+Angle\+Radians}} ()
+\begin{DoxyCompactList}\small\item\em Get the current movemnet angle for the angle / speed move system \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a323f04ef41bc129dee67fa3b4a5cab42}{set\+Move\+Angle\+Radians}} (float m)
+\begin{DoxyCompactList}\small\item\em Set the current movemnet angle in radians for the angle / speed move system \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a6704e7b0ad3c2b828975cfe1c9cf73a3}{set\+Move\+Angle\+Degrees}} (float m)
+\begin{DoxyCompactList}\small\item\em Set the current movemnet angle for the angle / speed move system \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a1534ae3b4f4a7b075661e0d644d589cf}{get\+Move\+Speed}} ()
+\begin{DoxyCompactList}\small\item\em Get the current movemnet speed for the angle / speed move system \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a630b8d8f2eda0fc820bf76a2c65f0671}{set\+Move\+Speed}} (float m)
+\begin{DoxyCompactList}\small\item\em Set the current movemnet speed for the angle / speed move system \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a7f311c885100d7a2164549158d90d927}{get\+Display\+Angle\+Radians}} ()
+\begin{DoxyCompactList}\small\item\em get display angle in radians \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a3e00764164dccc3eb6104e5ec643033a}{set\+Display\+Angle\+Radians}} (float d)
+\begin{DoxyCompactList}\small\item\em set display angle in radians \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a13036025a68f4353c2b9014d8634e836}{set\+Display\+Angle\+Degrees}} (float d)
+\begin{DoxyCompactList}\small\item\em Set display angle in degrees \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a2ec8cfce2feb2f1e648131e03099b147}{set\+Display\+Angle\+Offset}} (float d)
+\begin{DoxyCompactList}\small\item\em set the display angle offset in radians -\/ which is the angle added to the display\+Angle to make the sprite face in direction 0 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a6269a6c50ca875525156d347b216e491}{set\+Display\+Angle\+Offset\+Degrees}} (float d)
+\begin{DoxyCompactList}\small\item\em set the display angle offset -\/ which is the angle added to the display\+Angle to make the sprite face in direction 0 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_aad5d5ae96adc595d808baf24a283982e}{get\+Display\+Angle\+Offset}} ()
+\begin{DoxyCompactList}\small\item\em get the display angle offset \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_aab8c41c05cad46205425cfdb86b60e56}{set\+Xframes}} (int f)
+\begin{DoxyCompactList}\small\item\em Set the number of horizontal frames of animation \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a248e1776ffd7be872288f73fb7caeadd}{set\+Yframes}} (int f)
+\begin{DoxyCompactList}\small\item\em Set the number of vertical frames of animation \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_ac03a161791879ccf0758985c9dc49cce}{get\+Yframes}} ()
+\begin{DoxyCompactList}\small\item\em get the number of vertical frames of animation \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a838ca2253128f4f1099fa1ae24fe1fdf}{get\+Xframes}} ()
+\begin{DoxyCompactList}\small\item\em set the number of vertical frames of animation \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_afce769592e5683b522e77fa1edf9e81e}{get\+Xframe}} ()
+\begin{DoxyCompactList}\small\item\em get the current horizontal frame \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a909a64848da044a82bc9e3467ea28ace}{get\+Yframe}} ()
+\begin{DoxyCompactList}\small\item\em get the current vertical frame \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a4c0a6cf29709e9c6f8ead39eea215f4b}{get\+Frame}} ()
+\begin{DoxyCompactList}\small\item\em Get the current frame number which is an index into the animation frame sequence data updated by set\+Animation\+Sequence \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a946e99f3317d07ce6a098c4b435e1689}{set\+Yframe}} (int f)
+\begin{DoxyCompactList}\small\item\em set the current vertical frame \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a56a7afacc321c80d0dfb1d9c5933f7df}{set\+Xframe}} (int f)
+\begin{DoxyCompactList}\small\item\em Set the current horizontal frame \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a552be0daafb94d0cc7802a10539e5032}{set\+Frame}} (int f)
+\begin{DoxyCompactList}\small\item\em Set the current frame number which is an index into the animation frame sequence data updated by set\+Animation\+Sequence \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a2688823142342a7d1b2aaf91b8f5cc66}{set\+Animation\+Sequence}} (Vector2\mbox{[}$\,$\mbox{]} anim\+Seq, int first\+FrameZ, int last\+FrameZ, int ticks\+Between\+FramesZ)
+\begin{DoxyCompactList}\small\item\em Set an animation sequenece \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_aaba067bf7bc24cd0acd437a057a69eec}{animation\+Tick}} (Game\+Time game\+Time)
+\begin{DoxyCompactList}\small\item\em Upadate the animation sequence This routine is usually run in the update routine this routine now has game\+Time as a parameter \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a280b1377c4b22b183c82956efa33c9e5}{set\+Anim\+Finished}} (int what\+To\+Do)
+\begin{DoxyCompactList}\small\item\em What to do when the animation is finished 0=loop 1=set sprite invisible 2=set sprite inactive and invisible \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_ab181bdcfd7b9fcb12a931c13d2649d93}{animation\+Start}} ()
+\begin{DoxyCompactList}\small\item\em Set the start parameters for the animation sequence \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_abaab134b0035e614af80fa1755118fd2}{animation\+Start}} (int ticksZ, int frameZ)
+\begin{DoxyCompactList}\small\item\em Set the start parameters for the animation sequence allowing for some additional information \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a03369c23f152dc9720174e5053acd33f}{set\+Fade\+Details}} (bool fadeQ, Color fade\+From\+ColourQ, Color fade\+To\+ColourQ, int fade\+TicksQ, bool make\+InactiveQ)
+\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a2710ebb2e7b64a1ce4ce91aaf81f5fce}{do\+The\+Fade}} ()
+\item 
+float \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a58e467760eaf53fa02f50fb4129861c3}{distance\+To}} (\mbox{\hyperlink{class_r_c___framework_1_1_sprite3}{Sprite3}} sprite)
+\begin{DoxyCompactList}\small\item\em Distance to another sprite \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_ab41ca8d75520f2b6e11ba943d7eb3f77}{distance\+To}} (Vector2 point)
+\begin{DoxyCompactList}\small\item\em Distance to an arbitary point \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a92e3abec80772414657159820d45491a}{align\+Display\+Angle}} ()
+\begin{DoxyCompactList}\small\item\em Aligns the display angle to the sprites current movement angle based on oldpos -\/ only works if the sprite is actually moving in a way that old\+Pos is updated correctly so use set\+Pos to set position (only one per update call) \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a5354cb9f7ec64fa47814f67ee05d5fa5}{angle\+To}} (\mbox{\hyperlink{class_r_c___framework_1_1_sprite3}{Sprite3}} s)
+\begin{DoxyCompactList}\small\item\em computes the angle to another sprite \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a61485db626575e2a63c7ba078f84d46d}{angle\+To}} (Vector2 point)
+\begin{DoxyCompactList}\small\item\em computes the angle to an arbitary point \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_af3c0f0e95f498147b74322f3ef919005}{get\+Active}} ()
+\begin{DoxyCompactList}\small\item\em get the active flag \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a6e007701b261f3c293389e5094513faf}{set\+Active}} (bool activeZ)
+\begin{DoxyCompactList}\small\item\em set the active flag \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a9299af8d2e5277dd0e810389a7ed831c}{set\+Active\+And\+Visible}} (bool activeZ)
+\begin{DoxyCompactList}\small\item\em set the active flag \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_ab849638ba60bac0f9accbd4091f95d1e}{set\+Ticks\+To\+Visible}} (int \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a59474528cccad4b750e2b72a5f8cf585}{ticks}})
+\begin{DoxyCompactList}\small\item\em sets the number if ticks till the sprite becomes visible \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_abb634dc79e4094b58b566ef7d8aca35b}{set\+Ticks\+To\+Invisible}} (int \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a59474528cccad4b750e2b72a5f8cf585}{ticks}}, bool inactive)
+\begin{DoxyCompactList}\small\item\em Sets the ticks untill the sprite becomes invisible optionally inactive as well to use it you must call \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_aa6a483f4fdcd1ed260bd72f60a07834d}{tick()}} in update for the sprite \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_aa6a483f4fdcd1ed260bd72f60a07834d}{tick}} ()
+\begin{DoxyCompactList}\small\item\em Tick the visible / invisible ticker Tick is used in sprite 3 to make a sprite visible after a certain time see the routine set\+Ticks\+To\+Visible to set the tick counter \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a5473d37c4f1f44fa1685dd64c82dfd8c}{Update}} (Game\+Time game\+Time)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const string \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_af4a00055db200e357c65f9b289989ba5}{Sprite\+Version}} =\char`\"{}V3.\+18.\+1\char`\"{}
+\begin{DoxyCompactList}\small\item\em Just a version to help code controll \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a569b5506e5da155612f938e414d40c0b}{kind}}
+\begin{DoxyCompactList}\small\item\em this variable called kind is available for use by user code \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a390f0fa7f5de0cb734e313b31551b9c3}{state}}
+\begin{DoxyCompactList}\small\item\em this variable called state is available for use by user code \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a0b0ba2dfebf13a8ecf6ef372e3048f3c}{name}}
+\begin{DoxyCompactList}\small\item\em Used by user for id or text purposes \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a4428b9c3efc3f675f04df8141dc6e108}{score}}
+\begin{DoxyCompactList}\small\item\em this variable called score is available for use by user code \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_af2d07d57951fed3fd45129d58590974a}{var\+Int0}}
+\begin{DoxyCompactList}\small\item\em variables called var\+Int0, var\+Int1, var\+Int2 are available for use by user code there is also tagint and tag from renderable -\/ they are sort of duplicates \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a76f69d382ff8046c88681fe212a99176}{var\+Int1}}
+\begin{DoxyCompactList}\small\item\em available for use by user code \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a6dda4cde780442d3d2f226158fee5a11}{var\+Int2}}
+\begin{DoxyCompactList}\small\item\em available for use by user code \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_ae6cca5521f73ec073caa66b816ab8408}{var\+Int3}}
+\begin{DoxyCompactList}\small\item\em available for use by user code \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a461eb5bc92dd3eff6daff40147f060eb}{var\+Int4}}
+\begin{DoxyCompactList}\small\item\em available for use by user code \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a77c5b7c794daacbd31c49f83e40978f9}{var\+Bool0}}
+\begin{DoxyCompactList}\small\item\em these variables called var\+Bool0, var\+Bool1 are available for use by user code \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a5f9e5ed1f2c6b498eb2ca9e461c8bebc}{var\+Bool1}}
+\begin{DoxyCompactList}\small\item\em available for use by user code \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_aa90e0f3319e1d183780eaa4570d6bf2b}{var\+Float1}}
+\begin{DoxyCompactList}\small\item\em available for use by user code single floatig point number \end{DoxyCompactList}\item 
+Vector2 \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a7a99bed1590ff1e7e1f7c52a4a53c37e}{target}}
+\begin{DoxyCompactList}\small\item\em this variable called target is available for use by user code \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_abe8d4ab8316448c8d9ff2da22b680380}{hit\+Points}}
+\begin{DoxyCompactList}\small\item\em this variable called hit\+Points is available for use by user code it is also used by the attached renderable \mbox{\hyperlink{class_r_c___framework_1_1_health_bar}{Health\+Bar}} if one is active \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a7177e23ee5d4dd93ca4972e9798be680}{max\+Hit\+Points}}
+\begin{DoxyCompactList}\small\item\em this variable called max\+Hit\+Points is available for use by user code it may get used by an attached renderable to draw a health bar (or any other purpose) it is used by the attached renderable \mbox{\hyperlink{class_r_c___framework_1_1_health_bar}{Health\+Bar}} \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a6f76b1e09c665b5a930cb86c34c86429}{bounding\+Sphere\+Radius}}
+\begin{DoxyCompactList}\small\item\em bounding Sphere Radius for user to use this is in screen pixels not source pixels any resizing must be done by the user \end{DoxyCompactList}\item 
+Sprite\+Effects \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a2320b0a1f529f8b9998377a5690c2878}{flip}} = Sprite\+Effects.\+None
+\begin{DoxyCompactList}\small\item\em the direction of the sprite Sprite\+Effects.\+None, Sprite\+Effects.\+Flip\+Horizontaly, Sprite\+Effects.\+Flip\+Vertically \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_aed8fd08f1d911727fb48d3c456be713a}{display\+Angle}}
+\begin{DoxyCompactList}\small\item\em the display angle in radians -\/ which may or may not be the move angle should be set using set\+Display\+Angle(float d) \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_aafcde3bd32143744faf410c304a07f2d}{display\+Angle\+Offset}}
+\begin{DoxyCompactList}\small\item\em the display angle offset in radians Added to display angle to make the sprite \char`\"{}point in direction 0\char`\"{} should be set using \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a2ec8cfce2feb2f1e648131e03099b147}{set\+Display\+Angle\+Offset(float d)}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_frame_source}{Frame\+Source}} \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a052b6b4879f526456238accb371373a0}{frame\+Source}} = null
+\begin{DoxyCompactList}\small\item\em Animation system can have various values the possible behaviours are\+: \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_rect4}{Rect4}} \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a4fedf0e3c61d7960064f3588a9cc8a93}{bb\+Temp}}
+\begin{DoxyCompactList}\small\item\em Internal structure so one can check bounding box positions this turns out to be a usefull variable for debugging and display also it can be moved to bounding\+Poly for a non AA bounding box using Util2.\+Polygon12(\+Rect4 r) constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_polygon12}{Polygon12}} \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a38eaba03c71e388c288d36fbdf9cf9b6}{bounding\+Poly\+Offsets}} =null
+\begin{DoxyCompactList}\small\item\em Advanced Bounding box polygon offsets -\/ its in screen pixels Needs the polygon collision utility to use only partly supported \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_polygon12}{Polygon12}} \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a539da11d835c64da3a78039cd05942e9}{bounding\+Poly}} =null
+\begin{DoxyCompactList}\small\item\em Advanced Bounding box not axis aligned -\/ its in screen pixels Needs the polygon collision utility to use only partly supported updated by routine compute\+Bounding\+Poly\+From\+Pos \end{DoxyCompactList}\item 
+Rectangle \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_aec76c65582a5d71056a0d5f44f2e2906}{src}}
+\begin{DoxyCompactList}\small\item\em Internal source rectangle -\/ do not touch unless you know what you are doing source of image \end{DoxyCompactList}\item 
+Rectangle \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_ab2d852bf859c3d55bcf6517797b69dc6}{dest}}
+\begin{DoxyCompactList}\small\item\em Internal destination rectangle -\/ do not touch unless you know what you are doing destination of image \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Texture2D \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_ac69869c54b541f68ac23464874a4e91f}{tex\+Base}}
+\begin{DoxyCompactList}\small\item\em The sprites texture2d for basic sprites -\/ do not change it arbitarily use set\+Texture(\+Texture2\+D tw) routine instead to preserve frame information \end{DoxyCompactList}\item 
+Texture2D \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a5b3ed08cfae3aba31834ad0c16c98ed3}{tex\+Frame}}
+\begin{DoxyCompactList}\small\item\em The sprites texture2d for sprites using a \mbox{\hyperlink{class_r_c___framework_1_1_frame_source}{Frame\+Source}} usually in all other cases it is identical to tex\+Base do not change it arbitarily use set\+Texture(\+Texture2\+D tw) routine instead to preserve frame information it is updated frame by frame when frame\+Source is used \end{DoxyCompactList}\item 
+Vector2 \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a085b269f8bcef70e2e90cc6473d6d9f0}{delta\+Speed}}
+\begin{DoxyCompactList}\small\item\em movement vector when using the deltax deltay movement system \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a21a2dd7d771adeacb93f54e16c70809a}{move\+Angle}}
+\begin{DoxyCompactList}\small\item\em the movement angle in radians if using the angle / speed movement system \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a0bc61dcdb25da53eca3d470d1156e2a3}{save\+Move\+Angle}}
+\begin{DoxyCompactList}\small\item\em Just a place to save the move angle \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_ada8bbec97deb2dca71402963312b59f5}{move\+Speed}}
+\begin{DoxyCompactList}\small\item\em the movement angle if using the angle / speed movement system \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a77e1dfb9e0693a43de14ea2d0c565280}{save\+Display\+Angle}}
+\begin{DoxyCompactList}\small\item\em Just a place to store a save of the display angle \end{DoxyCompactList}\item 
+Rectangle \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a17993ffc6fc5f0b2008edb24696d5982}{image\+Source}}
+\begin{DoxyCompactList}\small\item\em image source is used only if xframes == 0 can be used to create a sprite that uses only a part of an image set it using \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_ac73292a1b053056aa28ecae03165c71d}{set\+Image\+Source(\+Rectangle r)}} \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a19515e51beafff504963c7b4491a7d04}{Xframes}}
+\begin{DoxyCompactList}\small\item\em Animation information -\/ number of horizontal frames \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_ac70dad68ff6f97705846e0c43db63295}{Yframes}}
+\begin{DoxyCompactList}\small\item\em Animation information -\/ number of vertical frames \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a480cad054f3470c3041e4759212b9194}{Xframe}}
+\begin{DoxyCompactList}\small\item\em Animation information -\/ current horizontal frame number frame numbers start at 0 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a337367ffb386b75b771589859fb70813}{Yframe}}
+\begin{DoxyCompactList}\small\item\em Animation information -\/ current vertical frame number frame numbers start at 0 \end{DoxyCompactList}\item 
+Vector2 \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_ae5664f646ee00d658a5d3087c78e9c8b}{animation\+Seq}}
+\begin{DoxyCompactList}\small\item\em The complete animation sequence that running now (if any) this list contains x and y frame numbers and is itself indexed by frame \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a51a88ce97928314b06f83ce2ab6cd04f}{frame}}
+\begin{DoxyCompactList}\small\item\em the frame withing sequence \textquotesingle{}animation\+Seq\textquotesingle{} \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a2ea65f55b021e3ce841161c43f4f7f9b}{first\+Frame}}
+\begin{DoxyCompactList}\small\item\em the first animation frame withing sequence \textquotesingle{}animation\+Seq\textquotesingle{} \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_afc5ff18b8c0a0c4b8bb686270e0157c1}{last\+Frame}}
+\begin{DoxyCompactList}\small\item\em the last animation frame withing sequence \textquotesingle{}animation\+Seq\textquotesingle{} \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_adcc42561b39149028339909953eabe4a}{anim\+Finished}}
+\begin{DoxyCompactList}\small\item\em A flag telling what to do when the animation finishes 0=loop 1=set sprite invisible 2=set sprite inactive and invisible \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a16c0418616359c95be16c9946db1fc23}{ticks\+Between\+Frames}}
+\begin{DoxyCompactList}\small\item\em number of ticks between aniamtion frames at 60 frames a second this could be as much as 20 or more \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a59474528cccad4b750e2b72a5f8cf585}{ticks}}
+\begin{DoxyCompactList}\small\item\em just a counter as it implies for animation purposes \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_adc96bdd58b49ea7f51c3e4a9f8167bc8}{width}}
+\begin{DoxyCompactList}\small\item\em The width of the sprite on the screen \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a3868e4ebe3d2ac0311fcf950650c5f91}{height}}
+\begin{DoxyCompactList}\small\item\em the height of the sprite on the screen in pixels \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a6155a73405919a9651d0d38e47dca233}{tex\+Width}}
+\begin{DoxyCompactList}\small\item\em the width of the meaningful part of the texture \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a66c1c4d6d47a86970961d4ba041acfce}{tex\+Height}}
+\begin{DoxyCompactList}\small\item\em the height of the meaningful part of the texture \end{DoxyCompactList}\item 
+Vector2 \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_aeed4e50c73f6bc34f4b9a4dec34c2f8e}{hot\+Spot\+Offset}}
+\begin{DoxyCompactList}\small\item\em hotspot offset x and y from top left corner of either the image -\/ or single frame if its an animation hotspot offet is in pixels in the souce image \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+override Rectangle \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_aa3f2de2ac85a5cb8f0753474ce2fc2f0}{bounds}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a2232d226353d716bf6928a252381ddd9}{move\+Angle\+Delta}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em the amount to adjust move angle by each tick (radians) \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_ac2869487c1a7c38299b913adbb4f97b7}{display\+Angle\+Delta}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em the amount to adjust display angle by each tick (radians) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_way_point_list}{Way\+Point\+List}} \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a95fc30b1a8756bc02dd6fd8fcf9f81ec}{way\+List}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The waypoints for the waypoint move routines at this time you need a separate waypointlist for each sprite so setting this uses a copy constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_attached}{R\+C\+\_\+\+Renderable\+Attached}} \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a4c216d42873e3e4d52d30596f3078bc8}{attached\+Renderable}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em This is a property for an attached renderable This can be used to show things like life bars or values if hit Importantly the renderable knows of its parent sprite If you are using attached renderables, its necessary to call the sprites \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a5473d37c4f1f44fa1685dd64c82dfd8c}{Update(\+Game\+Time game\+Time)}} method \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_attached}{R\+C\+\_\+\+Renderable\+Attached}} \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_ae627737dc486e6c5a9255921e620ff26}{attached\+Renderable2}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em This is a property for a second attached renderable This can be used to show things like life bars or values if hit Importantly the renderable knows of its parent sprite If you are using attached renderables, its necessary to call the sprites \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a5473d37c4f1f44fa1685dd64c82dfd8c}{Update(\+Game\+Time game\+Time)}} method \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \mbox{\hyperlink{namespace_r_c___framework}{R\+C\+\_\+\+Framework}} \mbox{\hyperlink{class_r_c___framework_1_1_sprite3}{Sprite3}} Class This class assumes that the position and hotspot are the same place and that this place is also the center of rotation, as a result all movement / rotation and collision routines make use of this place note properties active, visible and colour are inherited from renderable 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a92d70269202bf98ede05cbc45ca3690a}\label{class_r_c___framework_1_1_sprite3_a92d70269202bf98ede05cbc45ca3690a}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!Sprite3@{Sprite3}}
+\index{Sprite3@{Sprite3}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{Sprite3()}{Sprite3()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily R\+C\+\_\+\+Framework.\+Sprite3.\+Sprite3 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a497f021ee596994c26f0d83135b676f5}\label{class_r_c___framework_1_1_sprite3_a497f021ee596994c26f0d83135b676f5}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!Sprite3@{Sprite3}}
+\index{Sprite3@{Sprite3}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{Sprite3()}{Sprite3()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily R\+C\+\_\+\+Framework.\+Sprite3.\+Sprite3 (\begin{DoxyParamCaption}\item[{bool}]{visibleZ,  }\item[{Texture2D}]{texZ,  }\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+
+
+Standard Constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em visibleZ} & \\
+\hline
+{\em texZ} & \\
+\hline
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a5157f6fac4128e14e3a28ba540daec37}\label{class_r_c___framework_1_1_sprite3_a5157f6fac4128e14e3a28ba540daec37}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!Sprite3@{Sprite3}}
+\index{Sprite3@{Sprite3}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{Sprite3()}{Sprite3()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily R\+C\+\_\+\+Framework.\+Sprite3.\+Sprite3 (\begin{DoxyParamCaption}\item[{bool}]{visibleZ,  }\item[{Texture2D}]{texZ,  }\item[{String}]{nameZ,  }\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+
+
+named Constructor with level 
+
+
+\begin{DoxyParams}{Parameters}
+{\em visibleZ} & \\
+\hline
+{\em texZ} & \\
+\hline
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+{\em nameZ} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_ad6501c04436015bde3919a8ca6d7d4a0}\label{class_r_c___framework_1_1_sprite3_ad6501c04436015bde3919a8ca6d7d4a0}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!adjust\+Angles@{adjust\+Angles}}
+\index{adjust\+Angles@{adjust\+Angles}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{adjust\+Angles()}{adjustAngles()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+adjust\+Angles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Adjust 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a92e3abec80772414657159820d45491a}\label{class_r_c___framework_1_1_sprite3_a92e3abec80772414657159820d45491a}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!align\+Display\+Angle@{align\+Display\+Angle}}
+\index{align\+Display\+Angle@{align\+Display\+Angle}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{align\+Display\+Angle()}{alignDisplayAngle()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+align\+Display\+Angle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Aligns the display angle to the sprites current movement angle based on oldpos -\/ only works if the sprite is actually moving in a way that old\+Pos is updated correctly so use set\+Pos to set position (only one per update call) 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a5354cb9f7ec64fa47814f67ee05d5fa5}\label{class_r_c___framework_1_1_sprite3_a5354cb9f7ec64fa47814f67ee05d5fa5}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!angle\+To@{angle\+To}}
+\index{angle\+To@{angle\+To}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{angle\+To()}{angleTo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily float R\+C\+\_\+\+Framework.\+Sprite3.\+angle\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_r_c___framework_1_1_sprite3}{Sprite3}}}]{s }\end{DoxyParamCaption})}
+
+
+
+computes the angle to another sprite 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a61485db626575e2a63c7ba078f84d46d}\label{class_r_c___framework_1_1_sprite3_a61485db626575e2a63c7ba078f84d46d}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!angle\+To@{angle\+To}}
+\index{angle\+To@{angle\+To}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{angle\+To()}{angleTo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily float R\+C\+\_\+\+Framework.\+Sprite3.\+angle\+To (\begin{DoxyParamCaption}\item[{Vector2}]{point }\end{DoxyParamCaption})}
+
+
+
+computes the angle to an arbitary point 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_ab181bdcfd7b9fcb12a931c13d2649d93}\label{class_r_c___framework_1_1_sprite3_ab181bdcfd7b9fcb12a931c13d2649d93}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!animation\+Start@{animation\+Start}}
+\index{animation\+Start@{animation\+Start}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{animation\+Start()}{animationStart()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+animation\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Set the start parameters for the animation sequence 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_abaab134b0035e614af80fa1755118fd2}\label{class_r_c___framework_1_1_sprite3_abaab134b0035e614af80fa1755118fd2}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!animation\+Start@{animation\+Start}}
+\index{animation\+Start@{animation\+Start}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{animation\+Start()}{animationStart()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+animation\+Start (\begin{DoxyParamCaption}\item[{int}]{ticksZ,  }\item[{int}]{frameZ }\end{DoxyParamCaption})}
+
+
+
+Set the start parameters for the animation sequence allowing for some additional information 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ticksZ} & \\
+\hline
+{\em frameZ} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_aaba067bf7bc24cd0acd437a057a69eec}\label{class_r_c___framework_1_1_sprite3_aaba067bf7bc24cd0acd437a057a69eec}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!animation\+Tick@{animation\+Tick}}
+\index{animation\+Tick@{animation\+Tick}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{animation\+Tick()}{animationTick()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+animation\+Tick (\begin{DoxyParamCaption}\item[{Game\+Time}]{game\+Time }\end{DoxyParamCaption})}
+
+
+
+Upadate the animation sequence This routine is usually run in the update routine this routine now has game\+Time as a parameter 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a91ecfec14fcf4e3d45968c46f17fd83b}\label{class_r_c___framework_1_1_sprite3_a91ecfec14fcf4e3d45968c46f17fd83b}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!collision@{collision}}
+\index{collision@{collision}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{collision()}{collision()}}
+{\footnotesize\ttfamily bool R\+C\+\_\+\+Framework.\+Sprite3.\+collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_r_c___framework_1_1_sprite3}{Sprite3}}}]{s2 }\end{DoxyParamCaption})}
+
+
+
+Return true if two sprites axis aligned bounding boxes collide at their current locations 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a50c663717778826a66395efd510aec62}\label{class_r_c___framework_1_1_sprite3_a50c663717778826a66395efd510aec62}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!collision\+Rect@{collision\+Rect}}
+\index{collision\+Rect@{collision\+Rect}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{collision\+Rect()}{collisionRect()}}
+{\footnotesize\ttfamily Rectangle R\+C\+\_\+\+Framework.\+Sprite3.\+collision\+Rect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_r_c___framework_1_1_sprite3}{Sprite3}}}]{s2 }\end{DoxyParamCaption})}
+
+
+
+Return a rectangle that represents a collision rectangle (the intersection of the two rectangles)
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_ab430c66998577533366d5e4b1b85e2f4}\label{class_r_c___framework_1_1_sprite3_ab430c66998577533366d5e4b1b85e2f4}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!compute\+Bounding\+Poly\+From\+Pos@{compute\+Bounding\+Poly\+From\+Pos}}
+\index{compute\+Bounding\+Poly\+From\+Pos@{compute\+Bounding\+Poly\+From\+Pos}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{compute\+Bounding\+Poly\+From\+Pos()}{computeBoundingPolyFromPos()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+compute\+Bounding\+Poly\+From\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Computes the bounding polygon from the offsets and position 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_af5a02783f1305245a178fbe1cc1cc47a}\label{class_r_c___framework_1_1_sprite3_af5a02783f1305245a178fbe1cc1cc47a}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!copy\+Rect4temp\+To\+Bounding\+Poly@{copy\+Rect4temp\+To\+Bounding\+Poly}}
+\index{copy\+Rect4temp\+To\+Bounding\+Poly@{copy\+Rect4temp\+To\+Bounding\+Poly}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{copy\+Rect4temp\+To\+Bounding\+Poly()}{copyRect4tempToBoundingPoly()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+copy\+Rect4temp\+To\+Bounding\+Poly (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+copies the temp rect4 structure to non axis aligned bounding box ~\newline
+
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a58e467760eaf53fa02f50fb4129861c3}\label{class_r_c___framework_1_1_sprite3_a58e467760eaf53fa02f50fb4129861c3}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!distance\+To@{distance\+To}}
+\index{distance\+To@{distance\+To}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{distance\+To()}{distanceTo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily float R\+C\+\_\+\+Framework.\+Sprite3.\+distance\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_r_c___framework_1_1_sprite3}{Sprite3}}}]{sprite }\end{DoxyParamCaption})}
+
+
+
+Distance to another sprite 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_ab41ca8d75520f2b6e11ba943d7eb3f77}\label{class_r_c___framework_1_1_sprite3_ab41ca8d75520f2b6e11ba943d7eb3f77}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!distance\+To@{distance\+To}}
+\index{distance\+To@{distance\+To}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{distance\+To()}{distanceTo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily float R\+C\+\_\+\+Framework.\+Sprite3.\+distance\+To (\begin{DoxyParamCaption}\item[{Vector2}]{point }\end{DoxyParamCaption})}
+
+
+
+Distance to an arbitary point 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a2710ebb2e7b64a1ce4ce91aaf81f5fce}\label{class_r_c___framework_1_1_sprite3_a2710ebb2e7b64a1ce4ce91aaf81f5fce}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!do\+The\+Fade@{do\+The\+Fade}}
+\index{do\+The\+Fade@{do\+The\+Fade}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{do\+The\+Fade()}{doTheFade()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+do\+The\+Fade (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a79b8e18ee29cd62719307a059e4cb6df}\label{class_r_c___framework_1_1_sprite3_a79b8e18ee29cd62719307a059e4cb6df}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!Draw@{Draw}}
+\index{Draw@{Draw}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily override void R\+C\+\_\+\+Framework.\+Sprite3.\+Draw (\begin{DoxyParamCaption}\item[{Sprite\+Batch}]{sb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Draws the sprite if it is Visible (ie if the visible property is set) 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_acc26db34e382a25a989c4c0dd0354b23}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a4a9fc342f033b500edb18fbf9b921879}\label{class_r_c___framework_1_1_sprite3_a4a9fc342f033b500edb18fbf9b921879}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!draw@{draw}}
+\index{draw@{draw}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+draw (\begin{DoxyParamCaption}\item[{Sprite\+Batch}]{sb }\end{DoxyParamCaption})}
+
+
+
+Draws the sprite if it is Visible (ie if the visible property is set) 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a0b6d0934cd9eea34b1d517a1d09102be}\label{class_r_c___framework_1_1_sprite3_a0b6d0934cd9eea34b1d517a1d09102be}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!draw\+BB@{draw\+BB}}
+\index{draw\+BB@{draw\+BB}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{draw\+B\+B()}{drawBB()}}
+{\footnotesize\ttfamily virtual void R\+C\+\_\+\+Framework.\+Sprite3.\+draw\+BB (\begin{DoxyParamCaption}\item[{Sprite\+Batch}]{sb,  }\item[{Color}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+draws a bounding box 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & \\
+\hline
+{\em c} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a3787b8d78c1aedee770e6d2871e78156}\label{class_r_c___framework_1_1_sprite3_a3787b8d78c1aedee770e6d2871e78156}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!draw\+Bounding\+Poly@{draw\+Bounding\+Poly}}
+\index{draw\+Bounding\+Poly@{draw\+Bounding\+Poly}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{draw\+Bounding\+Poly()}{drawBoundingPoly()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+draw\+Bounding\+Poly (\begin{DoxyParamCaption}\item[{Sprite\+Batch}]{sb,  }\item[{Color}]{color\+BB,  }\item[{Color}]{color\+HS }\end{DoxyParamCaption})}
+
+
+
+Draws the bounding polygon and the hotspot if it exists 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & \\
+\hline
+{\em color\+BB} & \\
+\hline
+{\em color\+HS} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a33bc86bddbc57f002991ccf17c97d80a}\label{class_r_c___framework_1_1_sprite3_a33bc86bddbc57f002991ccf17c97d80a}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!draw\+Bounding\+Sphere@{draw\+Bounding\+Sphere}}
+\index{draw\+Bounding\+Sphere@{draw\+Bounding\+Sphere}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{draw\+Bounding\+Sphere()}{drawBoundingSphere()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+draw\+Bounding\+Sphere (\begin{DoxyParamCaption}\item[{Sprite\+Batch}]{sb,  }\item[{Color}]{color\+BS }\end{DoxyParamCaption})}
+
+
+
+draw bounding sphere if not zero 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & \\
+\hline
+{\em color\+BS} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_aa82450ed1a30116c7419e79c34c374f4}\label{class_r_c___framework_1_1_sprite3_aa82450ed1a30116c7419e79c34c374f4}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!draw\+HS@{draw\+HS}}
+\index{draw\+HS@{draw\+HS}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{draw\+H\+S()}{drawHS()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+draw\+HS (\begin{DoxyParamCaption}\item[{Sprite\+Batch}]{sb,  }\item[{Color}]{c }\end{DoxyParamCaption})}
+
+
+
+Draws the hotspot/position of the sprite 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & \\
+\hline
+{\em c} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a1f1acda2345b760c30d0f1c4c0815d4c}\label{class_r_c___framework_1_1_sprite3_a1f1acda2345b760c30d0f1c4c0815d4c}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!draw\+Info@{draw\+Info}}
+\index{draw\+Info@{draw\+Info}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{draw\+Info()}{drawInfo()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+draw\+Info (\begin{DoxyParamCaption}\item[{Sprite\+Batch}]{sb,  }\item[{Color}]{color\+BB,  }\item[{Color}]{color\+HS }\end{DoxyParamCaption})}
+
+
+
+draw bounding box and hotspot 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & \\
+\hline
+{\em color\+BB} & \\
+\hline
+{\em color\+HS} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a0ef49f4248eee1b81e48a2a8125fa477}\label{class_r_c___framework_1_1_sprite3_a0ef49f4248eee1b81e48a2a8125fa477}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!draw\+Rect4@{draw\+Rect4}}
+\index{draw\+Rect4@{draw\+Rect4}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{draw\+Rect4()}{drawRect4()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+draw\+Rect4 (\begin{DoxyParamCaption}\item[{Sprite\+Batch}]{sb,  }\item[{Color}]{c }\end{DoxyParamCaption})}
+
+
+
+For debugging only to make sure rotations are where they are expected to be You must have called get bounding box Axis aligned first 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & \\
+\hline
+{\em c} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_af3c0f0e95f498147b74322f3ef919005}\label{class_r_c___framework_1_1_sprite3_af3c0f0e95f498147b74322f3ef919005}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!get\+Active@{get\+Active}}
+\index{get\+Active@{get\+Active}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{get\+Active()}{getActive()}}
+{\footnotesize\ttfamily bool R\+C\+\_\+\+Framework.\+Sprite3.\+get\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get the active flag 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a376a1cca122797eb306bc81d31e91551}\label{class_r_c___framework_1_1_sprite3_a376a1cca122797eb306bc81d31e91551}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!get\+Actual\+Image\+Source@{get\+Actual\+Image\+Source}}
+\index{get\+Actual\+Image\+Source@{get\+Actual\+Image\+Source}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{get\+Actual\+Image\+Source()}{getActualImageSource()}}
+{\footnotesize\ttfamily Rectangle R\+C\+\_\+\+Framework.\+Sprite3.\+get\+Actual\+Image\+Source (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Where we get the sprite image from not intended for external use 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a16549a56813ed7daed2a64f6d2c3fdaf}\label{class_r_c___framework_1_1_sprite3_a16549a56813ed7daed2a64f6d2c3fdaf}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!get\+BB@{get\+BB}}
+\index{get\+BB@{get\+BB}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{get\+B\+B()}{getBB()}}
+{\footnotesize\ttfamily Rectangle R\+C\+\_\+\+Framework.\+Sprite3.\+get\+BB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the bouding rectange in screen co ordinates -\/ relative to the sprite pos 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a1069512793423e1c5f3205d053e11d66}\label{class_r_c___framework_1_1_sprite3_a1069512793423e1c5f3205d053e11d66}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!get\+Bounding\+Box\+AA@{get\+Bounding\+Box\+AA}}
+\index{get\+Bounding\+Box\+AA@{get\+Bounding\+Box\+AA}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{get\+Bounding\+Box\+A\+A()}{getBoundingBoxAA()}}
+{\footnotesize\ttfamily Rectangle R\+C\+\_\+\+Framework.\+Sprite3.\+get\+Bounding\+Box\+AA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return the axis aligned bounding box at the current position even if the display is rotated 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a01208614a05673dd6b6d747910394657}\label{class_r_c___framework_1_1_sprite3_a01208614a05673dd6b6d747910394657}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!get\+Bounding\+Box\+Middle@{get\+Bounding\+Box\+Middle}}
+\index{get\+Bounding\+Box\+Middle@{get\+Bounding\+Box\+Middle}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{get\+Bounding\+Box\+Middle()}{getBoundingBoxMiddle()}}
+{\footnotesize\ttfamily Vector2 R\+C\+\_\+\+Framework.\+Sprite3.\+get\+Bounding\+Box\+Middle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return the mid point of the axis aligned bounding box at the current position 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_afd66805a5662cad934b912d4b204819d}\label{class_r_c___framework_1_1_sprite3_afd66805a5662cad934b912d4b204819d}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!get\+Bounding\+Poly@{get\+Bounding\+Poly}}
+\index{get\+Bounding\+Poly@{get\+Bounding\+Poly}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{get\+Bounding\+Poly()}{getBoundingPoly()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_r_c___framework_1_1_polygon12}{Polygon12}} R\+C\+\_\+\+Framework.\+Sprite3.\+get\+Bounding\+Poly (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+retreives the bounding pollygon -\/ which assumed that the user called necessary routines to set it one of\+: 
+
+
+\begin{DoxyItemize}
+\item copy\+Rect4temp\+To\+Bounding\+Poly
+\item set\+Bounding\+Poly\+From\+BB
+\item compute\+Bounding\+Poly\+From\+Pos 
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a07bcebd23820bced67a5d2a34eeda633}\label{class_r_c___framework_1_1_sprite3_a07bcebd23820bced67a5d2a34eeda633}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!get\+Delta\+Speed@{get\+Delta\+Speed}}
+\index{get\+Delta\+Speed@{get\+Delta\+Speed}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{get\+Delta\+Speed()}{getDeltaSpeed()}}
+{\footnotesize\ttfamily Vector2 R\+C\+\_\+\+Framework.\+Sprite3.\+get\+Delta\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get the speed deltas for the deltax deltay move system 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_aad5d5ae96adc595d808baf24a283982e}\label{class_r_c___framework_1_1_sprite3_aad5d5ae96adc595d808baf24a283982e}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!get\+Display\+Angle\+Offset@{get\+Display\+Angle\+Offset}}
+\index{get\+Display\+Angle\+Offset@{get\+Display\+Angle\+Offset}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{get\+Display\+Angle\+Offset()}{getDisplayAngleOffset()}}
+{\footnotesize\ttfamily float R\+C\+\_\+\+Framework.\+Sprite3.\+get\+Display\+Angle\+Offset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get the display angle offset 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a7f311c885100d7a2164549158d90d927}\label{class_r_c___framework_1_1_sprite3_a7f311c885100d7a2164549158d90d927}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!get\+Display\+Angle\+Radians@{get\+Display\+Angle\+Radians}}
+\index{get\+Display\+Angle\+Radians@{get\+Display\+Angle\+Radians}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{get\+Display\+Angle\+Radians()}{getDisplayAngleRadians()}}
+{\footnotesize\ttfamily float R\+C\+\_\+\+Framework.\+Sprite3.\+get\+Display\+Angle\+Radians (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get display angle in radians 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_af559b399e3825aedda707573275f64df}\label{class_r_c___framework_1_1_sprite3_af559b399e3825aedda707573275f64df}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!get\+Flip@{get\+Flip}}
+\index{get\+Flip@{get\+Flip}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{get\+Flip()}{getFlip()}}
+{\footnotesize\ttfamily Sprite\+Effects R\+C\+\_\+\+Framework.\+Sprite3.\+get\+Flip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+gets the flip parameter (which sets sprite effects for horizontal and vertical flipping) 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a4c0a6cf29709e9c6f8ead39eea215f4b}\label{class_r_c___framework_1_1_sprite3_a4c0a6cf29709e9c6f8ead39eea215f4b}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!get\+Frame@{get\+Frame}}
+\index{get\+Frame@{get\+Frame}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{get\+Frame()}{getFrame()}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Sprite3.\+get\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the current frame number which is an index into the animation frame sequence data updated by set\+Animation\+Sequence 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a67a30fb7ba96da33d63134b34e6dbc0c}\label{class_r_c___framework_1_1_sprite3_a67a30fb7ba96da33d63134b34e6dbc0c}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!get\+Height@{get\+Height}}
+\index{get\+Height@{get\+Height}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{get\+Height()}{getHeight()}}
+{\footnotesize\ttfamily float R\+C\+\_\+\+Framework.\+Sprite3.\+get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get the height in display pixels 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a8f296827e1659e0b370699146d18536b}\label{class_r_c___framework_1_1_sprite3_a8f296827e1659e0b370699146d18536b}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!get\+H\+S\+Offset@{get\+H\+S\+Offset}}
+\index{get\+H\+S\+Offset@{get\+H\+S\+Offset}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{get\+H\+S\+Offset()}{getHSOffset()}}
+{\footnotesize\ttfamily Vector2 R\+C\+\_\+\+Framework.\+Sprite3.\+get\+H\+S\+Offset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+set the Hotspot offset 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a87dbfe3899e44fc7376837fe4cff0bd6}\label{class_r_c___framework_1_1_sprite3_a87dbfe3899e44fc7376837fe4cff0bd6}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!get\+Image\+Source@{get\+Image\+Source}}
+\index{get\+Image\+Source@{get\+Image\+Source}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{get\+Image\+Source()}{getImageSource()}}
+{\footnotesize\ttfamily Rectangle R\+C\+\_\+\+Framework.\+Sprite3.\+get\+Image\+Source (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+returns the image source parameter for the sprite for the current frame use \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a376a1cca122797eb306bc81d31e91551}{get\+Actual\+Image\+Source()}} 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a71a24dd1eb93a65918e2b1db390a5546}\label{class_r_c___framework_1_1_sprite3_a71a24dd1eb93a65918e2b1db390a5546}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!get\+Move\+Angle\+Radians@{get\+Move\+Angle\+Radians}}
+\index{get\+Move\+Angle\+Radians@{get\+Move\+Angle\+Radians}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{get\+Move\+Angle\+Radians()}{getMoveAngleRadians()}}
+{\footnotesize\ttfamily float R\+C\+\_\+\+Framework.\+Sprite3.\+get\+Move\+Angle\+Radians (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the current movemnet angle for the angle / speed move system 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a1534ae3b4f4a7b075661e0d644d589cf}\label{class_r_c___framework_1_1_sprite3_a1534ae3b4f4a7b075661e0d644d589cf}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!get\+Move\+Speed@{get\+Move\+Speed}}
+\index{get\+Move\+Speed@{get\+Move\+Speed}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{get\+Move\+Speed()}{getMoveSpeed()}}
+{\footnotesize\ttfamily float R\+C\+\_\+\+Framework.\+Sprite3.\+get\+Move\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the current movemnet speed for the angle / speed move system 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_afa836f90205eb82c09f948e01c0e47ca}\label{class_r_c___framework_1_1_sprite3_afa836f90205eb82c09f948e01c0e47ca}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{get\+Name()}{getName()}}
+{\footnotesize\ttfamily string R\+C\+\_\+\+Framework.\+Sprite3.\+get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+gets the sprite name if one was set or \char`\"{}\char`\"{} 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_aae022ecd2e51d1ad3654854b8594494f}\label{class_r_c___framework_1_1_sprite3_aae022ecd2e51d1ad3654854b8594494f}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!get\+Rotate\+Image@{get\+Rotate\+Image}}
+\index{get\+Rotate\+Image@{get\+Rotate\+Image}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{get\+Rotate\+Image()}{getRotateImage()}}
+{\footnotesize\ttfamily Vector2 R\+C\+\_\+\+Framework.\+Sprite3.\+get\+Rotate\+Image (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the point about which to rotate the image in Image co-\/ordinates 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a32b080ce4ed442a34af48551b05c4847}\label{class_r_c___framework_1_1_sprite3_a32b080ce4ed442a34af48551b05c4847}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!get\+Texture\+Base@{get\+Texture\+Base}}
+\index{get\+Texture\+Base@{get\+Texture\+Base}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{get\+Texture\+Base()}{getTextureBase()}}
+{\footnotesize\ttfamily Texture2D R\+C\+\_\+\+Framework.\+Sprite3.\+get\+Texture\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get the texturewrapper 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a5a3eda5b5e64a44638051ece772411ca}\label{class_r_c___framework_1_1_sprite3_a5a3eda5b5e64a44638051ece772411ca}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!get\+Texture\+Frame@{get\+Texture\+Frame}}
+\index{get\+Texture\+Frame@{get\+Texture\+Frame}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{get\+Texture\+Frame()}{getTextureFrame()}}
+{\footnotesize\ttfamily Texture2D R\+C\+\_\+\+Framework.\+Sprite3.\+get\+Texture\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a0368a20bd12250f8f55c0788531e454a}\label{class_r_c___framework_1_1_sprite3_a0368a20bd12250f8f55c0788531e454a}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!get\+Width@{get\+Width}}
+\index{get\+Width@{get\+Width}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{get\+Width()}{getWidth()}}
+{\footnotesize\ttfamily float R\+C\+\_\+\+Framework.\+Sprite3.\+get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get the width in display pixels 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_afce769592e5683b522e77fa1edf9e81e}\label{class_r_c___framework_1_1_sprite3_afce769592e5683b522e77fa1edf9e81e}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!get\+Xframe@{get\+Xframe}}
+\index{get\+Xframe@{get\+Xframe}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{get\+Xframe()}{getXframe()}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Sprite3.\+get\+Xframe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get the current horizontal frame 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a838ca2253128f4f1099fa1ae24fe1fdf}\label{class_r_c___framework_1_1_sprite3_a838ca2253128f4f1099fa1ae24fe1fdf}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!get\+Xframes@{get\+Xframes}}
+\index{get\+Xframes@{get\+Xframes}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{get\+Xframes()}{getXframes()}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Sprite3.\+get\+Xframes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+set the number of vertical frames of animation 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a909a64848da044a82bc9e3467ea28ace}\label{class_r_c___framework_1_1_sprite3_a909a64848da044a82bc9e3467ea28ace}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!get\+Yframe@{get\+Yframe}}
+\index{get\+Yframe@{get\+Yframe}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{get\+Yframe()}{getYframe()}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Sprite3.\+get\+Yframe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get the current vertical frame 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_ac03a161791879ccf0758985c9dc49cce}\label{class_r_c___framework_1_1_sprite3_ac03a161791879ccf0758985c9dc49cce}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!get\+Yframes@{get\+Yframes}}
+\index{get\+Yframes@{get\+Yframes}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{get\+Yframes()}{getYframes()}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Sprite3.\+get\+Yframes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get the number of vertical frames of animation 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a438ffa0b834a51a9f9cf35e372457d41}\label{class_r_c___framework_1_1_sprite3_a438ffa0b834a51a9f9cf35e372457d41}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!image\+Rectangle@{image\+Rectangle}}
+\index{image\+Rectangle@{image\+Rectangle}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{image\+Rectangle()}{imageRectangle()}}
+{\footnotesize\ttfamily Rectangle R\+C\+\_\+\+Framework.\+Sprite3.\+image\+Rectangle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return a Rectangle structure which is the sprite boundary for screen graphic purposes I am not sure if this is used or of value any more (deprecated) 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_addc1a2eb2b33095855d15652afac06e9}\label{class_r_c___framework_1_1_sprite3_addc1a2eb2b33095855d15652afac06e9}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!inside@{inside}}
+\index{inside@{inside}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{inside()}{inside()}}
+{\footnotesize\ttfamily Boolean R\+C\+\_\+\+Framework.\+Sprite3.\+inside (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+
+
+Return a boolean that is true if the point is inside the AA bounding box of the sprite
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_abdaf66e3a0bcc82d446a2c3f059c3fba}\label{class_r_c___framework_1_1_sprite3_abdaf66e3a0bcc82d446a2c3f059c3fba}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!inside\+Or\+Eq@{inside\+Or\+Eq}}
+\index{inside\+Or\+Eq@{inside\+Or\+Eq}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{inside\+Or\+Eq()}{insideOrEq()}}
+{\footnotesize\ttfamily Boolean R\+C\+\_\+\+Framework.\+Sprite3.\+inside\+Or\+Eq (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+
+
+Return a boolean that is true if the point is inside or on the AA bounding box of the sprite
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a8566054426bf9eb7093c101a2c26407e}\label{class_r_c___framework_1_1_sprite3_a8566054426bf9eb7093c101a2c26407e}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!move\+By\+Angle\+Speed@{move\+By\+Angle\+Speed}}
+\index{move\+By\+Angle\+Speed@{move\+By\+Angle\+Speed}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{move\+By\+Angle\+Speed()}{moveByAngleSpeed()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+move\+By\+Angle\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Moves the sprite by the delta x and delta y in delta\+Speed 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a07e6bec661635476eb17c60f72cfff68}\label{class_r_c___framework_1_1_sprite3_a07e6bec661635476eb17c60f72cfff68}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!move\+By\+Angle\+Speed\+Limit@{move\+By\+Angle\+Speed\+Limit}}
+\index{move\+By\+Angle\+Speed\+Limit@{move\+By\+Angle\+Speed\+Limit}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{move\+By\+Angle\+Speed\+Limit()}{moveByAngleSpeedLimit()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+move\+By\+Angle\+Speed\+Limit (\begin{DoxyParamCaption}\item[{Rectangle}]{r }\end{DoxyParamCaption})}
+
+
+
+Move with screen (or world wrap) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a6240d1baac5370a9be06ebaa4c188a95}\label{class_r_c___framework_1_1_sprite3_a6240d1baac5370a9be06ebaa4c188a95}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!move\+By\+DeltaX@{move\+By\+DeltaX}}
+\index{move\+By\+DeltaX@{move\+By\+DeltaX}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{move\+By\+Delta\+X()}{moveByDeltaX()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+move\+By\+DeltaX (\begin{DoxyParamCaption}\item[{float}]{dx }\end{DoxyParamCaption})}
+
+
+
+Moves the sprite by the delta x in dx used to separate x and y when using dx/dy movement mainly to assist in two part collision detection 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a39a0fe699940c7d7f57971dd2edabe88}\label{class_r_c___framework_1_1_sprite3_a39a0fe699940c7d7f57971dd2edabe88}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!move\+By\+Delta\+XY@{move\+By\+Delta\+XY}}
+\index{move\+By\+Delta\+XY@{move\+By\+Delta\+XY}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{move\+By\+Delta\+X\+Y()}{moveByDeltaXY()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+move\+By\+Delta\+XY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Moves the sprite by the delta x and delta y in delta\+Speed use \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a9a00bb05c798cc43c3518bb5ae6d0186}{set\+Delta\+Speed(\+Vector2 ds)}} to set the movement 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a0cbdba681e9a06a6270415b1a527536e}\label{class_r_c___framework_1_1_sprite3_a0cbdba681e9a06a6270415b1a527536e}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!move\+By\+Delta\+XY@{move\+By\+Delta\+XY}}
+\index{move\+By\+Delta\+XY@{move\+By\+Delta\+XY}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{move\+By\+Delta\+X\+Y()}{moveByDeltaXY()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+move\+By\+Delta\+XY (\begin{DoxyParamCaption}\item[{Vector2}]{ds }\end{DoxyParamCaption})}
+
+
+
+Moves the sprite by the delta x and delta y in delta\+Speed uses an input delta so no need to call \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a9a00bb05c798cc43c3518bb5ae6d0186}{set\+Delta\+Speed(\+Vector2 ds)}} 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a1f6400b76f55f9714cbbba19db329aa0}\label{class_r_c___framework_1_1_sprite3_a1f6400b76f55f9714cbbba19db329aa0}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!move\+By\+DeltaY@{move\+By\+DeltaY}}
+\index{move\+By\+DeltaY@{move\+By\+DeltaY}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{move\+By\+Delta\+Y()}{moveByDeltaY()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+move\+By\+DeltaY (\begin{DoxyParamCaption}\item[{float}]{dy }\end{DoxyParamCaption})}
+
+
+
+Moves the sprite by the delta y in dy used to separate x and y when using dx/dy movement mainly to assist in two part collision detection 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_abe2751690c88083e769e0742f6707fc8}\label{class_r_c___framework_1_1_sprite3_abe2751690c88083e769e0742f6707fc8}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!move\+To@{move\+To}}
+\index{move\+To@{move\+To}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{move\+To()}{moveTo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool R\+C\+\_\+\+Framework.\+Sprite3.\+move\+To (\begin{DoxyParamCaption}\item[{Vector2}]{posZ,  }\item[{float}]{speed,  }\item[{bool}]{set\+Display\+Angle }\end{DoxyParamCaption})}
+
+
+
+Moves the sprite towards the position pos 
+
+
+\begin{DoxyParams}{Parameters}
+{\em posZ} & the position to move towards\\
+\hline
+{\em speed} & the speed to move at \\
+\hline
+{\em set\+Display\+Angle} & true if you want to orient the sprites display\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if we got there 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_ad9e41fed1c73323a3375173c9be541be}\label{class_r_c___framework_1_1_sprite3_ad9e41fed1c73323a3375173c9be541be}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!move\+To@{move\+To}}
+\index{move\+To@{move\+To}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{move\+To()}{moveTo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool R\+C\+\_\+\+Framework.\+Sprite3.\+move\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_r_c___framework_1_1_way_point}{Way\+Point}}}]{way\+Point,  }\item[{bool}]{set\+Display\+Angle }\end{DoxyParamCaption})}
+
+
+
+Moves the sprite towards the waypoint 
+
+
+\begin{DoxyParams}{Parameters}
+{\em way\+Point} & the waypoint to move to\\
+\hline
+{\em set\+Display\+Angle} & true if you want to orient the sprites display\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if we got there
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a0dc780cf6c8438ad43880143e9e273c1}\label{class_r_c___framework_1_1_sprite3_a0dc780cf6c8438ad43880143e9e273c1}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!move\+To\+Start\+Of\+Way\+Points@{move\+To\+Start\+Of\+Way\+Points}}
+\index{move\+To\+Start\+Of\+Way\+Points@{move\+To\+Start\+Of\+Way\+Points}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{move\+To\+Start\+Of\+Way\+Points()}{moveToStartOfWayPoints()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+move\+To\+Start\+Of\+Way\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Puts the sprite at the start of the waypoint list 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a7f4a44725a3873c534b0466b7b49a990}\label{class_r_c___framework_1_1_sprite3_a7f4a44725a3873c534b0466b7b49a990}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!move\+Way\+Point\+List@{move\+Way\+Point\+List}}
+\index{move\+Way\+Point\+List@{move\+Way\+Point\+List}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{move\+Way\+Point\+List()}{moveWayPointList()}}
+{\footnotesize\ttfamily bool R\+C\+\_\+\+Framework.\+Sprite3.\+move\+Way\+Point\+List (\begin{DoxyParamCaption}\item[{bool}]{set\+Display\+Angle }\end{DoxyParamCaption})}
+
+
+
+Move the sprite around the waypoint list 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_afc737761beac47c71402bea9f5cc0b2a}\label{class_r_c___framework_1_1_sprite3_afc737761beac47c71402bea9f5cc0b2a}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!prepare\+To\+Draw@{prepare\+To\+Draw}}
+\index{prepare\+To\+Draw@{prepare\+To\+Draw}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{prepare\+To\+Draw()}{prepareToDraw()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+prepare\+To\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prepares the internal variables src,dest and rotate\+Image for drawing It can be used for -\/ writing virtual screen handlers that zoom, resize and pan 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a4ffc487d5c332dee276909dad3dba57a}\label{class_r_c___framework_1_1_sprite3_a4ffc487d5c332dee276909dad3dba57a}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!restore\+Position@{restore\+Position}}
+\index{restore\+Position@{restore\+Position}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{restore\+Position()}{restorePosition()}}
+{\footnotesize\ttfamily override void R\+C\+\_\+\+Framework.\+Sprite3.\+restore\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+restore the current position 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_parent_ad67b46aec70ebe4a720dc4550108b8c1}{R\+C\+\_\+\+Framework.\+Sprite3\+Parent}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_ae4733340c18c8098b250418081020c6a}\label{class_r_c___framework_1_1_sprite3_ae4733340c18c8098b250418081020c6a}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!save\+Position@{save\+Position}}
+\index{save\+Position@{save\+Position}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{save\+Position()}{savePosition()}}
+{\footnotesize\ttfamily override void R\+C\+\_\+\+Framework.\+Sprite3.\+save\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Save the current position 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_parent_ad934c0f7664064c6ac89525bf06516fc}{R\+C\+\_\+\+Framework.\+Sprite3\+Parent}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_ab4c64556d7bcebf5ce538631ae9b5d6c}\label{class_r_c___framework_1_1_sprite3_ab4c64556d7bcebf5ce538631ae9b5d6c}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!scroll\+Move@{scroll\+Move}}
+\index{scroll\+Move@{scroll\+Move}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{scroll\+Move()}{scrollMove()}}
+{\footnotesize\ttfamily override bool R\+C\+\_\+\+Framework.\+Sprite3.\+scroll\+Move (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Used to scroll the entire screen -\/ while preserving old position usually called in spritelist 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the amount to scroll in x \\
+\hline
+{\em y} & the amount to scroll in y\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if successfull 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_bounded_a000dd516577e50fb39fc3e1acc774435}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+Bounded}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a6e007701b261f3c293389e5094513faf}\label{class_r_c___framework_1_1_sprite3_a6e007701b261f3c293389e5094513faf}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!set\+Active@{set\+Active}}
+\index{set\+Active@{set\+Active}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{set\+Active()}{setActive()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+set\+Active (\begin{DoxyParamCaption}\item[{bool}]{activeZ }\end{DoxyParamCaption})}
+
+
+
+set the active flag 
+
+
+\begin{DoxyParams}{Parameters}
+{\em activeZ} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a9299af8d2e5277dd0e810389a7ed831c}\label{class_r_c___framework_1_1_sprite3_a9299af8d2e5277dd0e810389a7ed831c}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!set\+Active\+And\+Visible@{set\+Active\+And\+Visible}}
+\index{set\+Active\+And\+Visible@{set\+Active\+And\+Visible}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{set\+Active\+And\+Visible()}{setActiveAndVisible()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+set\+Active\+And\+Visible (\begin{DoxyParamCaption}\item[{bool}]{activeZ }\end{DoxyParamCaption})}
+
+
+
+set the active flag 
+
+
+\begin{DoxyParams}{Parameters}
+{\em activeZ} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a2688823142342a7d1b2aaf91b8f5cc66}\label{class_r_c___framework_1_1_sprite3_a2688823142342a7d1b2aaf91b8f5cc66}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!set\+Animation\+Sequence@{set\+Animation\+Sequence}}
+\index{set\+Animation\+Sequence@{set\+Animation\+Sequence}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{set\+Animation\+Sequence()}{setAnimationSequence()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+set\+Animation\+Sequence (\begin{DoxyParamCaption}\item[{Vector2 \mbox{[}$\,$\mbox{]}}]{anim\+Seq,  }\item[{int}]{first\+FrameZ,  }\item[{int}]{last\+FrameZ,  }\item[{int}]{ticks\+Between\+FramesZ }\end{DoxyParamCaption})}
+
+
+
+Set an animation sequenece 
+
+
+\begin{DoxyParams}{Parameters}
+{\em anim\+Seq} & \\
+\hline
+{\em first\+FrameZ} & \\
+\hline
+{\em last\+FrameZ} & \\
+\hline
+{\em ticks\+Between\+FramesZ} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a280b1377c4b22b183c82956efa33c9e5}\label{class_r_c___framework_1_1_sprite3_a280b1377c4b22b183c82956efa33c9e5}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!set\+Anim\+Finished@{set\+Anim\+Finished}}
+\index{set\+Anim\+Finished@{set\+Anim\+Finished}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{set\+Anim\+Finished()}{setAnimFinished()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+set\+Anim\+Finished (\begin{DoxyParamCaption}\item[{int}]{what\+To\+Do }\end{DoxyParamCaption})}
+
+
+
+What to do when the animation is finished 0=loop 1=set sprite invisible 2=set sprite inactive and invisible 
+
+
+\begin{DoxyParams}{Parameters}
+{\em what\+To\+Do} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a0901ebb278e50e5244e4b7f0fbd57242}\label{class_r_c___framework_1_1_sprite3_a0901ebb278e50e5244e4b7f0fbd57242}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!set\+BB@{set\+BB}}
+\index{set\+BB@{set\+BB}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{set\+B\+B()}{setBB()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+set\+BB (\begin{DoxyParamCaption}\item[{float}]{bb\+Xoffset,  }\item[{float}]{bb\+Yoffset,  }\item[{float}]{bb\+WidthZ,  }\item[{float}]{bb\+HeightZ }\end{DoxyParamCaption})}
+
+
+
+Sets the bounding box relative to the hotspot (or position) if the hotspot is in the middle of the source image there is a fair chance that bb.\+X and bb.\+Y will be negative 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bb\+Xoffset} & \\
+\hline
+{\em bb\+Yoffset} & \\
+\hline
+{\em bb\+WidthZ} & \\
+\hline
+{\em bb\+HeightZ} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a4c84dca0a120793e378451cefefb4183}\label{class_r_c___framework_1_1_sprite3_a4c84dca0a120793e378451cefefb4183}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!set\+B\+Band\+H\+S\+Fraction\+Of\+Tex\+Centered@{set\+B\+Band\+H\+S\+Fraction\+Of\+Tex\+Centered}}
+\index{set\+B\+Band\+H\+S\+Fraction\+Of\+Tex\+Centered@{set\+B\+Band\+H\+S\+Fraction\+Of\+Tex\+Centered}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{set\+B\+Band\+H\+S\+Fraction\+Of\+Tex\+Centered()}{setBBandHSFractionOfTexCentered()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+set\+B\+Band\+H\+S\+Fraction\+Of\+Tex\+Centered (\begin{DoxyParamCaption}\item[{float}]{f }\end{DoxyParamCaption})}
+
+
+
+Sets the bounding box to a fraction of the texture width and height eg set\+B\+B\+To\+Fraction(0.\+6) would creat a small bounding box whose dimensions are 0.\+6 of the full sprite dimensions with the bboffset sane if the hotspot is 0,0 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a899837f4fa3d7c5736a31b30de845707}\label{class_r_c___framework_1_1_sprite3_a899837f4fa3d7c5736a31b30de845707}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!set\+B\+B\+Fraction\+Of\+Tex@{set\+B\+B\+Fraction\+Of\+Tex}}
+\index{set\+B\+B\+Fraction\+Of\+Tex@{set\+B\+B\+Fraction\+Of\+Tex}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{set\+B\+B\+Fraction\+Of\+Tex()}{setBBFractionOfTex()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+set\+B\+B\+Fraction\+Of\+Tex (\begin{DoxyParamCaption}\item[{float}]{f,  }\item[{int}]{xoffset,  }\item[{int}]{yoffset }\end{DoxyParamCaption})}
+
+
+
+Sets the bounding box to a fraction of the texture width and height eg set\+B\+B\+To\+Fraction(0.\+6, 5, 7) would creat a small bounding box whose dimensions are 0.\+6 of the full sprite dimensions with the bboffset at 5,7 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_ad599fbce8c9402618ead1232fc9d0539}\label{class_r_c___framework_1_1_sprite3_ad599fbce8c9402618ead1232fc9d0539}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!set\+B\+B\+Fraction\+Of\+Tex\+Centered@{set\+B\+B\+Fraction\+Of\+Tex\+Centered}}
+\index{set\+B\+B\+Fraction\+Of\+Tex\+Centered@{set\+B\+B\+Fraction\+Of\+Tex\+Centered}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{set\+B\+B\+Fraction\+Of\+Tex\+Centered()}{setBBFractionOfTexCentered()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+set\+B\+B\+Fraction\+Of\+Tex\+Centered (\begin{DoxyParamCaption}\item[{float}]{f }\end{DoxyParamCaption})}
+
+
+
+Sets the bounding box to a fraction of the texture width and height eg set\+B\+B\+To\+Fraction(0.\+6) would creat a small bounding box whose dimensions are 0.\+6 of the full sprite dimensions with the bboffset sane if the hotspot is 0,0 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a820e5316676eee1ef5fccdc9ac07cf15}\label{class_r_c___framework_1_1_sprite3_a820e5316676eee1ef5fccdc9ac07cf15}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!set\+B\+B\+To\+Frame\+In\+Tex@{set\+B\+B\+To\+Frame\+In\+Tex}}
+\index{set\+B\+B\+To\+Frame\+In\+Tex@{set\+B\+B\+To\+Frame\+In\+Tex}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{set\+B\+B\+To\+Frame\+In\+Tex()}{setBBToFrameInTex()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+set\+B\+B\+To\+Frame\+In\+Tex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+set the bounding box to the width and height of A single frame typically this is a bounding box that follows the image boundary with a hotspot in the image top left corner 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a352f91941f5ca2df898d966564e4c875}\label{class_r_c___framework_1_1_sprite3_a352f91941f5ca2df898d966564e4c875}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!set\+B\+B\+To\+Texture@{set\+B\+B\+To\+Texture}}
+\index{set\+B\+B\+To\+Texture@{set\+B\+B\+To\+Texture}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{set\+B\+B\+To\+Texture()}{setBBToTexture()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+set\+B\+B\+To\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+lol for basic sprites set the BB to the texture with and height 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_aca02729a3919f4f31c4c63f814ea0150}\label{class_r_c___framework_1_1_sprite3_aca02729a3919f4f31c4c63f814ea0150}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!set\+B\+B\+To\+WH@{set\+B\+B\+To\+WH}}
+\index{set\+B\+B\+To\+WH@{set\+B\+B\+To\+WH}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{set\+B\+B\+To\+W\+H()}{setBBToWH()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+set\+B\+B\+To\+WH (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+set the bounding box to the width and height of the sprite typically this is a bounding box that follows the image boundary with a hotspot in the image top left corner 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a9ed1e862b6f3f6a28f65b5c53fbb34e1}\label{class_r_c___framework_1_1_sprite3_a9ed1e862b6f3f6a28f65b5c53fbb34e1}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!set\+Bounding\+Poly\+From\+BB@{set\+Bounding\+Poly\+From\+BB}}
+\index{set\+Bounding\+Poly\+From\+BB@{set\+Bounding\+Poly\+From\+BB}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{set\+Bounding\+Poly\+From\+B\+B()}{setBoundingPolyFromBB()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_r_c___framework_1_1_polygon12}{Polygon12}} R\+C\+\_\+\+Framework.\+Sprite3.\+set\+Bounding\+Poly\+From\+BB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets a \mbox{\hyperlink{class_r_c___framework_1_1_polygon12}{Polygon12}} structure which is the non axis aligned bounding box from the \mbox{\hyperlink{class_r_c___framework_1_1_rect4}{Rect4}} its a fairly slow routine, if you use \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a1069512793423e1c5f3205d053e11d66}{get\+Bounding\+Box\+A\+A()}} anyway just do copy\+Rect4temp\+To\+B\+B() its faster 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a9a00bb05c798cc43c3518bb5ae6d0186}\label{class_r_c___framework_1_1_sprite3_a9a00bb05c798cc43c3518bb5ae6d0186}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!set\+Delta\+Speed@{set\+Delta\+Speed}}
+\index{set\+Delta\+Speed@{set\+Delta\+Speed}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{set\+Delta\+Speed()}{setDeltaSpeed()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+set\+Delta\+Speed (\begin{DoxyParamCaption}\item[{Vector2}]{ds }\end{DoxyParamCaption})}
+
+
+
+Set a speed vector for the deltax/deltay move system 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ds} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a13036025a68f4353c2b9014d8634e836}\label{class_r_c___framework_1_1_sprite3_a13036025a68f4353c2b9014d8634e836}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!set\+Display\+Angle\+Degrees@{set\+Display\+Angle\+Degrees}}
+\index{set\+Display\+Angle\+Degrees@{set\+Display\+Angle\+Degrees}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{set\+Display\+Angle\+Degrees()}{setDisplayAngleDegrees()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+set\+Display\+Angle\+Degrees (\begin{DoxyParamCaption}\item[{float}]{d }\end{DoxyParamCaption})}
+
+
+
+Set display angle in degrees 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a2ec8cfce2feb2f1e648131e03099b147}\label{class_r_c___framework_1_1_sprite3_a2ec8cfce2feb2f1e648131e03099b147}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!set\+Display\+Angle\+Offset@{set\+Display\+Angle\+Offset}}
+\index{set\+Display\+Angle\+Offset@{set\+Display\+Angle\+Offset}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{set\+Display\+Angle\+Offset()}{setDisplayAngleOffset()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+set\+Display\+Angle\+Offset (\begin{DoxyParamCaption}\item[{float}]{d }\end{DoxyParamCaption})}
+
+
+
+set the display angle offset in radians -\/ which is the angle added to the display\+Angle to make the sprite face in direction 0 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a6269a6c50ca875525156d347b216e491}\label{class_r_c___framework_1_1_sprite3_a6269a6c50ca875525156d347b216e491}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!set\+Display\+Angle\+Offset\+Degrees@{set\+Display\+Angle\+Offset\+Degrees}}
+\index{set\+Display\+Angle\+Offset\+Degrees@{set\+Display\+Angle\+Offset\+Degrees}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{set\+Display\+Angle\+Offset\+Degrees()}{setDisplayAngleOffsetDegrees()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+set\+Display\+Angle\+Offset\+Degrees (\begin{DoxyParamCaption}\item[{float}]{d }\end{DoxyParamCaption})}
+
+
+
+set the display angle offset -\/ which is the angle added to the display\+Angle to make the sprite face in direction 0 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a3e00764164dccc3eb6104e5ec643033a}\label{class_r_c___framework_1_1_sprite3_a3e00764164dccc3eb6104e5ec643033a}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!set\+Display\+Angle\+Radians@{set\+Display\+Angle\+Radians}}
+\index{set\+Display\+Angle\+Radians@{set\+Display\+Angle\+Radians}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{set\+Display\+Angle\+Radians()}{setDisplayAngleRadians()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+set\+Display\+Angle\+Radians (\begin{DoxyParamCaption}\item[{float}]{d }\end{DoxyParamCaption})}
+
+
+
+set display angle in radians 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a03369c23f152dc9720174e5053acd33f}\label{class_r_c___framework_1_1_sprite3_a03369c23f152dc9720174e5053acd33f}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!set\+Fade\+Details@{set\+Fade\+Details}}
+\index{set\+Fade\+Details@{set\+Fade\+Details}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{set\+Fade\+Details()}{setFadeDetails()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+set\+Fade\+Details (\begin{DoxyParamCaption}\item[{bool}]{fadeQ,  }\item[{Color}]{fade\+From\+ColourQ,  }\item[{Color}]{fade\+To\+ColourQ,  }\item[{int}]{fade\+TicksQ,  }\item[{bool}]{make\+InactiveQ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a89a3746f82cb41211df31fc775654e8c}\label{class_r_c___framework_1_1_sprite3_a89a3746f82cb41211df31fc775654e8c}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!set\+Flip@{set\+Flip}}
+\index{set\+Flip@{set\+Flip}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{set\+Flip()}{setFlip()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+set\+Flip (\begin{DoxyParamCaption}\item[{Sprite\+Effects}]{se }\end{DoxyParamCaption})}
+
+
+
+sets the flip paramentser 
+
+
+\begin{DoxyParams}{Parameters}
+{\em se} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a552be0daafb94d0cc7802a10539e5032}\label{class_r_c___framework_1_1_sprite3_a552be0daafb94d0cc7802a10539e5032}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!set\+Frame@{set\+Frame}}
+\index{set\+Frame@{set\+Frame}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{set\+Frame()}{setFrame()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+set\+Frame (\begin{DoxyParamCaption}\item[{int}]{f }\end{DoxyParamCaption})}
+
+
+
+Set the current frame number which is an index into the animation frame sequence data updated by set\+Animation\+Sequence 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_ad1f24cf43143791cb73c80a4af1881f0}\label{class_r_c___framework_1_1_sprite3_ad1f24cf43143791cb73c80a4af1881f0}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!set\+Height@{set\+Height}}
+\index{set\+Height@{set\+Height}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{set\+Height()}{setHeight()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+set\+Height (\begin{DoxyParamCaption}\item[{float}]{h }\end{DoxyParamCaption})}
+
+
+
+just set the sprite height in display pixels 
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a2551e6efc55ccfb3596b0f5bff398fc1}\label{class_r_c___framework_1_1_sprite3_a2551e6efc55ccfb3596b0f5bff398fc1}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!set\+H\+Soffset@{set\+H\+Soffset}}
+\index{set\+H\+Soffset@{set\+H\+Soffset}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{set\+H\+Soffset()}{setHSoffset()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+set\+H\+Soffset (\begin{DoxyParamCaption}\item[{Vector2}]{offset }\end{DoxyParamCaption})}
+
+
+
+Set the hotspot offset Note that this is in original image pixels not pixels after resize 
+
+
+\begin{DoxyParams}{Parameters}
+{\em offset} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_ac73292a1b053056aa28ecae03165c71d}\label{class_r_c___framework_1_1_sprite3_ac73292a1b053056aa28ecae03165c71d}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!set\+Image\+Source@{set\+Image\+Source}}
+\index{set\+Image\+Source@{set\+Image\+Source}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{set\+Image\+Source()}{setImageSource()}}
+{\footnotesize\ttfamily virtual void R\+C\+\_\+\+Framework.\+Sprite3.\+set\+Image\+Source (\begin{DoxyParamCaption}\item[{Rectangle}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sets a source image for the sprite (usually less than the total texture) W\+A\+R\+N\+I\+NG This will alter the Xframes, Yframes 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & The source image rectangle\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a6704e7b0ad3c2b828975cfe1c9cf73a3}\label{class_r_c___framework_1_1_sprite3_a6704e7b0ad3c2b828975cfe1c9cf73a3}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!set\+Move\+Angle\+Degrees@{set\+Move\+Angle\+Degrees}}
+\index{set\+Move\+Angle\+Degrees@{set\+Move\+Angle\+Degrees}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{set\+Move\+Angle\+Degrees()}{setMoveAngleDegrees()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+set\+Move\+Angle\+Degrees (\begin{DoxyParamCaption}\item[{float}]{m }\end{DoxyParamCaption})}
+
+
+
+Set the current movemnet angle for the angle / speed move system 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a323f04ef41bc129dee67fa3b4a5cab42}\label{class_r_c___framework_1_1_sprite3_a323f04ef41bc129dee67fa3b4a5cab42}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!set\+Move\+Angle\+Radians@{set\+Move\+Angle\+Radians}}
+\index{set\+Move\+Angle\+Radians@{set\+Move\+Angle\+Radians}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{set\+Move\+Angle\+Radians()}{setMoveAngleRadians()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+set\+Move\+Angle\+Radians (\begin{DoxyParamCaption}\item[{float}]{m }\end{DoxyParamCaption})}
+
+
+
+Set the current movemnet angle in radians for the angle / speed move system 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a630b8d8f2eda0fc820bf76a2c65f0671}\label{class_r_c___framework_1_1_sprite3_a630b8d8f2eda0fc820bf76a2c65f0671}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!set\+Move\+Speed@{set\+Move\+Speed}}
+\index{set\+Move\+Speed@{set\+Move\+Speed}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{set\+Move\+Speed()}{setMoveSpeed()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+set\+Move\+Speed (\begin{DoxyParamCaption}\item[{float}]{m }\end{DoxyParamCaption})}
+
+
+
+Set the current movemnet speed for the angle / speed move system 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a95f9492fffdbd603d9aa087b4bc108f4}\label{class_r_c___framework_1_1_sprite3_a95f9492fffdbd603d9aa087b4bc108f4}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!set\+Texture@{set\+Texture}}
+\index{set\+Texture@{set\+Texture}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{set\+Texture()}{setTexture()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+set\+Texture (\begin{DoxyParamCaption}\item[{Texture2D}]{tw,  }\item[{bool}]{compute\+New\+Size }\end{DoxyParamCaption})}
+
+
+
+set the texture -\/ and set a default texture width and height W\+A\+R\+N\+I\+NG if compute\+New\+Size is true all size information will be recomputed Xframes, Yframes W\+A\+R\+N\+I\+NG if compute\+New\+Size is false no size information will be recomputed Think about the value of compute\+New\+Size its not always that obvious 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tw} & \\
+\hline
+{\em compute\+New\+Size} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_abb634dc79e4094b58b566ef7d8aca35b}\label{class_r_c___framework_1_1_sprite3_abb634dc79e4094b58b566ef7d8aca35b}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!set\+Ticks\+To\+Invisible@{set\+Ticks\+To\+Invisible}}
+\index{set\+Ticks\+To\+Invisible@{set\+Ticks\+To\+Invisible}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{set\+Ticks\+To\+Invisible()}{setTicksToInvisible()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+set\+Ticks\+To\+Invisible (\begin{DoxyParamCaption}\item[{int}]{ticks,  }\item[{bool}]{inactive }\end{DoxyParamCaption})}
+
+
+
+Sets the ticks untill the sprite becomes invisible optionally inactive as well to use it you must call \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_aa6a483f4fdcd1ed260bd72f60a07834d}{tick()}} in update for the sprite 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ticks} & \\
+\hline
+{\em inactive} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_ab849638ba60bac0f9accbd4091f95d1e}\label{class_r_c___framework_1_1_sprite3_ab849638ba60bac0f9accbd4091f95d1e}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!set\+Ticks\+To\+Visible@{set\+Ticks\+To\+Visible}}
+\index{set\+Ticks\+To\+Visible@{set\+Ticks\+To\+Visible}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{set\+Ticks\+To\+Visible()}{setTicksToVisible()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+set\+Ticks\+To\+Visible (\begin{DoxyParamCaption}\item[{int}]{ticks }\end{DoxyParamCaption})}
+
+
+
+sets the number if ticks till the sprite becomes visible 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ticks} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a6c0cc3a2227564aba7ee4d66d0c620fe}\label{class_r_c___framework_1_1_sprite3_a6c0cc3a2227564aba7ee4d66d0c620fe}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!set\+Width@{set\+Width}}
+\index{set\+Width@{set\+Width}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{set\+Width()}{setWidth()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+set\+Width (\begin{DoxyParamCaption}\item[{float}]{w }\end{DoxyParamCaption})}
+
+
+
+Just set the sprite width in display pixels 
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_ac7c6f7b2d84cfae1559eb4c84cb37f59}\label{class_r_c___framework_1_1_sprite3_ac7c6f7b2d84cfae1559eb4c84cb37f59}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!set\+Width\+Height@{set\+Width\+Height}}
+\index{set\+Width\+Height@{set\+Width\+Height}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{set\+Width\+Height()}{setWidthHeight()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+set\+Width\+Height (\begin{DoxyParamCaption}\item[{float}]{w,  }\item[{float}]{h }\end{DoxyParamCaption})}
+
+
+
+sets the width and height of the sprite in display pixels 
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & \\
+\hline
+{\em h} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_aced9c5f15e8334fd68852b3c9e67f2d8}\label{class_r_c___framework_1_1_sprite3_aced9c5f15e8334fd68852b3c9e67f2d8}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!set\+Width\+Height\+Of\+Tex@{set\+Width\+Height\+Of\+Tex}}
+\index{set\+Width\+Height\+Of\+Tex@{set\+Width\+Height\+Of\+Tex}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{set\+Width\+Height\+Of\+Tex()}{setWidthHeightOfTex()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+set\+Width\+Height\+Of\+Tex (\begin{DoxyParamCaption}\item[{float}]{w,  }\item[{float}]{h }\end{DoxyParamCaption})}
+
+
+
+This sets the usefull part of the texture (which is assumed to be the top left bit) its necessary because not all textures conform to the power of 2 rule and are upsized to a power of two 
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & \\
+\hline
+{\em h} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_ad1f6bebc12d9d8f9bdf4ba13f3907bc3}\label{class_r_c___framework_1_1_sprite3_ad1f6bebc12d9d8f9bdf4ba13f3907bc3}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!set\+Width\+Height\+Of\+Tex\+To\+Tex@{set\+Width\+Height\+Of\+Tex\+To\+Tex}}
+\index{set\+Width\+Height\+Of\+Tex\+To\+Tex@{set\+Width\+Height\+Of\+Tex\+To\+Tex}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{set\+Width\+Height\+Of\+Tex\+To\+Tex()}{setWidthHeightOfTexToTex()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+set\+Width\+Height\+Of\+Tex\+To\+Tex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Just sets the active part of the texture to the whole texture 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a05dbc29987c0c2552cb69e81ea3fcdab}\label{class_r_c___framework_1_1_sprite3_a05dbc29987c0c2552cb69e81ea3fcdab}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!set\+Width\+Height\+To\+Tex@{set\+Width\+Height\+To\+Tex}}
+\index{set\+Width\+Height\+To\+Tex@{set\+Width\+Height\+To\+Tex}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{set\+Width\+Height\+To\+Tex()}{setWidthHeightToTex()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+set\+Width\+Height\+To\+Tex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+sets the width and height of the sprite to what was read in from the texture This is usefull when you want the whole image 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a56a7afacc321c80d0dfb1d9c5933f7df}\label{class_r_c___framework_1_1_sprite3_a56a7afacc321c80d0dfb1d9c5933f7df}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!set\+Xframe@{set\+Xframe}}
+\index{set\+Xframe@{set\+Xframe}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{set\+Xframe()}{setXframe()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+set\+Xframe (\begin{DoxyParamCaption}\item[{int}]{f }\end{DoxyParamCaption})}
+
+
+
+Set the current horizontal frame 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_aab8c41c05cad46205425cfdb86b60e56}\label{class_r_c___framework_1_1_sprite3_aab8c41c05cad46205425cfdb86b60e56}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!set\+Xframes@{set\+Xframes}}
+\index{set\+Xframes@{set\+Xframes}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{set\+Xframes()}{setXframes()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+set\+Xframes (\begin{DoxyParamCaption}\item[{int}]{f }\end{DoxyParamCaption})}
+
+
+
+Set the number of horizontal frames of animation 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a946e99f3317d07ce6a098c4b435e1689}\label{class_r_c___framework_1_1_sprite3_a946e99f3317d07ce6a098c4b435e1689}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!set\+Yframe@{set\+Yframe}}
+\index{set\+Yframe@{set\+Yframe}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{set\+Yframe()}{setYframe()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+set\+Yframe (\begin{DoxyParamCaption}\item[{int}]{f }\end{DoxyParamCaption})}
+
+
+
+set the current vertical frame 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a248e1776ffd7be872288f73fb7caeadd}\label{class_r_c___framework_1_1_sprite3_a248e1776ffd7be872288f73fb7caeadd}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!set\+Yframes@{set\+Yframes}}
+\index{set\+Yframes@{set\+Yframes}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{set\+Yframes()}{setYframes()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3.\+set\+Yframes (\begin{DoxyParamCaption}\item[{int}]{f }\end{DoxyParamCaption})}
+
+
+
+Set the number of vertical frames of animation 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_aa6a483f4fdcd1ed260bd72f60a07834d}\label{class_r_c___framework_1_1_sprite3_aa6a483f4fdcd1ed260bd72f60a07834d}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!tick@{tick}}
+\index{tick@{tick}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{tick()}{tick()}}
+{\footnotesize\ttfamily virtual void R\+C\+\_\+\+Framework.\+Sprite3.\+tick (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Tick the visible / invisible ticker Tick is used in sprite 3 to make a sprite visible after a certain time see the routine set\+Ticks\+To\+Visible to set the tick counter 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a5473d37c4f1f44fa1685dd64c82dfd8c}\label{class_r_c___framework_1_1_sprite3_a5473d37c4f1f44fa1685dd64c82dfd8c}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!Update@{Update}}
+\index{Update@{Update}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily override void R\+C\+\_\+\+Framework.\+Sprite3.\+Update (\begin{DoxyParamCaption}\item[{Game\+Time}]{game\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_a5745bedc7ba0587aa1e1d8563c357228}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_ae5664f646ee00d658a5d3087c78e9c8b}\label{class_r_c___framework_1_1_sprite3_ae5664f646ee00d658a5d3087c78e9c8b}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!animation\+Seq@{animation\+Seq}}
+\index{animation\+Seq@{animation\+Seq}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{animation\+Seq}{animationSeq}}
+{\footnotesize\ttfamily Vector2 \mbox{[}$\,$\mbox{]} R\+C\+\_\+\+Framework.\+Sprite3.\+animation\+Seq\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The complete animation sequence that running now (if any) this list contains x and y frame numbers and is itself indexed by frame 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_adcc42561b39149028339909953eabe4a}\label{class_r_c___framework_1_1_sprite3_adcc42561b39149028339909953eabe4a}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!anim\+Finished@{anim\+Finished}}
+\index{anim\+Finished@{anim\+Finished}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{anim\+Finished}{animFinished}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Sprite3.\+anim\+Finished\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+A flag telling what to do when the animation finishes 0=loop 1=set sprite invisible 2=set sprite inactive and invisible 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a4fedf0e3c61d7960064f3588a9cc8a93}\label{class_r_c___framework_1_1_sprite3_a4fedf0e3c61d7960064f3588a9cc8a93}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!bb\+Temp@{bb\+Temp}}
+\index{bb\+Temp@{bb\+Temp}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{bb\+Temp}{bbTemp}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_r_c___framework_1_1_rect4}{Rect4}} R\+C\+\_\+\+Framework.\+Sprite3.\+bb\+Temp}
+
+
+
+Internal structure so one can check bounding box positions this turns out to be a usefull variable for debugging and display also it can be moved to bounding\+Poly for a non AA bounding box using Util2.\+Polygon12(\+Rect4 r) constructor 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a539da11d835c64da3a78039cd05942e9}\label{class_r_c___framework_1_1_sprite3_a539da11d835c64da3a78039cd05942e9}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!bounding\+Poly@{bounding\+Poly}}
+\index{bounding\+Poly@{bounding\+Poly}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{bounding\+Poly}{boundingPoly}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_r_c___framework_1_1_polygon12}{Polygon12}} R\+C\+\_\+\+Framework.\+Sprite3.\+bounding\+Poly =null}
+
+
+
+Advanced Bounding box not axis aligned -\/ its in screen pixels Needs the polygon collision utility to use only partly supported updated by routine compute\+Bounding\+Poly\+From\+Pos 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a38eaba03c71e388c288d36fbdf9cf9b6}\label{class_r_c___framework_1_1_sprite3_a38eaba03c71e388c288d36fbdf9cf9b6}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!bounding\+Poly\+Offsets@{bounding\+Poly\+Offsets}}
+\index{bounding\+Poly\+Offsets@{bounding\+Poly\+Offsets}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{bounding\+Poly\+Offsets}{boundingPolyOffsets}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_r_c___framework_1_1_polygon12}{Polygon12}} R\+C\+\_\+\+Framework.\+Sprite3.\+bounding\+Poly\+Offsets =null}
+
+
+
+Advanced Bounding box polygon offsets -\/ its in screen pixels Needs the polygon collision utility to use only partly supported 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a6f76b1e09c665b5a930cb86c34c86429}\label{class_r_c___framework_1_1_sprite3_a6f76b1e09c665b5a930cb86c34c86429}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!bounding\+Sphere\+Radius@{bounding\+Sphere\+Radius}}
+\index{bounding\+Sphere\+Radius@{bounding\+Sphere\+Radius}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{bounding\+Sphere\+Radius}{boundingSphereRadius}}
+{\footnotesize\ttfamily float R\+C\+\_\+\+Framework.\+Sprite3.\+bounding\+Sphere\+Radius}
+
+
+
+bounding Sphere Radius for user to use this is in screen pixels not source pixels any resizing must be done by the user 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a085b269f8bcef70e2e90cc6473d6d9f0}\label{class_r_c___framework_1_1_sprite3_a085b269f8bcef70e2e90cc6473d6d9f0}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!delta\+Speed@{delta\+Speed}}
+\index{delta\+Speed@{delta\+Speed}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{delta\+Speed}{deltaSpeed}}
+{\footnotesize\ttfamily Vector2 R\+C\+\_\+\+Framework.\+Sprite3.\+delta\+Speed\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+movement vector when using the deltax deltay movement system 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_ab2d852bf859c3d55bcf6517797b69dc6}\label{class_r_c___framework_1_1_sprite3_ab2d852bf859c3d55bcf6517797b69dc6}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!dest@{dest}}
+\index{dest@{dest}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{dest}{dest}}
+{\footnotesize\ttfamily Rectangle R\+C\+\_\+\+Framework.\+Sprite3.\+dest}
+
+
+
+Internal destination rectangle -\/ do not touch unless you know what you are doing destination of image 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_aed8fd08f1d911727fb48d3c456be713a}\label{class_r_c___framework_1_1_sprite3_aed8fd08f1d911727fb48d3c456be713a}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!display\+Angle@{display\+Angle}}
+\index{display\+Angle@{display\+Angle}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{display\+Angle}{displayAngle}}
+{\footnotesize\ttfamily float R\+C\+\_\+\+Framework.\+Sprite3.\+display\+Angle}
+
+
+
+the display angle in radians -\/ which may or may not be the move angle should be set using set\+Display\+Angle(float d) 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_aafcde3bd32143744faf410c304a07f2d}\label{class_r_c___framework_1_1_sprite3_aafcde3bd32143744faf410c304a07f2d}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!display\+Angle\+Offset@{display\+Angle\+Offset}}
+\index{display\+Angle\+Offset@{display\+Angle\+Offset}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{display\+Angle\+Offset}{displayAngleOffset}}
+{\footnotesize\ttfamily float R\+C\+\_\+\+Framework.\+Sprite3.\+display\+Angle\+Offset}
+
+
+
+the display angle offset in radians Added to display angle to make the sprite \char`\"{}point in direction 0\char`\"{} should be set using \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a2ec8cfce2feb2f1e648131e03099b147}{set\+Display\+Angle\+Offset(float d)}} 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a2ea65f55b021e3ce841161c43f4f7f9b}\label{class_r_c___framework_1_1_sprite3_a2ea65f55b021e3ce841161c43f4f7f9b}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!first\+Frame@{first\+Frame}}
+\index{first\+Frame@{first\+Frame}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{first\+Frame}{firstFrame}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Sprite3.\+first\+Frame\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+the first animation frame withing sequence \textquotesingle{}animation\+Seq\textquotesingle{} 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a2320b0a1f529f8b9998377a5690c2878}\label{class_r_c___framework_1_1_sprite3_a2320b0a1f529f8b9998377a5690c2878}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!flip@{flip}}
+\index{flip@{flip}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{flip}{flip}}
+{\footnotesize\ttfamily Sprite\+Effects R\+C\+\_\+\+Framework.\+Sprite3.\+flip = Sprite\+Effects.\+None}
+
+
+
+the direction of the sprite Sprite\+Effects.\+None, Sprite\+Effects.\+Flip\+Horizontaly, Sprite\+Effects.\+Flip\+Vertically 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a51a88ce97928314b06f83ce2ab6cd04f}\label{class_r_c___framework_1_1_sprite3_a51a88ce97928314b06f83ce2ab6cd04f}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!frame@{frame}}
+\index{frame@{frame}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{frame}{frame}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Sprite3.\+frame\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+the frame withing sequence \textquotesingle{}animation\+Seq\textquotesingle{} 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a052b6b4879f526456238accb371373a0}\label{class_r_c___framework_1_1_sprite3_a052b6b4879f526456238accb371373a0}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!frame\+Source@{frame\+Source}}
+\index{frame\+Source@{frame\+Source}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{frame\+Source}{frameSource}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_r_c___framework_1_1_frame_source}{Frame\+Source}} R\+C\+\_\+\+Framework.\+Sprite3.\+frame\+Source = null}
+
+
+
+Animation system can have various values the possible behaviours are\+: 
+
+
+\begin{DoxyItemize}
+\item the whole texture the sprite is all of it to do this set xframes = 1 and yframes = 1 (default behaviour)
+\item the texture but take a part of it to do this set image Source from image\+Source and set xframes = 0 (part of the texture)
+\item simple animation system (x and y simple frame animation system) to do this set Xframes $>$ 1 or Yframes $>$ 1
+\item complex frame aniumations ~\newline
+ to do this set if frame\+Source != null (set it to a frame source) then you get the new behaviour ~\newline
+ $\ast$ the new behaviour uses \mbox{\hyperlink{class_r_c___framework_1_1_r_c___frame}{R\+C\+\_\+\+Frame}} class and specifically a \mbox{\hyperlink{class_r_c___framework_1_1_frame_source}{Frame\+Source}}
+\begin{DoxyItemize}
+\item by constructing a frame source you can have maximum control of the aniamtion
+\item frame sources update the frames in Update this will be called when you call animation\+Tick on the sprite 
+\end{DoxyItemize}
+\end{DoxyItemize}\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a3868e4ebe3d2ac0311fcf950650c5f91}\label{class_r_c___framework_1_1_sprite3_a3868e4ebe3d2ac0311fcf950650c5f91}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!height@{height}}
+\index{height@{height}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily float R\+C\+\_\+\+Framework.\+Sprite3.\+height\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+the height of the sprite on the screen in pixels 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_abe8d4ab8316448c8d9ff2da22b680380}\label{class_r_c___framework_1_1_sprite3_abe8d4ab8316448c8d9ff2da22b680380}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!hit\+Points@{hit\+Points}}
+\index{hit\+Points@{hit\+Points}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{hit\+Points}{hitPoints}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Sprite3.\+hit\+Points}
+
+
+
+this variable called hit\+Points is available for use by user code it is also used by the attached renderable \mbox{\hyperlink{class_r_c___framework_1_1_health_bar}{Health\+Bar}} if one is active 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_aeed4e50c73f6bc34f4b9a4dec34c2f8e}\label{class_r_c___framework_1_1_sprite3_aeed4e50c73f6bc34f4b9a4dec34c2f8e}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!hot\+Spot\+Offset@{hot\+Spot\+Offset}}
+\index{hot\+Spot\+Offset@{hot\+Spot\+Offset}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{hot\+Spot\+Offset}{hotSpotOffset}}
+{\footnotesize\ttfamily Vector2 R\+C\+\_\+\+Framework.\+Sprite3.\+hot\+Spot\+Offset\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+hotspot offset x and y from top left corner of either the image -\/ or single frame if its an animation hotspot offet is in pixels in the souce image 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a17993ffc6fc5f0b2008edb24696d5982}\label{class_r_c___framework_1_1_sprite3_a17993ffc6fc5f0b2008edb24696d5982}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!image\+Source@{image\+Source}}
+\index{image\+Source@{image\+Source}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{image\+Source}{imageSource}}
+{\footnotesize\ttfamily Rectangle R\+C\+\_\+\+Framework.\+Sprite3.\+image\+Source\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+image source is used only if xframes == 0 can be used to create a sprite that uses only a part of an image set it using \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_ac73292a1b053056aa28ecae03165c71d}{set\+Image\+Source(\+Rectangle r)}} 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a569b5506e5da155612f938e414d40c0b}\label{class_r_c___framework_1_1_sprite3_a569b5506e5da155612f938e414d40c0b}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!kind@{kind}}
+\index{kind@{kind}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{kind}{kind}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Sprite3.\+kind}
+
+
+
+this variable called kind is available for use by user code 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_afc5ff18b8c0a0c4b8bb686270e0157c1}\label{class_r_c___framework_1_1_sprite3_afc5ff18b8c0a0c4b8bb686270e0157c1}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!last\+Frame@{last\+Frame}}
+\index{last\+Frame@{last\+Frame}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{last\+Frame}{lastFrame}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Sprite3.\+last\+Frame\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+the last animation frame withing sequence \textquotesingle{}animation\+Seq\textquotesingle{} 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a7177e23ee5d4dd93ca4972e9798be680}\label{class_r_c___framework_1_1_sprite3_a7177e23ee5d4dd93ca4972e9798be680}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!max\+Hit\+Points@{max\+Hit\+Points}}
+\index{max\+Hit\+Points@{max\+Hit\+Points}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{max\+Hit\+Points}{maxHitPoints}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Sprite3.\+max\+Hit\+Points}
+
+
+
+this variable called max\+Hit\+Points is available for use by user code it may get used by an attached renderable to draw a health bar (or any other purpose) it is used by the attached renderable \mbox{\hyperlink{class_r_c___framework_1_1_health_bar}{Health\+Bar}} 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a21a2dd7d771adeacb93f54e16c70809a}\label{class_r_c___framework_1_1_sprite3_a21a2dd7d771adeacb93f54e16c70809a}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!move\+Angle@{move\+Angle}}
+\index{move\+Angle@{move\+Angle}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{move\+Angle}{moveAngle}}
+{\footnotesize\ttfamily float R\+C\+\_\+\+Framework.\+Sprite3.\+move\+Angle\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+the movement angle in radians if using the angle / speed movement system 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_ada8bbec97deb2dca71402963312b59f5}\label{class_r_c___framework_1_1_sprite3_ada8bbec97deb2dca71402963312b59f5}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!move\+Speed@{move\+Speed}}
+\index{move\+Speed@{move\+Speed}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{move\+Speed}{moveSpeed}}
+{\footnotesize\ttfamily float R\+C\+\_\+\+Framework.\+Sprite3.\+move\+Speed\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+the movement angle if using the angle / speed movement system 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a0b0ba2dfebf13a8ecf6ef372e3048f3c}\label{class_r_c___framework_1_1_sprite3_a0b0ba2dfebf13a8ecf6ef372e3048f3c}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!name@{name}}
+\index{name@{name}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily string R\+C\+\_\+\+Framework.\+Sprite3.\+name}
+
+
+
+Used by user for id or text purposes 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a77e1dfb9e0693a43de14ea2d0c565280}\label{class_r_c___framework_1_1_sprite3_a77e1dfb9e0693a43de14ea2d0c565280}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!save\+Display\+Angle@{save\+Display\+Angle}}
+\index{save\+Display\+Angle@{save\+Display\+Angle}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{save\+Display\+Angle}{saveDisplayAngle}}
+{\footnotesize\ttfamily float R\+C\+\_\+\+Framework.\+Sprite3.\+save\+Display\+Angle\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Just a place to store a save of the display angle 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a0bc61dcdb25da53eca3d470d1156e2a3}\label{class_r_c___framework_1_1_sprite3_a0bc61dcdb25da53eca3d470d1156e2a3}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!save\+Move\+Angle@{save\+Move\+Angle}}
+\index{save\+Move\+Angle@{save\+Move\+Angle}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{save\+Move\+Angle}{saveMoveAngle}}
+{\footnotesize\ttfamily float R\+C\+\_\+\+Framework.\+Sprite3.\+save\+Move\+Angle\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Just a place to save the move angle 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a4428b9c3efc3f675f04df8141dc6e108}\label{class_r_c___framework_1_1_sprite3_a4428b9c3efc3f675f04df8141dc6e108}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!score@{score}}
+\index{score@{score}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{score}{score}}
+{\footnotesize\ttfamily float R\+C\+\_\+\+Framework.\+Sprite3.\+score}
+
+
+
+this variable called score is available for use by user code 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_af4a00055db200e357c65f9b289989ba5}\label{class_r_c___framework_1_1_sprite3_af4a00055db200e357c65f9b289989ba5}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!Sprite\+Version@{Sprite\+Version}}
+\index{Sprite\+Version@{Sprite\+Version}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{Sprite\+Version}{SpriteVersion}}
+{\footnotesize\ttfamily const string R\+C\+\_\+\+Framework.\+Sprite3.\+Sprite\+Version =\char`\"{}V3.\+18.\+1\char`\"{}}
+
+
+
+Just a version to help code controll 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_aec76c65582a5d71056a0d5f44f2e2906}\label{class_r_c___framework_1_1_sprite3_aec76c65582a5d71056a0d5f44f2e2906}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!src@{src}}
+\index{src@{src}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{src}{src}}
+{\footnotesize\ttfamily Rectangle R\+C\+\_\+\+Framework.\+Sprite3.\+src}
+
+
+
+Internal source rectangle -\/ do not touch unless you know what you are doing source of image 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a390f0fa7f5de0cb734e313b31551b9c3}\label{class_r_c___framework_1_1_sprite3_a390f0fa7f5de0cb734e313b31551b9c3}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!state@{state}}
+\index{state@{state}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Sprite3.\+state}
+
+
+
+this variable called state is available for use by user code 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a7a99bed1590ff1e7e1f7c52a4a53c37e}\label{class_r_c___framework_1_1_sprite3_a7a99bed1590ff1e7e1f7c52a4a53c37e}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!target@{target}}
+\index{target@{target}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{target}{target}}
+{\footnotesize\ttfamily Vector2 R\+C\+\_\+\+Framework.\+Sprite3.\+target}
+
+
+
+this variable called target is available for use by user code 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_ac69869c54b541f68ac23464874a4e91f}\label{class_r_c___framework_1_1_sprite3_ac69869c54b541f68ac23464874a4e91f}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!tex\+Base@{tex\+Base}}
+\index{tex\+Base@{tex\+Base}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{tex\+Base}{texBase}}
+{\footnotesize\ttfamily Texture2D R\+C\+\_\+\+Framework.\+Sprite3.\+tex\+Base\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The sprites texture2d for basic sprites -\/ do not change it arbitarily use set\+Texture(\+Texture2\+D tw) routine instead to preserve frame information 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a5b3ed08cfae3aba31834ad0c16c98ed3}\label{class_r_c___framework_1_1_sprite3_a5b3ed08cfae3aba31834ad0c16c98ed3}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!tex\+Frame@{tex\+Frame}}
+\index{tex\+Frame@{tex\+Frame}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{tex\+Frame}{texFrame}}
+{\footnotesize\ttfamily Texture2D R\+C\+\_\+\+Framework.\+Sprite3.\+tex\+Frame\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The sprites texture2d for sprites using a \mbox{\hyperlink{class_r_c___framework_1_1_frame_source}{Frame\+Source}} usually in all other cases it is identical to tex\+Base do not change it arbitarily use set\+Texture(\+Texture2\+D tw) routine instead to preserve frame information it is updated frame by frame when frame\+Source is used 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a66c1c4d6d47a86970961d4ba041acfce}\label{class_r_c___framework_1_1_sprite3_a66c1c4d6d47a86970961d4ba041acfce}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!tex\+Height@{tex\+Height}}
+\index{tex\+Height@{tex\+Height}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{tex\+Height}{texHeight}}
+{\footnotesize\ttfamily float R\+C\+\_\+\+Framework.\+Sprite3.\+tex\+Height\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+the height of the meaningful part of the texture 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a6155a73405919a9651d0d38e47dca233}\label{class_r_c___framework_1_1_sprite3_a6155a73405919a9651d0d38e47dca233}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!tex\+Width@{tex\+Width}}
+\index{tex\+Width@{tex\+Width}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{tex\+Width}{texWidth}}
+{\footnotesize\ttfamily float R\+C\+\_\+\+Framework.\+Sprite3.\+tex\+Width\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+the width of the meaningful part of the texture 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a59474528cccad4b750e2b72a5f8cf585}\label{class_r_c___framework_1_1_sprite3_a59474528cccad4b750e2b72a5f8cf585}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!ticks@{ticks}}
+\index{ticks@{ticks}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{ticks}{ticks}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Sprite3.\+ticks\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+just a counter as it implies for animation purposes 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a16c0418616359c95be16c9946db1fc23}\label{class_r_c___framework_1_1_sprite3_a16c0418616359c95be16c9946db1fc23}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!ticks\+Between\+Frames@{ticks\+Between\+Frames}}
+\index{ticks\+Between\+Frames@{ticks\+Between\+Frames}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{ticks\+Between\+Frames}{ticksBetweenFrames}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Sprite3.\+ticks\+Between\+Frames\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+number of ticks between aniamtion frames at 60 frames a second this could be as much as 20 or more 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a77c5b7c794daacbd31c49f83e40978f9}\label{class_r_c___framework_1_1_sprite3_a77c5b7c794daacbd31c49f83e40978f9}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!var\+Bool0@{var\+Bool0}}
+\index{var\+Bool0@{var\+Bool0}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{var\+Bool0}{varBool0}}
+{\footnotesize\ttfamily bool R\+C\+\_\+\+Framework.\+Sprite3.\+var\+Bool0}
+
+
+
+these variables called var\+Bool0, var\+Bool1 are available for use by user code 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a5f9e5ed1f2c6b498eb2ca9e461c8bebc}\label{class_r_c___framework_1_1_sprite3_a5f9e5ed1f2c6b498eb2ca9e461c8bebc}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!var\+Bool1@{var\+Bool1}}
+\index{var\+Bool1@{var\+Bool1}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{var\+Bool1}{varBool1}}
+{\footnotesize\ttfamily bool R\+C\+\_\+\+Framework.\+Sprite3.\+var\+Bool1}
+
+
+
+available for use by user code 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_aa90e0f3319e1d183780eaa4570d6bf2b}\label{class_r_c___framework_1_1_sprite3_aa90e0f3319e1d183780eaa4570d6bf2b}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!var\+Float1@{var\+Float1}}
+\index{var\+Float1@{var\+Float1}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{var\+Float1}{varFloat1}}
+{\footnotesize\ttfamily float R\+C\+\_\+\+Framework.\+Sprite3.\+var\+Float1}
+
+
+
+available for use by user code single floatig point number 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_af2d07d57951fed3fd45129d58590974a}\label{class_r_c___framework_1_1_sprite3_af2d07d57951fed3fd45129d58590974a}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!var\+Int0@{var\+Int0}}
+\index{var\+Int0@{var\+Int0}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{var\+Int0}{varInt0}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Sprite3.\+var\+Int0}
+
+
+
+variables called var\+Int0, var\+Int1, var\+Int2 are available for use by user code there is also tagint and tag from renderable -\/ they are sort of duplicates 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a76f69d382ff8046c88681fe212a99176}\label{class_r_c___framework_1_1_sprite3_a76f69d382ff8046c88681fe212a99176}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!var\+Int1@{var\+Int1}}
+\index{var\+Int1@{var\+Int1}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{var\+Int1}{varInt1}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Sprite3.\+var\+Int1}
+
+
+
+available for use by user code 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a6dda4cde780442d3d2f226158fee5a11}\label{class_r_c___framework_1_1_sprite3_a6dda4cde780442d3d2f226158fee5a11}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!var\+Int2@{var\+Int2}}
+\index{var\+Int2@{var\+Int2}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{var\+Int2}{varInt2}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Sprite3.\+var\+Int2}
+
+
+
+available for use by user code 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_ae6cca5521f73ec073caa66b816ab8408}\label{class_r_c___framework_1_1_sprite3_ae6cca5521f73ec073caa66b816ab8408}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!var\+Int3@{var\+Int3}}
+\index{var\+Int3@{var\+Int3}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{var\+Int3}{varInt3}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Sprite3.\+var\+Int3}
+
+
+
+available for use by user code 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a461eb5bc92dd3eff6daff40147f060eb}\label{class_r_c___framework_1_1_sprite3_a461eb5bc92dd3eff6daff40147f060eb}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!var\+Int4@{var\+Int4}}
+\index{var\+Int4@{var\+Int4}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{var\+Int4}{varInt4}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Sprite3.\+var\+Int4}
+
+
+
+available for use by user code 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_adc96bdd58b49ea7f51c3e4a9f8167bc8}\label{class_r_c___framework_1_1_sprite3_adc96bdd58b49ea7f51c3e4a9f8167bc8}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!width@{width}}
+\index{width@{width}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily float R\+C\+\_\+\+Framework.\+Sprite3.\+width\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The width of the sprite on the screen 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a480cad054f3470c3041e4759212b9194}\label{class_r_c___framework_1_1_sprite3_a480cad054f3470c3041e4759212b9194}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!Xframe@{Xframe}}
+\index{Xframe@{Xframe}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{Xframe}{Xframe}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Sprite3.\+Xframe\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Animation information -\/ current horizontal frame number frame numbers start at 0 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a19515e51beafff504963c7b4491a7d04}\label{class_r_c___framework_1_1_sprite3_a19515e51beafff504963c7b4491a7d04}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!Xframes@{Xframes}}
+\index{Xframes@{Xframes}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{Xframes}{Xframes}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Sprite3.\+Xframes\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Animation information -\/ number of horizontal frames 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a337367ffb386b75b771589859fb70813}\label{class_r_c___framework_1_1_sprite3_a337367ffb386b75b771589859fb70813}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!Yframe@{Yframe}}
+\index{Yframe@{Yframe}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{Yframe}{Yframe}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Sprite3.\+Yframe\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Animation information -\/ current vertical frame number frame numbers start at 0 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_ac70dad68ff6f97705846e0c43db63295}\label{class_r_c___framework_1_1_sprite3_ac70dad68ff6f97705846e0c43db63295}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!Yframes@{Yframes}}
+\index{Yframes@{Yframes}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{Yframes}{Yframes}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Sprite3.\+Yframes\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Animation information -\/ number of vertical frames 
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a4c216d42873e3e4d52d30596f3078bc8}\label{class_r_c___framework_1_1_sprite3_a4c216d42873e3e4d52d30596f3078bc8}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!attached\+Renderable@{attached\+Renderable}}
+\index{attached\+Renderable@{attached\+Renderable}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{attached\+Renderable}{attachedRenderable}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_attached}{R\+C\+\_\+\+Renderable\+Attached}} R\+C\+\_\+\+Framework.\+Sprite3.\+attached\+Renderable\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+This is a property for an attached renderable This can be used to show things like life bars or values if hit Importantly the renderable knows of its parent sprite If you are using attached renderables, its necessary to call the sprites \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a5473d37c4f1f44fa1685dd64c82dfd8c}{Update(\+Game\+Time game\+Time)}} method 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_ae627737dc486e6c5a9255921e620ff26}\label{class_r_c___framework_1_1_sprite3_ae627737dc486e6c5a9255921e620ff26}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!attached\+Renderable2@{attached\+Renderable2}}
+\index{attached\+Renderable2@{attached\+Renderable2}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{attached\+Renderable2}{attachedRenderable2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_attached}{R\+C\+\_\+\+Renderable\+Attached}} R\+C\+\_\+\+Framework.\+Sprite3.\+attached\+Renderable2\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+This is a property for a second attached renderable This can be used to show things like life bars or values if hit Importantly the renderable knows of its parent sprite If you are using attached renderables, its necessary to call the sprites \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a5473d37c4f1f44fa1685dd64c82dfd8c}{Update(\+Game\+Time game\+Time)}} method 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_aa3f2de2ac85a5cb8f0753474ce2fc2f0}\label{class_r_c___framework_1_1_sprite3_aa3f2de2ac85a5cb8f0753474ce2fc2f0}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!bounds@{bounds}}
+\index{bounds@{bounds}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{bounds}{bounds}}
+{\footnotesize\ttfamily override Rectangle R\+C\+\_\+\+Framework.\+Sprite3.\+bounds\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_ac2869487c1a7c38299b913adbb4f97b7}\label{class_r_c___framework_1_1_sprite3_ac2869487c1a7c38299b913adbb4f97b7}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!display\+Angle\+Delta@{display\+Angle\+Delta}}
+\index{display\+Angle\+Delta@{display\+Angle\+Delta}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{display\+Angle\+Delta}{displayAngleDelta}}
+{\footnotesize\ttfamily float R\+C\+\_\+\+Framework.\+Sprite3.\+display\+Angle\+Delta\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+the amount to adjust display angle by each tick (radians) 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a2232d226353d716bf6928a252381ddd9}\label{class_r_c___framework_1_1_sprite3_a2232d226353d716bf6928a252381ddd9}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!move\+Angle\+Delta@{move\+Angle\+Delta}}
+\index{move\+Angle\+Delta@{move\+Angle\+Delta}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{move\+Angle\+Delta}{moveAngleDelta}}
+{\footnotesize\ttfamily float R\+C\+\_\+\+Framework.\+Sprite3.\+move\+Angle\+Delta\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+the amount to adjust move angle by each tick (radians) 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_a95fc30b1a8756bc02dd6fd8fcf9f81ec}\label{class_r_c___framework_1_1_sprite3_a95fc30b1a8756bc02dd6fd8fcf9f81ec}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}!way\+List@{way\+List}}
+\index{way\+List@{way\+List}!R\+C\+\_\+\+Framework\+::\+Sprite3@{R\+C\+\_\+\+Framework\+::\+Sprite3}}
+\subsubsection{\texorpdfstring{way\+List}{wayList}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_r_c___framework_1_1_way_point_list}{Way\+Point\+List}} R\+C\+\_\+\+Framework.\+Sprite3.\+way\+List\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The waypoints for the waypoint move routines at this time you need a separate waypointlist for each sprite so setting this uses a copy constructor 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+B/\+R\+C\+\_\+\+Framework2018/\+Source/\mbox{\hyperlink{_r_c___sprite3_8cs}{R\+C\+\_\+\+Sprite3.\+cs}}\end{DoxyCompactItemize}

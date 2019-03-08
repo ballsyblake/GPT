@@ -1,0 +1,98 @@
+\hypertarget{class_r_c___framework_1_1_frame_source}{}\section{R\+C\+\_\+\+Framework.\+Frame\+Source Class Reference}
+\label{class_r_c___framework_1_1_frame_source}\index{R\+C\+\_\+\+Framework.\+Frame\+Source@{R\+C\+\_\+\+Framework.\+Frame\+Source}}
+
+
+Abstract class to get a numbered frame  
+
+
+Inheritance diagram for R\+C\+\_\+\+Framework.\+Frame\+Source\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.689291cm]{class_r_c___framework_1_1_frame_source}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract \mbox{\hyperlink{class_r_c___framework_1_1_r_c___frame}{R\+C\+\_\+\+Frame}} \mbox{\hyperlink{class_r_c___framework_1_1_frame_source_a6fd84a8d608da7d9ff2ff5ab10ed4243}{get\+Frame}} ()
+\begin{DoxyCompactList}\small\item\em this one method must be overridden and return the current frame or null \end{DoxyCompactList}\item 
+abstract \mbox{\hyperlink{class_r_c___framework_1_1_r_c___frame}{R\+C\+\_\+\+Frame}} \mbox{\hyperlink{class_r_c___framework_1_1_frame_source_a562dc295b5c265ec760227978802eb3a}{get\+Frame}} (int num)
+\begin{DoxyCompactList}\small\item\em this method is usually overridden and returns a numbered frame for any given number (or null) \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_r_c___framework_1_1_frame_source_a4ab94513c0555c16316b540aed1e9144}{Update}} (Game\+Time game\+Time)
+\begin{DoxyCompactList}\small\item\em Update so the frames can advance if necessary \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract class to get a numbered frame 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_frame_source_a6fd84a8d608da7d9ff2ff5ab10ed4243}\label{class_r_c___framework_1_1_frame_source_a6fd84a8d608da7d9ff2ff5ab10ed4243}} 
+\index{R\+C\+\_\+\+Framework\+::\+Frame\+Source@{R\+C\+\_\+\+Framework\+::\+Frame\+Source}!get\+Frame@{get\+Frame}}
+\index{get\+Frame@{get\+Frame}!R\+C\+\_\+\+Framework\+::\+Frame\+Source@{R\+C\+\_\+\+Framework\+::\+Frame\+Source}}
+\subsubsection{\texorpdfstring{get\+Frame()}{getFrame()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily abstract \mbox{\hyperlink{class_r_c___framework_1_1_r_c___frame}{R\+C\+\_\+\+Frame}} R\+C\+\_\+\+Framework.\+Frame\+Source.\+get\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+this one method must be overridden and return the current frame or null 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_r_c___framework_1_1_animation_frame_list_a5bc162ddb15e2ef4f98b72be2720a87b}{R\+C\+\_\+\+Framework.\+Animation\+Frame\+List}}, \mbox{\hyperlink{class_r_c___framework_1_1_frame_list_ab91faad4e97b6e118d1b49d267d15b34}{R\+C\+\_\+\+Framework.\+Frame\+List}}, and \mbox{\hyperlink{class_r_c___framework_1_1_r_c___frame_a9262ade99ade9dc102aac56587d55d0f}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Frame}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_frame_source_a562dc295b5c265ec760227978802eb3a}\label{class_r_c___framework_1_1_frame_source_a562dc295b5c265ec760227978802eb3a}} 
+\index{R\+C\+\_\+\+Framework\+::\+Frame\+Source@{R\+C\+\_\+\+Framework\+::\+Frame\+Source}!get\+Frame@{get\+Frame}}
+\index{get\+Frame@{get\+Frame}!R\+C\+\_\+\+Framework\+::\+Frame\+Source@{R\+C\+\_\+\+Framework\+::\+Frame\+Source}}
+\subsubsection{\texorpdfstring{get\+Frame()}{getFrame()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily abstract \mbox{\hyperlink{class_r_c___framework_1_1_r_c___frame}{R\+C\+\_\+\+Frame}} R\+C\+\_\+\+Framework.\+Frame\+Source.\+get\+Frame (\begin{DoxyParamCaption}\item[{int}]{num }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+this method is usually overridden and returns a numbered frame for any given number (or null) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_r_c___framework_1_1_animation_frame_list_aa253565464d98bf955c81702fd3d66a4}{R\+C\+\_\+\+Framework.\+Animation\+Frame\+List}}, \mbox{\hyperlink{class_r_c___framework_1_1_frame_list_a5bfd1878eccd7e9e0c66f6e848383e6b}{R\+C\+\_\+\+Framework.\+Frame\+List}}, and \mbox{\hyperlink{class_r_c___framework_1_1_r_c___frame_ad0a2ae1e80157a79713552d9484eb5de}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Frame}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_frame_source_a4ab94513c0555c16316b540aed1e9144}\label{class_r_c___framework_1_1_frame_source_a4ab94513c0555c16316b540aed1e9144}} 
+\index{R\+C\+\_\+\+Framework\+::\+Frame\+Source@{R\+C\+\_\+\+Framework\+::\+Frame\+Source}!Update@{Update}}
+\index{Update@{Update}!R\+C\+\_\+\+Framework\+::\+Frame\+Source@{R\+C\+\_\+\+Framework\+::\+Frame\+Source}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily virtual void R\+C\+\_\+\+Framework.\+Frame\+Source.\+Update (\begin{DoxyParamCaption}\item[{Game\+Time}]{game\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Update so the frames can advance if necessary 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Time} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_r_c___framework_1_1_animation_frame_list_ad6d3b045da01a972a32f48ae7b7c7598}{R\+C\+\_\+\+Framework.\+Animation\+Frame\+List}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+B/\+R\+C\+\_\+\+Framework2018/\+Source/\mbox{\hyperlink{_r_c___frame_8cs}{R\+C\+\_\+\+Frame.\+cs}}\end{DoxyCompactItemize}

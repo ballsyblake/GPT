@@ -1,0 +1,234 @@
+\hypertarget{class_r_c___framework_1_1_r_c___renderable_bounded}{}\section{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+Bounded Class Reference}
+\label{class_r_c___framework_1_1_r_c___renderable_bounded}\index{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+Bounded@{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+Bounded}}
+
+
+This class is a parent for a range of renderable class\textquotesingle{}s with a rectangle for bounds it allows seting the bounds by routines that resize it for zooming ~\newline
+the bounds are definitly the render bounds not a collision box (though of course they may be the same)  
+
+
+Inheritance diagram for R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+Bounded\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_r_c___framework_1_1_r_c___renderable_bounded}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_bounded_a49d38185d66bf150677aaf9cc35eb4fa}{set\+Pos}} (float x, float y)
+\begin{DoxyCompactList}\small\item\em Set the x and y position of this renderable \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_bounded_a000dd516577e50fb39fc3e1acc774435}{scroll\+Move}} (float x, float y)
+\begin{DoxyCompactList}\small\item\em Used to scroll the entire screen -\/ while preserving old position usually called in renderable List Will have problemes with non integral scroll amounts (ie fractions) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_bounded_a871ee20b647861fb3fb93e112375db21}{set\+Width\+Height}} (int w, int h)
+\begin{DoxyCompactList}\small\item\em set the width and height \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_bounded_a36f45a8174f4cee93a65085e015a2b2e}{Contains}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Returns true if the renderable contains the point x,y \end{DoxyCompactList}\item 
+Rectangle \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_bounded_a744532d85e586e0aa52f75dd1af3f60f}{Intersect}} (Rectangle r)
+\begin{DoxyCompactList}\small\item\em Returns a rectangle which is the intersection of this renderable with another rectangle \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_bounded_a394581a8ad6bf9a472214fe4316ea37c}{Intersects}} (Rectangle r)
+\begin{DoxyCompactList}\small\item\em Returns true if the rectange intersects this this renderable \end{DoxyCompactList}\item 
+Vector2 \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_bounded_a93bf68209b9cf3bce7cbbd8eb02d6e1a}{get\+Sub\+Location}} (int sub\+Loc\+Num)
+\begin{DoxyCompactList}\small\item\em Returns Various points in the rectangle \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_bounded_a126c01971f9ab5ac288b84aa985117e1}{inside}} (Rectangle r)
+\begin{DoxyCompactList}\small\item\em Returns true if inside or on boundary of r \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Rectangle \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_bounded_aabcb0f8cd56a2e7b6209f8530194aff1}{boundz}}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+virtual Rectangle \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_bounded_a64a3cd64146d7e7bc5897e5a849f158f}{bounds}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This class is a parent for a range of renderable class\textquotesingle{}s with a rectangle for bounds it allows seting the bounds by routines that resize it for zooming ~\newline
+the bounds are definitly the render bounds not a collision box (though of course they may be the same) 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_bounded_a36f45a8174f4cee93a65085e015a2b2e}\label{class_r_c___framework_1_1_r_c___renderable_bounded_a36f45a8174f4cee93a65085e015a2b2e}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+Bounded@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+Bounded}!Contains@{Contains}}
+\index{Contains@{Contains}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+Bounded@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+Bounded}}
+\subsubsection{\texorpdfstring{Contains()}{Contains()}}
+{\footnotesize\ttfamily bool R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+Bounded.\+Contains (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Returns true if the renderable contains the point x,y 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_bounded_a93bf68209b9cf3bce7cbbd8eb02d6e1a}\label{class_r_c___framework_1_1_r_c___renderable_bounded_a93bf68209b9cf3bce7cbbd8eb02d6e1a}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+Bounded@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+Bounded}!get\+Sub\+Location@{get\+Sub\+Location}}
+\index{get\+Sub\+Location@{get\+Sub\+Location}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+Bounded@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+Bounded}}
+\subsubsection{\texorpdfstring{get\+Sub\+Location()}{getSubLocation()}}
+{\footnotesize\ttfamily Vector2 R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+Bounded.\+get\+Sub\+Location (\begin{DoxyParamCaption}\item[{int}]{sub\+Loc\+Num }\end{DoxyParamCaption})}
+
+
+
+Returns Various points in the rectangle 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sub\+Loc\+Num} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_bounded_a126c01971f9ab5ac288b84aa985117e1}\label{class_r_c___framework_1_1_r_c___renderable_bounded_a126c01971f9ab5ac288b84aa985117e1}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+Bounded@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+Bounded}!inside@{inside}}
+\index{inside@{inside}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+Bounded@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+Bounded}}
+\subsubsection{\texorpdfstring{inside()}{inside()}}
+{\footnotesize\ttfamily bool R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+Bounded.\+inside (\begin{DoxyParamCaption}\item[{Rectangle}]{r }\end{DoxyParamCaption})}
+
+
+
+Returns true if inside or on boundary of r 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_bounded_a744532d85e586e0aa52f75dd1af3f60f}\label{class_r_c___framework_1_1_r_c___renderable_bounded_a744532d85e586e0aa52f75dd1af3f60f}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+Bounded@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+Bounded}!Intersect@{Intersect}}
+\index{Intersect@{Intersect}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+Bounded@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+Bounded}}
+\subsubsection{\texorpdfstring{Intersect()}{Intersect()}}
+{\footnotesize\ttfamily Rectangle R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+Bounded.\+Intersect (\begin{DoxyParamCaption}\item[{Rectangle}]{r }\end{DoxyParamCaption})}
+
+
+
+Returns a rectangle which is the intersection of this renderable with another rectangle 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_bounded_a394581a8ad6bf9a472214fe4316ea37c}\label{class_r_c___framework_1_1_r_c___renderable_bounded_a394581a8ad6bf9a472214fe4316ea37c}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+Bounded@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+Bounded}!Intersects@{Intersects}}
+\index{Intersects@{Intersects}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+Bounded@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+Bounded}}
+\subsubsection{\texorpdfstring{Intersects()}{Intersects()}}
+{\footnotesize\ttfamily bool R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+Bounded.\+Intersects (\begin{DoxyParamCaption}\item[{Rectangle}]{r }\end{DoxyParamCaption})}
+
+
+
+Returns true if the rectange intersects this this renderable 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_bounded_a000dd516577e50fb39fc3e1acc774435}\label{class_r_c___framework_1_1_r_c___renderable_bounded_a000dd516577e50fb39fc3e1acc774435}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+Bounded@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+Bounded}!scroll\+Move@{scroll\+Move}}
+\index{scroll\+Move@{scroll\+Move}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+Bounded@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+Bounded}}
+\subsubsection{\texorpdfstring{scroll\+Move()}{scrollMove()}}
+{\footnotesize\ttfamily override bool R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+Bounded.\+scroll\+Move (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Used to scroll the entire screen -\/ while preserving old position usually called in renderable List Will have problemes with non integral scroll amounts (ie fractions) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the amount to scroll in x \\
+\hline
+{\em y} & the amount to scroll in y\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if successfull 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_a21e5b1a68c7382443c82e7296fd2209a}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_ab4c64556d7bcebf5ce538631ae9b5d6c}{R\+C\+\_\+\+Framework.\+Sprite3}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_bounded_a49d38185d66bf150677aaf9cc35eb4fa}\label{class_r_c___framework_1_1_r_c___renderable_bounded_a49d38185d66bf150677aaf9cc35eb4fa}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+Bounded@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+Bounded}!set\+Pos@{set\+Pos}}
+\index{set\+Pos@{set\+Pos}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+Bounded@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+Bounded}}
+\subsubsection{\texorpdfstring{set\+Pos()}{setPos()}}
+{\footnotesize\ttfamily virtual void R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+Bounded.\+set\+Pos (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set the x and y position of this renderable 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_parent_aafe2f4e919b30044d02600942068d205}{R\+C\+\_\+\+Framework.\+Sprite3\+Parent}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_bounded_a871ee20b647861fb3fb93e112375db21}\label{class_r_c___framework_1_1_r_c___renderable_bounded_a871ee20b647861fb3fb93e112375db21}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+Bounded@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+Bounded}!set\+Width\+Height@{set\+Width\+Height}}
+\index{set\+Width\+Height@{set\+Width\+Height}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+Bounded@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+Bounded}}
+\subsubsection{\texorpdfstring{set\+Width\+Height()}{setWidthHeight()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+Bounded.\+set\+Width\+Height (\begin{DoxyParamCaption}\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})}
+
+
+
+set the width and height 
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & \\
+\hline
+{\em h} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_bounded_aabcb0f8cd56a2e7b6209f8530194aff1}\label{class_r_c___framework_1_1_r_c___renderable_bounded_aabcb0f8cd56a2e7b6209f8530194aff1}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+Bounded@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+Bounded}!boundz@{boundz}}
+\index{boundz@{boundz}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+Bounded@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+Bounded}}
+\subsubsection{\texorpdfstring{boundz}{boundz}}
+{\footnotesize\ttfamily Rectangle R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+Bounded.\+boundz\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___renderable_bounded_a64a3cd64146d7e7bc5897e5a849f158f}\label{class_r_c___framework_1_1_r_c___renderable_bounded_a64a3cd64146d7e7bc5897e5a849f158f}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+Bounded@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+Bounded}!bounds@{bounds}}
+\index{bounds@{bounds}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+Bounded@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Renderable\+Bounded}}
+\subsubsection{\texorpdfstring{bounds}{bounds}}
+{\footnotesize\ttfamily virtual Rectangle R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+Bounded.\+bounds\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+B/\+R\+C\+\_\+\+Framework2018/\+Source/\mbox{\hyperlink{_r_c___renderable_parents_8cs}{R\+C\+\_\+\+Renderable\+Parents.\+cs}}\end{DoxyCompactItemize}

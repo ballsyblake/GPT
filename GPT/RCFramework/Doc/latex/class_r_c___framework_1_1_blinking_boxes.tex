@@ -1,0 +1,172 @@
+\hypertarget{class_r_c___framework_1_1_blinking_boxes}{}\section{R\+C\+\_\+\+Framework.\+Blinking\+Boxes Class Reference}
+\label{class_r_c___framework_1_1_blinking_boxes}\index{R\+C\+\_\+\+Framework.\+Blinking\+Boxes@{R\+C\+\_\+\+Framework.\+Blinking\+Boxes}}
+
+
+Boxes that blink randomly -\/ for eyecandy on control pannels and computers and things blinktype = 0 for totally random new colour any other is a delta for cycling starttype = 0 for totally random new colour 1 = same colour 2 = cycle colours Example calling sequence is r8a = new \mbox{\hyperlink{class_r_c___framework_1_1_blinking_boxes}{Blinking\+Boxes}}(new Rectangle(10, 10, 200, 100), new Vector2(60, 30), new Vector2(2, 4), 4, 3, 5, 12); r8a.\+set\+Timing(30, 30, 0, 0); r8a.\+add\+Color(Color.\+White); r8a.\+add\+Color(Color.\+Gray); r8a.\+add\+Color(new Color(50,200,7)); r8a.\+add\+Color(Color.\+Red); r8a.\+add\+Color(Color.\+Green);  
+
+
+Inheritance diagram for R\+C\+\_\+\+Framework.\+Blinking\+Boxes\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_r_c___framework_1_1_blinking_boxes}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_blinking_boxes_a16ee508e4fa77310bb4305a16a199e95}{Blinking\+Boxes}} (Rectangle \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_bounded_aabcb0f8cd56a2e7b6209f8530194aff1}{boundz}}, Vector2 size\+Of\+Boxx, Vector2 gap\+Between\+Boxez, int num\+Of\+BoxezX, int num\+Of\+BoxezY, int num\+Of\+Colorz, int random\+Seed)
+\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_blinking_boxes_a1037bf0c922befbecbdca455d7f6165b}{set\+Stock\+Colours}} ()
+\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_blinking_boxes_a2166422cce34c57fb9d77627699c74eb}{set\+Stock\+Colours\+With\+Trans}} ()
+\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_blinking_boxes_a6435042084daac78ccd87d801d6a397d}{set\+Stock\+Colours\+With\+Lots\+Trans}} ()
+\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_blinking_boxes_ac28bc5c94fe42c132b822745ef292e46}{set\+Timing}} (int update\+ModuloZ, float percent\+Chance\+Of\+ChangeZ, int blink\+TypeZ, int start\+TypeZ)
+\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_blinking_boxes_a5e2d89da8ee707087bd2f6035b9bbcb8}{add\+Color}} (Color c)
+\item 
+override void \mbox{\hyperlink{class_r_c___framework_1_1_blinking_boxes_a2120dce99476eb2e086063a004acfd90}{reset}} ()
+\item 
+override void \mbox{\hyperlink{class_r_c___framework_1_1_blinking_boxes_a4e8a5e543c03905582bb27a0acfaa6cd}{Draw}} (Sprite\+Batch sb)
+\begin{DoxyCompactList}\small\item\em Standard draw routine which assumes the renderable knows where it is \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_r_c___framework_1_1_blinking_boxes_ac168957c1b1d674b9449bc53b07cf704}{Update}} (Game\+Time game\+Time)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Texture2D \mbox{\hyperlink{class_r_c___framework_1_1_blinking_boxes_a14d8576628e55d06cc4926e6658b7de5}{tex}} =null
+\item 
+Vector2 \mbox{\hyperlink{class_r_c___framework_1_1_blinking_boxes_ad40a2c29d7259bc269f9e27a8c45b20c}{size\+Of\+Box}}
+\item 
+Vector2 \mbox{\hyperlink{class_r_c___framework_1_1_blinking_boxes_afb0583f0a41e8f9256825893489cf33e}{gap\+Between\+Boxes}}
+\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_blinking_boxes_a35ba39213cc4b79938efe4c72bfed0ce}{num\+Of\+BoxesX}}
+\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_blinking_boxes_a4f5e0f431beee9bdcd4d52bf4fded6b3}{num\+Of\+BoxesY}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Boxes that blink randomly -\/ for eyecandy on control pannels and computers and things blinktype = 0 for totally random new colour any other is a delta for cycling starttype = 0 for totally random new colour 1 = same colour 2 = cycle colours Example calling sequence is r8a = new \mbox{\hyperlink{class_r_c___framework_1_1_blinking_boxes}{Blinking\+Boxes}}(new Rectangle(10, 10, 200, 100), new Vector2(60, 30), new Vector2(2, 4), 4, 3, 5, 12); r8a.\+set\+Timing(30, 30, 0, 0); r8a.\+add\+Color(Color.\+White); r8a.\+add\+Color(Color.\+Gray); r8a.\+add\+Color(new Color(50,200,7)); r8a.\+add\+Color(Color.\+Red); r8a.\+add\+Color(Color.\+Green); 
+
+After that call Update in update and Draw in draw 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_blinking_boxes_a16ee508e4fa77310bb4305a16a199e95}\label{class_r_c___framework_1_1_blinking_boxes_a16ee508e4fa77310bb4305a16a199e95}} 
+\index{R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes@{R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes}!Blinking\+Boxes@{Blinking\+Boxes}}
+\index{Blinking\+Boxes@{Blinking\+Boxes}!R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes@{R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes}}
+\subsubsection{\texorpdfstring{Blinking\+Boxes()}{BlinkingBoxes()}}
+{\footnotesize\ttfamily R\+C\+\_\+\+Framework.\+Blinking\+Boxes.\+Blinking\+Boxes (\begin{DoxyParamCaption}\item[{Rectangle}]{boundz,  }\item[{Vector2}]{size\+Of\+Boxx,  }\item[{Vector2}]{gap\+Between\+Boxez,  }\item[{int}]{num\+Of\+BoxezX,  }\item[{int}]{num\+Of\+BoxezY,  }\item[{int}]{num\+Of\+Colorz,  }\item[{int}]{random\+Seed }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_blinking_boxes_a5e2d89da8ee707087bd2f6035b9bbcb8}\label{class_r_c___framework_1_1_blinking_boxes_a5e2d89da8ee707087bd2f6035b9bbcb8}} 
+\index{R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes@{R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes}!add\+Color@{add\+Color}}
+\index{add\+Color@{add\+Color}!R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes@{R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes}}
+\subsubsection{\texorpdfstring{add\+Color()}{addColor()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Blinking\+Boxes.\+add\+Color (\begin{DoxyParamCaption}\item[{Color}]{c }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_blinking_boxes_a4e8a5e543c03905582bb27a0acfaa6cd}\label{class_r_c___framework_1_1_blinking_boxes_a4e8a5e543c03905582bb27a0acfaa6cd}} 
+\index{R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes@{R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes}!Draw@{Draw}}
+\index{Draw@{Draw}!R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes@{R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily override void R\+C\+\_\+\+Framework.\+Blinking\+Boxes.\+Draw (\begin{DoxyParamCaption}\item[{Sprite\+Batch}]{sb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Standard draw routine which assumes the renderable knows where it is 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_acc26db34e382a25a989c4c0dd0354b23}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_blinking_boxes_a2120dce99476eb2e086063a004acfd90}\label{class_r_c___framework_1_1_blinking_boxes_a2120dce99476eb2e086063a004acfd90}} 
+\index{R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes@{R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes}!reset@{reset}}
+\index{reset@{reset}!R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes@{R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily override void R\+C\+\_\+\+Framework.\+Blinking\+Boxes.\+reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_ae65ce69704d15963789f421b58618b1f}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_blinking_boxes_a1037bf0c922befbecbdca455d7f6165b}\label{class_r_c___framework_1_1_blinking_boxes_a1037bf0c922befbecbdca455d7f6165b}} 
+\index{R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes@{R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes}!set\+Stock\+Colours@{set\+Stock\+Colours}}
+\index{set\+Stock\+Colours@{set\+Stock\+Colours}!R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes@{R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes}}
+\subsubsection{\texorpdfstring{set\+Stock\+Colours()}{setStockColours()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Blinking\+Boxes.\+set\+Stock\+Colours (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_blinking_boxes_a6435042084daac78ccd87d801d6a397d}\label{class_r_c___framework_1_1_blinking_boxes_a6435042084daac78ccd87d801d6a397d}} 
+\index{R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes@{R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes}!set\+Stock\+Colours\+With\+Lots\+Trans@{set\+Stock\+Colours\+With\+Lots\+Trans}}
+\index{set\+Stock\+Colours\+With\+Lots\+Trans@{set\+Stock\+Colours\+With\+Lots\+Trans}!R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes@{R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes}}
+\subsubsection{\texorpdfstring{set\+Stock\+Colours\+With\+Lots\+Trans()}{setStockColoursWithLotsTrans()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Blinking\+Boxes.\+set\+Stock\+Colours\+With\+Lots\+Trans (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_blinking_boxes_a2166422cce34c57fb9d77627699c74eb}\label{class_r_c___framework_1_1_blinking_boxes_a2166422cce34c57fb9d77627699c74eb}} 
+\index{R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes@{R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes}!set\+Stock\+Colours\+With\+Trans@{set\+Stock\+Colours\+With\+Trans}}
+\index{set\+Stock\+Colours\+With\+Trans@{set\+Stock\+Colours\+With\+Trans}!R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes@{R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes}}
+\subsubsection{\texorpdfstring{set\+Stock\+Colours\+With\+Trans()}{setStockColoursWithTrans()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Blinking\+Boxes.\+set\+Stock\+Colours\+With\+Trans (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_blinking_boxes_ac28bc5c94fe42c132b822745ef292e46}\label{class_r_c___framework_1_1_blinking_boxes_ac28bc5c94fe42c132b822745ef292e46}} 
+\index{R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes@{R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes}!set\+Timing@{set\+Timing}}
+\index{set\+Timing@{set\+Timing}!R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes@{R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes}}
+\subsubsection{\texorpdfstring{set\+Timing()}{setTiming()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Blinking\+Boxes.\+set\+Timing (\begin{DoxyParamCaption}\item[{int}]{update\+ModuloZ,  }\item[{float}]{percent\+Chance\+Of\+ChangeZ,  }\item[{int}]{blink\+TypeZ,  }\item[{int}]{start\+TypeZ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_blinking_boxes_ac168957c1b1d674b9449bc53b07cf704}\label{class_r_c___framework_1_1_blinking_boxes_ac168957c1b1d674b9449bc53b07cf704}} 
+\index{R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes@{R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes}!Update@{Update}}
+\index{Update@{Update}!R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes@{R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily override void R\+C\+\_\+\+Framework.\+Blinking\+Boxes.\+Update (\begin{DoxyParamCaption}\item[{Game\+Time}]{game\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_a5745bedc7ba0587aa1e1d8563c357228}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_blinking_boxes_afb0583f0a41e8f9256825893489cf33e}\label{class_r_c___framework_1_1_blinking_boxes_afb0583f0a41e8f9256825893489cf33e}} 
+\index{R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes@{R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes}!gap\+Between\+Boxes@{gap\+Between\+Boxes}}
+\index{gap\+Between\+Boxes@{gap\+Between\+Boxes}!R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes@{R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes}}
+\subsubsection{\texorpdfstring{gap\+Between\+Boxes}{gapBetweenBoxes}}
+{\footnotesize\ttfamily Vector2 R\+C\+\_\+\+Framework.\+Blinking\+Boxes.\+gap\+Between\+Boxes}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_blinking_boxes_a35ba39213cc4b79938efe4c72bfed0ce}\label{class_r_c___framework_1_1_blinking_boxes_a35ba39213cc4b79938efe4c72bfed0ce}} 
+\index{R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes@{R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes}!num\+Of\+BoxesX@{num\+Of\+BoxesX}}
+\index{num\+Of\+BoxesX@{num\+Of\+BoxesX}!R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes@{R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes}}
+\subsubsection{\texorpdfstring{num\+Of\+BoxesX}{numOfBoxesX}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Blinking\+Boxes.\+num\+Of\+BoxesX}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_blinking_boxes_a4f5e0f431beee9bdcd4d52bf4fded6b3}\label{class_r_c___framework_1_1_blinking_boxes_a4f5e0f431beee9bdcd4d52bf4fded6b3}} 
+\index{R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes@{R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes}!num\+Of\+BoxesY@{num\+Of\+BoxesY}}
+\index{num\+Of\+BoxesY@{num\+Of\+BoxesY}!R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes@{R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes}}
+\subsubsection{\texorpdfstring{num\+Of\+BoxesY}{numOfBoxesY}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Blinking\+Boxes.\+num\+Of\+BoxesY}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_blinking_boxes_ad40a2c29d7259bc269f9e27a8c45b20c}\label{class_r_c___framework_1_1_blinking_boxes_ad40a2c29d7259bc269f9e27a8c45b20c}} 
+\index{R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes@{R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes}!size\+Of\+Box@{size\+Of\+Box}}
+\index{size\+Of\+Box@{size\+Of\+Box}!R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes@{R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes}}
+\subsubsection{\texorpdfstring{size\+Of\+Box}{sizeOfBox}}
+{\footnotesize\ttfamily Vector2 R\+C\+\_\+\+Framework.\+Blinking\+Boxes.\+size\+Of\+Box}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_blinking_boxes_a14d8576628e55d06cc4926e6658b7de5}\label{class_r_c___framework_1_1_blinking_boxes_a14d8576628e55d06cc4926e6658b7de5}} 
+\index{R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes@{R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes}!tex@{tex}}
+\index{tex@{tex}!R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes@{R\+C\+\_\+\+Framework\+::\+Blinking\+Boxes}}
+\subsubsection{\texorpdfstring{tex}{tex}}
+{\footnotesize\ttfamily Texture2D R\+C\+\_\+\+Framework.\+Blinking\+Boxes.\+tex =null}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+B/\+R\+C\+\_\+\+Framework2018/\+Source/\mbox{\hyperlink{_r_c___renderable_bounded_8cs}{R\+C\+\_\+\+Renderable\+Bounded.\+cs}}\end{DoxyCompactItemize}

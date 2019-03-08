@@ -1,0 +1,228 @@
+\hypertarget{class_r_c___framework_1_1_sprite3_parent}{}\section{R\+C\+\_\+\+Framework.\+Sprite3\+Parent Class Reference}
+\label{class_r_c___framework_1_1_sprite3_parent}\index{R\+C\+\_\+\+Framework.\+Sprite3\+Parent@{R\+C\+\_\+\+Framework.\+Sprite3\+Parent}}
+Inheritance diagram for R\+C\+\_\+\+Framework.\+Sprite3\+Parent\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{class_r_c___framework_1_1_sprite3_parent}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_parent_aafe2f4e919b30044d02600942068d205}{set\+Pos}} (float x, float y)
+\begin{DoxyCompactList}\small\item\em sets the sprite location (top left of image) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_parent_a850bd371ac0c564f36f14e2bf3ada72e}{set\+Pos}} (Vector2 p)
+\begin{DoxyCompactList}\small\item\em sets the sprite location -\/ ie its hotspot on the screen note the default hotspot is the top left of image \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_parent_ae8cc0fe44090f72c9c9f38826ba0bd3f}{set\+PosX}} (float x)
+\begin{DoxyCompactList}\small\item\em sets the X sprite location -\/ ie its hotspot on the screen note the default hotspot is the top left of image \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_parent_aacc2ace291d75d78005ab8d3f837a1af}{set\+PosY}} (float y)
+\begin{DoxyCompactList}\small\item\em sets the Y sprite location -\/ ie its hotspot on the screen note the default hotspot is the top left of image \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_parent_a78aeb4a281abcd3a5cc83fabb4d24a8e}{get\+PosX}} ()
+\begin{DoxyCompactList}\small\item\em returns the xpos of the sprite \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_parent_afaa8c7fd07554b39dbf6757656cd9065}{get\+PosY}} ()
+\begin{DoxyCompactList}\small\item\em returns the ypos of the sprite \end{DoxyCompactList}\item 
+Vector2 \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_parent_aabeda600912d35738cdb6de98a40282a}{get\+Pos}} ()
+\begin{DoxyCompactList}\small\item\em returns the position of the sprite \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_parent_ad67b46aec70ebe4a720dc4550108b8c1}{restore\+Position}} ()
+\begin{DoxyCompactList}\small\item\em restore the current position note its virtual and overidden in \mbox{\hyperlink{class_r_c___framework_1_1_sprite3}{Sprite3}} \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_parent_ad934c0f7664064c6ac89525bf06516fc}{save\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Save the current position note its virtual and overidden in \mbox{\hyperlink{class_r_c___framework_1_1_sprite3}{Sprite3}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Vector2 \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_parent_ade2887bc3eda096dd75498936daae484}{save\+Pos}}
+\begin{DoxyCompactList}\small\item\em Set by calling save\+Position, and used in restore\+Position \end{DoxyCompactList}\item 
+Vector2 \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_parent_a81a19273a375b067b83c5e01909bc576}{old\+Pos}}
+\begin{DoxyCompactList}\small\item\em the previous position it is updated if the \mbox{\hyperlink{class_r_c___framework_1_1_sprite3}{Sprite3}} movement systems are used and can be used to compute a display angle this is for you to use/set if you have your own movement system \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Rectangle \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_parent_af4043faa686325df81a690475feed4d8}{bb}}
+\begin{DoxyCompactList}\small\item\em Bounding Box rectange in source pixels x and y are offset from the H\+O\+T\+S\+P\+OT Warning if the hotspot is in the middle of the image/frame then x,y will be negative \end{DoxyCompactList}\item 
+Vector2 \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_parent_af83a86a2944aec373fe87a170f3d7e2c}{pos}}
+\begin{DoxyCompactList}\small\item\em the sprites location \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_parent_aabeda600912d35738cdb6de98a40282a}\label{class_r_c___framework_1_1_sprite3_parent_aabeda600912d35738cdb6de98a40282a}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent@{R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent}!get\+Pos@{get\+Pos}}
+\index{get\+Pos@{get\+Pos}!R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent@{R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent}}
+\subsubsection{\texorpdfstring{get\+Pos()}{getPos()}}
+{\footnotesize\ttfamily Vector2 R\+C\+\_\+\+Framework.\+Sprite3\+Parent.\+get\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+returns the position of the sprite 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_parent_a78aeb4a281abcd3a5cc83fabb4d24a8e}\label{class_r_c___framework_1_1_sprite3_parent_a78aeb4a281abcd3a5cc83fabb4d24a8e}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent@{R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent}!get\+PosX@{get\+PosX}}
+\index{get\+PosX@{get\+PosX}!R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent@{R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent}}
+\subsubsection{\texorpdfstring{get\+Pos\+X()}{getPosX()}}
+{\footnotesize\ttfamily float R\+C\+\_\+\+Framework.\+Sprite3\+Parent.\+get\+PosX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+returns the xpos of the sprite 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_parent_afaa8c7fd07554b39dbf6757656cd9065}\label{class_r_c___framework_1_1_sprite3_parent_afaa8c7fd07554b39dbf6757656cd9065}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent@{R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent}!get\+PosY@{get\+PosY}}
+\index{get\+PosY@{get\+PosY}!R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent@{R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent}}
+\subsubsection{\texorpdfstring{get\+Pos\+Y()}{getPosY()}}
+{\footnotesize\ttfamily float R\+C\+\_\+\+Framework.\+Sprite3\+Parent.\+get\+PosY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+returns the ypos of the sprite 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_parent_ad67b46aec70ebe4a720dc4550108b8c1}\label{class_r_c___framework_1_1_sprite3_parent_ad67b46aec70ebe4a720dc4550108b8c1}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent@{R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent}!restore\+Position@{restore\+Position}}
+\index{restore\+Position@{restore\+Position}!R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent@{R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent}}
+\subsubsection{\texorpdfstring{restore\+Position()}{restorePosition()}}
+{\footnotesize\ttfamily virtual void R\+C\+\_\+\+Framework.\+Sprite3\+Parent.\+restore\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+restore the current position note its virtual and overidden in \mbox{\hyperlink{class_r_c___framework_1_1_sprite3}{Sprite3}} 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_a4ffc487d5c332dee276909dad3dba57a}{R\+C\+\_\+\+Framework.\+Sprite3}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_parent_ad934c0f7664064c6ac89525bf06516fc}\label{class_r_c___framework_1_1_sprite3_parent_ad934c0f7664064c6ac89525bf06516fc}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent@{R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent}!save\+Position@{save\+Position}}
+\index{save\+Position@{save\+Position}!R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent@{R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent}}
+\subsubsection{\texorpdfstring{save\+Position()}{savePosition()}}
+{\footnotesize\ttfamily virtual void R\+C\+\_\+\+Framework.\+Sprite3\+Parent.\+save\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Save the current position note its virtual and overidden in \mbox{\hyperlink{class_r_c___framework_1_1_sprite3}{Sprite3}} 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_r_c___framework_1_1_sprite3_ae4733340c18c8098b250418081020c6a}{R\+C\+\_\+\+Framework.\+Sprite3}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_parent_aafe2f4e919b30044d02600942068d205}\label{class_r_c___framework_1_1_sprite3_parent_aafe2f4e919b30044d02600942068d205}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent@{R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent}!set\+Pos@{set\+Pos}}
+\index{set\+Pos@{set\+Pos}!R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent@{R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent}}
+\subsubsection{\texorpdfstring{set\+Pos()}{setPos()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily override void R\+C\+\_\+\+Framework.\+Sprite3\+Parent.\+set\+Pos (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+sets the sprite location (top left of image) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_bounded_a49d38185d66bf150677aaf9cc35eb4fa}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable\+Bounded}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_parent_a850bd371ac0c564f36f14e2bf3ada72e}\label{class_r_c___framework_1_1_sprite3_parent_a850bd371ac0c564f36f14e2bf3ada72e}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent@{R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent}!set\+Pos@{set\+Pos}}
+\index{set\+Pos@{set\+Pos}!R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent@{R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent}}
+\subsubsection{\texorpdfstring{set\+Pos()}{setPos()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3\+Parent.\+set\+Pos (\begin{DoxyParamCaption}\item[{Vector2}]{p }\end{DoxyParamCaption})}
+
+
+
+sets the sprite location -\/ ie its hotspot on the screen note the default hotspot is the top left of image 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_parent_ae8cc0fe44090f72c9c9f38826ba0bd3f}\label{class_r_c___framework_1_1_sprite3_parent_ae8cc0fe44090f72c9c9f38826ba0bd3f}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent@{R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent}!set\+PosX@{set\+PosX}}
+\index{set\+PosX@{set\+PosX}!R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent@{R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent}}
+\subsubsection{\texorpdfstring{set\+Pos\+X()}{setPosX()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3\+Parent.\+set\+PosX (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})}
+
+
+
+sets the X sprite location -\/ ie its hotspot on the screen note the default hotspot is the top left of image 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_parent_aacc2ace291d75d78005ab8d3f837a1af}\label{class_r_c___framework_1_1_sprite3_parent_aacc2ace291d75d78005ab8d3f837a1af}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent@{R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent}!set\+PosY@{set\+PosY}}
+\index{set\+PosY@{set\+PosY}!R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent@{R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent}}
+\subsubsection{\texorpdfstring{set\+Pos\+Y()}{setPosY()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite3\+Parent.\+set\+PosY (\begin{DoxyParamCaption}\item[{float}]{y }\end{DoxyParamCaption})}
+
+
+
+sets the Y sprite location -\/ ie its hotspot on the screen note the default hotspot is the top left of image 
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_parent_af4043faa686325df81a690475feed4d8}\label{class_r_c___framework_1_1_sprite3_parent_af4043faa686325df81a690475feed4d8}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent@{R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent}!bb@{bb}}
+\index{bb@{bb}!R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent@{R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent}}
+\subsubsection{\texorpdfstring{bb}{bb}}
+{\footnotesize\ttfamily Rectangle R\+C\+\_\+\+Framework.\+Sprite3\+Parent.\+bb\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Bounding Box rectange in source pixels x and y are offset from the H\+O\+T\+S\+P\+OT Warning if the hotspot is in the middle of the image/frame then x,y will be negative 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_parent_a81a19273a375b067b83c5e01909bc576}\label{class_r_c___framework_1_1_sprite3_parent_a81a19273a375b067b83c5e01909bc576}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent@{R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent}!old\+Pos@{old\+Pos}}
+\index{old\+Pos@{old\+Pos}!R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent@{R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent}}
+\subsubsection{\texorpdfstring{old\+Pos}{oldPos}}
+{\footnotesize\ttfamily Vector2 R\+C\+\_\+\+Framework.\+Sprite3\+Parent.\+old\+Pos}
+
+
+
+the previous position it is updated if the \mbox{\hyperlink{class_r_c___framework_1_1_sprite3}{Sprite3}} movement systems are used and can be used to compute a display angle this is for you to use/set if you have your own movement system 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_parent_af83a86a2944aec373fe87a170f3d7e2c}\label{class_r_c___framework_1_1_sprite3_parent_af83a86a2944aec373fe87a170f3d7e2c}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent@{R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent}!pos@{pos}}
+\index{pos@{pos}!R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent@{R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent}}
+\subsubsection{\texorpdfstring{pos}{pos}}
+{\footnotesize\ttfamily Vector2 R\+C\+\_\+\+Framework.\+Sprite3\+Parent.\+pos\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+the sprites location 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite3_parent_ade2887bc3eda096dd75498936daae484}\label{class_r_c___framework_1_1_sprite3_parent_ade2887bc3eda096dd75498936daae484}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent@{R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent}!save\+Pos@{save\+Pos}}
+\index{save\+Pos@{save\+Pos}!R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent@{R\+C\+\_\+\+Framework\+::\+Sprite3\+Parent}}
+\subsubsection{\texorpdfstring{save\+Pos}{savePos}}
+{\footnotesize\ttfamily Vector2 R\+C\+\_\+\+Framework.\+Sprite3\+Parent.\+save\+Pos}
+
+
+
+Set by calling save\+Position, and used in restore\+Position 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+B/\+R\+C\+\_\+\+Framework2018/\+Source/\mbox{\hyperlink{_r_c___sprite3_8cs}{R\+C\+\_\+\+Sprite3.\+cs}}\end{DoxyCompactItemize}

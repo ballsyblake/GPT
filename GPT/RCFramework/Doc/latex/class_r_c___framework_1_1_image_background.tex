@@ -1,0 +1,92 @@
+\hypertarget{class_r_c___framework_1_1_image_background}{}\section{R\+C\+\_\+\+Framework.\+Image\+Background Class Reference}
+\label{class_r_c___framework_1_1_image_background}\index{R\+C\+\_\+\+Framework.\+Image\+Background@{R\+C\+\_\+\+Framework.\+Image\+Background}}
+
+
+A background image with source, colour and destination Can Automatically resize to viewport consequently it needs the viewport passed in by graphics device If the source is null the whole texture is used  
+
+
+Inheritance diagram for R\+C\+\_\+\+Framework.\+Image\+Background\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_r_c___framework_1_1_image_background}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_image_background_ad66973504fc9518e98e0757458973880}{Image\+Background}} (Texture2D texZ, Rectangle? sourceZ, Rectangle destZ, Color colourZ)
+\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_image_background_a64185561061a54b6241c982541ed54a7}{Image\+Background}} (Texture2D texZ, Color colourZ, Graphics\+Device g)
+\item 
+override void \mbox{\hyperlink{class_r_c___framework_1_1_image_background_a1aaef38a9b320b21dc558e25d5a4c0af}{Draw}} (Sprite\+Batch sb)
+\begin{DoxyCompactList}\small\item\em Standard draw routine which assumes the renderable knows where it is \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Texture2D \mbox{\hyperlink{class_r_c___framework_1_1_image_background_acbae55d0eec7e9db3b3dd1e6adcbd01e}{tex}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Rectangle \mbox{\hyperlink{class_r_c___framework_1_1_image_background_a58fe22eaa5ab35456cd3a1d8c4b06295}{source}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A background image with source, colour and destination Can Automatically resize to viewport consequently it needs the viewport passed in by graphics device If the source is null the whole texture is used 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_image_background_ad66973504fc9518e98e0757458973880}\label{class_r_c___framework_1_1_image_background_ad66973504fc9518e98e0757458973880}} 
+\index{R\+C\+\_\+\+Framework\+::\+Image\+Background@{R\+C\+\_\+\+Framework\+::\+Image\+Background}!Image\+Background@{Image\+Background}}
+\index{Image\+Background@{Image\+Background}!R\+C\+\_\+\+Framework\+::\+Image\+Background@{R\+C\+\_\+\+Framework\+::\+Image\+Background}}
+\subsubsection{\texorpdfstring{Image\+Background()}{ImageBackground()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily R\+C\+\_\+\+Framework.\+Image\+Background.\+Image\+Background (\begin{DoxyParamCaption}\item[{Texture2D}]{texZ,  }\item[{Rectangle?}]{sourceZ,  }\item[{Rectangle}]{destZ,  }\item[{Color}]{colourZ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_image_background_a64185561061a54b6241c982541ed54a7}\label{class_r_c___framework_1_1_image_background_a64185561061a54b6241c982541ed54a7}} 
+\index{R\+C\+\_\+\+Framework\+::\+Image\+Background@{R\+C\+\_\+\+Framework\+::\+Image\+Background}!Image\+Background@{Image\+Background}}
+\index{Image\+Background@{Image\+Background}!R\+C\+\_\+\+Framework\+::\+Image\+Background@{R\+C\+\_\+\+Framework\+::\+Image\+Background}}
+\subsubsection{\texorpdfstring{Image\+Background()}{ImageBackground()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily R\+C\+\_\+\+Framework.\+Image\+Background.\+Image\+Background (\begin{DoxyParamCaption}\item[{Texture2D}]{texZ,  }\item[{Color}]{colourZ,  }\item[{Graphics\+Device}]{g }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_image_background_a1aaef38a9b320b21dc558e25d5a4c0af}\label{class_r_c___framework_1_1_image_background_a1aaef38a9b320b21dc558e25d5a4c0af}} 
+\index{R\+C\+\_\+\+Framework\+::\+Image\+Background@{R\+C\+\_\+\+Framework\+::\+Image\+Background}!Draw@{Draw}}
+\index{Draw@{Draw}!R\+C\+\_\+\+Framework\+::\+Image\+Background@{R\+C\+\_\+\+Framework\+::\+Image\+Background}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily override void R\+C\+\_\+\+Framework.\+Image\+Background.\+Draw (\begin{DoxyParamCaption}\item[{Sprite\+Batch}]{sb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Standard draw routine which assumes the renderable knows where it is 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_acc26db34e382a25a989c4c0dd0354b23}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable}}.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_image_background_a58fe22eaa5ab35456cd3a1d8c4b06295}\label{class_r_c___framework_1_1_image_background_a58fe22eaa5ab35456cd3a1d8c4b06295}} 
+\index{R\+C\+\_\+\+Framework\+::\+Image\+Background@{R\+C\+\_\+\+Framework\+::\+Image\+Background}!source@{source}}
+\index{source@{source}!R\+C\+\_\+\+Framework\+::\+Image\+Background@{R\+C\+\_\+\+Framework\+::\+Image\+Background}}
+\subsubsection{\texorpdfstring{source}{source}}
+{\footnotesize\ttfamily Rectangle R\+C\+\_\+\+Framework.\+Image\+Background.\+source\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_image_background_acbae55d0eec7e9db3b3dd1e6adcbd01e}\label{class_r_c___framework_1_1_image_background_acbae55d0eec7e9db3b3dd1e6adcbd01e}} 
+\index{R\+C\+\_\+\+Framework\+::\+Image\+Background@{R\+C\+\_\+\+Framework\+::\+Image\+Background}!tex@{tex}}
+\index{tex@{tex}!R\+C\+\_\+\+Framework\+::\+Image\+Background@{R\+C\+\_\+\+Framework\+::\+Image\+Background}}
+\subsubsection{\texorpdfstring{tex}{tex}}
+{\footnotesize\ttfamily Texture2D R\+C\+\_\+\+Framework.\+Image\+Background.\+tex\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+B/\+R\+C\+\_\+\+Framework2018/\+Source/\mbox{\hyperlink{_r_c___renderable_bounded_8cs}{R\+C\+\_\+\+Renderable\+Bounded.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,248 @@
+\hypertarget{class_r_c___framework_1_1_font_parent}{}\section{R\+C\+\_\+\+Framework.\+Font\+Parent Class Reference}
+\label{class_r_c___framework_1_1_font_parent}\index{R\+C\+\_\+\+Framework.\+Font\+Parent@{R\+C\+\_\+\+Framework.\+Font\+Parent}}
+
+
+Parent class for all the bitmapped fonts stored in code  
+
+
+Inheritance diagram for R\+C\+\_\+\+Framework.\+Font\+Parent\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_r_c___framework_1_1_font_parent}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{class_r_c___framework_1_1_font_parent_af32d5427b8feea59eb6f303ac3c36516}{charwidth}} ()
+\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_font_parent_a28b42b3aa17c44feb6f49065384ce9a7}{draw\+Char}} (Sprite\+Batch sb, Vector2 pos, char c, Color col)
+\begin{DoxyCompactList}\small\item\em Draw a character at a given location in its default size \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_font_parent_a8fb5fb02b85bc29031c0ccb8be1a7f61}{draw\+Char}} (Sprite\+Batch sb, Rectangle dest, char c, Color col)
+\begin{DoxyCompactList}\small\item\em draw a character in a bounding rectangle \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_font_parent_aa6d149fd5047fcc7b56dcbdcea21b5cc}{draw\+Str}} (Sprite\+Batch sb, Vector2 pos, string ss, Color col)
+\begin{DoxyCompactList}\small\item\em draw a complete string at a given location \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_font_parent_a4908cf6c8b915b517659eb1d1bef5a21}{draw\+Str}} (Sprite\+Batch sb, Vector2 pos, string ss, Color col, float char\+Width, float char\+Height)
+\begin{DoxyCompactList}\small\item\em draw a string with specified character width and height \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_font_parent_a54618265337f31d80bc6c82487855222}{draw\+Str\+Shadow}} (Sprite\+Batch sb, Vector2 pos, string ss, Color col, Color shadow\+Col, float char\+Width, float char\+Height, int x\+Offset, int y\+Offset)
+\begin{DoxyCompactList}\small\item\em Draw the string twice with two diferent colours and a small offset to create a shadow effect \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_font_parent_a4579edb7593917664d9d9d323a29cbae}{draw\+Str}} (Sprite\+Batch sb, Rectangle dest, string s, Color col)
+\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_font_parent_a8a6df4d62966f52f689d5a9738325797}{draw\+String}} (Sprite\+Batch sb, string text, Vector2 pos, Color col)
+\begin{DoxyCompactList}\small\item\em To replace Sprite\+Batch.\+Draw\+String but with similar syntax always 12x12 aproximating 12 point font \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Texture2D \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_r_c___framework_1_1_font_parent_aa4656447cdf3ab637f839e814cdadaea}{fnt\+Tex}} = null
+\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_font_parent_a86ed779120a31be51fe4a70a29e50ef4}{char\+Set\+Size}} = 96
+\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_font_parent_acb860508d110915f5146e2554d115818}{char\+Set\+Size\+Extra}} = 1
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Parent class for all the bitmapped fonts stored in code 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_font_parent_af32d5427b8feea59eb6f303ac3c36516}\label{class_r_c___framework_1_1_font_parent_af32d5427b8feea59eb6f303ac3c36516}} 
+\index{R\+C\+\_\+\+Framework\+::\+Font\+Parent@{R\+C\+\_\+\+Framework\+::\+Font\+Parent}!charwidth@{charwidth}}
+\index{charwidth@{charwidth}!R\+C\+\_\+\+Framework\+::\+Font\+Parent@{R\+C\+\_\+\+Framework\+::\+Font\+Parent}}
+\subsubsection{\texorpdfstring{charwidth()}{charwidth()}}
+{\footnotesize\ttfamily virtual int R\+C\+\_\+\+Framework.\+Font\+Parent.\+charwidth (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_r_c___framework_1_1_silly_font16_aa718495839a1492ebf5d7245d7d4620a}{R\+C\+\_\+\+Framework.\+Silly\+Font16}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_font_parent_a28b42b3aa17c44feb6f49065384ce9a7}\label{class_r_c___framework_1_1_font_parent_a28b42b3aa17c44feb6f49065384ce9a7}} 
+\index{R\+C\+\_\+\+Framework\+::\+Font\+Parent@{R\+C\+\_\+\+Framework\+::\+Font\+Parent}!draw\+Char@{draw\+Char}}
+\index{draw\+Char@{draw\+Char}!R\+C\+\_\+\+Framework\+::\+Font\+Parent@{R\+C\+\_\+\+Framework\+::\+Font\+Parent}}
+\subsubsection{\texorpdfstring{draw\+Char()}{drawChar()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Font\+Parent.\+draw\+Char (\begin{DoxyParamCaption}\item[{Sprite\+Batch}]{sb,  }\item[{Vector2}]{pos,  }\item[{char}]{c,  }\item[{Color}]{col }\end{DoxyParamCaption})}
+
+
+
+Draw a character at a given location in its default size 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & \\
+\hline
+{\em pos} & \\
+\hline
+{\em c} & \\
+\hline
+{\em col} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_font_parent_a8fb5fb02b85bc29031c0ccb8be1a7f61}\label{class_r_c___framework_1_1_font_parent_a8fb5fb02b85bc29031c0ccb8be1a7f61}} 
+\index{R\+C\+\_\+\+Framework\+::\+Font\+Parent@{R\+C\+\_\+\+Framework\+::\+Font\+Parent}!draw\+Char@{draw\+Char}}
+\index{draw\+Char@{draw\+Char}!R\+C\+\_\+\+Framework\+::\+Font\+Parent@{R\+C\+\_\+\+Framework\+::\+Font\+Parent}}
+\subsubsection{\texorpdfstring{draw\+Char()}{drawChar()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Font\+Parent.\+draw\+Char (\begin{DoxyParamCaption}\item[{Sprite\+Batch}]{sb,  }\item[{Rectangle}]{dest,  }\item[{char}]{c,  }\item[{Color}]{col }\end{DoxyParamCaption})}
+
+
+
+draw a character in a bounding rectangle 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & \\
+\hline
+{\em dest} & \\
+\hline
+{\em c} & \\
+\hline
+{\em col} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_font_parent_aa6d149fd5047fcc7b56dcbdcea21b5cc}\label{class_r_c___framework_1_1_font_parent_aa6d149fd5047fcc7b56dcbdcea21b5cc}} 
+\index{R\+C\+\_\+\+Framework\+::\+Font\+Parent@{R\+C\+\_\+\+Framework\+::\+Font\+Parent}!draw\+Str@{draw\+Str}}
+\index{draw\+Str@{draw\+Str}!R\+C\+\_\+\+Framework\+::\+Font\+Parent@{R\+C\+\_\+\+Framework\+::\+Font\+Parent}}
+\subsubsection{\texorpdfstring{draw\+Str()}{drawStr()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Font\+Parent.\+draw\+Str (\begin{DoxyParamCaption}\item[{Sprite\+Batch}]{sb,  }\item[{Vector2}]{pos,  }\item[{string}]{ss,  }\item[{Color}]{col }\end{DoxyParamCaption})}
+
+
+
+draw a complete string at a given location 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & \\
+\hline
+{\em pos} & \\
+\hline
+{\em ss} & \\
+\hline
+{\em col} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_font_parent_a4908cf6c8b915b517659eb1d1bef5a21}\label{class_r_c___framework_1_1_font_parent_a4908cf6c8b915b517659eb1d1bef5a21}} 
+\index{R\+C\+\_\+\+Framework\+::\+Font\+Parent@{R\+C\+\_\+\+Framework\+::\+Font\+Parent}!draw\+Str@{draw\+Str}}
+\index{draw\+Str@{draw\+Str}!R\+C\+\_\+\+Framework\+::\+Font\+Parent@{R\+C\+\_\+\+Framework\+::\+Font\+Parent}}
+\subsubsection{\texorpdfstring{draw\+Str()}{drawStr()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Font\+Parent.\+draw\+Str (\begin{DoxyParamCaption}\item[{Sprite\+Batch}]{sb,  }\item[{Vector2}]{pos,  }\item[{string}]{ss,  }\item[{Color}]{col,  }\item[{float}]{char\+Width,  }\item[{float}]{char\+Height }\end{DoxyParamCaption})}
+
+
+
+draw a string with specified character width and height 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & \\
+\hline
+{\em pos} & \\
+\hline
+{\em ss} & \\
+\hline
+{\em col} & \\
+\hline
+{\em char\+Width} & \\
+\hline
+{\em char\+Height} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_font_parent_a4579edb7593917664d9d9d323a29cbae}\label{class_r_c___framework_1_1_font_parent_a4579edb7593917664d9d9d323a29cbae}} 
+\index{R\+C\+\_\+\+Framework\+::\+Font\+Parent@{R\+C\+\_\+\+Framework\+::\+Font\+Parent}!draw\+Str@{draw\+Str}}
+\index{draw\+Str@{draw\+Str}!R\+C\+\_\+\+Framework\+::\+Font\+Parent@{R\+C\+\_\+\+Framework\+::\+Font\+Parent}}
+\subsubsection{\texorpdfstring{draw\+Str()}{drawStr()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Font\+Parent.\+draw\+Str (\begin{DoxyParamCaption}\item[{Sprite\+Batch}]{sb,  }\item[{Rectangle}]{dest,  }\item[{string}]{s,  }\item[{Color}]{col }\end{DoxyParamCaption})}
+
+
+
+
+
+draw a complete string in a bounding rectangle 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & \\
+\hline
+{\em dest} & \\
+\hline
+{\em s} & \\
+\hline
+{\em col} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_font_parent_a8a6df4d62966f52f689d5a9738325797}\label{class_r_c___framework_1_1_font_parent_a8a6df4d62966f52f689d5a9738325797}} 
+\index{R\+C\+\_\+\+Framework\+::\+Font\+Parent@{R\+C\+\_\+\+Framework\+::\+Font\+Parent}!draw\+String@{draw\+String}}
+\index{draw\+String@{draw\+String}!R\+C\+\_\+\+Framework\+::\+Font\+Parent@{R\+C\+\_\+\+Framework\+::\+Font\+Parent}}
+\subsubsection{\texorpdfstring{draw\+String()}{drawString()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Font\+Parent.\+draw\+String (\begin{DoxyParamCaption}\item[{Sprite\+Batch}]{sb,  }\item[{string}]{text,  }\item[{Vector2}]{pos,  }\item[{Color}]{col }\end{DoxyParamCaption})}
+
+
+
+To replace Sprite\+Batch.\+Draw\+String but with similar syntax always 12x12 aproximating 12 point font 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & \\
+\hline
+{\em text} & \\
+\hline
+{\em pos} & \\
+\hline
+{\em col} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_font_parent_a54618265337f31d80bc6c82487855222}\label{class_r_c___framework_1_1_font_parent_a54618265337f31d80bc6c82487855222}} 
+\index{R\+C\+\_\+\+Framework\+::\+Font\+Parent@{R\+C\+\_\+\+Framework\+::\+Font\+Parent}!draw\+Str\+Shadow@{draw\+Str\+Shadow}}
+\index{draw\+Str\+Shadow@{draw\+Str\+Shadow}!R\+C\+\_\+\+Framework\+::\+Font\+Parent@{R\+C\+\_\+\+Framework\+::\+Font\+Parent}}
+\subsubsection{\texorpdfstring{draw\+Str\+Shadow()}{drawStrShadow()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Font\+Parent.\+draw\+Str\+Shadow (\begin{DoxyParamCaption}\item[{Sprite\+Batch}]{sb,  }\item[{Vector2}]{pos,  }\item[{string}]{ss,  }\item[{Color}]{col,  }\item[{Color}]{shadow\+Col,  }\item[{float}]{char\+Width,  }\item[{float}]{char\+Height,  }\item[{int}]{x\+Offset,  }\item[{int}]{y\+Offset }\end{DoxyParamCaption})}
+
+
+
+Draw the string twice with two diferent colours and a small offset to create a shadow effect 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & \\
+\hline
+{\em pos} & \\
+\hline
+{\em ss} & \\
+\hline
+{\em col} & \\
+\hline
+{\em shadow\+Col} & \\
+\hline
+{\em char\+Width} & \\
+\hline
+{\em char\+Height} & \\
+\hline
+{\em x\+Offset} & \\
+\hline
+{\em y\+Offset} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_font_parent_a86ed779120a31be51fe4a70a29e50ef4}\label{class_r_c___framework_1_1_font_parent_a86ed779120a31be51fe4a70a29e50ef4}} 
+\index{R\+C\+\_\+\+Framework\+::\+Font\+Parent@{R\+C\+\_\+\+Framework\+::\+Font\+Parent}!char\+Set\+Size@{char\+Set\+Size}}
+\index{char\+Set\+Size@{char\+Set\+Size}!R\+C\+\_\+\+Framework\+::\+Font\+Parent@{R\+C\+\_\+\+Framework\+::\+Font\+Parent}}
+\subsubsection{\texorpdfstring{char\+Set\+Size}{charSetSize}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Font\+Parent.\+char\+Set\+Size = 96}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_font_parent_acb860508d110915f5146e2554d115818}\label{class_r_c___framework_1_1_font_parent_acb860508d110915f5146e2554d115818}} 
+\index{R\+C\+\_\+\+Framework\+::\+Font\+Parent@{R\+C\+\_\+\+Framework\+::\+Font\+Parent}!char\+Set\+Size\+Extra@{char\+Set\+Size\+Extra}}
+\index{char\+Set\+Size\+Extra@{char\+Set\+Size\+Extra}!R\+C\+\_\+\+Framework\+::\+Font\+Parent@{R\+C\+\_\+\+Framework\+::\+Font\+Parent}}
+\subsubsection{\texorpdfstring{char\+Set\+Size\+Extra}{charSetSizeExtra}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Font\+Parent.\+char\+Set\+Size\+Extra = 1}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_font_parent_aa4656447cdf3ab637f839e814cdadaea}\label{class_r_c___framework_1_1_font_parent_aa4656447cdf3ab637f839e814cdadaea}} 
+\index{R\+C\+\_\+\+Framework\+::\+Font\+Parent@{R\+C\+\_\+\+Framework\+::\+Font\+Parent}!fnt\+Tex@{fnt\+Tex}}
+\index{fnt\+Tex@{fnt\+Tex}!R\+C\+\_\+\+Framework\+::\+Font\+Parent@{R\+C\+\_\+\+Framework\+::\+Font\+Parent}}
+\subsubsection{\texorpdfstring{fnt\+Tex}{fntTex}}
+{\footnotesize\ttfamily Texture2D \mbox{[}$\,$\mbox{]} R\+C\+\_\+\+Framework.\+Font\+Parent.\+fnt\+Tex = null}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+B/\+R\+C\+\_\+\+Framework2018/\+Source/\mbox{\hyperlink{_r_c___util_text_8cs}{R\+C\+\_\+\+Util\+Text.\+cs}}\end{DoxyCompactItemize}

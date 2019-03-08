@@ -1,0 +1,184 @@
+\hypertarget{class_r_c___framework_1_1_animation_ticker}{}\section{R\+C\+\_\+\+Framework.\+Animation\+Ticker Class Reference}
+\label{class_r_c___framework_1_1_animation_ticker}\index{R\+C\+\_\+\+Framework.\+Animation\+Ticker@{R\+C\+\_\+\+Framework.\+Animation\+Ticker}}
+
+
+This class just manages a counter to tell the current frame number  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_animation_ticker_afb68bed1e4614d31fea99971448af72b}{Animation\+Ticker}} (int\mbox{[}$\,$\mbox{]} anim\+Seq, int first\+FrameZ, int last\+FrameZ, int ticks\+Between\+FramesZ, int anim\+FinishedZ)
+\begin{DoxyCompactList}\small\item\em create an animation ticker \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_animation_ticker_a7dc8c7e1833acf289c4ae2d8ef7186c0}{reset\+Animation\+Ticker}} (int\mbox{[}$\,$\mbox{]} anim\+Seq, int first\+FrameZ, int last\+FrameZ, int ticks\+Between\+FramesZ, int anim\+FinishedZ)
+\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_animation_ticker_aa01c754af9f362a118156f5114ee8843}{animation\+Start}} ()
+\begin{DoxyCompactList}\small\item\em Set the start parameters for the animation sequence \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_animation_ticker_a745c0ec1e44580c17ce60646ba0a8c10}{set\+Anim\+Finished}} (int what\+To\+Do)
+\begin{DoxyCompactList}\small\item\em A flag telling what to do when the animation finishes 0 = loop 1 = set first frame 2 = set last frame 3 = set frame = 0 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_animation_ticker_a5f122a2978abcd1ae930d22fbbf6e07e}{get\+Frame\+Num}} ()
+\begin{DoxyCompactList}\small\item\em gets the current frame number -\/ if update is called then all should be good \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_animation_ticker_ad5efbd9a22b71acdb310cbf36bfc3ed4}{pause\+Animation}} (bool state)
+\begin{DoxyCompactList}\small\item\em can be used to temporarily pause an animation \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_animation_ticker_a651ebc93d3b81476de57192aa0ed7ac0}{set\+Frame\+Index}} (int frame\+IndexZ)
+\begin{DoxyCompactList}\small\item\em generally you wont need this but in theory it can reset an animation to a new point \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_animation_ticker_ab35ac03afdb37b3f59a15eb08c7daa0f}{set\+Frame}} (int frameZ)
+\begin{DoxyCompactList}\small\item\em generally you wont need this and you will need to set running to false for it to stop animation \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_animation_ticker_a6d859fd88b02f11b5ce36d72f307f2da}{Update}} (Game\+Time game\+Time)
+\begin{DoxyCompactList}\small\item\em Update the animation sequence This routine is usually run in the update routine this routine has game\+Time as a parameter \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_r_c___framework_1_1_animation_ticker_aa510bfceffc13acf2a6175094794d783}{running}} = false
+\begin{DoxyCompactList}\small\item\em make it tick or not \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class just manages a counter to tell the current frame number 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_animation_ticker_afb68bed1e4614d31fea99971448af72b}\label{class_r_c___framework_1_1_animation_ticker_afb68bed1e4614d31fea99971448af72b}} 
+\index{R\+C\+\_\+\+Framework\+::\+Animation\+Ticker@{R\+C\+\_\+\+Framework\+::\+Animation\+Ticker}!Animation\+Ticker@{Animation\+Ticker}}
+\index{Animation\+Ticker@{Animation\+Ticker}!R\+C\+\_\+\+Framework\+::\+Animation\+Ticker@{R\+C\+\_\+\+Framework\+::\+Animation\+Ticker}}
+\subsubsection{\texorpdfstring{Animation\+Ticker()}{AnimationTicker()}}
+{\footnotesize\ttfamily R\+C\+\_\+\+Framework.\+Animation\+Ticker.\+Animation\+Ticker (\begin{DoxyParamCaption}\item[{int \mbox{[}$\,$\mbox{]}}]{anim\+Seq,  }\item[{int}]{first\+FrameZ,  }\item[{int}]{last\+FrameZ,  }\item[{int}]{ticks\+Between\+FramesZ,  }\item[{int}]{anim\+FinishedZ }\end{DoxyParamCaption})}
+
+
+
+create an animation ticker 
+
+
+\begin{DoxyParams}{Parameters}
+{\em anim\+Seq} & \\
+\hline
+{\em first\+FrameZ} & \\
+\hline
+{\em last\+FrameZ} & \\
+\hline
+{\em ticks\+Between\+FramesZ} & \\
+\hline
+{\em anim\+FinishedZ} & 0=loop, 1=firstframe, 2=lastframe, 3=frame0\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_animation_ticker_aa01c754af9f362a118156f5114ee8843}\label{class_r_c___framework_1_1_animation_ticker_aa01c754af9f362a118156f5114ee8843}} 
+\index{R\+C\+\_\+\+Framework\+::\+Animation\+Ticker@{R\+C\+\_\+\+Framework\+::\+Animation\+Ticker}!animation\+Start@{animation\+Start}}
+\index{animation\+Start@{animation\+Start}!R\+C\+\_\+\+Framework\+::\+Animation\+Ticker@{R\+C\+\_\+\+Framework\+::\+Animation\+Ticker}}
+\subsubsection{\texorpdfstring{animation\+Start()}{animationStart()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Animation\+Ticker.\+animation\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Set the start parameters for the animation sequence 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_animation_ticker_a5f122a2978abcd1ae930d22fbbf6e07e}\label{class_r_c___framework_1_1_animation_ticker_a5f122a2978abcd1ae930d22fbbf6e07e}} 
+\index{R\+C\+\_\+\+Framework\+::\+Animation\+Ticker@{R\+C\+\_\+\+Framework\+::\+Animation\+Ticker}!get\+Frame\+Num@{get\+Frame\+Num}}
+\index{get\+Frame\+Num@{get\+Frame\+Num}!R\+C\+\_\+\+Framework\+::\+Animation\+Ticker@{R\+C\+\_\+\+Framework\+::\+Animation\+Ticker}}
+\subsubsection{\texorpdfstring{get\+Frame\+Num()}{getFrameNum()}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Animation\+Ticker.\+get\+Frame\+Num (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+gets the current frame number -\/ if update is called then all should be good 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_animation_ticker_ad5efbd9a22b71acdb310cbf36bfc3ed4}\label{class_r_c___framework_1_1_animation_ticker_ad5efbd9a22b71acdb310cbf36bfc3ed4}} 
+\index{R\+C\+\_\+\+Framework\+::\+Animation\+Ticker@{R\+C\+\_\+\+Framework\+::\+Animation\+Ticker}!pause\+Animation@{pause\+Animation}}
+\index{pause\+Animation@{pause\+Animation}!R\+C\+\_\+\+Framework\+::\+Animation\+Ticker@{R\+C\+\_\+\+Framework\+::\+Animation\+Ticker}}
+\subsubsection{\texorpdfstring{pause\+Animation()}{pauseAnimation()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Animation\+Ticker.\+pause\+Animation (\begin{DoxyParamCaption}\item[{bool}]{state }\end{DoxyParamCaption})}
+
+
+
+can be used to temporarily pause an animation 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_animation_ticker_a7dc8c7e1833acf289c4ae2d8ef7186c0}\label{class_r_c___framework_1_1_animation_ticker_a7dc8c7e1833acf289c4ae2d8ef7186c0}} 
+\index{R\+C\+\_\+\+Framework\+::\+Animation\+Ticker@{R\+C\+\_\+\+Framework\+::\+Animation\+Ticker}!reset\+Animation\+Ticker@{reset\+Animation\+Ticker}}
+\index{reset\+Animation\+Ticker@{reset\+Animation\+Ticker}!R\+C\+\_\+\+Framework\+::\+Animation\+Ticker@{R\+C\+\_\+\+Framework\+::\+Animation\+Ticker}}
+\subsubsection{\texorpdfstring{reset\+Animation\+Ticker()}{resetAnimationTicker()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Animation\+Ticker.\+reset\+Animation\+Ticker (\begin{DoxyParamCaption}\item[{int \mbox{[}$\,$\mbox{]}}]{anim\+Seq,  }\item[{int}]{first\+FrameZ,  }\item[{int}]{last\+FrameZ,  }\item[{int}]{ticks\+Between\+FramesZ,  }\item[{int}]{anim\+FinishedZ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_animation_ticker_a745c0ec1e44580c17ce60646ba0a8c10}\label{class_r_c___framework_1_1_animation_ticker_a745c0ec1e44580c17ce60646ba0a8c10}} 
+\index{R\+C\+\_\+\+Framework\+::\+Animation\+Ticker@{R\+C\+\_\+\+Framework\+::\+Animation\+Ticker}!set\+Anim\+Finished@{set\+Anim\+Finished}}
+\index{set\+Anim\+Finished@{set\+Anim\+Finished}!R\+C\+\_\+\+Framework\+::\+Animation\+Ticker@{R\+C\+\_\+\+Framework\+::\+Animation\+Ticker}}
+\subsubsection{\texorpdfstring{set\+Anim\+Finished()}{setAnimFinished()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Animation\+Ticker.\+set\+Anim\+Finished (\begin{DoxyParamCaption}\item[{int}]{what\+To\+Do }\end{DoxyParamCaption})}
+
+
+
+A flag telling what to do when the animation finishes 0 = loop 1 = set first frame 2 = set last frame 3 = set frame = 0 
+
+
+\begin{DoxyParams}{Parameters}
+{\em what\+To\+Do} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_animation_ticker_ab35ac03afdb37b3f59a15eb08c7daa0f}\label{class_r_c___framework_1_1_animation_ticker_ab35ac03afdb37b3f59a15eb08c7daa0f}} 
+\index{R\+C\+\_\+\+Framework\+::\+Animation\+Ticker@{R\+C\+\_\+\+Framework\+::\+Animation\+Ticker}!set\+Frame@{set\+Frame}}
+\index{set\+Frame@{set\+Frame}!R\+C\+\_\+\+Framework\+::\+Animation\+Ticker@{R\+C\+\_\+\+Framework\+::\+Animation\+Ticker}}
+\subsubsection{\texorpdfstring{set\+Frame()}{setFrame()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Animation\+Ticker.\+set\+Frame (\begin{DoxyParamCaption}\item[{int}]{frameZ }\end{DoxyParamCaption})}
+
+
+
+generally you wont need this and you will need to set running to false for it to stop animation 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frameZ} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_animation_ticker_a651ebc93d3b81476de57192aa0ed7ac0}\label{class_r_c___framework_1_1_animation_ticker_a651ebc93d3b81476de57192aa0ed7ac0}} 
+\index{R\+C\+\_\+\+Framework\+::\+Animation\+Ticker@{R\+C\+\_\+\+Framework\+::\+Animation\+Ticker}!set\+Frame\+Index@{set\+Frame\+Index}}
+\index{set\+Frame\+Index@{set\+Frame\+Index}!R\+C\+\_\+\+Framework\+::\+Animation\+Ticker@{R\+C\+\_\+\+Framework\+::\+Animation\+Ticker}}
+\subsubsection{\texorpdfstring{set\+Frame\+Index()}{setFrameIndex()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Animation\+Ticker.\+set\+Frame\+Index (\begin{DoxyParamCaption}\item[{int}]{frame\+IndexZ }\end{DoxyParamCaption})}
+
+
+
+generally you wont need this but in theory it can reset an animation to a new point 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frameZ} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_animation_ticker_a6d859fd88b02f11b5ce36d72f307f2da}\label{class_r_c___framework_1_1_animation_ticker_a6d859fd88b02f11b5ce36d72f307f2da}} 
+\index{R\+C\+\_\+\+Framework\+::\+Animation\+Ticker@{R\+C\+\_\+\+Framework\+::\+Animation\+Ticker}!Update@{Update}}
+\index{Update@{Update}!R\+C\+\_\+\+Framework\+::\+Animation\+Ticker@{R\+C\+\_\+\+Framework\+::\+Animation\+Ticker}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Animation\+Ticker.\+Update (\begin{DoxyParamCaption}\item[{Game\+Time}]{game\+Time }\end{DoxyParamCaption})}
+
+
+
+Update the animation sequence This routine is usually run in the update routine this routine has game\+Time as a parameter 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_animation_ticker_aa510bfceffc13acf2a6175094794d783}\label{class_r_c___framework_1_1_animation_ticker_aa510bfceffc13acf2a6175094794d783}} 
+\index{R\+C\+\_\+\+Framework\+::\+Animation\+Ticker@{R\+C\+\_\+\+Framework\+::\+Animation\+Ticker}!running@{running}}
+\index{running@{running}!R\+C\+\_\+\+Framework\+::\+Animation\+Ticker@{R\+C\+\_\+\+Framework\+::\+Animation\+Ticker}}
+\subsubsection{\texorpdfstring{running}{running}}
+{\footnotesize\ttfamily bool R\+C\+\_\+\+Framework.\+Animation\+Ticker.\+running = false}
+
+
+
+make it tick or not 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+B/\+R\+C\+\_\+\+Framework2018/\+Source/\mbox{\hyperlink{_r_c___frame_8cs}{R\+C\+\_\+\+Frame.\+cs}}\end{DoxyCompactItemize}

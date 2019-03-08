@@ -1,0 +1,461 @@
+\hypertarget{class_r_c___framework_1_1_way_point_list}{}\section{R\+C\+\_\+\+Framework.\+Way\+Point\+List Class Reference}
+\label{class_r_c___framework_1_1_way_point_list}\index{R\+C\+\_\+\+Framework.\+Way\+Point\+List@{R\+C\+\_\+\+Framework.\+Way\+Point\+List}}
+
+
+A class for creating and managing lists of waypoints  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_way_point_list_a0928340fd1b2b35c0a65781d192c68bb}{Way\+Point\+List}} ()
+\begin{DoxyCompactList}\small\item\em construct an empty waypoint list \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_way_point_list_aa6f1a51f6d7703f3629b4355e714ee14}{Way\+Point\+List}} (\mbox{\hyperlink{class_r_c___framework_1_1_way_point_list}{Way\+Point\+List}} wl)
+\begin{DoxyCompactList}\small\item\em Copy constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_way_point_list_a09f5b120330425543ceed74153bad906}{Way\+Point\+List}} (\mbox{\hyperlink{class_r_c___framework_1_1_way_point}{Way\+Point}} w1, \mbox{\hyperlink{class_r_c___framework_1_1_way_point}{Way\+Point}} w2, int way\+FinishedZ)
+\begin{DoxyCompactList}\small\item\em Construct a 2 position waypoint list \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_way_point_list_a9c757a15b345cd24f2506766834dd9eb}{Way\+Point\+List}} (\mbox{\hyperlink{class_r_c___framework_1_1_way_point}{Way\+Point}} w1, \mbox{\hyperlink{class_r_c___framework_1_1_way_point}{Way\+Point}} w2, \mbox{\hyperlink{class_r_c___framework_1_1_way_point}{Way\+Point}} w3, int way\+FinishedZ)
+\begin{DoxyCompactList}\small\item\em Construct a 3 position waypoint list \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_way_point_list_a36f22f05e0d900f4acc2a7a8239b2227}{reset}} ()
+\begin{DoxyCompactList}\small\item\em reset the list to none \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_way_point_list_abfc790ca406453c0cddea8c03203ea3d}{count}} ()
+\begin{DoxyCompactList}\small\item\em count of waypoints \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_way_point_list_a04cecc3f9a75ae9eb80bdb9d0bb088d3}{add}} (\mbox{\hyperlink{class_r_c___framework_1_1_way_point}{Way\+Point}} w)
+\begin{DoxyCompactList}\small\item\em returns the index for subsequent use as leg \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_way_point_list_a17e0452280771d013bbdd3d97aadc0a1}{add}} (float x, float y, float speedZ)
+\begin{DoxyCompactList}\small\item\em returns the index for subsequent use as leg \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_way_point}{Way\+Point}} \mbox{\hyperlink{class_r_c___framework_1_1_way_point_list_a788fadcbf3ca059b956f292966788237}{current\+Waypoint}} ()
+\begin{DoxyCompactList}\small\item\em Returns the current waypoint \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_way_point_list_abba1a4cdc76bdb8206f8b5e4455b7ad0}{get\+Current\+Leg}} ()
+\begin{DoxyCompactList}\small\item\em returns the index of the current way point \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_way_point}{Way\+Point}} \mbox{\hyperlink{class_r_c___framework_1_1_way_point_list_aefb59feb76973b2a903d342618350896}{get\+Way\+Point}} (int i)
+\begin{DoxyCompactList}\small\item\em returns a particular waypoint \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_r_c___framework_1_1_way_point_list_aa1d992bceb400ee9fcf657e6a4c379f8}{next\+Leg}} ()
+\begin{DoxyCompactList}\small\item\em returns false if the next leg is the end ~\newline
+\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_way_point_list_ada4f7ff83ceacd5494f4ed71e8301c4d}{set\+Leg}} (int i)
+\begin{DoxyCompactList}\small\item\em This would be rarely be used it sets the current leg of the way point as an index \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_way_point_list_a4e5f6b4882fd8ad79fe45ff7ed5da4a1}{make\+Path\+Circle}} (Vector2 center, float radius, float start\+Angle, float angle\+Increment, int steps, float speed, float Xscale)
+\begin{DoxyCompactList}\small\item\em Construct a circular path of waypoints \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_way_point_list_a93115e08872305f07ab33703dfcda118}{make\+Path\+Zig\+Zag}} (Vector2 start\+Pos, Vector2 end\+Pos, Vector2 start\+Zig\+Zag, Vector2 end\+Zig\+Zag, int steps, float speed)
+\begin{DoxyCompactList}\small\item\em Makes a zig zag path previously there was only one zigzag param -\/ so make start\+Zig\+Zag the same as end\+Zig\+Zag for compatibilty \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_way_point_list_a27351971197e27dc2f7144030db5a34d}{make\+Path\+Line\+With\+Steps}} (Vector2 start\+Pos, Vector2 end\+Pos, int steps, float speed)
+\begin{DoxyCompactList}\small\item\em Just a subdivided line -\/ more for use with position factories and particle systems than sprites since a sprite with a constant speed and just two ends is easier \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_way_point_list_aee18abc5ce1b54b6b1c642307852a9ce}{make\+Path\+Delta}} (float speed, int max\+Steps, Vector2 start\+Pos, Vector2 init\+Velocity, Vector2 delta, Rectangle limits)
+\begin{DoxyCompactList}\small\item\em Make a parabolic path changing velocity by delta to -\//+ limits in \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_way_point_list_aefa55485666e631b2ef38e634f8cf27e}{Draw}} (Sprite\+Batch sb, Color c\+Points, Color c\+Lines)
+\begin{DoxyCompactList}\small\item\em draw it so it helps \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{class_r_c___framework_1_1_way_point}{Way\+Point}} $>$ \mbox{\hyperlink{class_r_c___framework_1_1_way_point_list_a4d619d6c2ba2451d3a4be093264fd748}{lst}}
+\begin{DoxyCompactList}\small\item\em lst is public for convenience and extension it is not normally needed outside the class \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_way_point_list_a2ba972fa03f1cecf550ae7e3a0005131}{current\+Leg}}
+\begin{DoxyCompactList}\small\item\em current\+Leg is public for convenience and extension it is not normally accessed outside the class \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_way_point_list_ab0df171ffd39426546ab8c8e44f5a464}{wl\+Direction}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em +1 = forward -\/1 = backward previously this was called dir \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_way_point_list_a458d4b048929d665adaeb7f99e02a246}{way\+Finished}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em 0=return false to \mbox{\hyperlink{class_r_c___framework_1_1_way_point_list_aa1d992bceb400ee9fcf657e6a4c379f8}{next\+Leg()}} but loop back to start 1=return false to \mbox{\hyperlink{class_r_c___framework_1_1_way_point_list_aa1d992bceb400ee9fcf657e6a4c379f8}{next\+Leg()}} but reverse direction 2=set invisible / inactive \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_way_point}{Way\+Point}} \mbox{\hyperlink{class_r_c___framework_1_1_way_point_list_ad4aa13b191657a06490f39b452ca1204}{this\mbox{[}int index\mbox{]}}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Array property (get only) waypoints should probably never be dynamically moved \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class for creating and managing lists of waypoints 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_way_point_list_a0928340fd1b2b35c0a65781d192c68bb}\label{class_r_c___framework_1_1_way_point_list_a0928340fd1b2b35c0a65781d192c68bb}} 
+\index{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List@{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List}!Way\+Point\+List@{Way\+Point\+List}}
+\index{Way\+Point\+List@{Way\+Point\+List}!R\+C\+\_\+\+Framework\+::\+Way\+Point\+List@{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List}}
+\subsubsection{\texorpdfstring{Way\+Point\+List()}{WayPointList()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily R\+C\+\_\+\+Framework.\+Way\+Point\+List.\+Way\+Point\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+construct an empty waypoint list 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_way_point_list_aa6f1a51f6d7703f3629b4355e714ee14}\label{class_r_c___framework_1_1_way_point_list_aa6f1a51f6d7703f3629b4355e714ee14}} 
+\index{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List@{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List}!Way\+Point\+List@{Way\+Point\+List}}
+\index{Way\+Point\+List@{Way\+Point\+List}!R\+C\+\_\+\+Framework\+::\+Way\+Point\+List@{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List}}
+\subsubsection{\texorpdfstring{Way\+Point\+List()}{WayPointList()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily R\+C\+\_\+\+Framework.\+Way\+Point\+List.\+Way\+Point\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_r_c___framework_1_1_way_point_list}{Way\+Point\+List}}}]{wl }\end{DoxyParamCaption})}
+
+
+
+Copy constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wl} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_way_point_list_a09f5b120330425543ceed74153bad906}\label{class_r_c___framework_1_1_way_point_list_a09f5b120330425543ceed74153bad906}} 
+\index{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List@{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List}!Way\+Point\+List@{Way\+Point\+List}}
+\index{Way\+Point\+List@{Way\+Point\+List}!R\+C\+\_\+\+Framework\+::\+Way\+Point\+List@{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List}}
+\subsubsection{\texorpdfstring{Way\+Point\+List()}{WayPointList()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily R\+C\+\_\+\+Framework.\+Way\+Point\+List.\+Way\+Point\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_r_c___framework_1_1_way_point}{Way\+Point}}}]{w1,  }\item[{\mbox{\hyperlink{class_r_c___framework_1_1_way_point}{Way\+Point}}}]{w2,  }\item[{int}]{way\+FinishedZ }\end{DoxyParamCaption})}
+
+
+
+Construct a 2 position waypoint list 
+
+
+\begin{DoxyParams}{Parameters}
+{\em w1} & \\
+\hline
+{\em w2} & \\
+\hline
+{\em way\+FinishedZ} & you probably want this to be 1 ro get back forward actions\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_way_point_list_a9c757a15b345cd24f2506766834dd9eb}\label{class_r_c___framework_1_1_way_point_list_a9c757a15b345cd24f2506766834dd9eb}} 
+\index{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List@{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List}!Way\+Point\+List@{Way\+Point\+List}}
+\index{Way\+Point\+List@{Way\+Point\+List}!R\+C\+\_\+\+Framework\+::\+Way\+Point\+List@{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List}}
+\subsubsection{\texorpdfstring{Way\+Point\+List()}{WayPointList()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily R\+C\+\_\+\+Framework.\+Way\+Point\+List.\+Way\+Point\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_r_c___framework_1_1_way_point}{Way\+Point}}}]{w1,  }\item[{\mbox{\hyperlink{class_r_c___framework_1_1_way_point}{Way\+Point}}}]{w2,  }\item[{\mbox{\hyperlink{class_r_c___framework_1_1_way_point}{Way\+Point}}}]{w3,  }\item[{int}]{way\+FinishedZ }\end{DoxyParamCaption})}
+
+
+
+Construct a 3 position waypoint list 
+
+
+\begin{DoxyParams}{Parameters}
+{\em w1} & \\
+\hline
+{\em w2} & \\
+\hline
+{\em w3} & \\
+\hline
+{\em way\+FinishedZ} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_way_point_list_a04cecc3f9a75ae9eb80bdb9d0bb088d3}\label{class_r_c___framework_1_1_way_point_list_a04cecc3f9a75ae9eb80bdb9d0bb088d3}} 
+\index{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List@{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List}!add@{add}}
+\index{add@{add}!R\+C\+\_\+\+Framework\+::\+Way\+Point\+List@{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List}}
+\subsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Way\+Point\+List.\+add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_r_c___framework_1_1_way_point}{Way\+Point}}}]{w }\end{DoxyParamCaption})}
+
+
+
+returns the index for subsequent use as leg 
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_way_point_list_a17e0452280771d013bbdd3d97aadc0a1}\label{class_r_c___framework_1_1_way_point_list_a17e0452280771d013bbdd3d97aadc0a1}} 
+\index{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List@{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List}!add@{add}}
+\index{add@{add}!R\+C\+\_\+\+Framework\+::\+Way\+Point\+List@{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List}}
+\subsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Way\+Point\+List.\+add (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{speedZ }\end{DoxyParamCaption})}
+
+
+
+returns the index for subsequent use as leg 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+{\em speedZ} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_way_point_list_abfc790ca406453c0cddea8c03203ea3d}\label{class_r_c___framework_1_1_way_point_list_abfc790ca406453c0cddea8c03203ea3d}} 
+\index{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List@{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List}!count@{count}}
+\index{count@{count}!R\+C\+\_\+\+Framework\+::\+Way\+Point\+List@{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List}}
+\subsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Way\+Point\+List.\+count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+count of waypoints 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_way_point_list_a788fadcbf3ca059b956f292966788237}\label{class_r_c___framework_1_1_way_point_list_a788fadcbf3ca059b956f292966788237}} 
+\index{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List@{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List}!current\+Waypoint@{current\+Waypoint}}
+\index{current\+Waypoint@{current\+Waypoint}!R\+C\+\_\+\+Framework\+::\+Way\+Point\+List@{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List}}
+\subsubsection{\texorpdfstring{current\+Waypoint()}{currentWaypoint()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_r_c___framework_1_1_way_point}{Way\+Point}} R\+C\+\_\+\+Framework.\+Way\+Point\+List.\+current\+Waypoint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the current waypoint 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_way_point_list_aefa55485666e631b2ef38e634f8cf27e}\label{class_r_c___framework_1_1_way_point_list_aefa55485666e631b2ef38e634f8cf27e}} 
+\index{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List@{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List}!Draw@{Draw}}
+\index{Draw@{Draw}!R\+C\+\_\+\+Framework\+::\+Way\+Point\+List@{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Way\+Point\+List.\+Draw (\begin{DoxyParamCaption}\item[{Sprite\+Batch}]{sb,  }\item[{Color}]{c\+Points,  }\item[{Color}]{c\+Lines }\end{DoxyParamCaption})}
+
+
+
+draw it so it helps 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & \\
+\hline
+{\em c\+Points} & color of points (or null if no points wanted)\\
+\hline
+{\em c\+Lines} & color of lines (or null if no lines wanted)\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_way_point_list_abba1a4cdc76bdb8206f8b5e4455b7ad0}\label{class_r_c___framework_1_1_way_point_list_abba1a4cdc76bdb8206f8b5e4455b7ad0}} 
+\index{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List@{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List}!get\+Current\+Leg@{get\+Current\+Leg}}
+\index{get\+Current\+Leg@{get\+Current\+Leg}!R\+C\+\_\+\+Framework\+::\+Way\+Point\+List@{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List}}
+\subsubsection{\texorpdfstring{get\+Current\+Leg()}{getCurrentLeg()}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Way\+Point\+List.\+get\+Current\+Leg (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+returns the index of the current way point 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_way_point_list_aefb59feb76973b2a903d342618350896}\label{class_r_c___framework_1_1_way_point_list_aefb59feb76973b2a903d342618350896}} 
+\index{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List@{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List}!get\+Way\+Point@{get\+Way\+Point}}
+\index{get\+Way\+Point@{get\+Way\+Point}!R\+C\+\_\+\+Framework\+::\+Way\+Point\+List@{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List}}
+\subsubsection{\texorpdfstring{get\+Way\+Point()}{getWayPoint()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_r_c___framework_1_1_way_point}{Way\+Point}} R\+C\+\_\+\+Framework.\+Way\+Point\+List.\+get\+Way\+Point (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+returns a particular waypoint 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_way_point_list_a4e5f6b4882fd8ad79fe45ff7ed5da4a1}\label{class_r_c___framework_1_1_way_point_list_a4e5f6b4882fd8ad79fe45ff7ed5da4a1}} 
+\index{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List@{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List}!make\+Path\+Circle@{make\+Path\+Circle}}
+\index{make\+Path\+Circle@{make\+Path\+Circle}!R\+C\+\_\+\+Framework\+::\+Way\+Point\+List@{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List}}
+\subsubsection{\texorpdfstring{make\+Path\+Circle()}{makePathCircle()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Way\+Point\+List.\+make\+Path\+Circle (\begin{DoxyParamCaption}\item[{Vector2}]{center,  }\item[{float}]{radius,  }\item[{float}]{start\+Angle,  }\item[{float}]{angle\+Increment,  }\item[{int}]{steps,  }\item[{float}]{speed,  }\item[{float}]{Xscale }\end{DoxyParamCaption})}
+
+
+
+Construct a circular path of waypoints 
+
+
+\begin{DoxyParams}{Parameters}
+{\em center} & \\
+\hline
+{\em radius} & \\
+\hline
+{\em start\+Angle} & \\
+\hline
+{\em angle\+Increment} & \\
+\hline
+{\em steps} & \\
+\hline
+{\em speed} & \\
+\hline
+{\em Xscale} & usually 1 for a circle, can vary try 0.\+5 and 2 to creat ovals\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_way_point_list_aee18abc5ce1b54b6b1c642307852a9ce}\label{class_r_c___framework_1_1_way_point_list_aee18abc5ce1b54b6b1c642307852a9ce}} 
+\index{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List@{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List}!make\+Path\+Delta@{make\+Path\+Delta}}
+\index{make\+Path\+Delta@{make\+Path\+Delta}!R\+C\+\_\+\+Framework\+::\+Way\+Point\+List@{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List}}
+\subsubsection{\texorpdfstring{make\+Path\+Delta()}{makePathDelta()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Way\+Point\+List.\+make\+Path\+Delta (\begin{DoxyParamCaption}\item[{float}]{speed,  }\item[{int}]{max\+Steps,  }\item[{Vector2}]{start\+Pos,  }\item[{Vector2}]{init\+Velocity,  }\item[{Vector2}]{delta,  }\item[{Rectangle}]{limits }\end{DoxyParamCaption})}
+
+
+
+Make a parabolic path changing velocity by delta to -\//+ limits in 
+
+
+\begin{DoxyParams}{Parameters}
+{\em speed} & \\
+\hline
+{\em max\+Steps} & \\
+\hline
+{\em start\+Pos} & \\
+\hline
+{\em init\+Velocity} & \\
+\hline
+{\em delta} & \\
+\hline
+{\em limits} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_way_point_list_a27351971197e27dc2f7144030db5a34d}\label{class_r_c___framework_1_1_way_point_list_a27351971197e27dc2f7144030db5a34d}} 
+\index{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List@{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List}!make\+Path\+Line\+With\+Steps@{make\+Path\+Line\+With\+Steps}}
+\index{make\+Path\+Line\+With\+Steps@{make\+Path\+Line\+With\+Steps}!R\+C\+\_\+\+Framework\+::\+Way\+Point\+List@{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List}}
+\subsubsection{\texorpdfstring{make\+Path\+Line\+With\+Steps()}{makePathLineWithSteps()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Way\+Point\+List.\+make\+Path\+Line\+With\+Steps (\begin{DoxyParamCaption}\item[{Vector2}]{start\+Pos,  }\item[{Vector2}]{end\+Pos,  }\item[{int}]{steps,  }\item[{float}]{speed }\end{DoxyParamCaption})}
+
+
+
+Just a subdivided line -\/ more for use with position factories and particle systems than sprites since a sprite with a constant speed and just two ends is easier 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start\+Pos} & \\
+\hline
+{\em end\+Pos} & \\
+\hline
+{\em steps} & \\
+\hline
+{\em speed} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_way_point_list_a93115e08872305f07ab33703dfcda118}\label{class_r_c___framework_1_1_way_point_list_a93115e08872305f07ab33703dfcda118}} 
+\index{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List@{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List}!make\+Path\+Zig\+Zag@{make\+Path\+Zig\+Zag}}
+\index{make\+Path\+Zig\+Zag@{make\+Path\+Zig\+Zag}!R\+C\+\_\+\+Framework\+::\+Way\+Point\+List@{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List}}
+\subsubsection{\texorpdfstring{make\+Path\+Zig\+Zag()}{makePathZigZag()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Way\+Point\+List.\+make\+Path\+Zig\+Zag (\begin{DoxyParamCaption}\item[{Vector2}]{start\+Pos,  }\item[{Vector2}]{end\+Pos,  }\item[{Vector2}]{start\+Zig\+Zag,  }\item[{Vector2}]{end\+Zig\+Zag,  }\item[{int}]{steps,  }\item[{float}]{speed }\end{DoxyParamCaption})}
+
+
+
+Makes a zig zag path previously there was only one zigzag param -\/ so make start\+Zig\+Zag the same as end\+Zig\+Zag for compatibilty 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start\+Pos} & \\
+\hline
+{\em end\+Pos} & \\
+\hline
+{\em start\+Zig\+Zag} & \\
+\hline
+{\em end\+Zig\+Zag} & \\
+\hline
+{\em steps} & \\
+\hline
+{\em speed} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_way_point_list_aa1d992bceb400ee9fcf657e6a4c379f8}\label{class_r_c___framework_1_1_way_point_list_aa1d992bceb400ee9fcf657e6a4c379f8}} 
+\index{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List@{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List}!next\+Leg@{next\+Leg}}
+\index{next\+Leg@{next\+Leg}!R\+C\+\_\+\+Framework\+::\+Way\+Point\+List@{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List}}
+\subsubsection{\texorpdfstring{next\+Leg()}{nextLeg()}}
+{\footnotesize\ttfamily bool R\+C\+\_\+\+Framework.\+Way\+Point\+List.\+next\+Leg (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+returns false if the next leg is the end ~\newline
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_way_point_list_a36f22f05e0d900f4acc2a7a8239b2227}\label{class_r_c___framework_1_1_way_point_list_a36f22f05e0d900f4acc2a7a8239b2227}} 
+\index{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List@{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List}!reset@{reset}}
+\index{reset@{reset}!R\+C\+\_\+\+Framework\+::\+Way\+Point\+List@{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Way\+Point\+List.\+reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+reset the list to none 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_way_point_list_ada4f7ff83ceacd5494f4ed71e8301c4d}\label{class_r_c___framework_1_1_way_point_list_ada4f7ff83ceacd5494f4ed71e8301c4d}} 
+\index{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List@{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List}!set\+Leg@{set\+Leg}}
+\index{set\+Leg@{set\+Leg}!R\+C\+\_\+\+Framework\+::\+Way\+Point\+List@{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List}}
+\subsubsection{\texorpdfstring{set\+Leg()}{setLeg()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Way\+Point\+List.\+set\+Leg (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+This would be rarely be used it sets the current leg of the way point as an index 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_way_point_list_a2ba972fa03f1cecf550ae7e3a0005131}\label{class_r_c___framework_1_1_way_point_list_a2ba972fa03f1cecf550ae7e3a0005131}} 
+\index{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List@{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List}!current\+Leg@{current\+Leg}}
+\index{current\+Leg@{current\+Leg}!R\+C\+\_\+\+Framework\+::\+Way\+Point\+List@{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List}}
+\subsubsection{\texorpdfstring{current\+Leg}{currentLeg}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Way\+Point\+List.\+current\+Leg}
+
+
+
+current\+Leg is public for convenience and extension it is not normally accessed outside the class 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_way_point_list_a4d619d6c2ba2451d3a4be093264fd748}\label{class_r_c___framework_1_1_way_point_list_a4d619d6c2ba2451d3a4be093264fd748}} 
+\index{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List@{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List}!lst@{lst}}
+\index{lst@{lst}!R\+C\+\_\+\+Framework\+::\+Way\+Point\+List@{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List}}
+\subsubsection{\texorpdfstring{lst}{lst}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_r_c___framework_1_1_way_point}{Way\+Point}}$>$ R\+C\+\_\+\+Framework.\+Way\+Point\+List.\+lst}
+
+
+
+lst is public for convenience and extension it is not normally needed outside the class 
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_way_point_list_ad4aa13b191657a06490f39b452ca1204}\label{class_r_c___framework_1_1_way_point_list_ad4aa13b191657a06490f39b452ca1204}} 
+\index{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List@{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List}!this\mbox{[}int index\mbox{]}@{this[int index]}}
+\index{this\mbox{[}int index\mbox{]}@{this[int index]}!R\+C\+\_\+\+Framework\+::\+Way\+Point\+List@{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List}}
+\subsubsection{\texorpdfstring{this[int index]}{this[int index]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_r_c___framework_1_1_way_point}{Way\+Point}} R\+C\+\_\+\+Framework.\+Way\+Point\+List.\+this\mbox{[}int index\mbox{]}\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Array property (get only) waypoints should probably never be dynamically moved 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_way_point_list_a458d4b048929d665adaeb7f99e02a246}\label{class_r_c___framework_1_1_way_point_list_a458d4b048929d665adaeb7f99e02a246}} 
+\index{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List@{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List}!way\+Finished@{way\+Finished}}
+\index{way\+Finished@{way\+Finished}!R\+C\+\_\+\+Framework\+::\+Way\+Point\+List@{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List}}
+\subsubsection{\texorpdfstring{way\+Finished}{wayFinished}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Way\+Point\+List.\+way\+Finished\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+0=return false to \mbox{\hyperlink{class_r_c___framework_1_1_way_point_list_aa1d992bceb400ee9fcf657e6a4c379f8}{next\+Leg()}} but loop back to start 1=return false to \mbox{\hyperlink{class_r_c___framework_1_1_way_point_list_aa1d992bceb400ee9fcf657e6a4c379f8}{next\+Leg()}} but reverse direction 2=set invisible / inactive 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_way_point_list_ab0df171ffd39426546ab8c8e44f5a464}\label{class_r_c___framework_1_1_way_point_list_ab0df171ffd39426546ab8c8e44f5a464}} 
+\index{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List@{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List}!wl\+Direction@{wl\+Direction}}
+\index{wl\+Direction@{wl\+Direction}!R\+C\+\_\+\+Framework\+::\+Way\+Point\+List@{R\+C\+\_\+\+Framework\+::\+Way\+Point\+List}}
+\subsubsection{\texorpdfstring{wl\+Direction}{wlDirection}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Way\+Point\+List.\+wl\+Direction\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
++1 = forward -\/1 = backward previously this was called dir 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+B/\+R\+C\+\_\+\+Framework2018/\+Source/\mbox{\hyperlink{_r_c___waypoint_8cs}{R\+C\+\_\+\+Waypoint.\+cs}}\end{DoxyCompactItemize}

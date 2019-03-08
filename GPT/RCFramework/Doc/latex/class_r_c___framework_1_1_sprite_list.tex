@@ -1,0 +1,776 @@
+\hypertarget{class_r_c___framework_1_1_sprite_list}{}\section{R\+C\+\_\+\+Framework.\+Sprite\+List Class Reference}
+\label{class_r_c___framework_1_1_sprite_list}\index{R\+C\+\_\+\+Framework.\+Sprite\+List@{R\+C\+\_\+\+Framework.\+Sprite\+List}}
+
+
+A list of sprites with some basic management functions It has the concept than sprites are visbile or not visible and active or not active the function addspritereuse -\/ reuses the inactive sprite slots  
+
+
+Inheritance diagram for R\+C\+\_\+\+Framework.\+Sprite\+List\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_r_c___framework_1_1_sprite_list}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_aa12cce855c8cfefbfb9dd4f011ee6b0c}{Sprite\+List}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for spritelist \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_ab960d5ea8bbf16fe40562fc083ce8059}{Sprite\+List}} (int Num\+Of\+Sprites)
+\begin{DoxyCompactList}\small\item\em Constructor if you want to manage how many sprites \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_a5ae9a1c4902704af27642541288eab22}{count}} ()
+\begin{DoxyCompactList}\small\item\em counts sprites in list (active, inactive , visible, not visible) fairly useless \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_a806056c18832f13d2adf0dad0c0b2152}{count\+Active}} ()
+\begin{DoxyCompactList}\small\item\em counts sprites in list (active only) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_a093cf170b2802f89be43bf86ed81662e}{get\+Max\+Num\+Of\+Sprites}} ()
+\begin{DoxyCompactList}\small\item\em Get max number of sprites in this list \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_aad3ba75650382840c4c11d28022bc288}{get\+Highest\+Used}} ()
+\begin{DoxyCompactList}\small\item\em get the index of the highest used sprite \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_a3d07b6b3927153b2dec5f13666908cfe}{find\+Free\+Sprite}} ()
+\begin{DoxyCompactList}\small\item\em Finds a free slot in the sprite list or -\/1 if it fails \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_a019afbeb0e8e39bbc9e5a5c6cf34f777}{find\+Free\+Sprite\+Or\+Inactive}} ()
+\begin{DoxyCompactList}\small\item\em Finds a free slot in the sprite list or an inactive sprite -\/1 if it fails \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_a8f45da7ee7263d6f9167a2961e14a412}{add\+Sprite}} (\mbox{\hyperlink{class_r_c___framework_1_1_sprite3}{Sprite3}} spriteZ)
+\begin{DoxyCompactList}\small\item\em Add a sprite and return then return the number we added it at return -\/1 if not possible \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_a0ff2817bd891443dd588b37aad792cf0}{add\+Sprite\+Reuse}} (\mbox{\hyperlink{class_r_c___framework_1_1_sprite3}{Sprite3}} spriteZ)
+\begin{DoxyCompactList}\small\item\em Add a sprite and return then number we added it at and allow inactive sprites to be oever written return -\/1 if not possible \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_sprite3}{Sprite3}} \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_a430b89d680a7267307b61d7cb81d948d}{get\+Sprite}} (int i)
+\begin{DoxyCompactList}\small\item\em return the particular sprite \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_a6976b2d2feaf72f41d92a8981e595efb}{delete\+Sprite}} (int i)
+\begin{DoxyCompactList}\small\item\em Remove a sprite \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_a9ddabec41f012b498c09368318c1941c}{set\+Sprite}} (int i, \mbox{\hyperlink{class_r_c___framework_1_1_sprite3}{Sprite3}} spriteZ)
+\begin{DoxyCompactList}\small\item\em Replace or set a specifically numbered sprite \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_a4100c8d4abaa1e7268c17607d70b539a}{Draw}} (Sprite\+Batch sb)
+\begin{DoxyCompactList}\small\item\em draw all visible sprites \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_aab5a80e0d7a8340768db890a9af8a90c}{draw\+All}} (Sprite\+Batch sb)
+\begin{DoxyCompactList}\small\item\em draw all visible and active sprites \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_a501e6bd0f2a0910e5259db8189e23ce4}{animation\+Tick}} (Game\+Time game\+Time)
+\begin{DoxyCompactList}\small\item\em animation\+Tick tick all visible and active sprites \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_af36a07386a5b0f32a74473890868b3fc}{Tick}} ()
+\begin{DoxyCompactList}\small\item\em Run routine tick on all active sprites -\/ this may alter their visiblity or active staus Tick is used in sprite3 to make a sprite visible after a certain time \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_aba7adceacb386357f811b5099d8885ca}{set\+Color}} (Color c)
+\begin{DoxyCompactList}\small\item\em Run set\+Color on all active sprites \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_a816100deff7ad173c33904ac59f3ad79}{Update}} (Game\+Time game\+Time)
+\begin{DoxyCompactList}\small\item\em Run Update on all active sprites; but most of the time you actually want one of (or more of)\+: \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_a865a310d536bf2fd0b23f01b84159887}{draw\+Active}} (Sprite\+Batch sb)
+\begin{DoxyCompactList}\small\item\em Draw all active sprites \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_a5467136da9d231b4e99444adb5f52470}{move\+By\+Angle\+Speed}} ()
+\begin{DoxyCompactList}\small\item\em Calls \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_a5467136da9d231b4e99444adb5f52470}{move\+By\+Angle\+Speed()}}; on all active sprites in the list \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_a9d1b368c9d6d8e340e66faa06c63e5dd}{move\+Active\+AD}} ()
+\begin{DoxyCompactList}\small\item\em Move active by angle/dist \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_a1ad88a094e1efbdd75de18f8f1d49db1}{move\+By\+Angle\+Speeed\+Limit}} (Rectangle r)
+\begin{DoxyCompactList}\small\item\em runs move\+By\+Angle\+Speeed\+Limit on all active sprites \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_a91c1c36f7a1b321e6a1351fddd9c7e3e}{adjust\+Angles}} ()
+\begin{DoxyCompactList}\small\item\em Adjust all angles (move and display) by relevant deltas \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_a0d85e7ec742d8326291f6d51ab0e0b0e}{adjust\+Angles\+Active}} ()
+\begin{DoxyCompactList}\small\item\em Adjust all angles (move and display) by relevant deltas \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_a993e1c122878810e0e4cb439bc34be45}{remove\+If\+Outside}} (Rectangle r)
+\begin{DoxyCompactList}\small\item\em Removes (makes inactive) all sprites whos bouding vbox is outside r returns a count of the number of sprites removed \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_a61d8b26102baae989a9a9c82b1242c0c}{move\+Delta\+X\+Y\+\_\+\+Visible}} ()
+\begin{DoxyCompactList}\small\item\em Move visible or active by delat x delta y \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_a7412f51e494ab844da5c81c24d1b24a9}{move\+Delta\+XY}} ()
+\begin{DoxyCompactList}\small\item\em Move active by delta x delta y \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_ac4dbeb822b300bdcbebeb20c15b7bc9a}{scroll\+Move}} (float x, float y)
+\begin{DoxyCompactList}\small\item\em Call scrollmove to move all sprites \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_ab65f3d6bc7574e4b5df5c36b09d4d0b7}{move\+DeltaX}} (float dx)
+\begin{DoxyCompactList}\small\item\em Move active by a delta x \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_a49e91f6101d88d31069bb76d76efe9af}{move\+DeltaY}} (float dy)
+\begin{DoxyCompactList}\small\item\em Move active by a delta y \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_a2f4c60ffbdb1ed918079bb2572b0dcf5}{move\+Visible\+Way\+Points}} ()
+\begin{DoxyCompactList}\small\item\em Move all active visible sprites by their waypoint \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_a172fdc75116eeac16731188b46b7dac6}{draw\+Info}} (Sprite\+Batch sb, Color color\+BB, Color color\+HS)
+\begin{DoxyCompactList}\small\item\em Draw BB and hotspot for all visible sprites \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_a3927cc35567aca5b96ebd966a8b480be}{draw\+Bounding\+Sphere}} (Sprite\+Batch sb, Color color\+BS)
+\begin{DoxyCompactList}\small\item\em draw Bounding Spheres in list \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_af03b9a1d139cffcaa9cb32170788998e}{draw\+Way\+Lists}} (Sprite\+Batch sb, Color colorW)
+\begin{DoxyCompactList}\small\item\em Draw the waypoints \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_adbb96b3d84627126045be2b406c9ab12}{draw\+Rect4}} (Sprite\+Batch sb, Color color)
+\begin{DoxyCompactList}\small\item\em draws the rotated bounding box for all visible sprites \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_a3cb2f1e0826f5a00623500c8f6e824e9}{collision\+AA}} (\mbox{\hyperlink{class_r_c___framework_1_1_sprite3}{Sprite3}} s)
+\begin{DoxyCompactList}\small\item\em Returns the index of the first (ie lowest numbered) sprite it colides with -\/1 if no colission \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_aae4b98d6d9acdf7c2b2160eb6a4189d8}{collision\+AA}} (\mbox{\hyperlink{class_r_c___framework_1_1_sprite3}{Sprite3}} s, int self)
+\begin{DoxyCompactList}\small\item\em Returns the index of the first (ie lowest numbered) sprite it colides with -\/1 if no collision the self parameter is there to allow the avoidance of collision texting against yourself \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_ac5d904b4fb5a97aadefde7838aea186c}{collision\+With\+Rect}} (Rectangle r)
+\begin{DoxyCompactList}\small\item\em returns index of the first visible sprite that collides with r if no colission it returns -\/1 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_a06ea4d7accd25d0fb593bcf043bb16b5}{point\+In\+List}} (Vector2 point)
+\begin{DoxyCompactList}\small\item\em Returns the number of the first sprite found \textquotesingle{}under\textquotesingle{} the spot \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_a737c9d5cc39dbb8c3754b2fd6d67e8ab}{find\+Inactive}} ()
+\begin{DoxyCompactList}\small\item\em Find inactive sprite or -\/1 if not found \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_ad3406b2aeba1b08f23f13a35454f63e3}{Run\+The\+Method}} (Func$<$ \mbox{\hyperlink{class_r_c___framework_1_1_sprite3}{Sprite3}}, bool $>$ method\+Name)
+\begin{DoxyCompactList}\small\item\em Run the method on each active sprite return true only if all functions return true (or possibly there were no active sprites) the function has the formal parameters bool name(\+Sprite3 s) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_ac5f0c7b4e89b70c3ca6d87c45d874ad9}{low\+Free}} = 0
+\begin{DoxyCompactList}\small\item\em Lowest free sprite num (for use in external loops rarely needed) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_acba70858abae8afe358df8fe61c8c394}{high\+Used}} = 0
+\begin{DoxyCompactList}\small\item\em Highest free sprite num (for use in external loops rarely needed) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_sprite3}{Sprite3}} \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_ad32b304d8023b1a91a3021545436c4e5}{this\mbox{[}int key\mbox{]}}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Overload \mbox{[} and \mbox{]} for ease of use \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A list of sprites with some basic management functions It has the concept than sprites are visbile or not visible and active or not active the function addspritereuse -\/ reuses the inactive sprite slots 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite_list_aa12cce855c8cfefbfb9dd4f011ee6b0c}\label{class_r_c___framework_1_1_sprite_list_aa12cce855c8cfefbfb9dd4f011ee6b0c}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}!Sprite\+List@{Sprite\+List}}
+\index{Sprite\+List@{Sprite\+List}!R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}}
+\subsubsection{\texorpdfstring{Sprite\+List()}{SpriteList()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily R\+C\+\_\+\+Framework.\+Sprite\+List.\+Sprite\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor for spritelist 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite_list_ab960d5ea8bbf16fe40562fc083ce8059}\label{class_r_c___framework_1_1_sprite_list_ab960d5ea8bbf16fe40562fc083ce8059}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}!Sprite\+List@{Sprite\+List}}
+\index{Sprite\+List@{Sprite\+List}!R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}}
+\subsubsection{\texorpdfstring{Sprite\+List()}{SpriteList()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily R\+C\+\_\+\+Framework.\+Sprite\+List.\+Sprite\+List (\begin{DoxyParamCaption}\item[{int}]{Num\+Of\+Sprites }\end{DoxyParamCaption})}
+
+
+
+Constructor if you want to manage how many sprites 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Num\+Of\+Sprites} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite_list_a8f45da7ee7263d6f9167a2961e14a412}\label{class_r_c___framework_1_1_sprite_list_a8f45da7ee7263d6f9167a2961e14a412}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}!add\+Sprite@{add\+Sprite}}
+\index{add\+Sprite@{add\+Sprite}!R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}}
+\subsubsection{\texorpdfstring{add\+Sprite()}{addSprite()}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Sprite\+List.\+add\+Sprite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_r_c___framework_1_1_sprite3}{Sprite3}}}]{spriteZ }\end{DoxyParamCaption})}
+
+
+
+Add a sprite and return then return the number we added it at return -\/1 if not possible 
+
+
+\begin{DoxyParams}{Parameters}
+{\em spriteZ} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite_list_a0ff2817bd891443dd588b37aad792cf0}\label{class_r_c___framework_1_1_sprite_list_a0ff2817bd891443dd588b37aad792cf0}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}!add\+Sprite\+Reuse@{add\+Sprite\+Reuse}}
+\index{add\+Sprite\+Reuse@{add\+Sprite\+Reuse}!R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}}
+\subsubsection{\texorpdfstring{add\+Sprite\+Reuse()}{addSpriteReuse()}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Sprite\+List.\+add\+Sprite\+Reuse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_r_c___framework_1_1_sprite3}{Sprite3}}}]{spriteZ }\end{DoxyParamCaption})}
+
+
+
+Add a sprite and return then number we added it at and allow inactive sprites to be oever written return -\/1 if not possible 
+
+
+\begin{DoxyParams}{Parameters}
+{\em spriteZ} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite_list_a91c1c36f7a1b321e6a1351fddd9c7e3e}\label{class_r_c___framework_1_1_sprite_list_a91c1c36f7a1b321e6a1351fddd9c7e3e}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}!adjust\+Angles@{adjust\+Angles}}
+\index{adjust\+Angles@{adjust\+Angles}!R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}}
+\subsubsection{\texorpdfstring{adjust\+Angles()}{adjustAngles()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite\+List.\+adjust\+Angles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Adjust all angles (move and display) by relevant deltas 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite_list_a0d85e7ec742d8326291f6d51ab0e0b0e}\label{class_r_c___framework_1_1_sprite_list_a0d85e7ec742d8326291f6d51ab0e0b0e}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}!adjust\+Angles\+Active@{adjust\+Angles\+Active}}
+\index{adjust\+Angles\+Active@{adjust\+Angles\+Active}!R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}}
+\subsubsection{\texorpdfstring{adjust\+Angles\+Active()}{adjustAnglesActive()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite\+List.\+adjust\+Angles\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Adjust all angles (move and display) by relevant deltas 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite_list_a501e6bd0f2a0910e5259db8189e23ce4}\label{class_r_c___framework_1_1_sprite_list_a501e6bd0f2a0910e5259db8189e23ce4}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}!animation\+Tick@{animation\+Tick}}
+\index{animation\+Tick@{animation\+Tick}!R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}}
+\subsubsection{\texorpdfstring{animation\+Tick()}{animationTick()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite\+List.\+animation\+Tick (\begin{DoxyParamCaption}\item[{Game\+Time}]{game\+Time }\end{DoxyParamCaption})}
+
+
+
+animation\+Tick tick all visible and active sprites 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite_list_a3cb2f1e0826f5a00623500c8f6e824e9}\label{class_r_c___framework_1_1_sprite_list_a3cb2f1e0826f5a00623500c8f6e824e9}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}!collision\+AA@{collision\+AA}}
+\index{collision\+AA@{collision\+AA}!R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}}
+\subsubsection{\texorpdfstring{collision\+A\+A()}{collisionAA()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Sprite\+List.\+collision\+AA (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_r_c___framework_1_1_sprite3}{Sprite3}}}]{s }\end{DoxyParamCaption})}
+
+
+
+Returns the index of the first (ie lowest numbered) sprite it colides with -\/1 if no colission 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite_list_aae4b98d6d9acdf7c2b2160eb6a4189d8}\label{class_r_c___framework_1_1_sprite_list_aae4b98d6d9acdf7c2b2160eb6a4189d8}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}!collision\+AA@{collision\+AA}}
+\index{collision\+AA@{collision\+AA}!R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}}
+\subsubsection{\texorpdfstring{collision\+A\+A()}{collisionAA()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Sprite\+List.\+collision\+AA (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_r_c___framework_1_1_sprite3}{Sprite3}}}]{s,  }\item[{int}]{self }\end{DoxyParamCaption})}
+
+
+
+Returns the index of the first (ie lowest numbered) sprite it colides with -\/1 if no collision the self parameter is there to allow the avoidance of collision texting against yourself 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & the sprite to test the list against\\
+\hline
+{\em self} & the number of a single sprite to avoid testing\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite_list_ac5d904b4fb5a97aadefde7838aea186c}\label{class_r_c___framework_1_1_sprite_list_ac5d904b4fb5a97aadefde7838aea186c}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}!collision\+With\+Rect@{collision\+With\+Rect}}
+\index{collision\+With\+Rect@{collision\+With\+Rect}!R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}}
+\subsubsection{\texorpdfstring{collision\+With\+Rect()}{collisionWithRect()}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Sprite\+List.\+collision\+With\+Rect (\begin{DoxyParamCaption}\item[{Rectangle}]{r }\end{DoxyParamCaption})}
+
+
+
+returns index of the first visible sprite that collides with r if no colission it returns -\/1 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite_list_a5ae9a1c4902704af27642541288eab22}\label{class_r_c___framework_1_1_sprite_list_a5ae9a1c4902704af27642541288eab22}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}!count@{count}}
+\index{count@{count}!R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}}
+\subsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Sprite\+List.\+count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+counts sprites in list (active, inactive , visible, not visible) fairly useless 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite_list_a806056c18832f13d2adf0dad0c0b2152}\label{class_r_c___framework_1_1_sprite_list_a806056c18832f13d2adf0dad0c0b2152}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}!count\+Active@{count\+Active}}
+\index{count\+Active@{count\+Active}!R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}}
+\subsubsection{\texorpdfstring{count\+Active()}{countActive()}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Sprite\+List.\+count\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+counts sprites in list (active only) 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite_list_a6976b2d2feaf72f41d92a8981e595efb}\label{class_r_c___framework_1_1_sprite_list_a6976b2d2feaf72f41d92a8981e595efb}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}!delete\+Sprite@{delete\+Sprite}}
+\index{delete\+Sprite@{delete\+Sprite}!R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}}
+\subsubsection{\texorpdfstring{delete\+Sprite()}{deleteSprite()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite\+List.\+delete\+Sprite (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Remove a sprite 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite_list_a4100c8d4abaa1e7268c17607d70b539a}\label{class_r_c___framework_1_1_sprite_list_a4100c8d4abaa1e7268c17607d70b539a}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}!Draw@{Draw}}
+\index{Draw@{Draw}!R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily override void R\+C\+\_\+\+Framework.\+Sprite\+List.\+Draw (\begin{DoxyParamCaption}\item[{Sprite\+Batch}]{sb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+draw all visible sprites 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_acc26db34e382a25a989c4c0dd0354b23}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite_list_a865a310d536bf2fd0b23f01b84159887}\label{class_r_c___framework_1_1_sprite_list_a865a310d536bf2fd0b23f01b84159887}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}!draw\+Active@{draw\+Active}}
+\index{draw\+Active@{draw\+Active}!R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}}
+\subsubsection{\texorpdfstring{draw\+Active()}{drawActive()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite\+List.\+draw\+Active (\begin{DoxyParamCaption}\item[{Sprite\+Batch}]{sb }\end{DoxyParamCaption})}
+
+
+
+Draw all active sprites 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite_list_aab5a80e0d7a8340768db890a9af8a90c}\label{class_r_c___framework_1_1_sprite_list_aab5a80e0d7a8340768db890a9af8a90c}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}!draw\+All@{draw\+All}}
+\index{draw\+All@{draw\+All}!R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}}
+\subsubsection{\texorpdfstring{draw\+All()}{drawAll()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite\+List.\+draw\+All (\begin{DoxyParamCaption}\item[{Sprite\+Batch}]{sb }\end{DoxyParamCaption})}
+
+
+
+draw all visible and active sprites 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite_list_a3927cc35567aca5b96ebd966a8b480be}\label{class_r_c___framework_1_1_sprite_list_a3927cc35567aca5b96ebd966a8b480be}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}!draw\+Bounding\+Sphere@{draw\+Bounding\+Sphere}}
+\index{draw\+Bounding\+Sphere@{draw\+Bounding\+Sphere}!R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}}
+\subsubsection{\texorpdfstring{draw\+Bounding\+Sphere()}{drawBoundingSphere()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite\+List.\+draw\+Bounding\+Sphere (\begin{DoxyParamCaption}\item[{Sprite\+Batch}]{sb,  }\item[{Color}]{color\+BS }\end{DoxyParamCaption})}
+
+
+
+draw Bounding Spheres in list 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & \\
+\hline
+{\em color\+BS} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite_list_a172fdc75116eeac16731188b46b7dac6}\label{class_r_c___framework_1_1_sprite_list_a172fdc75116eeac16731188b46b7dac6}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}!draw\+Info@{draw\+Info}}
+\index{draw\+Info@{draw\+Info}!R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}}
+\subsubsection{\texorpdfstring{draw\+Info()}{drawInfo()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite\+List.\+draw\+Info (\begin{DoxyParamCaption}\item[{Sprite\+Batch}]{sb,  }\item[{Color}]{color\+BB,  }\item[{Color}]{color\+HS }\end{DoxyParamCaption})}
+
+
+
+Draw BB and hotspot for all visible sprites 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & \\
+\hline
+{\em color\+BB} & \\
+\hline
+{\em color\+HS} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite_list_adbb96b3d84627126045be2b406c9ab12}\label{class_r_c___framework_1_1_sprite_list_adbb96b3d84627126045be2b406c9ab12}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}!draw\+Rect4@{draw\+Rect4}}
+\index{draw\+Rect4@{draw\+Rect4}!R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}}
+\subsubsection{\texorpdfstring{draw\+Rect4()}{drawRect4()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite\+List.\+draw\+Rect4 (\begin{DoxyParamCaption}\item[{Sprite\+Batch}]{sb,  }\item[{Color}]{color }\end{DoxyParamCaption})}
+
+
+
+draws the rotated bounding box for all visible sprites 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & \\
+\hline
+{\em color} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite_list_af03b9a1d139cffcaa9cb32170788998e}\label{class_r_c___framework_1_1_sprite_list_af03b9a1d139cffcaa9cb32170788998e}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}!draw\+Way\+Lists@{draw\+Way\+Lists}}
+\index{draw\+Way\+Lists@{draw\+Way\+Lists}!R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}}
+\subsubsection{\texorpdfstring{draw\+Way\+Lists()}{drawWayLists()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite\+List.\+draw\+Way\+Lists (\begin{DoxyParamCaption}\item[{Sprite\+Batch}]{sb,  }\item[{Color}]{colorW }\end{DoxyParamCaption})}
+
+
+
+Draw the waypoints 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & \\
+\hline
+{\em colorW} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite_list_a3d07b6b3927153b2dec5f13666908cfe}\label{class_r_c___framework_1_1_sprite_list_a3d07b6b3927153b2dec5f13666908cfe}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}!find\+Free\+Sprite@{find\+Free\+Sprite}}
+\index{find\+Free\+Sprite@{find\+Free\+Sprite}!R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}}
+\subsubsection{\texorpdfstring{find\+Free\+Sprite()}{findFreeSprite()}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Sprite\+List.\+find\+Free\+Sprite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Finds a free slot in the sprite list or -\/1 if it fails 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite_list_a019afbeb0e8e39bbc9e5a5c6cf34f777}\label{class_r_c___framework_1_1_sprite_list_a019afbeb0e8e39bbc9e5a5c6cf34f777}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}!find\+Free\+Sprite\+Or\+Inactive@{find\+Free\+Sprite\+Or\+Inactive}}
+\index{find\+Free\+Sprite\+Or\+Inactive@{find\+Free\+Sprite\+Or\+Inactive}!R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}}
+\subsubsection{\texorpdfstring{find\+Free\+Sprite\+Or\+Inactive()}{findFreeSpriteOrInactive()}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Sprite\+List.\+find\+Free\+Sprite\+Or\+Inactive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Finds a free slot in the sprite list or an inactive sprite -\/1 if it fails 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite_list_a737c9d5cc39dbb8c3754b2fd6d67e8ab}\label{class_r_c___framework_1_1_sprite_list_a737c9d5cc39dbb8c3754b2fd6d67e8ab}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}!find\+Inactive@{find\+Inactive}}
+\index{find\+Inactive@{find\+Inactive}!R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}}
+\subsubsection{\texorpdfstring{find\+Inactive()}{findInactive()}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Sprite\+List.\+find\+Inactive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Find inactive sprite or -\/1 if not found 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite_list_aad3ba75650382840c4c11d28022bc288}\label{class_r_c___framework_1_1_sprite_list_aad3ba75650382840c4c11d28022bc288}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}!get\+Highest\+Used@{get\+Highest\+Used}}
+\index{get\+Highest\+Used@{get\+Highest\+Used}!R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}}
+\subsubsection{\texorpdfstring{get\+Highest\+Used()}{getHighestUsed()}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Sprite\+List.\+get\+Highest\+Used (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get the index of the highest used sprite 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite_list_a093cf170b2802f89be43bf86ed81662e}\label{class_r_c___framework_1_1_sprite_list_a093cf170b2802f89be43bf86ed81662e}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}!get\+Max\+Num\+Of\+Sprites@{get\+Max\+Num\+Of\+Sprites}}
+\index{get\+Max\+Num\+Of\+Sprites@{get\+Max\+Num\+Of\+Sprites}!R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}}
+\subsubsection{\texorpdfstring{get\+Max\+Num\+Of\+Sprites()}{getMaxNumOfSprites()}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Sprite\+List.\+get\+Max\+Num\+Of\+Sprites (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get max number of sprites in this list 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite_list_a430b89d680a7267307b61d7cb81d948d}\label{class_r_c___framework_1_1_sprite_list_a430b89d680a7267307b61d7cb81d948d}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}!get\+Sprite@{get\+Sprite}}
+\index{get\+Sprite@{get\+Sprite}!R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}}
+\subsubsection{\texorpdfstring{get\+Sprite()}{getSprite()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_r_c___framework_1_1_sprite3}{Sprite3}} R\+C\+\_\+\+Framework.\+Sprite\+List.\+get\+Sprite (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+return the particular sprite 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite_list_a9d1b368c9d6d8e340e66faa06c63e5dd}\label{class_r_c___framework_1_1_sprite_list_a9d1b368c9d6d8e340e66faa06c63e5dd}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}!move\+Active\+AD@{move\+Active\+AD}}
+\index{move\+Active\+AD@{move\+Active\+AD}!R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}}
+\subsubsection{\texorpdfstring{move\+Active\+A\+D()}{moveActiveAD()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite\+List.\+move\+Active\+AD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Move active by angle/dist 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite_list_a5467136da9d231b4e99444adb5f52470}\label{class_r_c___framework_1_1_sprite_list_a5467136da9d231b4e99444adb5f52470}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}!move\+By\+Angle\+Speed@{move\+By\+Angle\+Speed}}
+\index{move\+By\+Angle\+Speed@{move\+By\+Angle\+Speed}!R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}}
+\subsubsection{\texorpdfstring{move\+By\+Angle\+Speed()}{moveByAngleSpeed()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite\+List.\+move\+By\+Angle\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calls \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_a5467136da9d231b4e99444adb5f52470}{move\+By\+Angle\+Speed()}}; on all active sprites in the list 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite_list_a1ad88a094e1efbdd75de18f8f1d49db1}\label{class_r_c___framework_1_1_sprite_list_a1ad88a094e1efbdd75de18f8f1d49db1}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}!move\+By\+Angle\+Speeed\+Limit@{move\+By\+Angle\+Speeed\+Limit}}
+\index{move\+By\+Angle\+Speeed\+Limit@{move\+By\+Angle\+Speeed\+Limit}!R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}}
+\subsubsection{\texorpdfstring{move\+By\+Angle\+Speeed\+Limit()}{moveByAngleSpeeedLimit()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite\+List.\+move\+By\+Angle\+Speeed\+Limit (\begin{DoxyParamCaption}\item[{Rectangle}]{r }\end{DoxyParamCaption})}
+
+
+
+runs move\+By\+Angle\+Speeed\+Limit on all active sprites 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite_list_ab65f3d6bc7574e4b5df5c36b09d4d0b7}\label{class_r_c___framework_1_1_sprite_list_ab65f3d6bc7574e4b5df5c36b09d4d0b7}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}!move\+DeltaX@{move\+DeltaX}}
+\index{move\+DeltaX@{move\+DeltaX}!R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}}
+\subsubsection{\texorpdfstring{move\+Delta\+X()}{moveDeltaX()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite\+List.\+move\+DeltaX (\begin{DoxyParamCaption}\item[{float}]{dx }\end{DoxyParamCaption})}
+
+
+
+Move active by a delta x 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite_list_a7412f51e494ab844da5c81c24d1b24a9}\label{class_r_c___framework_1_1_sprite_list_a7412f51e494ab844da5c81c24d1b24a9}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}!move\+Delta\+XY@{move\+Delta\+XY}}
+\index{move\+Delta\+XY@{move\+Delta\+XY}!R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}}
+\subsubsection{\texorpdfstring{move\+Delta\+X\+Y()}{moveDeltaXY()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite\+List.\+move\+Delta\+XY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Move active by delta x delta y 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite_list_a61d8b26102baae989a9a9c82b1242c0c}\label{class_r_c___framework_1_1_sprite_list_a61d8b26102baae989a9a9c82b1242c0c}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}!move\+Delta\+X\+Y\+\_\+\+Visible@{move\+Delta\+X\+Y\+\_\+\+Visible}}
+\index{move\+Delta\+X\+Y\+\_\+\+Visible@{move\+Delta\+X\+Y\+\_\+\+Visible}!R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}}
+\subsubsection{\texorpdfstring{move\+Delta\+X\+Y\+\_\+\+Visible()}{moveDeltaXY\_Visible()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite\+List.\+move\+Delta\+X\+Y\+\_\+\+Visible (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Move visible or active by delat x delta y 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite_list_a49e91f6101d88d31069bb76d76efe9af}\label{class_r_c___framework_1_1_sprite_list_a49e91f6101d88d31069bb76d76efe9af}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}!move\+DeltaY@{move\+DeltaY}}
+\index{move\+DeltaY@{move\+DeltaY}!R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}}
+\subsubsection{\texorpdfstring{move\+Delta\+Y()}{moveDeltaY()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite\+List.\+move\+DeltaY (\begin{DoxyParamCaption}\item[{float}]{dy }\end{DoxyParamCaption})}
+
+
+
+Move active by a delta y 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite_list_a2f4c60ffbdb1ed918079bb2572b0dcf5}\label{class_r_c___framework_1_1_sprite_list_a2f4c60ffbdb1ed918079bb2572b0dcf5}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}!move\+Visible\+Way\+Points@{move\+Visible\+Way\+Points}}
+\index{move\+Visible\+Way\+Points@{move\+Visible\+Way\+Points}!R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}}
+\subsubsection{\texorpdfstring{move\+Visible\+Way\+Points()}{moveVisibleWayPoints()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite\+List.\+move\+Visible\+Way\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Move all active visible sprites by their waypoint 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite_list_a06ea4d7accd25d0fb593bcf043bb16b5}\label{class_r_c___framework_1_1_sprite_list_a06ea4d7accd25d0fb593bcf043bb16b5}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}!point\+In\+List@{point\+In\+List}}
+\index{point\+In\+List@{point\+In\+List}!R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}}
+\subsubsection{\texorpdfstring{point\+In\+List()}{pointInList()}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Sprite\+List.\+point\+In\+List (\begin{DoxyParamCaption}\item[{Vector2}]{point }\end{DoxyParamCaption})}
+
+
+
+Returns the number of the first sprite found \textquotesingle{}under\textquotesingle{} the spot 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite_list_a993e1c122878810e0e4cb439bc34be45}\label{class_r_c___framework_1_1_sprite_list_a993e1c122878810e0e4cb439bc34be45}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}!remove\+If\+Outside@{remove\+If\+Outside}}
+\index{remove\+If\+Outside@{remove\+If\+Outside}!R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}}
+\subsubsection{\texorpdfstring{remove\+If\+Outside()}{removeIfOutside()}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Sprite\+List.\+remove\+If\+Outside (\begin{DoxyParamCaption}\item[{Rectangle}]{r }\end{DoxyParamCaption})}
+
+
+
+Removes (makes inactive) all sprites whos bouding vbox is outside r returns a count of the number of sprites removed 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite_list_ad3406b2aeba1b08f23f13a35454f63e3}\label{class_r_c___framework_1_1_sprite_list_ad3406b2aeba1b08f23f13a35454f63e3}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}!Run\+The\+Method@{Run\+The\+Method}}
+\index{Run\+The\+Method@{Run\+The\+Method}!R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}}
+\subsubsection{\texorpdfstring{Run\+The\+Method()}{RunTheMethod()}}
+{\footnotesize\ttfamily bool R\+C\+\_\+\+Framework.\+Sprite\+List.\+Run\+The\+Method (\begin{DoxyParamCaption}\item[{Func$<$ \mbox{\hyperlink{class_r_c___framework_1_1_sprite3}{Sprite3}}, bool $>$}]{method\+Name }\end{DoxyParamCaption})}
+
+
+
+Run the method on each active sprite return true only if all functions return true (or possibly there were no active sprites) the function has the formal parameters bool name(\+Sprite3 s) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em method\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite_list_ac4dbeb822b300bdcbebeb20c15b7bc9a}\label{class_r_c___framework_1_1_sprite_list_ac4dbeb822b300bdcbebeb20c15b7bc9a}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}!scroll\+Move@{scroll\+Move}}
+\index{scroll\+Move@{scroll\+Move}!R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}}
+\subsubsection{\texorpdfstring{scroll\+Move()}{scrollMove()}}
+{\footnotesize\ttfamily override bool R\+C\+\_\+\+Framework.\+Sprite\+List.\+scroll\+Move (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Call scrollmove to move all sprites 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_a21e5b1a68c7382443c82e7296fd2209a}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite_list_aba7adceacb386357f811b5099d8885ca}\label{class_r_c___framework_1_1_sprite_list_aba7adceacb386357f811b5099d8885ca}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}!set\+Color@{set\+Color}}
+\index{set\+Color@{set\+Color}!R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}}
+\subsubsection{\texorpdfstring{set\+Color()}{setColor()}}
+{\footnotesize\ttfamily override void R\+C\+\_\+\+Framework.\+Sprite\+List.\+set\+Color (\begin{DoxyParamCaption}\item[{Color}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Run set\+Color on all active sprites 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_a73bf15681dc31644705e509c53f68833}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite_list_a9ddabec41f012b498c09368318c1941c}\label{class_r_c___framework_1_1_sprite_list_a9ddabec41f012b498c09368318c1941c}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}!set\+Sprite@{set\+Sprite}}
+\index{set\+Sprite@{set\+Sprite}!R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}}
+\subsubsection{\texorpdfstring{set\+Sprite()}{setSprite()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite\+List.\+set\+Sprite (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{\mbox{\hyperlink{class_r_c___framework_1_1_sprite3}{Sprite3}}}]{spriteZ }\end{DoxyParamCaption})}
+
+
+
+Replace or set a specifically numbered sprite 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \\
+\hline
+{\em spriteZ} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite_list_af36a07386a5b0f32a74473890868b3fc}\label{class_r_c___framework_1_1_sprite_list_af36a07386a5b0f32a74473890868b3fc}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}!Tick@{Tick}}
+\index{Tick@{Tick}!R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}}
+\subsubsection{\texorpdfstring{Tick()}{Tick()}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Sprite\+List.\+Tick (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Run routine tick on all active sprites -\/ this may alter their visiblity or active staus Tick is used in sprite3 to make a sprite visible after a certain time 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite_list_a816100deff7ad173c33904ac59f3ad79}\label{class_r_c___framework_1_1_sprite_list_a816100deff7ad173c33904ac59f3ad79}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}!Update@{Update}}
+\index{Update@{Update}!R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily override void R\+C\+\_\+\+Framework.\+Sprite\+List.\+Update (\begin{DoxyParamCaption}\item[{Game\+Time}]{game\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Run Update on all active sprites; but most of the time you actually want one of (or more of)\+: 
+
+\mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_af36a07386a5b0f32a74473890868b3fc}{Tick()}} -\/ visible/invisible and active/inactive timer ticker Animation\+Tick() -\/ to advance animation frames if necessary move\+By\+Delta\+X\+Y() -\/ move the sprites move\+By\+Delta\+X(dx) -\/ move the sprites move\+By\+Delta\+Y(dy) -\/ move the sprites \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_a5467136da9d231b4e99444adb5f52470}{move\+By\+Angle\+Speed()}} -\/ move the sprites \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_a1ad88a094e1efbdd75de18f8f1d49db1}{move\+By\+Angle\+Speeed\+Limit(\+Rectangle r)}} -\/ move the sprites within a limited area \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_ac4dbeb822b300bdcbebeb20c15b7bc9a}{scroll\+Move(float x, float y)}} -\/ these sprites need to scroll \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_a91c1c36f7a1b321e6a1351fddd9c7e3e}{adjust\+Angles()}} -\/ rotate the sprites display and movement angles \mbox{\hyperlink{class_r_c___framework_1_1_sprite_list_a2f4c60ffbdb1ed918079bb2572b0dcf5}{move\+Visible\+Way\+Points()}} -\/ move sprites in the list towards their waypoints
+
+By separating these routine so you use only the ones you need we keep the frame rate up -\/ but it does get annoying i guess to code more lines than needed
+
+Reimplemented from \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_a5745bedc7ba0587aa1e1d8563c357228}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite_list_acba70858abae8afe358df8fe61c8c394}\label{class_r_c___framework_1_1_sprite_list_acba70858abae8afe358df8fe61c8c394}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}!high\+Used@{high\+Used}}
+\index{high\+Used@{high\+Used}!R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}}
+\subsubsection{\texorpdfstring{high\+Used}{highUsed}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Sprite\+List.\+high\+Used = 0}
+
+
+
+Highest free sprite num (for use in external loops rarely needed) 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite_list_ac5f0c7b4e89b70c3ca6d87c45d874ad9}\label{class_r_c___framework_1_1_sprite_list_ac5f0c7b4e89b70c3ca6d87c45d874ad9}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}!low\+Free@{low\+Free}}
+\index{low\+Free@{low\+Free}!R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}}
+\subsubsection{\texorpdfstring{low\+Free}{lowFree}}
+{\footnotesize\ttfamily int R\+C\+\_\+\+Framework.\+Sprite\+List.\+low\+Free = 0}
+
+
+
+Lowest free sprite num (for use in external loops rarely needed) 
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_sprite_list_ad32b304d8023b1a91a3021545436c4e5}\label{class_r_c___framework_1_1_sprite_list_ad32b304d8023b1a91a3021545436c4e5}} 
+\index{R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}!this\mbox{[}int key\mbox{]}@{this[int key]}}
+\index{this\mbox{[}int key\mbox{]}@{this[int key]}!R\+C\+\_\+\+Framework\+::\+Sprite\+List@{R\+C\+\_\+\+Framework\+::\+Sprite\+List}}
+\subsubsection{\texorpdfstring{this[int key]}{this[int key]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_r_c___framework_1_1_sprite3}{Sprite3}} R\+C\+\_\+\+Framework.\+Sprite\+List.\+this\mbox{[}int key\mbox{]}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Overload \mbox{[} and \mbox{]} for ease of use 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+B/\+R\+C\+\_\+\+Framework2018/\+Source/\mbox{\hyperlink{_r_c___sprite_list_8cs}{R\+C\+\_\+\+Sprite\+List.\+cs}}\end{DoxyCompactItemize}

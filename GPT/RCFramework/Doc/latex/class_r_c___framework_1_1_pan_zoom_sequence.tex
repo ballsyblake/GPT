@@ -1,0 +1,159 @@
+\hypertarget{class_r_c___framework_1_1_pan_zoom_sequence}{}\section{R\+C\+\_\+\+Framework.\+Pan\+Zoom\+Sequence Class Reference}
+\label{class_r_c___framework_1_1_pan_zoom_sequence}\index{R\+C\+\_\+\+Framework.\+Pan\+Zoom\+Sequence@{R\+C\+\_\+\+Framework.\+Pan\+Zoom\+Sequence}}
+Inheritance diagram for R\+C\+\_\+\+Framework.\+Pan\+Zoom\+Sequence\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_r_c___framework_1_1_pan_zoom_sequence}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_pan_zoom_sequence_acf6051001df62fee79c67a3e53012341}{Pan\+Zoom\+Sequence}} (Rectangle destZ, Texture2D default\+TexZ, Color default\+ColorZ)
+\item 
+override void \mbox{\hyperlink{class_r_c___framework_1_1_pan_zoom_sequence_ab235ec7298062b4e3a028979c5abad5c}{reset}} ()
+\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_pan_zoom_sequence_a6e2a1cbdd12386dd59daab6ab1bb94fc}{add\+Stage}} (\mbox{\hyperlink{class_r_c___framework_1_1_pan_zoom_stage}{Pan\+Zoom\+Stage}} s)
+\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_pan_zoom_sequence_a35676939d35ab90a9a8c855a9fcf4479}{add\+Stage}} (Texture2D texZ, int ticks\+To\+TransitZ, Color init\+ColourZ, Color final\+ColourZ, Rectangle init\+DestZ, Rectangle final\+DestZ, Rectangle init\+SourceZ, Rectangle final\+SourceZ)
+\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_pan_zoom_sequence_ac8daade410a23e40a6050b0152d28cf9}{add\+Stage}} (int ticks\+To\+TransitZ, Rectangle init\+SourceZ)
+\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_pan_zoom_sequence_a5ac14ab5b1b52c28349481afb6f4b8b5}{add\+Stage}} (int ticks\+To\+TransitZ, Rectangle init\+SourceZ, Rectangle final\+SourceZ)
+\item 
+bool \mbox{\hyperlink{class_r_c___framework_1_1_pan_zoom_sequence_a7e24734bce4072f60e65cc1b63ca460c}{Done}} ()
+\item 
+override void \mbox{\hyperlink{class_r_c___framework_1_1_pan_zoom_sequence_a1c15ccaf96c79adece0f665f1419f95b}{Update}} (Game\+Time game\+Time)
+\item 
+override void \mbox{\hyperlink{class_r_c___framework_1_1_pan_zoom_sequence_a63516b58108ff5f5bcb03d24230128f3}{Draw}} (Sprite\+Batch sb)
+\begin{DoxyCompactList}\small\item\em Standard draw routine which assumes the renderable knows where it is \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{class_r_c___framework_1_1_pan_zoom_stage}{Pan\+Zoom\+Stage}} $>$ \mbox{\hyperlink{class_r_c___framework_1_1_pan_zoom_sequence_ae20aeed249f040a8f132657fae2087ec}{lst}}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Texture2D \mbox{\hyperlink{class_r_c___framework_1_1_pan_zoom_sequence_a39a1630167632f8cfd7004083f9f8099}{default\+Tex}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Rectangle \mbox{\hyperlink{class_r_c___framework_1_1_pan_zoom_sequence_ab3b02fbe31f614dc4e7fdc5d3ff076d0}{default\+Dest}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Color \mbox{\hyperlink{class_r_c___framework_1_1_pan_zoom_sequence_a252b67cb0eb86c4dd81ce80230421ca5}{default\+Colour}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_pan_zoom_sequence_acf6051001df62fee79c67a3e53012341}\label{class_r_c___framework_1_1_pan_zoom_sequence_acf6051001df62fee79c67a3e53012341}} 
+\index{R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence@{R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence}!Pan\+Zoom\+Sequence@{Pan\+Zoom\+Sequence}}
+\index{Pan\+Zoom\+Sequence@{Pan\+Zoom\+Sequence}!R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence@{R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence}}
+\subsubsection{\texorpdfstring{Pan\+Zoom\+Sequence()}{PanZoomSequence()}}
+{\footnotesize\ttfamily R\+C\+\_\+\+Framework.\+Pan\+Zoom\+Sequence.\+Pan\+Zoom\+Sequence (\begin{DoxyParamCaption}\item[{Rectangle}]{destZ,  }\item[{Texture2D}]{default\+TexZ,  }\item[{Color}]{default\+ColorZ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_pan_zoom_sequence_a6e2a1cbdd12386dd59daab6ab1bb94fc}\label{class_r_c___framework_1_1_pan_zoom_sequence_a6e2a1cbdd12386dd59daab6ab1bb94fc}} 
+\index{R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence@{R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence}!add\+Stage@{add\+Stage}}
+\index{add\+Stage@{add\+Stage}!R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence@{R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence}}
+\subsubsection{\texorpdfstring{add\+Stage()}{addStage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Pan\+Zoom\+Sequence.\+add\+Stage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_r_c___framework_1_1_pan_zoom_stage}{Pan\+Zoom\+Stage}}}]{s }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_pan_zoom_sequence_a35676939d35ab90a9a8c855a9fcf4479}\label{class_r_c___framework_1_1_pan_zoom_sequence_a35676939d35ab90a9a8c855a9fcf4479}} 
+\index{R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence@{R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence}!add\+Stage@{add\+Stage}}
+\index{add\+Stage@{add\+Stage}!R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence@{R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence}}
+\subsubsection{\texorpdfstring{add\+Stage()}{addStage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Pan\+Zoom\+Sequence.\+add\+Stage (\begin{DoxyParamCaption}\item[{Texture2D}]{texZ,  }\item[{int}]{ticks\+To\+TransitZ,  }\item[{Color}]{init\+ColourZ,  }\item[{Color}]{final\+ColourZ,  }\item[{Rectangle}]{init\+DestZ,  }\item[{Rectangle}]{final\+DestZ,  }\item[{Rectangle}]{init\+SourceZ,  }\item[{Rectangle}]{final\+SourceZ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_pan_zoom_sequence_ac8daade410a23e40a6050b0152d28cf9}\label{class_r_c___framework_1_1_pan_zoom_sequence_ac8daade410a23e40a6050b0152d28cf9}} 
+\index{R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence@{R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence}!add\+Stage@{add\+Stage}}
+\index{add\+Stage@{add\+Stage}!R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence@{R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence}}
+\subsubsection{\texorpdfstring{add\+Stage()}{addStage()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Pan\+Zoom\+Sequence.\+add\+Stage (\begin{DoxyParamCaption}\item[{int}]{ticks\+To\+TransitZ,  }\item[{Rectangle}]{init\+SourceZ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_pan_zoom_sequence_a5ac14ab5b1b52c28349481afb6f4b8b5}\label{class_r_c___framework_1_1_pan_zoom_sequence_a5ac14ab5b1b52c28349481afb6f4b8b5}} 
+\index{R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence@{R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence}!add\+Stage@{add\+Stage}}
+\index{add\+Stage@{add\+Stage}!R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence@{R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence}}
+\subsubsection{\texorpdfstring{add\+Stage()}{addStage()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+Pan\+Zoom\+Sequence.\+add\+Stage (\begin{DoxyParamCaption}\item[{int}]{ticks\+To\+TransitZ,  }\item[{Rectangle}]{init\+SourceZ,  }\item[{Rectangle}]{final\+SourceZ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_pan_zoom_sequence_a7e24734bce4072f60e65cc1b63ca460c}\label{class_r_c___framework_1_1_pan_zoom_sequence_a7e24734bce4072f60e65cc1b63ca460c}} 
+\index{R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence@{R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence}!Done@{Done}}
+\index{Done@{Done}!R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence@{R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence}}
+\subsubsection{\texorpdfstring{Done()}{Done()}}
+{\footnotesize\ttfamily bool R\+C\+\_\+\+Framework.\+Pan\+Zoom\+Sequence.\+Done (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_pan_zoom_sequence_a63516b58108ff5f5bcb03d24230128f3}\label{class_r_c___framework_1_1_pan_zoom_sequence_a63516b58108ff5f5bcb03d24230128f3}} 
+\index{R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence@{R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence}!Draw@{Draw}}
+\index{Draw@{Draw}!R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence@{R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily override void R\+C\+\_\+\+Framework.\+Pan\+Zoom\+Sequence.\+Draw (\begin{DoxyParamCaption}\item[{Sprite\+Batch}]{sb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Standard draw routine which assumes the renderable knows where it is 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_acc26db34e382a25a989c4c0dd0354b23}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_pan_zoom_sequence_ab235ec7298062b4e3a028979c5abad5c}\label{class_r_c___framework_1_1_pan_zoom_sequence_ab235ec7298062b4e3a028979c5abad5c}} 
+\index{R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence@{R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence}!reset@{reset}}
+\index{reset@{reset}!R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence@{R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily override void R\+C\+\_\+\+Framework.\+Pan\+Zoom\+Sequence.\+reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_ae65ce69704d15963789f421b58618b1f}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_pan_zoom_sequence_a1c15ccaf96c79adece0f665f1419f95b}\label{class_r_c___framework_1_1_pan_zoom_sequence_a1c15ccaf96c79adece0f665f1419f95b}} 
+\index{R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence@{R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence}!Update@{Update}}
+\index{Update@{Update}!R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence@{R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily override void R\+C\+\_\+\+Framework.\+Pan\+Zoom\+Sequence.\+Update (\begin{DoxyParamCaption}\item[{Game\+Time}]{game\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_r_c___framework_1_1_r_c___renderable_a5745bedc7ba0587aa1e1d8563c357228}{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Renderable}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_pan_zoom_sequence_ae20aeed249f040a8f132657fae2087ec}\label{class_r_c___framework_1_1_pan_zoom_sequence_ae20aeed249f040a8f132657fae2087ec}} 
+\index{R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence@{R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence}!lst@{lst}}
+\index{lst@{lst}!R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence@{R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence}}
+\subsubsection{\texorpdfstring{lst}{lst}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_r_c___framework_1_1_pan_zoom_stage}{Pan\+Zoom\+Stage}}$>$ R\+C\+\_\+\+Framework.\+Pan\+Zoom\+Sequence.\+lst}
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_pan_zoom_sequence_a252b67cb0eb86c4dd81ce80230421ca5}\label{class_r_c___framework_1_1_pan_zoom_sequence_a252b67cb0eb86c4dd81ce80230421ca5}} 
+\index{R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence@{R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence}!default\+Colour@{default\+Colour}}
+\index{default\+Colour@{default\+Colour}!R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence@{R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence}}
+\subsubsection{\texorpdfstring{default\+Colour}{defaultColour}}
+{\footnotesize\ttfamily Color R\+C\+\_\+\+Framework.\+Pan\+Zoom\+Sequence.\+default\+Colour\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_pan_zoom_sequence_ab3b02fbe31f614dc4e7fdc5d3ff076d0}\label{class_r_c___framework_1_1_pan_zoom_sequence_ab3b02fbe31f614dc4e7fdc5d3ff076d0}} 
+\index{R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence@{R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence}!default\+Dest@{default\+Dest}}
+\index{default\+Dest@{default\+Dest}!R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence@{R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence}}
+\subsubsection{\texorpdfstring{default\+Dest}{defaultDest}}
+{\footnotesize\ttfamily Rectangle R\+C\+\_\+\+Framework.\+Pan\+Zoom\+Sequence.\+default\+Dest\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_pan_zoom_sequence_a39a1630167632f8cfd7004083f9f8099}\label{class_r_c___framework_1_1_pan_zoom_sequence_a39a1630167632f8cfd7004083f9f8099}} 
+\index{R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence@{R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence}!default\+Tex@{default\+Tex}}
+\index{default\+Tex@{default\+Tex}!R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence@{R\+C\+\_\+\+Framework\+::\+Pan\+Zoom\+Sequence}}
+\subsubsection{\texorpdfstring{default\+Tex}{defaultTex}}
+{\footnotesize\ttfamily Texture2D R\+C\+\_\+\+Framework.\+Pan\+Zoom\+Sequence.\+default\+Tex\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+B/\+R\+C\+\_\+\+Framework2018/\+Source/\mbox{\hyperlink{_r_c___pan_zoom_8cs}{R\+C\+\_\+\+Pan\+Zoom.\+cs}}\end{DoxyCompactItemize}

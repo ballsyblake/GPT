@@ -1,0 +1,198 @@
+\hypertarget{class_r_c___framework_1_1_r_c___game_state_parent}{}\section{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Game\+State\+Parent Class Reference}
+\label{class_r_c___framework_1_1_r_c___game_state_parent}\index{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Game\+State\+Parent@{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Game\+State\+Parent}}
+
+
+Parent Stagre class all levels inherit from this  
+
+
+Inheritance diagram for R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Game\+State\+Parent\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_r_c___framework_1_1_r_c___game_state_parent}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_r_c___framework_1_1_r_c___game_state_parent_a3fd47a4805f19683bc68eb3e20f36086}{Initialize\+Level}} (Graphics\+Device g, Sprite\+Batch s, Content\+Manager c, \mbox{\hyperlink{class_r_c___framework_1_1_r_c___game_state_manager}{R\+C\+\_\+\+Game\+State\+Manager}} lm)
+\item 
+virtual void \mbox{\hyperlink{class_r_c___framework_1_1_r_c___game_state_parent_a6c87e9eecbd5ac046fd1987ea09da716}{Load\+Content}} ()
+\item 
+virtual void \mbox{\hyperlink{class_r_c___framework_1_1_r_c___game_state_parent_a7752d80f5d187c87f85ec6a2c38b2dc1}{Unload\+Content}} ()
+\item 
+virtual void \mbox{\hyperlink{class_r_c___framework_1_1_r_c___game_state_parent_a99f481185124bd50d92a032416e96d7a}{Enter\+Level}} (int from\+Level\+Num)
+\item 
+virtual void \mbox{\hyperlink{class_r_c___framework_1_1_r_c___game_state_parent_a1501d4293365e35c42a659a7d7477fc7}{Exit\+Level}} ()
+\item 
+virtual void \mbox{\hyperlink{class_r_c___framework_1_1_r_c___game_state_parent_af276a58dd0a0581095a2776801942860}{Update}} (Game\+Time game\+Time)
+\item 
+abstract void \mbox{\hyperlink{class_r_c___framework_1_1_r_c___game_state_parent_adec421bc58a381ab34ffa74b495fa3c9}{Draw}} (Game\+Time game\+Time)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_r_c___framework_1_1_r_c___game_state_parent_a97c7dff53d0c3543e8ea01fcdb2cd1de}{get\+Keyboard\+And\+Mouse}} ()
+\begin{DoxyCompactList}\small\item\em Utility routine to set up keyboard and mouse \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static Graphics\+Device \mbox{\hyperlink{class_r_c___framework_1_1_r_c___game_state_parent_afd2f2ef0999c284adc241563b5c6314a}{graphics\+Device}}
+\item 
+static Sprite\+Batch \mbox{\hyperlink{class_r_c___framework_1_1_r_c___game_state_parent_a53d22435d3ccf01092a06e83873a9eeb}{sprite\+Batch}}
+\item 
+static Content\+Manager \mbox{\hyperlink{class_r_c___framework_1_1_r_c___game_state_parent_a772dfa1ba0878142104adfc3eae559e5}{Content}}
+\item 
+static \mbox{\hyperlink{class_r_c___framework_1_1_r_c___game_state_manager}{R\+C\+\_\+\+Game\+State\+Manager}} \mbox{\hyperlink{class_r_c___framework_1_1_r_c___game_state_parent_a3511187c06d875b45ff212506147cb3d}{game\+State\+Manager}}
+\item 
+static Keyboard\+State \mbox{\hyperlink{class_r_c___framework_1_1_r_c___game_state_parent_ad06a8d6e2406a9dc1d8300c8dc71f29a}{key\+State}}
+\item 
+static Keyboard\+State \mbox{\hyperlink{class_r_c___framework_1_1_r_c___game_state_parent_a55d41a359519fd898e465887b452063d}{prev\+Key\+State}}
+\item 
+static float \mbox{\hyperlink{class_r_c___framework_1_1_r_c___game_state_parent_af534866f8d4fa277ffacce36c161da65}{mouse\+\_\+x}} = 0
+\item 
+static float \mbox{\hyperlink{class_r_c___framework_1_1_r_c___game_state_parent_ac8ccd45ec22dd583f59d8d21663abe97}{mouse\+\_\+y}} = 0
+\item 
+static Mouse\+State \mbox{\hyperlink{class_r_c___framework_1_1_r_c___game_state_parent_a4009cee63013baddd6c472493878c631}{current\+Mouse\+State}}
+\item 
+static Mouse\+State \mbox{\hyperlink{class_r_c___framework_1_1_r_c___game_state_parent_a867cec9b3490d334194932d82e5ea6c0}{previous\+Mouse\+State}}
+\item 
+static Sprite\+Font \mbox{\hyperlink{class_r_c___framework_1_1_r_c___game_state_parent_a0e2ab0c92858466e1628dc79ef237a8b}{font1}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Parent Stagre class all levels inherit from this 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___game_state_parent_adec421bc58a381ab34ffa74b495fa3c9}\label{class_r_c___framework_1_1_r_c___game_state_parent_adec421bc58a381ab34ffa74b495fa3c9}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent}!Draw@{Draw}}
+\index{Draw@{Draw}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily abstract void R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Game\+State\+Parent.\+Draw (\begin{DoxyParamCaption}\item[{Game\+Time}]{game\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_r_c___framework_1_1_empty_state_adfa60e364416dfe5f9a3ba565bc6329b}{R\+C\+\_\+\+Framework.\+Empty\+State}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___game_state_parent_a99f481185124bd50d92a032416e96d7a}\label{class_r_c___framework_1_1_r_c___game_state_parent_a99f481185124bd50d92a032416e96d7a}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent}!Enter\+Level@{Enter\+Level}}
+\index{Enter\+Level@{Enter\+Level}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent}}
+\subsubsection{\texorpdfstring{Enter\+Level()}{EnterLevel()}}
+{\footnotesize\ttfamily virtual void R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Game\+State\+Parent.\+Enter\+Level (\begin{DoxyParamCaption}\item[{int}]{from\+Level\+Num }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___game_state_parent_a1501d4293365e35c42a659a7d7477fc7}\label{class_r_c___framework_1_1_r_c___game_state_parent_a1501d4293365e35c42a659a7d7477fc7}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent}!Exit\+Level@{Exit\+Level}}
+\index{Exit\+Level@{Exit\+Level}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent}}
+\subsubsection{\texorpdfstring{Exit\+Level()}{ExitLevel()}}
+{\footnotesize\ttfamily virtual void R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Game\+State\+Parent.\+Exit\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___game_state_parent_a97c7dff53d0c3543e8ea01fcdb2cd1de}\label{class_r_c___framework_1_1_r_c___game_state_parent_a97c7dff53d0c3543e8ea01fcdb2cd1de}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent}!get\+Keyboard\+And\+Mouse@{get\+Keyboard\+And\+Mouse}}
+\index{get\+Keyboard\+And\+Mouse@{get\+Keyboard\+And\+Mouse}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent}}
+\subsubsection{\texorpdfstring{get\+Keyboard\+And\+Mouse()}{getKeyboardAndMouse()}}
+{\footnotesize\ttfamily static void R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Game\+State\+Parent.\+get\+Keyboard\+And\+Mouse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Utility routine to set up keyboard and mouse 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___game_state_parent_a3fd47a4805f19683bc68eb3e20f36086}\label{class_r_c___framework_1_1_r_c___game_state_parent_a3fd47a4805f19683bc68eb3e20f36086}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent}!Initialize\+Level@{Initialize\+Level}}
+\index{Initialize\+Level@{Initialize\+Level}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent}}
+\subsubsection{\texorpdfstring{Initialize\+Level()}{InitializeLevel()}}
+{\footnotesize\ttfamily virtual void R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Game\+State\+Parent.\+Initialize\+Level (\begin{DoxyParamCaption}\item[{Graphics\+Device}]{g,  }\item[{Sprite\+Batch}]{s,  }\item[{Content\+Manager}]{c,  }\item[{\mbox{\hyperlink{class_r_c___framework_1_1_r_c___game_state_manager}{R\+C\+\_\+\+Game\+State\+Manager}}}]{lm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___game_state_parent_a6c87e9eecbd5ac046fd1987ea09da716}\label{class_r_c___framework_1_1_r_c___game_state_parent_a6c87e9eecbd5ac046fd1987ea09da716}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent}!Load\+Content@{Load\+Content}}
+\index{Load\+Content@{Load\+Content}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent}}
+\subsubsection{\texorpdfstring{Load\+Content()}{LoadContent()}}
+{\footnotesize\ttfamily virtual void R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Game\+State\+Parent.\+Load\+Content (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___game_state_parent_a7752d80f5d187c87f85ec6a2c38b2dc1}\label{class_r_c___framework_1_1_r_c___game_state_parent_a7752d80f5d187c87f85ec6a2c38b2dc1}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent}!Unload\+Content@{Unload\+Content}}
+\index{Unload\+Content@{Unload\+Content}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent}}
+\subsubsection{\texorpdfstring{Unload\+Content()}{UnloadContent()}}
+{\footnotesize\ttfamily virtual void R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Game\+State\+Parent.\+Unload\+Content (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___game_state_parent_af276a58dd0a0581095a2776801942860}\label{class_r_c___framework_1_1_r_c___game_state_parent_af276a58dd0a0581095a2776801942860}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent}!Update@{Update}}
+\index{Update@{Update}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily virtual void R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Game\+State\+Parent.\+Update (\begin{DoxyParamCaption}\item[{Game\+Time}]{game\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___game_state_parent_a772dfa1ba0878142104adfc3eae559e5}\label{class_r_c___framework_1_1_r_c___game_state_parent_a772dfa1ba0878142104adfc3eae559e5}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent}!Content@{Content}}
+\index{Content@{Content}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent}}
+\subsubsection{\texorpdfstring{Content}{Content}}
+{\footnotesize\ttfamily Content\+Manager R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Game\+State\+Parent.\+Content\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___game_state_parent_a4009cee63013baddd6c472493878c631}\label{class_r_c___framework_1_1_r_c___game_state_parent_a4009cee63013baddd6c472493878c631}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent}!current\+Mouse\+State@{current\+Mouse\+State}}
+\index{current\+Mouse\+State@{current\+Mouse\+State}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent}}
+\subsubsection{\texorpdfstring{current\+Mouse\+State}{currentMouseState}}
+{\footnotesize\ttfamily Mouse\+State R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Game\+State\+Parent.\+current\+Mouse\+State\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___game_state_parent_a0e2ab0c92858466e1628dc79ef237a8b}\label{class_r_c___framework_1_1_r_c___game_state_parent_a0e2ab0c92858466e1628dc79ef237a8b}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent}!font1@{font1}}
+\index{font1@{font1}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent}}
+\subsubsection{\texorpdfstring{font1}{font1}}
+{\footnotesize\ttfamily Sprite\+Font R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Game\+State\+Parent.\+font1\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___game_state_parent_a3511187c06d875b45ff212506147cb3d}\label{class_r_c___framework_1_1_r_c___game_state_parent_a3511187c06d875b45ff212506147cb3d}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent}!game\+State\+Manager@{game\+State\+Manager}}
+\index{game\+State\+Manager@{game\+State\+Manager}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent}}
+\subsubsection{\texorpdfstring{game\+State\+Manager}{gameStateManager}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_r_c___framework_1_1_r_c___game_state_manager}{R\+C\+\_\+\+Game\+State\+Manager}} R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Game\+State\+Parent.\+game\+State\+Manager\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___game_state_parent_afd2f2ef0999c284adc241563b5c6314a}\label{class_r_c___framework_1_1_r_c___game_state_parent_afd2f2ef0999c284adc241563b5c6314a}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent}!graphics\+Device@{graphics\+Device}}
+\index{graphics\+Device@{graphics\+Device}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent}}
+\subsubsection{\texorpdfstring{graphics\+Device}{graphicsDevice}}
+{\footnotesize\ttfamily Graphics\+Device R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Game\+State\+Parent.\+graphics\+Device\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___game_state_parent_ad06a8d6e2406a9dc1d8300c8dc71f29a}\label{class_r_c___framework_1_1_r_c___game_state_parent_ad06a8d6e2406a9dc1d8300c8dc71f29a}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent}!key\+State@{key\+State}}
+\index{key\+State@{key\+State}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent}}
+\subsubsection{\texorpdfstring{key\+State}{keyState}}
+{\footnotesize\ttfamily Keyboard\+State R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Game\+State\+Parent.\+key\+State\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___game_state_parent_af534866f8d4fa277ffacce36c161da65}\label{class_r_c___framework_1_1_r_c___game_state_parent_af534866f8d4fa277ffacce36c161da65}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent}!mouse\+\_\+x@{mouse\+\_\+x}}
+\index{mouse\+\_\+x@{mouse\+\_\+x}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent}}
+\subsubsection{\texorpdfstring{mouse\+\_\+x}{mouse\_x}}
+{\footnotesize\ttfamily float R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Game\+State\+Parent.\+mouse\+\_\+x = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___game_state_parent_ac8ccd45ec22dd583f59d8d21663abe97}\label{class_r_c___framework_1_1_r_c___game_state_parent_ac8ccd45ec22dd583f59d8d21663abe97}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent}!mouse\+\_\+y@{mouse\+\_\+y}}
+\index{mouse\+\_\+y@{mouse\+\_\+y}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent}}
+\subsubsection{\texorpdfstring{mouse\+\_\+y}{mouse\_y}}
+{\footnotesize\ttfamily float R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Game\+State\+Parent.\+mouse\+\_\+y = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___game_state_parent_a867cec9b3490d334194932d82e5ea6c0}\label{class_r_c___framework_1_1_r_c___game_state_parent_a867cec9b3490d334194932d82e5ea6c0}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent}!previous\+Mouse\+State@{previous\+Mouse\+State}}
+\index{previous\+Mouse\+State@{previous\+Mouse\+State}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent}}
+\subsubsection{\texorpdfstring{previous\+Mouse\+State}{previousMouseState}}
+{\footnotesize\ttfamily Mouse\+State R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Game\+State\+Parent.\+previous\+Mouse\+State\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___game_state_parent_a55d41a359519fd898e465887b452063d}\label{class_r_c___framework_1_1_r_c___game_state_parent_a55d41a359519fd898e465887b452063d}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent}!prev\+Key\+State@{prev\+Key\+State}}
+\index{prev\+Key\+State@{prev\+Key\+State}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent}}
+\subsubsection{\texorpdfstring{prev\+Key\+State}{prevKeyState}}
+{\footnotesize\ttfamily Keyboard\+State R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Game\+State\+Parent.\+prev\+Key\+State\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___game_state_parent_a53d22435d3ccf01092a06e83873a9eeb}\label{class_r_c___framework_1_1_r_c___game_state_parent_a53d22435d3ccf01092a06e83873a9eeb}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent}!sprite\+Batch@{sprite\+Batch}}
+\index{sprite\+Batch@{sprite\+Batch}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Game\+State\+Parent}}
+\subsubsection{\texorpdfstring{sprite\+Batch}{spriteBatch}}
+{\footnotesize\ttfamily Sprite\+Batch R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Game\+State\+Parent.\+sprite\+Batch\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+B/\+R\+C\+\_\+\+Framework2018/\+Source/\mbox{\hyperlink{_r_c___game_state_8cs}{R\+C\+\_\+\+Game\+State.\+cs}}\end{DoxyCompactItemize}

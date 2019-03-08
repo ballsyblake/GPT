@@ -1,0 +1,213 @@
+\hypertarget{class_r_c___framework_1_1_r_c___frame}{}\section{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Frame Class Reference}
+\label{class_r_c___framework_1_1_r_c___frame}\index{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Frame@{R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Frame}}
+Inheritance diagram for R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Frame\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_r_c___framework_1_1_r_c___frame}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_r_c___frame_ac98c117754dc66b735a58067ea2f7f8d}{R\+C\+\_\+\+Frame}} (Rectangle sourceZ, Texture2D texZ)
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_r_c___frame_a0ffc0dddb25f22ad5ef471848f02005b}{R\+C\+\_\+\+Frame}} (Graphics\+Device gd, string dir, string file\+Name)
+\begin{DoxyCompactList}\small\item\em create frame from file \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_r_c___framework_1_1_r_c___frame_a5f7ccf1fe93891b8fff92d76c716ce9e}{R\+C\+\_\+\+Frame}} (\mbox{\hyperlink{class_r_c___framework_1_1_r_c___frame}{R\+C\+\_\+\+Frame}} f)
+\begin{DoxyCompactList}\small\item\em copy constructor \end{DoxyCompactList}\item 
+override \mbox{\hyperlink{class_r_c___framework_1_1_r_c___frame}{R\+C\+\_\+\+Frame}} \mbox{\hyperlink{class_r_c___framework_1_1_r_c___frame_ad0a2ae1e80157a79713552d9484eb5de}{get\+Frame}} (int num)
+\begin{DoxyCompactList}\small\item\em so that a single frame can be a frame source it ignores the frame number (use 0 if it really matters to you) eg get\+Frame(0) \end{DoxyCompactList}\item 
+override \mbox{\hyperlink{class_r_c___framework_1_1_r_c___frame}{R\+C\+\_\+\+Frame}} \mbox{\hyperlink{class_r_c___framework_1_1_r_c___frame_a9262ade99ade9dc102aac56587d55d0f}{get\+Frame}} ()
+\begin{DoxyCompactList}\small\item\em so that a single frame can be a frame source it ignores the frame number (use 0 if it really matters to you) eg \mbox{\hyperlink{class_r_c___framework_1_1_r_c___frame_a9262ade99ade9dc102aac56587d55d0f}{get\+Frame()}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_r_c___frame_a361103a6b92e33f4babc6ec9b02402da}{draw}} (Sprite\+Batch sb, Vector2 pos, Color col)
+\begin{DoxyCompactList}\small\item\em draw it at a given 2d loaction \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_r_c___framework_1_1_r_c___frame_afea32f86d34f1095c53af00e5228622a}{draw}} (Sprite\+Batch sb, Rectangle rect, Color col)
+\begin{DoxyCompactList}\small\item\em draw it at a given 2d loaction \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Rectangle \mbox{\hyperlink{class_r_c___framework_1_1_r_c___frame_a0e325c29407bc7c18acbbe841095a89a}{source}}
+\item 
+Texture2D \mbox{\hyperlink{class_r_c___framework_1_1_r_c___frame_a1cf940e9c27e48778d926c5cecea5544}{tex}}
+\item 
+Rectangle \mbox{\hyperlink{class_r_c___framework_1_1_r_c___frame_a3da33fc90486a672115df3764898b808}{bb}}
+\begin{DoxyCompactList}\small\item\em Bounding Box rectange in source pixels x and y are offset from the H\+O\+T\+S\+P\+OT Warning if the hotspot is in the middle of the image/frame then x,y will be negative For users to use (posibbly in update if you need it) currently sprite3 ignores this \end{DoxyCompactList}\item 
+Vector2 \mbox{\hyperlink{class_r_c___framework_1_1_r_c___frame_a3188c8af00f675e9419b492d4ef40587}{hot\+Spot\+Offset}}
+\begin{DoxyCompactList}\small\item\em hotspot offset x and y from top left corner of either the image -\/ or single frame if its an animation hotspot offet is in pixels in the souce image For users to use (posibbly in update if you need it) currently sprite3 ignores this \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___frame_ac98c117754dc66b735a58067ea2f7f8d}\label{class_r_c___framework_1_1_r_c___frame_ac98c117754dc66b735a58067ea2f7f8d}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Frame@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Frame}!R\+C\+\_\+\+Frame@{R\+C\+\_\+\+Frame}}
+\index{R\+C\+\_\+\+Frame@{R\+C\+\_\+\+Frame}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Frame@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Frame}}
+\subsubsection{\texorpdfstring{R\+C\+\_\+\+Frame()}{RC\_Frame()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Frame.\+R\+C\+\_\+\+Frame (\begin{DoxyParamCaption}\item[{Rectangle}]{sourceZ,  }\item[{Texture2D}]{texZ }\end{DoxyParamCaption})}
+
+
+
+constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sourceZ} & \\
+\hline
+{\em texZ} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___frame_a0ffc0dddb25f22ad5ef471848f02005b}\label{class_r_c___framework_1_1_r_c___frame_a0ffc0dddb25f22ad5ef471848f02005b}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Frame@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Frame}!R\+C\+\_\+\+Frame@{R\+C\+\_\+\+Frame}}
+\index{R\+C\+\_\+\+Frame@{R\+C\+\_\+\+Frame}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Frame@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Frame}}
+\subsubsection{\texorpdfstring{R\+C\+\_\+\+Frame()}{RC\_Frame()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Frame.\+R\+C\+\_\+\+Frame (\begin{DoxyParamCaption}\item[{Graphics\+Device}]{gd,  }\item[{string}]{dir,  }\item[{string}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+create frame from file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sourceZ} & \\
+\hline
+{\em texZ} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___frame_a5f7ccf1fe93891b8fff92d76c716ce9e}\label{class_r_c___framework_1_1_r_c___frame_a5f7ccf1fe93891b8fff92d76c716ce9e}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Frame@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Frame}!R\+C\+\_\+\+Frame@{R\+C\+\_\+\+Frame}}
+\index{R\+C\+\_\+\+Frame@{R\+C\+\_\+\+Frame}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Frame@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Frame}}
+\subsubsection{\texorpdfstring{R\+C\+\_\+\+Frame()}{RC\_Frame()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Frame.\+R\+C\+\_\+\+Frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_r_c___framework_1_1_r_c___frame}{R\+C\+\_\+\+Frame}}}]{f }\end{DoxyParamCaption})}
+
+
+
+copy constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___frame_a361103a6b92e33f4babc6ec9b02402da}\label{class_r_c___framework_1_1_r_c___frame_a361103a6b92e33f4babc6ec9b02402da}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Frame@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Frame}!draw@{draw}}
+\index{draw@{draw}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Frame@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Frame}}
+\subsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Frame.\+draw (\begin{DoxyParamCaption}\item[{Sprite\+Batch}]{sb,  }\item[{Vector2}]{pos,  }\item[{Color}]{col }\end{DoxyParamCaption})}
+
+
+
+draw it at a given 2d loaction 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & \\
+\hline
+{\em pos} & \\
+\hline
+{\em col} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___frame_afea32f86d34f1095c53af00e5228622a}\label{class_r_c___framework_1_1_r_c___frame_afea32f86d34f1095c53af00e5228622a}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Frame@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Frame}!draw@{draw}}
+\index{draw@{draw}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Frame@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Frame}}
+\subsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Frame.\+draw (\begin{DoxyParamCaption}\item[{Sprite\+Batch}]{sb,  }\item[{Rectangle}]{rect,  }\item[{Color}]{col }\end{DoxyParamCaption})}
+
+
+
+draw it at a given 2d loaction 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & \\
+\hline
+{\em pos} & \\
+\hline
+{\em col} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___frame_ad0a2ae1e80157a79713552d9484eb5de}\label{class_r_c___framework_1_1_r_c___frame_ad0a2ae1e80157a79713552d9484eb5de}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Frame@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Frame}!get\+Frame@{get\+Frame}}
+\index{get\+Frame@{get\+Frame}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Frame@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Frame}}
+\subsubsection{\texorpdfstring{get\+Frame()}{getFrame()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily override \mbox{\hyperlink{class_r_c___framework_1_1_r_c___frame}{R\+C\+\_\+\+Frame}} R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Frame.\+get\+Frame (\begin{DoxyParamCaption}\item[{int}]{num }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+so that a single frame can be a frame source it ignores the frame number (use 0 if it really matters to you) eg get\+Frame(0) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_r_c___framework_1_1_frame_source_a562dc295b5c265ec760227978802eb3a}{R\+C\+\_\+\+Framework.\+Frame\+Source}}.
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___frame_a9262ade99ade9dc102aac56587d55d0f}\label{class_r_c___framework_1_1_r_c___frame_a9262ade99ade9dc102aac56587d55d0f}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Frame@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Frame}!get\+Frame@{get\+Frame}}
+\index{get\+Frame@{get\+Frame}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Frame@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Frame}}
+\subsubsection{\texorpdfstring{get\+Frame()}{getFrame()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily override \mbox{\hyperlink{class_r_c___framework_1_1_r_c___frame}{R\+C\+\_\+\+Frame}} R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Frame.\+get\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+so that a single frame can be a frame source it ignores the frame number (use 0 if it really matters to you) eg \mbox{\hyperlink{class_r_c___framework_1_1_r_c___frame_a9262ade99ade9dc102aac56587d55d0f}{get\+Frame()}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_r_c___framework_1_1_frame_source_a6fd84a8d608da7d9ff2ff5ab10ed4243}{R\+C\+\_\+\+Framework.\+Frame\+Source}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___frame_a3da33fc90486a672115df3764898b808}\label{class_r_c___framework_1_1_r_c___frame_a3da33fc90486a672115df3764898b808}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Frame@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Frame}!bb@{bb}}
+\index{bb@{bb}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Frame@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Frame}}
+\subsubsection{\texorpdfstring{bb}{bb}}
+{\footnotesize\ttfamily Rectangle R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Frame.\+bb}
+
+
+
+Bounding Box rectange in source pixels x and y are offset from the H\+O\+T\+S\+P\+OT Warning if the hotspot is in the middle of the image/frame then x,y will be negative For users to use (posibbly in update if you need it) currently sprite3 ignores this 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___frame_a3188c8af00f675e9419b492d4ef40587}\label{class_r_c___framework_1_1_r_c___frame_a3188c8af00f675e9419b492d4ef40587}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Frame@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Frame}!hot\+Spot\+Offset@{hot\+Spot\+Offset}}
+\index{hot\+Spot\+Offset@{hot\+Spot\+Offset}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Frame@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Frame}}
+\subsubsection{\texorpdfstring{hot\+Spot\+Offset}{hotSpotOffset}}
+{\footnotesize\ttfamily Vector2 R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Frame.\+hot\+Spot\+Offset}
+
+
+
+hotspot offset x and y from top left corner of either the image -\/ or single frame if its an animation hotspot offet is in pixels in the souce image For users to use (posibbly in update if you need it) currently sprite3 ignores this 
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___frame_a0e325c29407bc7c18acbbe841095a89a}\label{class_r_c___framework_1_1_r_c___frame_a0e325c29407bc7c18acbbe841095a89a}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Frame@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Frame}!source@{source}}
+\index{source@{source}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Frame@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Frame}}
+\subsubsection{\texorpdfstring{source}{source}}
+{\footnotesize\ttfamily Rectangle R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Frame.\+source}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_r_c___frame_a1cf940e9c27e48778d926c5cecea5544}\label{class_r_c___framework_1_1_r_c___frame_a1cf940e9c27e48778d926c5cecea5544}} 
+\index{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Frame@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Frame}!tex@{tex}}
+\index{tex@{tex}!R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Frame@{R\+C\+\_\+\+Framework\+::\+R\+C\+\_\+\+Frame}}
+\subsubsection{\texorpdfstring{tex}{tex}}
+{\footnotesize\ttfamily Texture2D R\+C\+\_\+\+Framework.\+R\+C\+\_\+\+Frame.\+tex}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+B/\+R\+C\+\_\+\+Framework2018/\+Source/\mbox{\hyperlink{_r_c___frame_8cs}{R\+C\+\_\+\+Frame.\+cs}}\end{DoxyCompactItemize}

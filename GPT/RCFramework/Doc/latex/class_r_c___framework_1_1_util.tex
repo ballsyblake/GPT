@@ -1,0 +1,898 @@
+\hypertarget{class_r_c___framework_1_1_util}{}\section{R\+C\+\_\+\+Framework.\+Util Class Reference}
+\label{class_r_c___framework_1_1_util}\index{R\+C\+\_\+\+Framework.\+Util@{R\+C\+\_\+\+Framework.\+Util}}
+
+
+Just a utility class for staic common usefull methods  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Rectangle \mbox{\hyperlink{class_r_c___framework_1_1_util_a4b3641d1c35bdd3428cb28da938b263b}{inner\+Rectangle\+Of\+Circle}} (Vector2 center\+Of\+Circle, float radius)
+\begin{DoxyCompactList}\small\item\em Returns the inner rectangle of a circle \end{DoxyCompactList}\item 
+Rectangle \mbox{\hyperlink{class_r_c___framework_1_1_util_acfe8d27d82ff07df93b0a0545fbc6773}{outer\+Rectangle\+Of\+Circle}} (Vector2 center\+Of\+Circle, float radius)
+\begin{DoxyCompactList}\small\item\em Returns the outer rectangle of a circle \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_r_c___framework_1_1_util_a775e3f63e6491a8ea6bd6a1a82db5531}{collide\+Circle\+Rectangle}} (Vector2 center\+Of\+Circle, float radius, Rectangle rect\+BB)
+\begin{DoxyCompactList}\small\item\em This is a fairly aproximate collision routine it would usually only be used with rectangles and circles of similar size \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_r_c___framework_1_1_util_a6cd31bdef807a78294fc65ba7806adb1}{collide\+Circle\+Circle}} (Vector2 center\+Of\+Circle1, float radius1, Vector2 center\+Of\+Circle2, float radius2)
+\begin{DoxyCompactList}\small\item\em This is a accurate routine \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static float \mbox{\hyperlink{class_r_c___framework_1_1_util_ab64b89f35cd444e0de8ff911c7eb97ae}{dist}} (Vector2 p1, Vector2 p2)
+\begin{DoxyCompactList}\small\item\em Pythagorean distance \end{DoxyCompactList}\item 
+static Vector2 \mbox{\hyperlink{class_r_c___framework_1_1_util_a5d6c5f7ec7c507c48a6f42fae4cdfb23}{rotate\+Point}} (Vector2 point, Vector2 center\+Of\+Rotation, float angle\+In\+Radians)
+\begin{DoxyCompactList}\small\item\em Rotate a single point about an arbitay center radians \end{DoxyCompactList}\item 
+static Vector2 \mbox{\hyperlink{class_r_c___framework_1_1_util_a8a768b99dd53f6fc5906dbc5da8a69fa}{rotate\+Point\+Deg}} (Vector2 point, Vector2 center\+Of\+Rotation, float angle\+In\+Degrees)
+\begin{DoxyCompactList}\small\item\em Rotate a single point about an arbitay center in degrees \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_r_c___framework_1_1_util_a086caff1ffcf1feb50c4839cf1e698c8}{deg\+To\+Rad}} (float angle\+In\+Degrees)
+\begin{DoxyCompactList}\small\item\em Convert degrees to radians \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_r_c___framework_1_1_util_a4f7b82a75ed62f22465f81917f0683ce}{rad\+To\+Deg}} (float angle\+In\+Radians)
+\begin{DoxyCompactList}\small\item\em convert radians to degrees \end{DoxyCompactList}\item 
+static Vector2 \mbox{\hyperlink{class_r_c___framework_1_1_util_a38093fb4ea209c5f44f2a6d3f08a1202}{move\+By\+Angle\+Dist}} (Vector2 posZ, float angle\+In\+Radians, float distance)
+\begin{DoxyCompactList}\small\item\em Move a single spot in x/y plane by a given distance at a given angle \end{DoxyCompactList}\item 
+static Vector2 \mbox{\hyperlink{class_r_c___framework_1_1_util_ac7ef00e1305fbdcdae04e73a3d48cdb2}{move\+By\+Angle\+Dist\+Delta}} (Vector2 posZ, float angle\+In\+Radians, float distance)
+\begin{DoxyCompactList}\small\item\em Just return the x,y delta of a move in a given angle \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_r_c___framework_1_1_util_a9c9049464e895bda2a1fc9789c526ed2}{get\+Angle}} (Vector2 p1, Vector2 p2)
+\begin{DoxyCompactList}\small\item\em gets the angle in radians between p1 and p2 \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_r_c___framework_1_1_util_aa1110dfd94a9f1963a560f4266f5db4e}{compute\+Dest\+From\+Source}} (Rectangle sourceframe, Rectangle source\+BB, Point hotspot, Vector2 pos, float destwidth, float destheight, ref Rectangle dest, ref Rectangle dest\+BB, ref Vector2 dest\+HS)
+\begin{DoxyCompactList}\small\item\em Computes a final set of destination values for blit \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_r_c___framework_1_1_util_a85009919b261b85302abf6f7bd1d02ce}{find\+File}} (string fname)
+\begin{DoxyCompactList}\small\item\em Search working directory and sub directories for file \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_r_c___framework_1_1_util_a554f5a1c79d41198bdc7314da7394c1d}{find\+Dir\+With\+File}} (string fname)
+\begin{DoxyCompactList}\small\item\em Search working directory and sub directories for file and return the directory prefix \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_r_c___framework_1_1_util_a3cb2180e25fa07003655a8f93d0d3d85}{find\+Dir\+With\+File\+Exe}} (string fname)
+\begin{DoxyCompactList}\small\item\em Search executing assembly path and sub directories for file and return the directory prefix \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_r_c___framework_1_1_util_afe33a070b0b4b808fc997b208f39cbaf}{Change\+Colour\+In\+Texture\+P\+NG}} (Texture2D tex, Color c\+To\+Replace, Color c\+To\+Write)
+\begin{DoxyCompactList}\small\item\em This will replace one colour with another in a \textquotesingle{}Color\textquotesingle{} Format texture These apear to be the format read when a png 32 bit file is loaded \end{DoxyCompactList}\item 
+static Vector2 \mbox{\hyperlink{class_r_c___framework_1_1_util_ac1ae1f985062d114cae845a16df70c80}{get\+Sub\+Location}} (Rectangle r, int sub\+Loc\+Num)
+\begin{DoxyCompactList}\small\item\em Returns sublocations around the edge and middle of a rectangle \end{DoxyCompactList}\item 
+static Color \mbox{\hyperlink{class_r_c___framework_1_1_util_a88559e70851ee1e21bdc1375b862919d}{lighter\+Or\+Darker}} (Color c, float amount)
+\begin{DoxyCompactList}\small\item\em Create a new colour either lighter or darker than the previous one \end{DoxyCompactList}\item 
+static Rectangle \mbox{\hyperlink{class_r_c___framework_1_1_util_a122c1990a7bfeaab7b87d9493fd5970d}{new\+Rectangle}} (Rectangle r)
+\begin{DoxyCompactList}\small\item\em create a copy of a rectangle \end{DoxyCompactList}\item 
+static Rectangle \mbox{\hyperlink{class_r_c___framework_1_1_util_ad3ac7d622266e8e09e88b50b50052578}{new\+Rectangle}} (Rectangle? r)
+\begin{DoxyCompactList}\small\item\em create a copy of a nullable rectangle \end{DoxyCompactList}\item 
+static Rectangle \mbox{\hyperlink{class_r_c___framework_1_1_util_a205f56f4b98e21666462ddce5143a2e5}{new\+Rectangle\+Beside}} (Rectangle r, int dirX, int dirY, int gap)
+\begin{DoxyCompactList}\small\item\em Creates a rectangle beside the existing one if dirX == 1 its to the right if dirY == 1 its below if dirX == -\/1 its to the left if dirY == -\/1 its above Gap is the gap between usually 0 \end{DoxyCompactList}\item 
+static Rectangle \mbox{\hyperlink{class_r_c___framework_1_1_util_ad343f81943f78c8a9ac412a0d6c217e5}{new\+Rectangle\+Inside}} (Rectangle r, int gapX, int gapY)
+\begin{DoxyCompactList}\small\item\em Creates a new rectangle inside or outside an existing one by gapX and gapY For creating concentric rectangles \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_r_c___framework_1_1_util_a283ca8d3dea62fbca3b399c2193a1741}{aequal}} (int v1, int v2, int \mbox{\hyperlink{class_r_c___framework_1_1_util_a0e915c7b69e861aa3da7617fce83851f}{epsilon}})
+\begin{DoxyCompactList}\small\item\em aproximately equal (maximum diference is epsilon) \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_r_c___framework_1_1_util_ab3e2109463c60b9576f6ece00d48ecf1}{aequal}} (double v1, double v2, double \mbox{\hyperlink{class_r_c___framework_1_1_util_a0e915c7b69e861aa3da7617fce83851f}{epsilon}})
+\begin{DoxyCompactList}\small\item\em aproximately equal (maximum diference is epsilon) \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_r_c___framework_1_1_util_a3311ca5f6822df17f8c910a3ad5e4296}{aequal}} (float v1, float v2, float \mbox{\hyperlink{class_r_c___framework_1_1_util_a0e915c7b69e861aa3da7617fce83851f}{epsilon}})
+\begin{DoxyCompactList}\small\item\em aproximately equal (maximum diference is epsilon) \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{class_r_c___framework_1_1_util_a739e0ec7a821d4f5c30e41bf45c553a2}{slope}} (double x1, double y1, double x2, double y2)
+\begin{DoxyCompactList}\small\item\em Returns the slope of the line x1,y1 to x2 y2 \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_r_c___framework_1_1_util_a56a2d48ad29e3cd4fb4e92a0f4cd42cd}{intersect2D}} (ref double x, ref double y, double x1, double y1, double x2, double y2, double x3, double y3, double x4, double y4)
+\begin{DoxyCompactList}\small\item\em Aproximate interection of 2 line segments in 2d this returns the following 0= all ok they inteset and the intersect is in x,y 1= they are both vertical lines 2= they are both horizontal lines 3= they dont intersesct in range Given it does a bounding box check first 1 and 2 indicate colisions \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_r_c___framework_1_1_util_a0ee1f0e0b21832dcbf6ec2865d0af2e3}{intersect2D}} (ref Vector2 colision\+Point, Vector2 p0, Vector2 p1, Vector2 p2, Vector2 p3)
+\begin{DoxyCompactList}\small\item\em Aproximate interection of 2 line segments in 2d this returns the following 0= all ok they intersect and the intersect is in x,y 1= they are both vertical lines 2= they are both horizontal lines 3= they dont intersesct in range Given it does a bounding box check first 1 and 2 indicate colisions \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_r_c___framework_1_1_util_a286eafab09f04d0a65d82cc04315a606}{inside\+Poly}} (Vector2 point, Vector2\mbox{[}$\,$\mbox{]} poly, int count)
+\begin{DoxyCompactList}\small\item\em Returns true if the point is inside the polygon it draws a line from the point to a point outside the polygon counting the number of intersects if intersects are an odd number its inside othewise its outside \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_r_c___framework_1_1_util_a5781bcc8d796c2c8c8f1d52a97aa66b3}{collision\+Rect4\+Rect4\+Points}} (\mbox{\hyperlink{class_r_c___framework_1_1_rect4}{Rect4}} r0, \mbox{\hyperlink{class_r_c___framework_1_1_rect4}{Rect4}} r1)
+\begin{DoxyCompactList}\small\item\em A fairly fast but not totally accurate collision system for rect 4 structures Simply checks that the corner points in one are inside the outline of the other \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_r_c___framework_1_1_util_aa5997c26036537e821b8274bbc8348ff}{collision\+Rect4\+Rect4\+Lines}} (\mbox{\hyperlink{class_r_c___framework_1_1_rect4}{Rect4}} r0, \mbox{\hyperlink{class_r_c___framework_1_1_rect4}{Rect4}} r1)
+\begin{DoxyCompactList}\small\item\em A Slower accurate collision system for rect 4 structures checks for line intersections and point containment which i think is totally accurate \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_r_c___framework_1_1_util_ae49f540d59a1b7169b659a8cd45cffd4}{collision\+Polygon12}} (\mbox{\hyperlink{class_r_c___framework_1_1_polygon12}{Polygon12}} r0, \mbox{\hyperlink{class_r_c___framework_1_1_polygon12}{Polygon12}} r1)
+\item 
+static Texture2D \mbox{\hyperlink{class_r_c___framework_1_1_util_a407242341a419220c4ee196f2553d04a}{tex\+From\+File}} (Graphics\+Device gd, String f\+Name)
+\item 
+static int \mbox{\hyperlink{class_r_c___framework_1_1_util_a432029bd0c2fd330b086e0b62d4afeb4}{seconds\+To\+Ticks}} (float seconds, int ticks\+Per\+Second)
+\item 
+static int \mbox{\hyperlink{class_r_c___framework_1_1_util_acc409dafdb1c4fe02554266da165a9f0}{seconds\+To\+Ticks}} (float seconds, Time\+Span t)
+\item 
+static string \mbox{\hyperlink{class_r_c___framework_1_1_util_adccf855c375478f646f22a9bef9ac54b}{dbl0}} (double dd)
+\item 
+static string \mbox{\hyperlink{class_r_c___framework_1_1_util_abef5974ce6f3a15f8066d2d19f63e3eb}{dbl1}} (double dd)
+\item 
+static string \mbox{\hyperlink{class_r_c___framework_1_1_util_a7dd17e2815d9e71d8b42e42d452cdef8}{dbl2}} (double dd)
+\item 
+static string \mbox{\hyperlink{class_r_c___framework_1_1_util_a66a7877a79e9575332dc10fca26426f5}{dbl3}} (double dd)
+\item 
+static string \mbox{\hyperlink{class_r_c___framework_1_1_util_ace78f374f6aa9bb6b6ff33eecc199199}{int1}} (int dd)
+\item 
+static string \mbox{\hyperlink{class_r_c___framework_1_1_util_ab4098f3fc98178eec79615fd96c8a5a7}{int2}} (int dd)
+\item 
+static string \mbox{\hyperlink{class_r_c___framework_1_1_util_ad21b9868a5f3b821b63d832fa207580c}{int3}} (int dd)
+\item 
+static string \mbox{\hyperlink{class_r_c___framework_1_1_util_a572eaef37e4be463a3ae9bb34ff6241f}{int4}} (int dd)
+\item 
+static string \mbox{\hyperlink{class_r_c___framework_1_1_util_a999f61fae876b3c8241ad49deeb7fc4f}{int5}} (int dd)
+\item 
+static string \mbox{\hyperlink{class_r_c___framework_1_1_util_a5c4d63b7d4eaf32cda361fb8973cef05}{int6}} (int dd)
+\item 
+static string \mbox{\hyperlink{class_r_c___framework_1_1_util_ab2f2d7143a68278d2d3754b5a00bc1e3}{int7}} (int dd)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static double \mbox{\hyperlink{class_r_c___framework_1_1_util_a0e915c7b69e861aa3da7617fce83851f}{epsilon}} = 0.\+001
+\item 
+static float \mbox{\hyperlink{class_r_c___framework_1_1_util_afe9ab3df53a3bbd8071c105be4d0bed2}{epsilonf}} = 0.\+001f
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Just a utility class for staic common usefull methods 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_util_a283ca8d3dea62fbca3b399c2193a1741}\label{class_r_c___framework_1_1_util_a283ca8d3dea62fbca3b399c2193a1741}} 
+\index{R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}!aequal@{aequal}}
+\index{aequal@{aequal}!R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}}
+\subsubsection{\texorpdfstring{aequal()}{aequal()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily static bool R\+C\+\_\+\+Framework.\+Util.\+aequal (\begin{DoxyParamCaption}\item[{int}]{v1,  }\item[{int}]{v2,  }\item[{int}]{epsilon }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+aproximately equal (maximum diference is epsilon) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v1} & \\
+\hline
+{\em v2} & \\
+\hline
+{\em epsilon} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_util_ab3e2109463c60b9576f6ece00d48ecf1}\label{class_r_c___framework_1_1_util_ab3e2109463c60b9576f6ece00d48ecf1}} 
+\index{R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}!aequal@{aequal}}
+\index{aequal@{aequal}!R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}}
+\subsubsection{\texorpdfstring{aequal()}{aequal()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily static bool R\+C\+\_\+\+Framework.\+Util.\+aequal (\begin{DoxyParamCaption}\item[{double}]{v1,  }\item[{double}]{v2,  }\item[{double}]{epsilon }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+aproximately equal (maximum diference is epsilon) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v1} & \\
+\hline
+{\em v2} & \\
+\hline
+{\em epsilon} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_util_a3311ca5f6822df17f8c910a3ad5e4296}\label{class_r_c___framework_1_1_util_a3311ca5f6822df17f8c910a3ad5e4296}} 
+\index{R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}!aequal@{aequal}}
+\index{aequal@{aequal}!R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}}
+\subsubsection{\texorpdfstring{aequal()}{aequal()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily static bool R\+C\+\_\+\+Framework.\+Util.\+aequal (\begin{DoxyParamCaption}\item[{float}]{v1,  }\item[{float}]{v2,  }\item[{float}]{epsilon }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+aproximately equal (maximum diference is epsilon) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v1} & \\
+\hline
+{\em v2} & \\
+\hline
+{\em epsilon} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_util_afe33a070b0b4b808fc997b208f39cbaf}\label{class_r_c___framework_1_1_util_afe33a070b0b4b808fc997b208f39cbaf}} 
+\index{R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}!Change\+Colour\+In\+Texture\+P\+NG@{Change\+Colour\+In\+Texture\+P\+NG}}
+\index{Change\+Colour\+In\+Texture\+P\+NG@{Change\+Colour\+In\+Texture\+P\+NG}!R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}}
+\subsubsection{\texorpdfstring{Change\+Colour\+In\+Texture\+P\+N\+G()}{ChangeColourInTexturePNG()}}
+{\footnotesize\ttfamily static int R\+C\+\_\+\+Framework.\+Util.\+Change\+Colour\+In\+Texture\+P\+NG (\begin{DoxyParamCaption}\item[{Texture2D}]{tex,  }\item[{Color}]{c\+To\+Replace,  }\item[{Color}]{c\+To\+Write }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This will replace one colour with another in a \textquotesingle{}Color\textquotesingle{} Format texture These apear to be the format read when a png 32 bit file is loaded 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tex} & \\
+\hline
+{\em c\+To\+Replace} & \\
+\hline
+{\em c\+To\+Write} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_util_a6cd31bdef807a78294fc65ba7806adb1}\label{class_r_c___framework_1_1_util_a6cd31bdef807a78294fc65ba7806adb1}} 
+\index{R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}!collide\+Circle\+Circle@{collide\+Circle\+Circle}}
+\index{collide\+Circle\+Circle@{collide\+Circle\+Circle}!R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}}
+\subsubsection{\texorpdfstring{collide\+Circle\+Circle()}{collideCircleCircle()}}
+{\footnotesize\ttfamily bool R\+C\+\_\+\+Framework.\+Util.\+collide\+Circle\+Circle (\begin{DoxyParamCaption}\item[{Vector2}]{center\+Of\+Circle1,  }\item[{float}]{radius1,  }\item[{Vector2}]{center\+Of\+Circle2,  }\item[{float}]{radius2 }\end{DoxyParamCaption})}
+
+
+
+This is a accurate routine 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_util_a775e3f63e6491a8ea6bd6a1a82db5531}\label{class_r_c___framework_1_1_util_a775e3f63e6491a8ea6bd6a1a82db5531}} 
+\index{R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}!collide\+Circle\+Rectangle@{collide\+Circle\+Rectangle}}
+\index{collide\+Circle\+Rectangle@{collide\+Circle\+Rectangle}!R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}}
+\subsubsection{\texorpdfstring{collide\+Circle\+Rectangle()}{collideCircleRectangle()}}
+{\footnotesize\ttfamily bool R\+C\+\_\+\+Framework.\+Util.\+collide\+Circle\+Rectangle (\begin{DoxyParamCaption}\item[{Vector2}]{center\+Of\+Circle,  }\item[{float}]{radius,  }\item[{Rectangle}]{rect\+BB }\end{DoxyParamCaption})}
+
+
+
+This is a fairly aproximate collision routine it would usually only be used with rectangles and circles of similar size 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_util_ae49f540d59a1b7169b659a8cd45cffd4}\label{class_r_c___framework_1_1_util_ae49f540d59a1b7169b659a8cd45cffd4}} 
+\index{R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}!collision\+Polygon12@{collision\+Polygon12}}
+\index{collision\+Polygon12@{collision\+Polygon12}!R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}}
+\subsubsection{\texorpdfstring{collision\+Polygon12()}{collisionPolygon12()}}
+{\footnotesize\ttfamily static bool R\+C\+\_\+\+Framework.\+Util.\+collision\+Polygon12 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_r_c___framework_1_1_polygon12}{Polygon12}}}]{r0,  }\item[{\mbox{\hyperlink{class_r_c___framework_1_1_polygon12}{Polygon12}}}]{r1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_util_aa5997c26036537e821b8274bbc8348ff}\label{class_r_c___framework_1_1_util_aa5997c26036537e821b8274bbc8348ff}} 
+\index{R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}!collision\+Rect4\+Rect4\+Lines@{collision\+Rect4\+Rect4\+Lines}}
+\index{collision\+Rect4\+Rect4\+Lines@{collision\+Rect4\+Rect4\+Lines}!R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}}
+\subsubsection{\texorpdfstring{collision\+Rect4\+Rect4\+Lines()}{collisionRect4Rect4Lines()}}
+{\footnotesize\ttfamily static bool R\+C\+\_\+\+Framework.\+Util.\+collision\+Rect4\+Rect4\+Lines (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_r_c___framework_1_1_rect4}{Rect4}}}]{r0,  }\item[{\mbox{\hyperlink{class_r_c___framework_1_1_rect4}{Rect4}}}]{r1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+A Slower accurate collision system for rect 4 structures checks for line intersections and point containment which i think is totally accurate 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_util_a5781bcc8d796c2c8c8f1d52a97aa66b3}\label{class_r_c___framework_1_1_util_a5781bcc8d796c2c8c8f1d52a97aa66b3}} 
+\index{R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}!collision\+Rect4\+Rect4\+Points@{collision\+Rect4\+Rect4\+Points}}
+\index{collision\+Rect4\+Rect4\+Points@{collision\+Rect4\+Rect4\+Points}!R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}}
+\subsubsection{\texorpdfstring{collision\+Rect4\+Rect4\+Points()}{collisionRect4Rect4Points()}}
+{\footnotesize\ttfamily static bool R\+C\+\_\+\+Framework.\+Util.\+collision\+Rect4\+Rect4\+Points (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_r_c___framework_1_1_rect4}{Rect4}}}]{r0,  }\item[{\mbox{\hyperlink{class_r_c___framework_1_1_rect4}{Rect4}}}]{r1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+A fairly fast but not totally accurate collision system for rect 4 structures Simply checks that the corner points in one are inside the outline of the other 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_util_aa1110dfd94a9f1963a560f4266f5db4e}\label{class_r_c___framework_1_1_util_aa1110dfd94a9f1963a560f4266f5db4e}} 
+\index{R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}!compute\+Dest\+From\+Source@{compute\+Dest\+From\+Source}}
+\index{compute\+Dest\+From\+Source@{compute\+Dest\+From\+Source}!R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}}
+\subsubsection{\texorpdfstring{compute\+Dest\+From\+Source()}{computeDestFromSource()}}
+{\footnotesize\ttfamily static void R\+C\+\_\+\+Framework.\+Util.\+compute\+Dest\+From\+Source (\begin{DoxyParamCaption}\item[{Rectangle}]{sourceframe,  }\item[{Rectangle}]{source\+BB,  }\item[{Point}]{hotspot,  }\item[{Vector2}]{pos,  }\item[{float}]{destwidth,  }\item[{float}]{destheight,  }\item[{ref Rectangle}]{dest,  }\item[{ref Rectangle}]{dest\+BB,  }\item[{ref Vector2}]{dest\+HS }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Computes a final set of destination values for blit 
+
+sourceframe is the rectange on the texture in texture pixels source\+BB is the bounding box in texture co ordinates hotspot is the hotspot in texture co-\/ordinates desthotspot is the destination hotspot destwidth is the width of the destination destheight is the height of the destination dest is the output destination rectangle ~\newline
+dest\+BB is the output bounding box rectangle 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sourceframe} & \\
+\hline
+{\em source\+BB} & \\
+\hline
+{\em hotspot} & \\
+\hline
+{\em pos} & \\
+\hline
+{\em destwidth} & \\
+\hline
+{\em destheight} & \\
+\hline
+{\em dest} & \\
+\hline
+{\em dest\+BB} & \\
+\hline
+{\em dest\+HS} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_r_c___framework_1_1_util_adccf855c375478f646f22a9bef9ac54b}\label{class_r_c___framework_1_1_util_adccf855c375478f646f22a9bef9ac54b}} 
+\index{R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}!dbl0@{dbl0}}
+\index{dbl0@{dbl0}!R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}}
+\subsubsection{\texorpdfstring{dbl0()}{dbl0()}}
+{\footnotesize\ttfamily static string R\+C\+\_\+\+Framework.\+Util.\+dbl0 (\begin{DoxyParamCaption}\item[{double}]{dd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_util_abef5974ce6f3a15f8066d2d19f63e3eb}\label{class_r_c___framework_1_1_util_abef5974ce6f3a15f8066d2d19f63e3eb}} 
+\index{R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}!dbl1@{dbl1}}
+\index{dbl1@{dbl1}!R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}}
+\subsubsection{\texorpdfstring{dbl1()}{dbl1()}}
+{\footnotesize\ttfamily static string R\+C\+\_\+\+Framework.\+Util.\+dbl1 (\begin{DoxyParamCaption}\item[{double}]{dd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_util_a7dd17e2815d9e71d8b42e42d452cdef8}\label{class_r_c___framework_1_1_util_a7dd17e2815d9e71d8b42e42d452cdef8}} 
+\index{R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}!dbl2@{dbl2}}
+\index{dbl2@{dbl2}!R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}}
+\subsubsection{\texorpdfstring{dbl2()}{dbl2()}}
+{\footnotesize\ttfamily static string R\+C\+\_\+\+Framework.\+Util.\+dbl2 (\begin{DoxyParamCaption}\item[{double}]{dd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_util_a66a7877a79e9575332dc10fca26426f5}\label{class_r_c___framework_1_1_util_a66a7877a79e9575332dc10fca26426f5}} 
+\index{R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}!dbl3@{dbl3}}
+\index{dbl3@{dbl3}!R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}}
+\subsubsection{\texorpdfstring{dbl3()}{dbl3()}}
+{\footnotesize\ttfamily static string R\+C\+\_\+\+Framework.\+Util.\+dbl3 (\begin{DoxyParamCaption}\item[{double}]{dd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_util_a086caff1ffcf1feb50c4839cf1e698c8}\label{class_r_c___framework_1_1_util_a086caff1ffcf1feb50c4839cf1e698c8}} 
+\index{R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}!deg\+To\+Rad@{deg\+To\+Rad}}
+\index{deg\+To\+Rad@{deg\+To\+Rad}!R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}}
+\subsubsection{\texorpdfstring{deg\+To\+Rad()}{degToRad()}}
+{\footnotesize\ttfamily static float R\+C\+\_\+\+Framework.\+Util.\+deg\+To\+Rad (\begin{DoxyParamCaption}\item[{float}]{angle\+In\+Degrees }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Convert degrees to radians 
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle\+In\+Degrees} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_util_ab64b89f35cd444e0de8ff911c7eb97ae}\label{class_r_c___framework_1_1_util_ab64b89f35cd444e0de8ff911c7eb97ae}} 
+\index{R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}!dist@{dist}}
+\index{dist@{dist}!R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}}
+\subsubsection{\texorpdfstring{dist()}{dist()}}
+{\footnotesize\ttfamily static float R\+C\+\_\+\+Framework.\+Util.\+dist (\begin{DoxyParamCaption}\item[{Vector2}]{p1,  }\item[{Vector2}]{p2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Pythagorean distance 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & \\
+\hline
+{\em p2} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_util_a554f5a1c79d41198bdc7314da7394c1d}\label{class_r_c___framework_1_1_util_a554f5a1c79d41198bdc7314da7394c1d}} 
+\index{R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}!find\+Dir\+With\+File@{find\+Dir\+With\+File}}
+\index{find\+Dir\+With\+File@{find\+Dir\+With\+File}!R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}}
+\subsubsection{\texorpdfstring{find\+Dir\+With\+File()}{findDirWithFile()}}
+{\footnotesize\ttfamily static string R\+C\+\_\+\+Framework.\+Util.\+find\+Dir\+With\+File (\begin{DoxyParamCaption}\item[{string}]{fname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Search working directory and sub directories for file and return the directory prefix 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fname} & The file being searched for\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A valid dir path ending with \textbackslash{} or \char`\"{}\char`\"{} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_util_a3cb2180e25fa07003655a8f93d0d3d85}\label{class_r_c___framework_1_1_util_a3cb2180e25fa07003655a8f93d0d3d85}} 
+\index{R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}!find\+Dir\+With\+File\+Exe@{find\+Dir\+With\+File\+Exe}}
+\index{find\+Dir\+With\+File\+Exe@{find\+Dir\+With\+File\+Exe}!R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}}
+\subsubsection{\texorpdfstring{find\+Dir\+With\+File\+Exe()}{findDirWithFileExe()}}
+{\footnotesize\ttfamily static string R\+C\+\_\+\+Framework.\+Util.\+find\+Dir\+With\+File\+Exe (\begin{DoxyParamCaption}\item[{string}]{fname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Search executing assembly path and sub directories for file and return the directory prefix 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fname} & The file being searched for\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A valid dir path ending with \textbackslash{} or \char`\"{}\char`\"{} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_util_a85009919b261b85302abf6f7bd1d02ce}\label{class_r_c___framework_1_1_util_a85009919b261b85302abf6f7bd1d02ce}} 
+\index{R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}!find\+File@{find\+File}}
+\index{find\+File@{find\+File}!R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}}
+\subsubsection{\texorpdfstring{find\+File()}{findFile()}}
+{\footnotesize\ttfamily static string R\+C\+\_\+\+Framework.\+Util.\+find\+File (\begin{DoxyParamCaption}\item[{string}]{fname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Search working directory and sub directories for file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fname} & The file being searched for\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A valid file name with path or \char`\"{}\char`\"{} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_util_a9c9049464e895bda2a1fc9789c526ed2}\label{class_r_c___framework_1_1_util_a9c9049464e895bda2a1fc9789c526ed2}} 
+\index{R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}!get\+Angle@{get\+Angle}}
+\index{get\+Angle@{get\+Angle}!R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}}
+\subsubsection{\texorpdfstring{get\+Angle()}{getAngle()}}
+{\footnotesize\ttfamily static float R\+C\+\_\+\+Framework.\+Util.\+get\+Angle (\begin{DoxyParamCaption}\item[{Vector2}]{p1,  }\item[{Vector2}]{p2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+gets the angle in radians between p1 and p2 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & \\
+\hline
+{\em p2} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_util_ac1ae1f985062d114cae845a16df70c80}\label{class_r_c___framework_1_1_util_ac1ae1f985062d114cae845a16df70c80}} 
+\index{R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}!get\+Sub\+Location@{get\+Sub\+Location}}
+\index{get\+Sub\+Location@{get\+Sub\+Location}!R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}}
+\subsubsection{\texorpdfstring{get\+Sub\+Location()}{getSubLocation()}}
+{\footnotesize\ttfamily static Vector2 R\+C\+\_\+\+Framework.\+Util.\+get\+Sub\+Location (\begin{DoxyParamCaption}\item[{Rectangle}]{r,  }\item[{int}]{sub\+Loc\+Num }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns sublocations around the edge and middle of a rectangle 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & the rectangle in question\\
+\hline
+{\em sub\+Loc\+Num} & the sub location from the list below 0=middle of rectange 1=mid of top 2=right top corner 3=mid of right side 4=right bottom corner 5=mid of bottom 6=left bottom corner 7=mid left side 8=top left corner \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_util_a4b3641d1c35bdd3428cb28da938b263b}\label{class_r_c___framework_1_1_util_a4b3641d1c35bdd3428cb28da938b263b}} 
+\index{R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}!inner\+Rectangle\+Of\+Circle@{inner\+Rectangle\+Of\+Circle}}
+\index{inner\+Rectangle\+Of\+Circle@{inner\+Rectangle\+Of\+Circle}!R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}}
+\subsubsection{\texorpdfstring{inner\+Rectangle\+Of\+Circle()}{innerRectangleOfCircle()}}
+{\footnotesize\ttfamily Rectangle R\+C\+\_\+\+Framework.\+Util.\+inner\+Rectangle\+Of\+Circle (\begin{DoxyParamCaption}\item[{Vector2}]{center\+Of\+Circle,  }\item[{float}]{radius }\end{DoxyParamCaption})}
+
+
+
+Returns the inner rectangle of a circle 
+
+
+\begin{DoxyParams}{Parameters}
+{\em center\+Of\+Circle} & \\
+\hline
+{\em radius} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_util_a286eafab09f04d0a65d82cc04315a606}\label{class_r_c___framework_1_1_util_a286eafab09f04d0a65d82cc04315a606}} 
+\index{R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}!inside\+Poly@{inside\+Poly}}
+\index{inside\+Poly@{inside\+Poly}!R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}}
+\subsubsection{\texorpdfstring{inside\+Poly()}{insidePoly()}}
+{\footnotesize\ttfamily static bool R\+C\+\_\+\+Framework.\+Util.\+inside\+Poly (\begin{DoxyParamCaption}\item[{Vector2}]{point,  }\item[{Vector2 \mbox{[}$\,$\mbox{]}}]{poly,  }\item[{int}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns true if the point is inside the polygon it draws a line from the point to a point outside the polygon counting the number of intersects if intersects are an odd number its inside othewise its outside 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & \\
+\hline
+{\em poly} & \\
+\hline
+{\em count} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_util_ace78f374f6aa9bb6b6ff33eecc199199}\label{class_r_c___framework_1_1_util_ace78f374f6aa9bb6b6ff33eecc199199}} 
+\index{R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}!int1@{int1}}
+\index{int1@{int1}!R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}}
+\subsubsection{\texorpdfstring{int1()}{int1()}}
+{\footnotesize\ttfamily static string R\+C\+\_\+\+Framework.\+Util.\+int1 (\begin{DoxyParamCaption}\item[{int}]{dd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_util_ab4098f3fc98178eec79615fd96c8a5a7}\label{class_r_c___framework_1_1_util_ab4098f3fc98178eec79615fd96c8a5a7}} 
+\index{R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}!int2@{int2}}
+\index{int2@{int2}!R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}}
+\subsubsection{\texorpdfstring{int2()}{int2()}}
+{\footnotesize\ttfamily static string R\+C\+\_\+\+Framework.\+Util.\+int2 (\begin{DoxyParamCaption}\item[{int}]{dd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_util_ad21b9868a5f3b821b63d832fa207580c}\label{class_r_c___framework_1_1_util_ad21b9868a5f3b821b63d832fa207580c}} 
+\index{R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}!int3@{int3}}
+\index{int3@{int3}!R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}}
+\subsubsection{\texorpdfstring{int3()}{int3()}}
+{\footnotesize\ttfamily static string R\+C\+\_\+\+Framework.\+Util.\+int3 (\begin{DoxyParamCaption}\item[{int}]{dd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_util_a572eaef37e4be463a3ae9bb34ff6241f}\label{class_r_c___framework_1_1_util_a572eaef37e4be463a3ae9bb34ff6241f}} 
+\index{R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}!int4@{int4}}
+\index{int4@{int4}!R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}}
+\subsubsection{\texorpdfstring{int4()}{int4()}}
+{\footnotesize\ttfamily static string R\+C\+\_\+\+Framework.\+Util.\+int4 (\begin{DoxyParamCaption}\item[{int}]{dd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_util_a999f61fae876b3c8241ad49deeb7fc4f}\label{class_r_c___framework_1_1_util_a999f61fae876b3c8241ad49deeb7fc4f}} 
+\index{R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}!int5@{int5}}
+\index{int5@{int5}!R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}}
+\subsubsection{\texorpdfstring{int5()}{int5()}}
+{\footnotesize\ttfamily static string R\+C\+\_\+\+Framework.\+Util.\+int5 (\begin{DoxyParamCaption}\item[{int}]{dd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_util_a5c4d63b7d4eaf32cda361fb8973cef05}\label{class_r_c___framework_1_1_util_a5c4d63b7d4eaf32cda361fb8973cef05}} 
+\index{R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}!int6@{int6}}
+\index{int6@{int6}!R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}}
+\subsubsection{\texorpdfstring{int6()}{int6()}}
+{\footnotesize\ttfamily static string R\+C\+\_\+\+Framework.\+Util.\+int6 (\begin{DoxyParamCaption}\item[{int}]{dd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_util_ab2f2d7143a68278d2d3754b5a00bc1e3}\label{class_r_c___framework_1_1_util_ab2f2d7143a68278d2d3754b5a00bc1e3}} 
+\index{R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}!int7@{int7}}
+\index{int7@{int7}!R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}}
+\subsubsection{\texorpdfstring{int7()}{int7()}}
+{\footnotesize\ttfamily static string R\+C\+\_\+\+Framework.\+Util.\+int7 (\begin{DoxyParamCaption}\item[{int}]{dd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_util_a56a2d48ad29e3cd4fb4e92a0f4cd42cd}\label{class_r_c___framework_1_1_util_a56a2d48ad29e3cd4fb4e92a0f4cd42cd}} 
+\index{R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}!intersect2D@{intersect2D}}
+\index{intersect2D@{intersect2D}!R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}}
+\subsubsection{\texorpdfstring{intersect2\+D()}{intersect2D()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static int R\+C\+\_\+\+Framework.\+Util.\+intersect2D (\begin{DoxyParamCaption}\item[{ref double}]{x,  }\item[{ref double}]{y,  }\item[{double}]{x1,  }\item[{double}]{y1,  }\item[{double}]{x2,  }\item[{double}]{y2,  }\item[{double}]{x3,  }\item[{double}]{y3,  }\item[{double}]{x4,  }\item[{double}]{y4 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Aproximate interection of 2 line segments in 2d this returns the following 0= all ok they inteset and the intersect is in x,y 1= they are both vertical lines 2= they are both horizontal lines 3= they dont intersesct in range Given it does a bounding box check first 1 and 2 indicate colisions 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+{\em x1} & \\
+\hline
+{\em y1} & \\
+\hline
+{\em x2} & \\
+\hline
+{\em y2} & \\
+\hline
+{\em x3} & \\
+\hline
+{\em y3} & \\
+\hline
+{\em x4} & \\
+\hline
+{\em y4} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_util_a0ee1f0e0b21832dcbf6ec2865d0af2e3}\label{class_r_c___framework_1_1_util_a0ee1f0e0b21832dcbf6ec2865d0af2e3}} 
+\index{R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}!intersect2D@{intersect2D}}
+\index{intersect2D@{intersect2D}!R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}}
+\subsubsection{\texorpdfstring{intersect2\+D()}{intersect2D()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static int R\+C\+\_\+\+Framework.\+Util.\+intersect2D (\begin{DoxyParamCaption}\item[{ref Vector2}]{colision\+Point,  }\item[{Vector2}]{p0,  }\item[{Vector2}]{p1,  }\item[{Vector2}]{p2,  }\item[{Vector2}]{p3 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Aproximate interection of 2 line segments in 2d this returns the following 0= all ok they intersect and the intersect is in x,y 1= they are both vertical lines 2= they are both horizontal lines 3= they dont intersesct in range Given it does a bounding box check first 1 and 2 indicate colisions 
+
+
+\begin{DoxyParams}{Parameters}
+{\em colision\+Point} & \\
+\hline
+{\em p0} & \\
+\hline
+{\em p1} & \\
+\hline
+{\em p2} & \\
+\hline
+{\em p3} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_util_a88559e70851ee1e21bdc1375b862919d}\label{class_r_c___framework_1_1_util_a88559e70851ee1e21bdc1375b862919d}} 
+\index{R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}!lighter\+Or\+Darker@{lighter\+Or\+Darker}}
+\index{lighter\+Or\+Darker@{lighter\+Or\+Darker}!R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}}
+\subsubsection{\texorpdfstring{lighter\+Or\+Darker()}{lighterOrDarker()}}
+{\footnotesize\ttfamily static Color R\+C\+\_\+\+Framework.\+Util.\+lighter\+Or\+Darker (\begin{DoxyParamCaption}\item[{Color}]{c,  }\item[{float}]{amount }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a new colour either lighter or darker than the previous one 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & \\
+\hline
+{\em amount} & 1.\+1f = lighter 0.\+9f = darker \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_util_a38093fb4ea209c5f44f2a6d3f08a1202}\label{class_r_c___framework_1_1_util_a38093fb4ea209c5f44f2a6d3f08a1202}} 
+\index{R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}!move\+By\+Angle\+Dist@{move\+By\+Angle\+Dist}}
+\index{move\+By\+Angle\+Dist@{move\+By\+Angle\+Dist}!R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}}
+\subsubsection{\texorpdfstring{move\+By\+Angle\+Dist()}{moveByAngleDist()}}
+{\footnotesize\ttfamily static Vector2 R\+C\+\_\+\+Framework.\+Util.\+move\+By\+Angle\+Dist (\begin{DoxyParamCaption}\item[{Vector2}]{posZ,  }\item[{float}]{angle\+In\+Radians,  }\item[{float}]{distance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Move a single spot in x/y plane by a given distance at a given angle 
+
+
+\begin{DoxyParams}{Parameters}
+{\em posZ} & \\
+\hline
+{\em angle\+In\+Radians} & \\
+\hline
+{\em distance} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_util_ac7ef00e1305fbdcdae04e73a3d48cdb2}\label{class_r_c___framework_1_1_util_ac7ef00e1305fbdcdae04e73a3d48cdb2}} 
+\index{R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}!move\+By\+Angle\+Dist\+Delta@{move\+By\+Angle\+Dist\+Delta}}
+\index{move\+By\+Angle\+Dist\+Delta@{move\+By\+Angle\+Dist\+Delta}!R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}}
+\subsubsection{\texorpdfstring{move\+By\+Angle\+Dist\+Delta()}{moveByAngleDistDelta()}}
+{\footnotesize\ttfamily static Vector2 R\+C\+\_\+\+Framework.\+Util.\+move\+By\+Angle\+Dist\+Delta (\begin{DoxyParamCaption}\item[{Vector2}]{posZ,  }\item[{float}]{angle\+In\+Radians,  }\item[{float}]{distance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Just return the x,y delta of a move in a given angle 
+
+
+\begin{DoxyParams}{Parameters}
+{\em posZ} & \\
+\hline
+{\em angle\+In\+Radians} & \\
+\hline
+{\em distance} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_util_a122c1990a7bfeaab7b87d9493fd5970d}\label{class_r_c___framework_1_1_util_a122c1990a7bfeaab7b87d9493fd5970d}} 
+\index{R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}!new\+Rectangle@{new\+Rectangle}}
+\index{new\+Rectangle@{new\+Rectangle}!R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}}
+\subsubsection{\texorpdfstring{new\+Rectangle()}{newRectangle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static Rectangle R\+C\+\_\+\+Framework.\+Util.\+new\+Rectangle (\begin{DoxyParamCaption}\item[{Rectangle}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+create a copy of a rectangle 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_util_ad3ac7d622266e8e09e88b50b50052578}\label{class_r_c___framework_1_1_util_ad3ac7d622266e8e09e88b50b50052578}} 
+\index{R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}!new\+Rectangle@{new\+Rectangle}}
+\index{new\+Rectangle@{new\+Rectangle}!R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}}
+\subsubsection{\texorpdfstring{new\+Rectangle()}{newRectangle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static Rectangle R\+C\+\_\+\+Framework.\+Util.\+new\+Rectangle (\begin{DoxyParamCaption}\item[{Rectangle?}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+create a copy of a nullable rectangle 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_util_a205f56f4b98e21666462ddce5143a2e5}\label{class_r_c___framework_1_1_util_a205f56f4b98e21666462ddce5143a2e5}} 
+\index{R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}!new\+Rectangle\+Beside@{new\+Rectangle\+Beside}}
+\index{new\+Rectangle\+Beside@{new\+Rectangle\+Beside}!R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}}
+\subsubsection{\texorpdfstring{new\+Rectangle\+Beside()}{newRectangleBeside()}}
+{\footnotesize\ttfamily static Rectangle R\+C\+\_\+\+Framework.\+Util.\+new\+Rectangle\+Beside (\begin{DoxyParamCaption}\item[{Rectangle}]{r,  }\item[{int}]{dirX,  }\item[{int}]{dirY,  }\item[{int}]{gap }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a rectangle beside the existing one if dirX == 1 its to the right if dirY == 1 its below if dirX == -\/1 its to the left if dirY == -\/1 its above Gap is the gap between usually 0 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & \\
+\hline
+{\em dirX} & \\
+\hline
+{\em dirY} & \\
+\hline
+\end{DoxyParams}
+~\newline
+
+\begin{DoxyParams}{Parameters}
+{\em gap} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_util_ad343f81943f78c8a9ac412a0d6c217e5}\label{class_r_c___framework_1_1_util_ad343f81943f78c8a9ac412a0d6c217e5}} 
+\index{R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}!new\+Rectangle\+Inside@{new\+Rectangle\+Inside}}
+\index{new\+Rectangle\+Inside@{new\+Rectangle\+Inside}!R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}}
+\subsubsection{\texorpdfstring{new\+Rectangle\+Inside()}{newRectangleInside()}}
+{\footnotesize\ttfamily static Rectangle R\+C\+\_\+\+Framework.\+Util.\+new\+Rectangle\+Inside (\begin{DoxyParamCaption}\item[{Rectangle}]{r,  }\item[{int}]{gapX,  }\item[{int}]{gapY }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a new rectangle inside or outside an existing one by gapX and gapY For creating concentric rectangles 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & \\
+\hline
+{\em gapX} & \\
+\hline
+{\em gapY} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_util_acfe8d27d82ff07df93b0a0545fbc6773}\label{class_r_c___framework_1_1_util_acfe8d27d82ff07df93b0a0545fbc6773}} 
+\index{R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}!outer\+Rectangle\+Of\+Circle@{outer\+Rectangle\+Of\+Circle}}
+\index{outer\+Rectangle\+Of\+Circle@{outer\+Rectangle\+Of\+Circle}!R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}}
+\subsubsection{\texorpdfstring{outer\+Rectangle\+Of\+Circle()}{outerRectangleOfCircle()}}
+{\footnotesize\ttfamily Rectangle R\+C\+\_\+\+Framework.\+Util.\+outer\+Rectangle\+Of\+Circle (\begin{DoxyParamCaption}\item[{Vector2}]{center\+Of\+Circle,  }\item[{float}]{radius }\end{DoxyParamCaption})}
+
+
+
+Returns the outer rectangle of a circle 
+
+
+\begin{DoxyParams}{Parameters}
+{\em center\+Of\+Circle} & \\
+\hline
+{\em radius} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_util_a4f7b82a75ed62f22465f81917f0683ce}\label{class_r_c___framework_1_1_util_a4f7b82a75ed62f22465f81917f0683ce}} 
+\index{R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}!rad\+To\+Deg@{rad\+To\+Deg}}
+\index{rad\+To\+Deg@{rad\+To\+Deg}!R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}}
+\subsubsection{\texorpdfstring{rad\+To\+Deg()}{radToDeg()}}
+{\footnotesize\ttfamily static float R\+C\+\_\+\+Framework.\+Util.\+rad\+To\+Deg (\begin{DoxyParamCaption}\item[{float}]{angle\+In\+Radians }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+convert radians to degrees 
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle\+In\+Radians} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_util_a5d6c5f7ec7c507c48a6f42fae4cdfb23}\label{class_r_c___framework_1_1_util_a5d6c5f7ec7c507c48a6f42fae4cdfb23}} 
+\index{R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}!rotate\+Point@{rotate\+Point}}
+\index{rotate\+Point@{rotate\+Point}!R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}}
+\subsubsection{\texorpdfstring{rotate\+Point()}{rotatePoint()}}
+{\footnotesize\ttfamily static Vector2 R\+C\+\_\+\+Framework.\+Util.\+rotate\+Point (\begin{DoxyParamCaption}\item[{Vector2}]{point,  }\item[{Vector2}]{center\+Of\+Rotation,  }\item[{float}]{angle\+In\+Radians }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Rotate a single point about an arbitay center radians 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & \\
+\hline
+{\em center\+Of\+Rotation} & \\
+\hline
+{\em angle\+In\+Radians} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_util_a8a768b99dd53f6fc5906dbc5da8a69fa}\label{class_r_c___framework_1_1_util_a8a768b99dd53f6fc5906dbc5da8a69fa}} 
+\index{R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}!rotate\+Point\+Deg@{rotate\+Point\+Deg}}
+\index{rotate\+Point\+Deg@{rotate\+Point\+Deg}!R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}}
+\subsubsection{\texorpdfstring{rotate\+Point\+Deg()}{rotatePointDeg()}}
+{\footnotesize\ttfamily static Vector2 R\+C\+\_\+\+Framework.\+Util.\+rotate\+Point\+Deg (\begin{DoxyParamCaption}\item[{Vector2}]{point,  }\item[{Vector2}]{center\+Of\+Rotation,  }\item[{float}]{angle\+In\+Degrees }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Rotate a single point about an arbitay center in degrees 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & \\
+\hline
+{\em center\+Of\+Rotation} & \\
+\hline
+{\em angle\+In\+Degrees} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_util_a432029bd0c2fd330b086e0b62d4afeb4}\label{class_r_c___framework_1_1_util_a432029bd0c2fd330b086e0b62d4afeb4}} 
+\index{R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}!seconds\+To\+Ticks@{seconds\+To\+Ticks}}
+\index{seconds\+To\+Ticks@{seconds\+To\+Ticks}!R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}}
+\subsubsection{\texorpdfstring{seconds\+To\+Ticks()}{secondsToTicks()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static int R\+C\+\_\+\+Framework.\+Util.\+seconds\+To\+Ticks (\begin{DoxyParamCaption}\item[{float}]{seconds,  }\item[{int}]{ticks\+Per\+Second }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_util_acc409dafdb1c4fe02554266da165a9f0}\label{class_r_c___framework_1_1_util_acc409dafdb1c4fe02554266da165a9f0}} 
+\index{R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}!seconds\+To\+Ticks@{seconds\+To\+Ticks}}
+\index{seconds\+To\+Ticks@{seconds\+To\+Ticks}!R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}}
+\subsubsection{\texorpdfstring{seconds\+To\+Ticks()}{secondsToTicks()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static int R\+C\+\_\+\+Framework.\+Util.\+seconds\+To\+Ticks (\begin{DoxyParamCaption}\item[{float}]{seconds,  }\item[{Time\+Span}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_util_a739e0ec7a821d4f5c30e41bf45c553a2}\label{class_r_c___framework_1_1_util_a739e0ec7a821d4f5c30e41bf45c553a2}} 
+\index{R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}!slope@{slope}}
+\index{slope@{slope}!R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}}
+\subsubsection{\texorpdfstring{slope()}{slope()}}
+{\footnotesize\ttfamily static double R\+C\+\_\+\+Framework.\+Util.\+slope (\begin{DoxyParamCaption}\item[{double}]{x1,  }\item[{double}]{y1,  }\item[{double}]{x2,  }\item[{double}]{y2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the slope of the line x1,y1 to x2 y2 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x1} & \\
+\hline
+{\em y1} & \\
+\hline
+{\em x2} & \\
+\hline
+{\em y2} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_r_c___framework_1_1_util_a407242341a419220c4ee196f2553d04a}\label{class_r_c___framework_1_1_util_a407242341a419220c4ee196f2553d04a}} 
+\index{R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}!tex\+From\+File@{tex\+From\+File}}
+\index{tex\+From\+File@{tex\+From\+File}!R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}}
+\subsubsection{\texorpdfstring{tex\+From\+File()}{texFromFile()}}
+{\footnotesize\ttfamily static Texture2D R\+C\+\_\+\+Framework.\+Util.\+tex\+From\+File (\begin{DoxyParamCaption}\item[{Graphics\+Device}]{gd,  }\item[{String}]{f\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_r_c___framework_1_1_util_a0e915c7b69e861aa3da7617fce83851f}\label{class_r_c___framework_1_1_util_a0e915c7b69e861aa3da7617fce83851f}} 
+\index{R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}!epsilon@{epsilon}}
+\index{epsilon@{epsilon}!R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}}
+\subsubsection{\texorpdfstring{epsilon}{epsilon}}
+{\footnotesize\ttfamily double R\+C\+\_\+\+Framework.\+Util.\+epsilon = 0.\+001\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_r_c___framework_1_1_util_afe9ab3df53a3bbd8071c105be4d0bed2}\label{class_r_c___framework_1_1_util_afe9ab3df53a3bbd8071c105be4d0bed2}} 
+\index{R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}!epsilonf@{epsilonf}}
+\index{epsilonf@{epsilonf}!R\+C\+\_\+\+Framework\+::\+Util@{R\+C\+\_\+\+Framework\+::\+Util}}
+\subsubsection{\texorpdfstring{epsilonf}{epsilonf}}
+{\footnotesize\ttfamily float R\+C\+\_\+\+Framework.\+Util.\+epsilonf = 0.\+001f\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+B/\+R\+C\+\_\+\+Framework2018/\+Source/\mbox{\hyperlink{_r_c___utils2_8cs}{R\+C\+\_\+\+Utils2.\+cs}}\end{DoxyCompactItemize}
